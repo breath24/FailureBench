@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/784",
+  "llm_response": "def mul_even_odd(numbers):\n    even = None\n    odd = None\n    for num in numbers:\n        if num % 2 == 0 and even is None:\n            even = num\n        elif num % 2 != 0 and odd is None:\n            odd = num\n        if even is not None and odd is not None:\n            break\n    return even * odd if even is not None and odd is not None else None",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find the product of first even and odd number of a given list."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/763",
+  "llm_response": "import sys\n\ndef find_min_diff(arr, n):\n    arr_sorted = sorted(arr)\n    min_diff = sys.maxsize\n    for i in range(n - 1):\n        diff = arr_sorted[i+1] - arr_sorted[i]\n        if diff < min_diff:\n            min_diff = diff\n    return min_diff",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the minimum difference between any two elements in a given array."
+}

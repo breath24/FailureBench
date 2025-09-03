@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/86",
+  "llm_response": "def centered_hexagonal_number(n):\n    return 3 * n * (n - 1) + 1\n\n# Example usage\nassert centered_hexagonal_number(10) == 271",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find nth centered hexagonal number."
+}

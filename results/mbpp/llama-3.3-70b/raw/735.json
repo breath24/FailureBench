@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/735",
+  "llm_response": "import math\n\ndef toggle_middle_bits(n):\n    num_bits = n.bit_length()\n    mask = (1 << (num_bits - 1)) | 1\n    middle_bits = n ^ mask\n    return middle_bits",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to toggle bits of the number except the first and the last bit."
+}

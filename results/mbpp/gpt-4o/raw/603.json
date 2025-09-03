@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/603",
+  "llm_response": "from typing import List\n\ndef get_ludic(n: int) -> List[int]:\n    sequence = list(range(1, n + 1))\n    i = 1\n    while i < len(sequence):\n        step = sequence[i]\n        sequence = [num for j, num in enumerate(sequence) if (j + 1) % step != 0]\n        i += 1\n    return sequence",
+  "model": "gpt-4o",
+  "task_description": "Write a function to get a lucid number smaller than or equal to n."
+}

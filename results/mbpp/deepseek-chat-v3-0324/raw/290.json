@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/290",
+  "llm_response": "from typing import List, Tuple\n\ndef max_length(lst: List[List[int]]) -> Tuple[int, List[int]]:\n    max_len = max(len(sublist) for sublist in lst)\n    max_list = next(sublist for sublist in lst if len(sublist) == max_len)\n    return (max_len, max_list)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the list of lists with maximum length."
+}

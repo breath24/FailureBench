@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/762",
+  "llm_response": "import calendar\n\ndef check_monthnumber_number(month):\n    return calendar.monthrange(2021, month)[1] == 30",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to check whether the given month number contains 30 days or not."
+}

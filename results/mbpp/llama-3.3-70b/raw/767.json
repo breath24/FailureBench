@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/767",
+  "llm_response": "from itertools import combinations\n\ndef get_pairs_count(numbers, sum):\n    count = 0\n    pairs = list(combinations(numbers, 2))\n    for pair in pairs:\n        if sum(pair) == sum:\n            count += 1\n    return count",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to count the number of pairs whose sum is equal to \u2018sum\u2019."
+}

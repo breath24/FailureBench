@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/141",
+  "llm_response": "def pancake_sort(arr):\n    n = len(arr)\n    for curr_size in range(n, 1, -1):\n        max_idx = arr.index(max(arr[:curr_size]))\n        if max_idx != curr_size - 1:\n            arr[:max_idx+1] = reversed(arr[:max_idx+1])\n            arr[:curr_size] = reversed(arr[:curr_size])\n    return arr",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to sort a list of elements using pancake sort."
+}

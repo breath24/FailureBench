@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/94",
+  "llm_response": "def index_minimum(tuples_list):\n    min_tuple = min(tuples_list, key=lambda x: x[1])\n    return min_tuple[0]",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to extract the index minimum value record from the given tuples."
+}

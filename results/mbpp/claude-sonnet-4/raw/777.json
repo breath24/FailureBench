@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/777",
+  "llm_response": "def find_sum(lst):\n    count = {}\n    for num in lst:\n        count[num] = count.get(num, 0) + 1\n    \n    return sum(num for num, freq in count.items() if freq == 1)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to find the sum of non-repeated elements in a given array."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/90",
+  "llm_response": "import functools\n\ndef len_log(words):\n    return max(len(word) for word in words)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the length of the longest word."
+}

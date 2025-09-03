@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/580",
+  "llm_response": "import collections\n\ndef extract_even(data):\n    if isinstance(data, collections.abc.Iterable) and not isinstance(data, (str, bytes)):\n        return tuple(extract_even(item) for item in data if isinstance(item, int) and item % 2 == 0 or isinstance(item, collections.abc.Iterable))\n    return data if isinstance(data, int) and data % 2 == 0 else ()",
+  "model": "gpt-4o",
+  "task_description": "Write a function to extract the even elements in the nested mixed tuple."
+}

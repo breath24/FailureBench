@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/757",
+  "llm_response": "from collections import defaultdict\n\ndef count_reverse_pairs(strings):\n    count = 0\n    seen = defaultdict(int)\n    for s in strings:\n        reversed_s = s[::-1]\n        if reversed_s in seen:\n            count += seen[reversed_s]\n        seen[s] += 1\n    return count",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to count the pairs of reverse strings in the given string list."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/439",
+  "llm_response": "def multiple_to_single(numbers):\n    result = 0\n    for num in numbers:\n        result = result * 10**len(str(num)) + num\n    return result",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to convert a list of multiple integers into a single integer."
+}

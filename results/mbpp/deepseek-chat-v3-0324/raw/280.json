@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/280",
+  "llm_response": "def sequential_search(arr, element):\n    for i, val in enumerate(arr):\n        if val == element:\n            return (True, i)\n    return (False, -1)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to search an element in the given array by using sequential search."
+}

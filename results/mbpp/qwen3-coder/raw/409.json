@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/409",
+  "llm_response": "def min_product_tuple(lst):\n    min_product = float('inf')\n    for pair in lst:\n        product = pair[0] * pair[1]\n        if product < min_product:\n            min_product = product\n    return min_product",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find the minimum product from the pairs of tuples within a given list."
+}

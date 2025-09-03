@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/245",
+  "llm_response": "def max_sum(arr):\n    def max_ending_here(arr, i, direction):\n        if direction == 'up':\n            if i == 0:\n                return arr[i]\n            else:\n                return max(arr[i], max_ending_here(arr, i-1, direction) + arr[i])\n        else:\n            if i == len(arr) - 1:\n                return arr[i]\n            else:\n                return max(arr[i], max_ending_here(arr, i+1, direction) + arr[i])\n\n    max_sum = 0\n    for i in range(len(arr)):\n        sum_up = max_ending_here(arr, i, 'up')\n        sum_down = max_ending_here(arr, i, 'down')\n        max_sum = max(max_sum, sum_up + sum_down - arr[i])\n    return max_sum",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to find the maximum sum of bi-tonic sub-sequence for the given array."
+}

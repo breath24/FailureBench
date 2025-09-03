@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/592",
+  "llm_response": "from math import comb\n\ndef sum_Of_product(n):\n    return sum(comb(n, k) * comb(n, k + 1) for k in range(n))",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find sum of product of binomial co-efficients."
+}

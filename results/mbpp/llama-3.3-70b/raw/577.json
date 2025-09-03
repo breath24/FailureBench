@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/577",
+  "llm_response": "import math\n\ndef last_Digit_Factorial(n):\n    return math.factorial(n) % 10",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the last digit in factorial of a given number."
+}

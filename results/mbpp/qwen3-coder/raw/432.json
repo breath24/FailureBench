@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/432",
+  "llm_response": "def median_trapezium(a, b, h):\n    return (a + b) / 2",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find the median of a trapezium."
+}

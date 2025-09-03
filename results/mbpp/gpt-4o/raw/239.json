@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/239",
+  "llm_response": "from functools import lru_cache\n\ndef get_total_number_of_sequences(m, n):\n    @lru_cache(None)\n    def count_sequences(last, length):\n        if length == 0:\n            return 1\n        total = 0\n        for next_elem in range(last * 2, m + 1):\n            total += count_sequences(next_elem, length - 1)\n        return total\n    \n    return sum(count_sequences(i, n - 1) for i in range(1, m + 1)) if n > 0 else 0",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the number of possible sequences of length n such that each of the next element is greater than or equal to twice of the previous element but less than or equal to m."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/97",
+  "llm_response": "import itertools\n\ndef frequency_lists(lists):\n    flat_list = list(itertools.chain(*lists))\n    freq_dict = {}\n    for item in flat_list:\n        if item in freq_dict:\n            freq_dict[item] += 1\n        else:\n            freq_dict[item] = 1\n    return freq_dict",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to find frequency count of list of lists."
+}

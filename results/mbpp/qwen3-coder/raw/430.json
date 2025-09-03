@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/430",
+  "llm_response": "import math\n\ndef parabola_directrix(a, b, c):\n    h = -b / (2 * a)\n    k = a * h * h + b * h + c\n    p = 1 / (4 * a)\n    directrix = k - p\n    return directrix",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find the directrix of a parabola."
+}

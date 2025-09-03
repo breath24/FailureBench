@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/138",
+  "llm_response": "def is_Sum_Of_Powers_Of_Two(n):\n    if n <= 0:\n        return False\n    \n    # Count number of set bits in binary representation\n    # A number can be represented as sum of non-zero powers of 2 \n    # if and only if it has at least one bit set to 1 in its binary representation\n    # and it's positive\n    \n    # This is essentially checking if the number is a positive integer\n    # which automatically means it can be represented as sum of powers of 2\n    # since any positive integer can be expressed as sum of distinct powers of 2\n    # (this is basically the binary representation)\n    \n    return n > 0 and (n & (n - 1)) != 0 or n == 1",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not."
+}

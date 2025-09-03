@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/283",
+  "llm_response": "import collections\n\ndef validate(n):\n    str_n = str(n)\n    digit_counts = collections.Counter(str_n)\n    for digit, count in digit_counts.items():\n        if count > int(digit):\n            return False\n    return True",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to check whether the frequency of each digit is less than or equal to the digit itself."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/251",
+  "llm_response": "def insert_element(lst, elem):\n    result = []\n    for i in lst:\n        result.append(elem)\n        result.append(i)\n    return result",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to insert an element before each element of a list."
+}

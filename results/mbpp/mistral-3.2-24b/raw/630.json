@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/630",
+  "llm_response": "def get_coordinates(coord):\n    x, y = coord\n    adjacent = []\n    for i in range(x-1, x+2):\n        for j in range(y-1, y+2):\n            adjacent.append([i, j])\n    return adjacent",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to extract all the adjacent coordinates of the given coordinate tuple."
+}

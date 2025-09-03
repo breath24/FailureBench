@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/290",
+  "llm_response": "import itertools\n\ndef max_length(lists):\n    max_len = max(len(lst) for lst in lists)\n    return (max_len, next(lst for lst in lists if len(lst) == max_len))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to find the list of lists with maximum length."
+}

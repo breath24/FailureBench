@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/108",
+  "llm_response": "import heapq\n\ndef merge_sorted_list(list1, list2, list3):\n    return sorted(list1 + list2 + list3)\n\ndef merge_sorted_list_efficient(list1, list2, list3):\n    return list(heapq.merge(list1, list2, list3))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to merge multiple sorted inputs into a single sorted iterator using heap queue algorithm."
+}

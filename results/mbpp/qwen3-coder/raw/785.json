@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/785",
+  "llm_response": "def tuple_str_int(tuple_str):\n    # Remove parentheses and split by comma\n    cleaned = tuple_str.strip('()')\n    # Split by comma and convert each element to integer\n    elements = [int(x.strip()) for x in cleaned.split(',')]\n    # Convert list to tuple and return\n    return tuple(elements)",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to convert tuple string to integer tuple."
+}

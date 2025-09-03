@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/167",
+  "llm_response": "import math\n\ndef next_power_of_2(n):\n    if n <= 0:\n        return 1\n    return 1 << (n - 1).bit_length()",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find smallest power of 2 greater than or equal to n."
+}

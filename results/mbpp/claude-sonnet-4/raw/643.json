@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/643",
+  "llm_response": "import re\n\ndef text_match_wordz_middle(text):\n    pattern = r'\\B[a-zA-Z]*z[a-zA-Z]*\\B'\n    return bool(re.search(pattern, text))",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function that matches a word containing 'z', not at the start or end of the word."
+}

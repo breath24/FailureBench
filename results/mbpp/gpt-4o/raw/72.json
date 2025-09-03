@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/72",
+  "llm_response": "def dif_Square(n):\n    if n < 0:\n        return False\n    return n % 2 == 0 or n % 4 == 1",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to check whether the given number can be represented as difference of two squares or not."
+}

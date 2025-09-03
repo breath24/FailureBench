@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/237",
+  "llm_response": "def check_occurences(tuples_list):\n    result = {}\n    for tup in tuples_list:\n        normalized = tuple(sorted(tup))\n        result[normalized] = result.get(normalized, 0) + 1\n    return result",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to check the occurrences of records which occur similar times in the given tuples."
+}

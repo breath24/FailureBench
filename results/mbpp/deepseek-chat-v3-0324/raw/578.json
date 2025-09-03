@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/578",
+  "llm_response": "from itertools import chain\n\ndef interleave_lists(list1, list2, list3):\n    return list(chain.from_iterable(zip(list1, list2, list3)))",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to interleave lists of the same length."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/265",
+  "llm_response": "def list_split(lst, n):\n    return [lst[i::n] for i in range(n)]",
+  "model": "gpt-4o",
+  "task_description": "Write a function to split a list for every nth element."
+}

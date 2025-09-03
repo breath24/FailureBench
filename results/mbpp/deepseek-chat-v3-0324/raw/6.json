@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/6",
+  "llm_response": "import math\n\ndef differ_At_One_Bit_Pos(a, b):\n    xor_result = a ^ b\n    return xor_result != 0 and (xor_result & (xor_result - 1)) == 0",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to check whether the two numbers differ at one bit position only or not."
+}

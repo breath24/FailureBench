@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/168",
+  "llm_response": "def frequency(lst, num):\n    return lst.count(num)",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to find the frequency of a number in a given array."
+}

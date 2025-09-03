@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/626",
+  "llm_response": "import math\n\ndef triangle_area(radius):\n    if radius <= 0:\n        return None\n    return radius ** 2",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to find the largest triangle that can be inscribed in the semicircle."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/773",
+  "llm_response": "import re\n\ndef occurance_substring(text, substring):\n    match = re.search(re.escape(substring), text)\n    if match:\n        start = match.start()\n        end = match.end()\n        return (substring, start, end)\n    return None",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find the occurrence and position of the substrings within a string."
+}

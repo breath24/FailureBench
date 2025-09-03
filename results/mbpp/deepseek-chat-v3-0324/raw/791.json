@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/791",
+  "llm_response": "def remove_nested(t):\n    return tuple(element for element in t if not isinstance(element, tuple))",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to remove the nested record from the given tuple."
+}

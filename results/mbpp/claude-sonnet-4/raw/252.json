@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/252",
+  "llm_response": "import math\n\ndef convert(z):\n    if isinstance(z, (int, float)):\n        z = complex(z)\n    \n    r = abs(z)\n    theta = math.atan2(z.imag, z.real)\n    \n    return (r, theta)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to convert complex numbers to polar coordinates."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/635",
+  "llm_response": "import heapq\n\ndef heap_sort(lst):\n    heapq.heapify(lst)\n    sorted_lst = []\n    while lst:\n        sorted_lst.append(heapq.heappop(lst))\n    return sorted_lst",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to push all values into a heap and then pop off the smallest values one at a time."
+}

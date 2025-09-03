@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/240",
+  "llm_response": "def replace_list(list1, list2):\n    if not list1:\n        return list2\n    return list1[:-1] + list2",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to replace the last element of the list with another list."
+}

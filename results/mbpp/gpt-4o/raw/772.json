@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/772",
+  "llm_response": "import re\n\ndef remove_length(s, k):\n    return ' '.join(re.findall(r'\\b\\w+\\b', s, re.UNICODE | re.IGNORECASE | re.MULTILINE | re.DOTALL) if len(word) != k)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to remove all the words with k length in the given string."
+}

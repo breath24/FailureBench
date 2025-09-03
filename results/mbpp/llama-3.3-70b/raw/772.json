@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/772",
+  "llm_response": "import re\n\ndef remove_length(s, k):\n    words = s.split()\n    return ' '.join([word for word in words if len(word) != k])",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to remove all the words with k length in the given string."
+}

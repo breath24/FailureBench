@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/62",
+  "llm_response": "import math\n\ndef smallest_num(lst):\n    return min(lst)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find smallest number in a list."
+}

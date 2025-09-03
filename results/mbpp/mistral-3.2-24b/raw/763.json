@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/763",
+  "llm_response": "def find_min_diff(arr, k):\n    arr = sorted(arr)\n    min_diff = float('inf')\n    for i in range(len(arr) - 1):\n        if arr[i+1] - arr[i] < min_diff:\n            min_diff = arr[i+1] - arr[i]\n    return min_diff",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to find the minimum difference between any two elements in a given array."
+}

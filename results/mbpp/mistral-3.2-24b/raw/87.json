@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/87",
+  "llm_response": "def merge_dictionaries_three(dict1, dict2, dict3):\n    merged_dict = {}\n    merged_dict.update(dict1)\n    merged_dict.update(dict2)\n    merged_dict.update(dict3)\n    return merged_dict",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to merge three dictionaries into a single expression."
+}

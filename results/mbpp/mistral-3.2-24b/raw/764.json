@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/764",
+  "llm_response": "def number_ctr(s):\n    return sum(c.isdigit() for c in s)",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to count numeric values in a given string."
+}

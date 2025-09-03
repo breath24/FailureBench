@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/6",
+  "llm_response": "def differ_At_One_Bit_Pos(a, b):\n    xor_result = a ^ b\n    return bin(xor_result).count('1') == 1",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to check whether the two numbers differ at one bit position only or not."
+}

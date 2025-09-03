@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/116",
+  "llm_response": "import functools\n\ndef tuple_to_int(t):\n    return int(functools.reduce(lambda x, y: str(x) + str(y), t))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to convert a given tuple of positive integers into an integer."
+}

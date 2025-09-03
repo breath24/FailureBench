@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/277",
+  "llm_response": "import typing\n\ndef dict_filter(d: typing.Dict[str, int], n: int) -> typing.Dict[str, int]:\n    return {k: v for k, v in d.items() if v >= n}",
+  "model": "gpt-4o",
+  "task_description": "Write a function to filter a dictionary based on values."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/739",
+  "llm_response": "import math\n\ndef find_Index(n):\n    i = 1\n    while True:\n        triangular_num = i * (i + 1) // 2\n        if len(str(triangular_num)) == n:\n            return i\n        i += 1",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the index of smallest triangular number with n digits."
+}

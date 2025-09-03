@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/311",
+  "llm_response": "import math\n\ndef set_left_most_unset_bit(n):\n    if n == 0:\n        return 1\n    position = math.floor(math.log2(n)) + 1\n    return n | (1 << position)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to set the left most unset bit."
+}

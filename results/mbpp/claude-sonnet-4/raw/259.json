@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/259",
+  "llm_response": "def maximize_elements(tuple1, tuple2):\n    result = []\n    for i in range(len(tuple1)):\n        max_tuple = tuple(max(tuple1[i][j], tuple2[i][j]) for j in range(len(tuple1[i])))\n        result.append(max_tuple)\n    return tuple(result)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to maximize the given two tuples."
+}

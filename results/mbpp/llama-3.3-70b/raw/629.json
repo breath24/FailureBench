@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/629",
+  "llm_response": "import numpy as np\n\ndef Split(numbers):\n    even_numbers = [num for num in numbers if num % 2 == 0]\n    return even_numbers",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find even numbers from a mixed list."
+}

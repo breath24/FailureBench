@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/415",
+  "llm_response": "from itertools import combinations\n\ndef max_Product(arr):\n    return max(combinations(arr, 2), key=lambda x: x[0] * x[1])",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find a pair with highest product from a given array of integers."
+}

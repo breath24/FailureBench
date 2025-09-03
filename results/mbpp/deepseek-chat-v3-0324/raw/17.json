@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/17",
+  "llm_response": "import math\n\ndef square_perimeter(side_length):\n    return 4 * side_length",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the perimeter of a square."
+}

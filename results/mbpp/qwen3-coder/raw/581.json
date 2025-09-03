@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/581",
+  "llm_response": "import math\n\ndef surface_Area(base_edge, height):\n    # Calculate slant height\n    slant_height = math.sqrt((base_edge/2)**2 + height**2)\n    \n    # Calculate base area\n    base_area = base_edge**2\n    \n    # Calculate lateral surface area (4 triangular faces)\n    lateral_area = 4 * (0.5 * base_edge * slant_height)\n    \n    # Total surface area\n    total_surface_area = base_area + lateral_area\n    \n    return int(total_surface_area)",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to find the surface area of the square pyramid."
+}

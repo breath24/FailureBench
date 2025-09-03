@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/792",
+  "llm_response": "def count_list(list_of_lists):\n    return len(list_of_lists)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to count the number of lists in a given number of lists."
+}

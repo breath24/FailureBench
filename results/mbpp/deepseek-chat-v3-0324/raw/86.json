@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/86",
+  "llm_response": "import math\n\ndef centered_hexagonal_number(n):\n    return 3 * n * (n - 1) + 1",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find nth centered hexagonal number."
+}

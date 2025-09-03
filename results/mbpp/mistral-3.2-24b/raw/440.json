@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/440",
+  "llm_response": "import re\n\ndef find_adverb_position(sentence):\n    words = sentence.split()\n    for i, word in enumerate(words):\n        if re.search(r'ly$', word):\n            return (i, i + len(word), word)\n    return None",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find all adverbs and their positions in a given sentence."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/778",
+  "llm_response": "import itertools\n\ndef pack_consecutive_duplicates(lst):\n    return [list(g) for k, g in itertools.groupby(lst)]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to pack consecutive duplicates of a given list elements into sublists."
+}

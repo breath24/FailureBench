@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/57",
+  "llm_response": "from functools import cmp_to_key\n\ndef find_Max_Num(digits):\n    digits = list(map(str, digits))\n    def compare(a, b):\n        if a + b > b + a:\n            return -1\n        else:\n            return 1\n    digits.sort(key=cmp_to_key(compare))\n    return int(''.join(digits))",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the largest number that can be formed with the given digits."
+}

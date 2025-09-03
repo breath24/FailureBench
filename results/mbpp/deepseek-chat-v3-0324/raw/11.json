@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/11",
+  "llm_response": "def remove_Occ(s, char):\n    first = s.find(char)\n    if first == -1:\n        return s\n    last = s.rfind(char)\n    if first == last:\n        return s[:first] + s[first+1:]\n    return s[:first] + s[first+1:last] + s[last+1:]",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to remove first and last occurrence of a given character from the string."
+}

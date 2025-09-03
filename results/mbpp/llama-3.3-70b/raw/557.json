@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/557",
+  "llm_response": "import re\ndef toggle_string(s):\n    return re.sub(r'([a-z]+)', lambda x: x.group().upper(), re.sub(r'([A-Z]+)', lambda x: x.group().lower(), s))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to toggle characters case in a string."
+}

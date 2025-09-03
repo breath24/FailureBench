@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/97",
+  "llm_response": "from collections import Counter\n\ndef frequency_lists(lists):\n    flattened = [item for sublist in lists for item in sublist]\n    return dict(Counter(flattened))",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find frequency count of list of lists."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/592",
+  "llm_response": "from math import comb\n\ndef sum_Of_product(n):\n    total = 0\n    for i in range(n):\n        total += comb(n, i) * comb(n, i + 1)\n    return total",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to find sum of product of binomial co-efficients."
+}

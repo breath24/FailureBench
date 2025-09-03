@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/296",
+  "llm_response": "def get_Inv_Count(arr):\n    inv_count = 0\n    for i in range(len(arr)):\n        for j in range(i + 1, len(arr)):\n            if arr[i] > arr[j]:\n                inv_count += 1\n    return inv_count",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to count inversions in an array."
+}

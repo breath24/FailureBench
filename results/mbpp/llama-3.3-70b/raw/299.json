@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/299",
+  "llm_response": "from collections import defaultdict\n\ndef max_aggregate(students):\n    student_scores = defaultdict(int)\n    for student, score in students:\n        student_scores[student] += score\n    max_score = max(student_scores.values())\n    max_student = [student for student, score in student_scores.items() if score == max_score][0]\n    return max_student, max_score",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to calculate the maximum aggregate from the list of tuples."
+}

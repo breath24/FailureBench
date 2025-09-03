@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/459",
+  "llm_response": "import re\n\ndef remove_uppercase(s):\n    return re.sub('[A-Z]+', '', s)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to remove uppercase substrings from a given string by using regex."
+}

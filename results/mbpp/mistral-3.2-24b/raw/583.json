@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/583",
+  "llm_response": "def catalan_number(n):\n    if n <= 1:\n        return 1\n    catalan = [0] * (n + 1)\n    catalan[0] = 1\n    catalan[1] = 1\n    for i in range(2, n + 1):\n        catalan[i] = 0\n        for j in range(i):\n            catalan[i] += catalan[j] * catalan[i - j - 1]\n    return catalan[n]",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function for nth catalan number."
+}

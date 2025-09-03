@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/102",
+  "llm_response": "import re\n\ndef snake_to_camel(s):\n    components = s.split('_')\n    return components[0].capitalize() + ''.join(x.capitalize() for x in components[1:])",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to convert snake case string to camel case string."
+}

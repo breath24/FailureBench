@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/624",
+  "llm_response": "def is_upper(input_string):\n    return input_string.upper()",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to convert the given string to upper case."
+}

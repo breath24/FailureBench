@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/92",
+  "llm_response": "def is_undulating(number):\n    num_str = str(number)\n    if len(num_str) < 3:\n        return False\n    first, second = num_str[0], num_str[1]\n    if first == second:\n        return False\n    for i in range(2, len(num_str)):\n        if i % 2 == 0 and num_str[i] != first:\n            return False\n        elif i % 2 != 0 and num_str[i] != second:\n            return False\n    return True",
+  "model": "gpt-4o",
+  "task_description": "Write a function to check whether the given number is undulating or not."
+}

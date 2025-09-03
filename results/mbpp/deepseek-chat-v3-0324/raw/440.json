@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/440",
+  "llm_response": "import spacy\n\ndef find_adverb_position(sentence):\n    nlp = spacy.load(\"en_core_web_sm\")\n    doc = nlp(sentence)\n    for token in doc:\n        if token.pos_ == 'ADV':\n            start = token.idx\n            end = start + len(token.text)\n            return (start, end, token.text)\n    return None",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find all adverbs and their positions in a given sentence."
+}

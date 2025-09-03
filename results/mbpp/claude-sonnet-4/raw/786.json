@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/786",
+  "llm_response": "import bisect\n\ndef right_insertion(arr, value):\n    return bisect.bisect_right(arr, value)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to locate the right insertion point for a specified value in sorted order."
+}

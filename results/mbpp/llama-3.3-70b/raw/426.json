@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/426",
+  "llm_response": "import numpy as np\n\ndef filter_oddnumbers(numbers):\n    return [num for num in numbers if num % 2 != 0]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to filter odd numbers using lambda function."
+}

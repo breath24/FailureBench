@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/409",
+  "llm_response": "import math\n\ndef min_product_tuple(tuples_list):\n    min_product = math.inf\n    for t in tuples_list:\n        product = t[0] * t[1]\n        if product < min_product:\n            min_product = product\n    return min_product",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the minimum product from the pairs of tuples within a given list."
+}

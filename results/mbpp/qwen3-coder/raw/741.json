@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/741",
+  "llm_response": "def all_Characters_Same(s):\n    if len(s) == 0:\n        return True\n    first_char = s[0]\n    for char in s:\n        if char != first_char:\n            return False\n    return True",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to check whether all the characters are same or not."
+}

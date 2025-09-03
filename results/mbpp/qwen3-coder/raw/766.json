@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/766",
+  "llm_response": "def pair_wise(lst):\n    return [(lst[i], lst[i+1]) for i in range(len(lst)-1)]",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to iterate over all pairs of consecutive items in a given list."
+}

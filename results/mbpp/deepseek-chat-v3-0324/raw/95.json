@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/95",
+  "llm_response": "import numpy as np\n\ndef Find_Min_Length(list_of_lists):\n    return min(len(sublist) for sublist in list_of_lists)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the minimum length of sublist."
+}

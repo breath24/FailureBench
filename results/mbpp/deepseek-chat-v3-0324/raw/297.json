@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/297",
+  "llm_response": "def flatten_list(nested_list):\n    flat_list = []\n    for element in nested_list:\n        if isinstance(element, list):\n            flat_list.extend(flatten_list(element))\n        else:\n            flat_list.append(element)\n    return flat_list",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to flatten a given nested list structure."
+}

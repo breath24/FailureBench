@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/404",
+  "llm_response": "def minimum(a, b):\n    return min(a, b)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to find the minimum of two numbers."
+}

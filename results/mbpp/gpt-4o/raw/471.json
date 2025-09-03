@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/471",
+  "llm_response": "from functools import reduce\n\ndef find_remainder(arr, n):\n    return reduce(lambda x, y: (x * y) % n, arr, 1)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find remainder of array multiplication divided by n."
+}

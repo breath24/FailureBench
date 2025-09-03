@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/793",
+  "llm_response": "def last(arr, target):\n    if not arr:\n        return -1\n    \n    left, right = 0, len(arr) - 1\n    result = -1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            result = mid\n            left = mid + 1\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    \n    return result",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to find the last position of an element in a sorted array."
+}

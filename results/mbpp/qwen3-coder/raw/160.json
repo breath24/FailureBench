@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/160",
+  "llm_response": "def find_solution(a, b, n):\n    # Extended Euclidean Algorithm to find x, y such that ax + by = gcd(a, b)\n    def extended_gcd(a, b):\n        if b == 0:\n            return a, 1, 0\n        else:\n            gcd, x1, y1 = extended_gcd(b, a % b)\n            x = y1\n            y = x1 - (a // b) * y1\n            return gcd, x, y\n    \n    gcd, x, y = extended_gcd(a, b)\n    \n    # Check if n is divisible by gcd(a, b)\n    if n % gcd != 0:\n        return None\n    \n    # Scale the solution by n/gcd(a, b)\n    x *= n // gcd\n    y *= n // gcd\n    \n    return (x, y)",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find x and y that satisfies ax + by = n."
+}

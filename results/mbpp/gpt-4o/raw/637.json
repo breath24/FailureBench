@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/637",
+  "llm_response": "def noprofit_noloss(cost_price, selling_price):\n    return cost_price == selling_price",
+  "model": "gpt-4o",
+  "task_description": "Write a function to check whether the given amount has no profit and no loss"
+}

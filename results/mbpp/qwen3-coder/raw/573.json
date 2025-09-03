@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/573",
+  "llm_response": "def unique_product(lst):\n    unique_numbers = set(lst)\n    product = 1\n    for num in unique_numbers:\n        product *= num\n    return product",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to calculate the product of the unique numbers of a given list."
+}

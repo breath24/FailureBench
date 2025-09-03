@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/593",
+  "llm_response": "def removezero_ip(ip_address):\n    return '.'.join(str(int(part)) for part in ip_address.split('.'))",
+  "model": "gpt-4o",
+  "task_description": "Write a function to remove leading zeroes from an ip address."
+}

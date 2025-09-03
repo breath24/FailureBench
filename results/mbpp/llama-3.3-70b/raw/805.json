@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/805",
+  "llm_response": "import numpy as np\n\ndef max_sum_list(lists):\n    sums = [sum(lst) for lst in lists]\n    return lists[np.argmax(sums)]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to find the list in a list of lists whose sum of elements is the highest."
+}

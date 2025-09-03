@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/763",
+  "llm_response": "import itertools\n\ndef find_min_diff(arr, k):\n    return min(abs(x - y) for x, y in itertools.combinations(arr, 2))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the minimum difference between any two elements in a given array."
+}

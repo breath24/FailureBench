@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/471",
+  "llm_response": "import math\n\ndef find_remainder(arr, n):\n    product = 1\n    for num in arr:\n        product *= num\n    return product % n",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find remainder of array multiplication divided by n."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/272",
+  "llm_response": "def rear_extract(tuples_list):\n    return [t[-1] for t in tuples_list]",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to perfom the rear element extraction from list of tuples records."
+}

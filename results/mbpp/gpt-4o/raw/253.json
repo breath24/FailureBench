@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/253",
+  "llm_response": "def count_integer(lst):\n    return sum(isinstance(i, int) for i in lst)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to count integers from a given list."
+}

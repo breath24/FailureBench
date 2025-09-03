@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/632",
+  "llm_response": "def move_zero(nums):\n    non_zero = [x for x in nums if x != 0]\n    zero_count = nums.count(0)\n    return non_zero + [0] * zero_count",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to move all zeroes to the end of the given list."
+}

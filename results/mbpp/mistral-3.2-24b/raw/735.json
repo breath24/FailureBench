@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/735",
+  "llm_response": "def toggle_middle_bits(num):\n    if num == 0:\n        return 0\n    binary = bin(num)[2:]\n    if len(binary) == 1:\n        return num\n    first_bit = binary[0]\n    last_bit = binary[-1]\n    middle_bits = binary[1:-1]\n    toggled_middle = ''.join(['1' if bit == '0' else '0' for bit in middle_bits])\n    toggled_binary = first_bit + toggled_middle + last_bit\n    return int(toggled_binary, 2)",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to toggle bits of the number except the first and the last bit."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/586",
+  "llm_response": "def split_Arr(arr, n):\n    return arr[n:] + arr[:n]",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to split the array and add the first part to the end."
+}

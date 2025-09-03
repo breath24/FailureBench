@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/391",
+  "llm_response": "def convert_list_dictionary(keys, names, scores):\n    return [{k: {n: s}} for k, n, s in zip(keys, names, scores)]",
+  "model": "gpt-4o",
+  "task_description": "Write a function to convert more than one list to nested dictionary."
+}

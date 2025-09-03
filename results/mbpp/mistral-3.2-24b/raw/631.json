@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/631",
+  "llm_response": "def replace_spaces(s):\n    return s.replace(' ', '_').replace('_', ' ', s.count('_') - s.count(' '))",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to replace whitespaces with an underscore and vice versa in a given string by using regex."
+}

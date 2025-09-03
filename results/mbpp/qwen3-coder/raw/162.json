@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/162",
+  "llm_response": "def sum_series(n):\n    total = 0\n    for i in range(n // 2 + 1):\n        total += n - 2 * i\n    return total",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to calculate the sum of the positive integers of n+(n-2)+(n-4)... (until n-x =< 0)."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/610",
+  "llm_response": "def remove_kth_element(lst, k):\n    if k <= 0 or k > len(lst):\n        return lst[:]\n    return lst[:k-1] + lst[k:]",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to remove the k'th element from a given list."
+}

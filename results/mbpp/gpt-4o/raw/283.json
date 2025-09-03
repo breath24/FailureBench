@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/283",
+  "llm_response": "from collections import Counter\n\ndef validate(n):\n    digit_count = Counter(str(n))\n    return all(digit_count[digit] <= int(digit) for digit in digit_count)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to check whether the frequency of each digit is less than or equal to the digit itself."
+}

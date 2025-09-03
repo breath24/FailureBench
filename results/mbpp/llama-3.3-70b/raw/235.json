@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/235",
+  "llm_response": "def even_bit_set_number(n):\n    binary = bin(n)[2:]\n    binary = binary.zfill(8)\n    result = ''\n    for i in range(len(binary)):\n        if (i+1) % 2 == 0:\n            result += '1'\n        else:\n            result += binary[i]\n    return int(result, 2)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to set all even bits of a given number."
+}

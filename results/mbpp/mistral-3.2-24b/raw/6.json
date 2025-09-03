@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/6",
+  "llm_response": "def differ_At_One_Bit_Pos(x, y):\n    return (x ^ y) & ((x ^ y) - 1) == 0 and (x ^ y) != 0",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to check whether the two numbers differ at one bit position only or not."
+}

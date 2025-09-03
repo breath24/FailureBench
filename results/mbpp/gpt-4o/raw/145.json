@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/145",
+  "llm_response": "import numpy as np\n\ndef max_Abs_Diff(arr):\n    return np.max(arr) - np.min(arr)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find the maximum difference between any two elements in a given array."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/465",
+  "llm_response": "def drop_empty(d):\n    return {k: v for k, v in d.items() if v is not None}",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to drop empty items from a given dictionary."
+}

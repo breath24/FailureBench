@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/118",
+  "llm_response": "def string_to_list(input_string):\n    return input_string.split()",
+  "model": "mistral-3.2-24b",
+  "task_description": "[link text](https:// [link text](https:// [link text](https://)))write a function to convert a string to a list."
+}

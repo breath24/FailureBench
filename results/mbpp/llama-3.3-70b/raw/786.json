@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/786",
+  "llm_response": "from bisect import bisect_right\n\ndef right_insertion(nums, target):\n    return bisect_right(nums, target)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to locate the right insertion point for a specified value in sorted order."
+}

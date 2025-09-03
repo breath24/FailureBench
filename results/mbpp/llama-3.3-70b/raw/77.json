@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/77",
+  "llm_response": "def is_Diff(n):\n    return n % 11 == 0",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the difference between sum of even and odd digits."
+}

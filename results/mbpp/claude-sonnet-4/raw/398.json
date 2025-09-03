@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/398",
+  "llm_response": "def sum_of_digits(numbers):\n    total = 0\n    for num in numbers:\n        while num > 0:\n            total += num % 10\n            num //= 10\n    return total",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to compute the sum of digits of each number of a given list."
+}

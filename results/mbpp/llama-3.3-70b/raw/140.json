@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/140",
+  "llm_response": "def extract_singly(lists):\n    result = set()\n    for lst in lists:\n        result.update(lst)\n    return result",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to extract elements that occur singly in the given tuple list."
+}

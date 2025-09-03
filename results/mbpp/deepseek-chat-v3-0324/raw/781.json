@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/781",
+  "llm_response": "import math\n\ndef count_divisors(n):\n    root = math.isqrt(n)\n    if root * root == n:\n        return False\n    return True",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to check whether the count of divisors is even or odd."
+}

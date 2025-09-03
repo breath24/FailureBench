@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/597",
+  "llm_response": "from typing import List\n\ndef find_kth(arr1: List[int], arr2: List[int], k: int) -> int:\n    def kth_util(a, b, k):\n        if not a:\n            return b[k]\n        if not b:\n            return a[k]\n        mid_a, mid_b = len(a) // 2, len(b) // 2\n        if mid_a + mid_b < k:\n            if a[mid_a] > b[mid_b]:\n                return kth_util(a, b[mid_b + 1:], k - mid_b - 1)\n            else:\n                return kth_util(a[mid_a + 1:], b, k - mid_a - 1)\n        else:\n            if a[mid_a] > b[mid_b]:\n                return kth_util(a[:mid_a], b, k)\n            else:\n                return kth_util(a, b[:mid_b], k)\n    return kth_util(arr1, arr2, k - 1)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find kth element from the given two sorted arrays."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/749",
+  "llm_response": "def sort_numeric_strings(lst):\n    return sorted([int(x) for x in lst])",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to sort a given list of strings of numbers numerically."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/742",
+  "llm_response": "import math\n\ndef area_tetrahedron(side_length):\n    return math.sqrt(3) * side_length ** 2",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to caluclate the area of a tetrahedron."
+}

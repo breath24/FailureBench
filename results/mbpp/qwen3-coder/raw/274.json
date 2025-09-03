@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/274",
+  "llm_response": "def even_binomial_Coeff_Sum(n):\n    # Sum of binomial coefficients at even indices\n    # C(n,0) + C(n,2) + C(n,4) + ... + C(n,k) where k <= n and k is even\n    \n    # Using the property that sum of even index binomial coefficients \n    # equals 2^(n-1) for n > 0\n    \n    if n == 0:\n        return 1\n    \n    return 2 ** (n - 1)",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to find sum of even index binomial coefficients."
+}

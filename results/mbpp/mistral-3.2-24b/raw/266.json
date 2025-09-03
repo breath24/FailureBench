@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/266",
+  "llm_response": "def lateralsurface_cube(side_length):\n    return 4 * side_length ** 2",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find the lateral surface area of a cube."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/63",
+  "llm_response": "import itertools\n\ndef max_difference(tuple_list):\n    return max(abs(a - b) for a, b in itertools.combinations(itertools.chain.from_iterable(tuple_list), 2))",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the maximum difference between available pairs in the given tuple list."
+}

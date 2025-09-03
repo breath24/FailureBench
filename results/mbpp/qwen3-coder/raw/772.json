@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/772",
+  "llm_response": "import re\n\ndef remove_length(string, k):\n    words = string.split()\n    filtered_words = [word for word in words if len(word) != k]\n    return ' '.join(filtered_words)",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to remove all the words with k length in the given string."
+}

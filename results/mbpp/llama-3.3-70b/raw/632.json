@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/632",
+  "llm_response": "import itertools\n\ndef move_zero(lst):\n    return list(itertools.chain(*itertools.groupby(lst, key=lambda x: x==0), reverse=True))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to move all zeroes to the end of the given list."
+}

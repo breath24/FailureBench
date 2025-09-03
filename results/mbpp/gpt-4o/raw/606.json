@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/606",
+  "llm_response": "import math\n\ndef radian_degree(degree):\n    return degree * (math.pi / 180)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to convert degrees to radians."
+}

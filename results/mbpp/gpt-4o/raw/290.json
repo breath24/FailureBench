@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/290",
+  "llm_response": "import itertools\n\ndef max_length(list_of_lists):\n    return max(((len(lst), lst) for lst in list_of_lists), key=lambda x: x[0])",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the list of lists with maximum length."
+}

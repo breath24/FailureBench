@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/581",
+  "llm_response": "import math\n\ndef surface_Area(base_edge, height):\n    base_area = base_edge ** 2\n    slant_height = math.sqrt((base_edge / 2) ** 2 + height ** 2)\n    triangular_face_area = 0.5 * base_edge * slant_height\n    total_triangular_area = 4 * triangular_face_area\n    return base_area + total_triangular_area",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to find the surface area of the square pyramid."
+}

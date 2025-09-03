@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/468",
+  "llm_response": "import itertools\n\ndef max_product(arr):\n    max_prod = 0\n    for i in range(1, len(arr) + 1):\n        for subseq in itertools.combinations(arr, i):\n            if list(subseq) == sorted(subseq):\n                prod = 1\n                for num in subseq:\n                    prod *= num\n                max_prod = max(max_prod, prod)\n    return max_prod",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the maximum product formed by multiplying numbers of an increasing subsequence of that array."
+}

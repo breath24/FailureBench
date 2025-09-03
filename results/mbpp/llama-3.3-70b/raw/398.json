@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/398",
+  "llm_response": "import functools\n\ndef sum_of_digits(lst):\n    def sum_digits(n):\n        return sum(int(digit) for digit in str(n))\n    return sum(sum_digits(n) for n in lst)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to compute the sum of digits of each number of a given list."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/131",
+  "llm_response": "def reverse_vowels(s):\n    vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}\n    s_list = list(s)\n    left, right = 0, len(s) - 1\n    while left < right:\n        if s_list[left] not in vowels:\n            left += 1\n        elif s_list[right] not in vowels:\n            right -= 1\n        else:\n            s_list[left], s_list[right] = s_list[right], s_list[left]\n            left += 1\n            right -= 1\n    return ''.join(s_list)",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to reverse only the vowels of a given string."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/252",
+  "llm_response": "import cmath\n\ndef convert(z):\n    return cmath.polar(z)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to convert complex numbers to polar coordinates."
+}

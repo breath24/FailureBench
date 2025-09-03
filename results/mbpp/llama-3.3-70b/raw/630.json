@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/630",
+  "llm_response": "import itertools\n\ndef get_coordinates(coord):\n    x, y = coord\n    adjacent_coords = list(itertools.product(range(x-1, x+2), range(y-1, y+2)))\n    return [list(i) for i in adjacent_coords]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to extract all the adjacent coordinates of the given coordinate tuple."
+}

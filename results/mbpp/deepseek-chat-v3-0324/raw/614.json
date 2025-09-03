@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/614",
+  "llm_response": "from typing import List, Tuple\n\ndef cummulative_sum(tuple_list: List[Tuple]) -> int:\n    total = 0\n    for t in tuple_list:\n        total += sum(t)\n    return total",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the cumulative sum of all the values that are present in the given tuple list."
+}

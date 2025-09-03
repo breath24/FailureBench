@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/594",
+  "llm_response": "def diff_even_odd(lst):\n    first_even = None\n    first_odd = None\n    for num in lst:\n        if first_even is None and num % 2 == 0:\n            first_even = num\n        if first_odd is None and num % 2 != 0:\n            first_odd = num\n        if first_even is not None and first_odd is not None:\n            break\n    return first_even - first_odd if first_even is not None and first_odd is not None else None",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the difference of first even and odd number of a given list."
+}

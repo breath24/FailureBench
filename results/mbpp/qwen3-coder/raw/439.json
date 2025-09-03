@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/439",
+  "llm_response": "def multiple_to_single(lst):\n    return int(''.join(map(str, lst)))",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to convert a list of multiple integers into a single integer."
+}

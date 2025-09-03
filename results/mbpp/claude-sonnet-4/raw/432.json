@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/432",
+  "llm_response": "def median_trapezium(base1, base2, height):\n    return (base1 + base2) / 2",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to find the median of a trapezium."
+}

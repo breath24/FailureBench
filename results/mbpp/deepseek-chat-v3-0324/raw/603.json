@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/603",
+  "llm_response": "def get_ludic(n):\n    ludics = []\n    candidates = list(range(2, n + 1))\n    current = 1\n    ludics.append(current)\n    while candidates:\n        current = candidates[0]\n        ludics.append(current)\n        del candidates[0::current]\n    return ludics",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to get a lucid number smaller than or equal to n."
+}

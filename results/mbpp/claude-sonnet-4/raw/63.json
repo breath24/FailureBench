@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/63",
+  "llm_response": "def max_difference(tuple_list):\n    max_diff = 0\n    for pair in tuple_list:\n        diff = abs(pair[0] - pair[1])\n        if diff > max_diff:\n            max_diff = diff\n    return max_diff",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to find the maximum difference between available pairs in the given tuple list."
+}

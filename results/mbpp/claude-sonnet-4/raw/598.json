@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/598",
+  "llm_response": "def armstrong_number(n):\n    num_str = str(n)\n    num_digits = len(num_str)\n    sum_of_powers = sum(int(digit) ** num_digits for digit in num_str)\n    return sum_of_powers == n",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to check whether the given number is armstrong or not."
+}

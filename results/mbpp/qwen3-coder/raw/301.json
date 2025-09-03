@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/301",
+  "llm_response": "def dict_depth(d):\n    if not isinstance(d, dict) or not d:\n        return 0\n    return 1 + max(dict_depth(value) for value in d.values())\n\nassert dict_depth({'a':1, 'b': {'c': {'d': {}}}})==4",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find the depth of a dictionary."
+}

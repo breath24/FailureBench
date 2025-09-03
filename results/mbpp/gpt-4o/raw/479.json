@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/479",
+  "llm_response": "def first_Digit(number):\n    return int(str(abs(number))[0]) if number != 0 else 0",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find the first digit of a given number."
+}

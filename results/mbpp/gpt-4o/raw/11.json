@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/11",
+  "llm_response": "def remove_Occ(s, char):\n    first_occ = s.find(char)\n    last_occ = s.rfind(char)\n    if first_occ == -1 or last_occ == -1 or first_occ == last_occ:\n        return s\n    return s[:first_occ] + s[first_occ+1:last_occ] + s[last_occ+1:]",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to remove first and last occurrence of a given character from the string."
+}

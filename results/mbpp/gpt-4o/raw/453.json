@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/453",
+  "llm_response": "def sumofFactors(n):\n    return sum(i for i in range(2, n + 1, 2) if n % i == 0)",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find the sum of even factors of a number."
+}

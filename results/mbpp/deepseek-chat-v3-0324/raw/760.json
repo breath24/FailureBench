@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/760",
+  "llm_response": "def unique_Element(lst):\n    return len(set(lst)) == 1",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to check whether an array contains only one distinct element or not."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/475",
+  "llm_response": "import operator\n\ndef sort_counter(counter):\n    return sorted(counter.items(), key=operator.itemgetter(1), reverse=True)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to sort counter by value."
+}

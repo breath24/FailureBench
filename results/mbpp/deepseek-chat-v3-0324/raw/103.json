@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/103",
+  "llm_response": "import math\n\ndef eulerian_num(n, m):\n    if m == 0:\n        return 1\n    if m == n - 1:\n        return 1\n    return (n - m) * eulerian_num(n - 1, m - 1) + (m + 1) * eulerian_num(n - 1, m)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find eulerian number a(n, m)."
+}

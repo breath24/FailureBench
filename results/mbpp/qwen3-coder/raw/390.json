@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/390",
+  "llm_response": "def add_string(lst, format_str):\n    return [format_str.format(item) for item in lst]",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to insert a given string at the beginning of all items in a list."
+}

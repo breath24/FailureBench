@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/764",
+  "llm_response": "import re\n\ndef number_ctr(input_str):\n    return len(re.findall(r'\\d', input_str))",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to count numeric values in a given string."
+}

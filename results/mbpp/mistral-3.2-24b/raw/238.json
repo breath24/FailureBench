@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/238",
+  "llm_response": "def number_of_substrings(s):\n    count = 0\n    n = len(s)\n    for i in range(n):\n        for j in range(i + 1, n + 1):\n            substring = s[i:j]\n            if substring:\n                count += 1\n    return count",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to count number of non-empty substrings of a given string."
+}

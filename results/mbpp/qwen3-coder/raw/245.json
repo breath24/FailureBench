@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/245",
+  "llm_response": "def max_sum(arr):\n    n = len(arr)\n    if n == 0:\n        return 0\n    \n    # Initialize MSIS and MSDS arrays\n    msis = [0] * n  # Maximum Sum Increasing Subsequence\n    msds = [0] * n  # Maximum Sum Decreasing Subsequence\n    \n    # Calculate MSIS - Maximum sum increasing subsequence ending at each index\n    for i in range(n):\n        msis[i] = arr[i]\n        for j in range(i):\n            if arr[j] < arr[i] and msis[i] < msis[j] + arr[i]:\n                msis[i] = msis[j] + arr[i]\n    \n    # Calculate MSDS - Maximum sum decreasing subsequence starting at each index\n    for i in range(n-1, -1, -1):\n        msds[i] = arr[i]\n        for j in range(i+1, n):\n            if arr[j] < arr[i] and msds[i] < msds[j] + arr[i]:\n                msds[i] = msds[j] + arr[i]\n    \n    # Find maximum sum bitonic subsequence\n    max_sum = 0\n    for i in range(n):\n        current_sum = msis[i] + msds[i] - arr[i]  # Subtract arr[i] as it's counted twice\n        if current_sum > max_sum:\n            max_sum = current_sum\n    \n    return max_sum",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find the maximum sum of bi-tonic sub-sequence for the given array."
+}

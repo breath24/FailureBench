@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/775",
+  "llm_response": "def odd_position(lst):\n    return all(lst[i] % 2 != 0 for i in range(1, len(lst), 2))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to check whether every odd index contains odd numbers of a given list."
+}

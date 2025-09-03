@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/453",
+  "llm_response": "import math\n\ndef sumofFactors(n):\n    if n % 2 != 0:\n        return 0\n    res = 1\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            if i % 2 == 0:\n                res += i\n            counterpart = n // i\n            if counterpart != i and counterpart % 2 == 0:\n                res += counterpart\n    if n % 2 == 0:\n        res += n\n    return res",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the sum of even factors of a number."
+}

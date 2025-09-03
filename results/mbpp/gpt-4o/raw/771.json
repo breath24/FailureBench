@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/771",
+  "llm_response": "def check_expression(expression):\n    from collections import deque\n    stack = deque()\n    matching_bracket = {')': '(', '}': '{', ']': '['}\n    for char in expression:\n        if char in matching_bracket.values():\n            stack.append(char)\n        elif char in matching_bracket.keys():\n            if not stack or stack.pop() != matching_bracket[char]:\n                return False\n    return not stack\n\nassert check_expression(\"{()}[{}]\") == True",
+  "model": "gpt-4o",
+  "task_description": "Write a function to check if the given expression is balanced or not."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/462",
+  "llm_response": "from itertools import combinations\n\ndef combinations_list(elements):\n    result = []\n    for r in range(len(elements) + 1):\n        for combo in combinations(elements, r):\n            result.append(list(combo))\n    return result",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find all possible combinations of the elements of a given list."
+}

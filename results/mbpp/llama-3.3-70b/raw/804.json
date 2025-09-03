@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/804",
+  "llm_response": "import math\n\ndef is_product_even(numbers):\n    product = math.prod(numbers)\n    return product % 2 == 0",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to check whether the product of numbers is even or not."
+}

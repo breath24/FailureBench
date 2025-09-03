@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/556",
+  "llm_response": "from itertools import combinations\n\ndef find_Odd_Pair(arr, n):\n    count = 0\n    for pair in combinations(arr, 2):\n        if (pair[0] ^ pair[1]) % 2 != 0:\n            count += 1\n    return count",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to count the pairs with xor as an odd number."
+}

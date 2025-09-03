@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/459",
+  "llm_response": "def remove_uppercase(s):\n    return ''.join(c for c in s if c.islower())",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to remove uppercase substrings from a given string by using regex."
+}

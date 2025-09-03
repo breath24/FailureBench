@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/138",
+  "llm_response": "def is_Sum_Of_Powers_Of_Two(n):\n    if n <= 0:\n        return False\n    while n > 1:\n        if n & 1:\n            return False\n        n = n >> 1\n    return True",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not."
+}

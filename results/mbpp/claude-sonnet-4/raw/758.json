@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/758",
+  "llm_response": "def unique_sublists(lst):\n    result = {}\n    for sublist in lst:\n        key = tuple(sublist)\n        result[key] = result.get(key, 0) + 1\n    return result",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to count number of unique lists within a list."
+}

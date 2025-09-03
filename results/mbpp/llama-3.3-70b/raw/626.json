@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/626",
+  "llm_response": "import math\n\ndef triangle_area(radius):\n    if radius < 0:\n        return None\n    base = 2 * radius\n    height = radius\n    area = 0.5 * base * height\n    return area",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the largest triangle that can be inscribed in the semicircle."
+}

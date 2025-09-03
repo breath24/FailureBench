@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/262",
+  "llm_response": "def split_two_parts(lst, L):\n    return (lst[:L], lst[L:])",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to split a given list into two parts where the length of the first part of the list is given."
+}

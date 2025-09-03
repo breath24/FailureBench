@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/735",
+  "llm_response": "def toggle_middle_bits(n):\n    if n <= 1:\n        return n\n    \n    # Find the position of the most significant bit (MSB)\n    msb_pos = 0\n    temp = n\n    while temp > 0:\n        temp >>= 1\n        msb_pos += 1\n    msb_pos -= 1\n    \n    # Create a mask with all bits set except first and last\n    if msb_pos <= 1:\n        return n\n    \n    # Create mask with all bits set from position 1 to msb_pos-1\n    mask = ((1 << (msb_pos - 1)) - 1) << 1\n    \n    # Toggle the middle bits\n    return n ^ mask",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to toggle bits of the number except the first and the last bit."
+}

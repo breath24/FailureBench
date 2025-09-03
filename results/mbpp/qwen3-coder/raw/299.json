@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/299",
+  "llm_response": "from collections import defaultdict\n\ndef max_aggregate(tuples_list):\n    aggregate_scores = defaultdict(int)\n    \n    for name, score in tuples_list:\n        aggregate_scores[name] += score\n    \n    max_name = max(aggregate_scores, key=aggregate_scores.get)\n    max_score = aggregate_scores[max_name]\n    \n    return (max_name, max_score)",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to calculate the maximum aggregate from the list of tuples."
+}

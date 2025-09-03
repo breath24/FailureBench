@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/752",
+  "llm_response": "import functools\n\n@functools.lru_cache(maxsize=None)\ndef jacobsthal_num(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return jacobsthal_num(n-1) + 2 * jacobsthal_num(n-2)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the nth jacobsthal number."
+}

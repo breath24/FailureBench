@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/474",
+  "llm_response": "def replace_char(s, old_char, new_char):\n    return s.replace(old_char, new_char)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to replace characters in a string."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/769",
+  "llm_response": "from typing import List\n\ndef Diff(list1: List[int], list2: List[int]) -> List[int]:\n    return list(set(list1) - set(list2)) + list(set(list2) - set(list1))",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to get the difference between two lists."
+}

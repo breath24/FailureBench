@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/305",
+  "llm_response": "import re\n\ndef start_withp(words):\n    p_words = [word for word in ' '.join(words).split() if word.startswith('p') or word.startswith('P')]\n    return tuple(p_words[:2])",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to match two words from a list of words starting with letter 'p'."
+}

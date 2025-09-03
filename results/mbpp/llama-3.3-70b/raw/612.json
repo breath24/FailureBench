@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/612",
+  "llm_response": "def merge(lst):\n    return [[sublist[0] for sublist in lst], [sublist[1] for sublist in lst]]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to merge the first and last elements separately in a list of lists."
+}

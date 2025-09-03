@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/305",
+  "llm_response": "import re\n\ndef start_withp(words):\n    p_words = []\n    for word in words:\n        matches = re.findall(r'\\b[pP]\\w+', word)\n        p_words.extend(matches)\n    return tuple(p_words[:2])",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to match two words from a list of words starting with letter 'p'."
+}

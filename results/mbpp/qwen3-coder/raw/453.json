@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/453",
+  "llm_response": "def sumofFactors(n):\n    if n <= 0:\n        return 0\n    \n    total = 0\n    i = 1\n    while i <= n:\n        if n % i == 0 and i % 2 == 0:\n            total += i\n        i += 1\n    \n    return total",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to find the sum of even factors of a number."
+}

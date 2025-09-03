@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/769",
+  "llm_response": "def Diff(li1, li2):\n    return list(set(li1) - set(li2))\n\nassert (Diff([10, 15, 20, 25, 30, 35, 40], [25, 40, 35])) == [10, 20, 30, 15]",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to get the difference between two lists."
+}

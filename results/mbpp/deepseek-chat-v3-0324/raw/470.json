@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/470",
+  "llm_response": "def add_pairwise(t):\n    return tuple(t[i] + t[i+1] for i in range(len(t)-1))",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the pairwise addition of the elements of the given tuples."
+}

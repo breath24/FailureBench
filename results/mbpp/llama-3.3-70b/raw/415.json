@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/415",
+  "llm_response": "import itertools\n\ndef max_Product(arr):\n    max_product = float('-inf')\n    max_pair = None\n    for pair in itertools.combinations(arr, 2):\n        product = pair[0] * pair[1]\n        if product > max_product:\n            max_product = product\n            max_pair = pair\n    return max_pair",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find a pair with highest product from a given array of integers."
+}

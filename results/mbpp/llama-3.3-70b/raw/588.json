@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/588",
+  "llm_response": "import numpy as np\n\ndef big_diff(nums):\n    return max(nums) - min(nums)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the difference between largest and smallest value in a given array."
+}

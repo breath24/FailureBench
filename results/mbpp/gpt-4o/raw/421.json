@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/421",
+  "llm_response": "def concatenate_tuple(tup, delimiter='-'):\n    return delimiter.join(map(str, tup))",
+  "model": "gpt-4o",
+  "task_description": "Write a function to concatenate each element of tuple by the delimiter."
+}

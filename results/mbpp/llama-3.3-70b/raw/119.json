@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/119",
+  "llm_response": "import itertools\n\ndef search(nums):\n    for key, group in itertools.groupby(nums):\n        if len(list(group)) == 1:\n            return key",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to find the element that appears only once in a sorted array."
+}

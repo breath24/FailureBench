@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/463",
+  "llm_response": "import sys\n\ndef max_subarray_product(arr):\n    if not arr:\n        return 0\n    max_product = -sys.maxsize - 1\n    current_max = 1\n    current_min = 1\n    \n    for num in arr:\n        if num == 0:\n            current_max = 1\n            current_min = 1\n            continue\n        \n        temp = current_max * num\n        current_max = max(num, current_max * num, current_min * num)\n        current_min = min(num, temp, current_min * num)\n        \n        max_product = max(max_product, current_max)\n    \n    return max_product",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the maximum product subarray of the given array."
+}

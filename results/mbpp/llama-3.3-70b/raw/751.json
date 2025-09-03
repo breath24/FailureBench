@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/751",
+  "llm_response": "import math\n\ndef check_min_heap(arr):\n    n = len(arr)\n    for i in range(n):\n        left_child = 2 * i + 1\n        right_child = 2 * i + 2\n        if left_child < n and arr[i] > arr[left_child]:\n            return False\n        if right_child < n and arr[i] > arr[right_child]:\n            return False\n    return True",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to check if the given array represents min heap or not."
+}

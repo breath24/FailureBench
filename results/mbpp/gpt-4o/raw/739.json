@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/739",
+  "llm_response": "import math\n\ndef find_Index(n):\n    def is_triangular(num):\n        x = (math.sqrt(8 * num + 1) - 1) / 2\n        return x.is_integer()\n\n    index = 1\n    while True:\n        triangular_number = index * (index + 1) // 2\n        if len(str(triangular_number)) == n:\n            return index\n        index += 1",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find the index of smallest triangular number with n digits."
+}

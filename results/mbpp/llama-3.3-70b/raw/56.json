@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/56",
+  "llm_response": "import math\n\ndef check(n):\n    rev = 0\n    temp = n\n    while temp != 0:\n        rev = rev * 10 + temp % 10\n        temp = temp // 10\n    return n == 2 * rev - 1",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to check if a given number is one less than twice its reverse."
+}

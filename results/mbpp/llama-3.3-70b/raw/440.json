@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/440",
+  "llm_response": "import re\n\ndef find_adverb_position(sentence):\n    adverbs = re.findall(r'\\b\\w+ly\\b', sentence)\n    if adverbs:\n        first_adverb = adverbs[0]\n        start = sentence.find(first_adverb)\n        end = start + len(first_adverb)\n        return start, end, first_adverb\n    else:\n        return None",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to find all adverbs and their positions in a given sentence."
+}

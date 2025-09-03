@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/299",
+  "llm_response": "from collections import defaultdict\n\ndef max_aggregate(tuples_list):\n    aggregate = defaultdict(int)\n    for name, value in tuples_list:\n        aggregate[name] += value\n    max_name = max(aggregate, key=aggregate.get)\n    return (max_name, aggregate[max_name])",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to calculate the maximum aggregate from the list of tuples."
+}

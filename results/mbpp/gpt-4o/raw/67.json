@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/67",
+  "llm_response": "from math import factorial\n\ndef bell_number(n):\n    def stirling_second_kind(n, k):\n        return sum((-1)**(k-i) * factorial(k) // (factorial(i) * factorial(k-i)) * i**n for i in range(k+1))\n    \n    return sum(stirling_second_kind(n, k) for k in range(n+1))",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the number of ways to partition a set of bell numbers."
+}

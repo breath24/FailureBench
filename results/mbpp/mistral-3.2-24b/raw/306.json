@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/306",
+  "llm_response": "def max_sum_increasing_subseq(arr, i, k, n):\n    max_sum = 0\n    current_sum = 0\n    for j in range(i, -1, -1):\n        if arr[j] < arr[k]:\n            current_sum += arr[j]\n            if current_sum > max_sum:\n                max_sum = current_sum\n        else:\n            current_sum = 0\n    return max_sum",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find the maximum sum of increasing subsequence from prefix till ith index and also including a given kth element which is after i, i.e., k > i ."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/572",
+  "llm_response": "def two_unique_nums(lst):\n    from collections import Counter\n    count = Counter(lst)\n    return [num for num in lst if count[num] == 1]",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to remove two duplicate numbers from a given number of lists."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/310",
+  "llm_response": "def string_to_tuple(string):\n    return tuple(char for char in string if char != ' ')",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to convert a given string to a tuple."
+}

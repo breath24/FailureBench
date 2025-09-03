@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/777",
+  "llm_response": "from collections import defaultdict\n\ndef find_sum(lst):\n    freq = defaultdict(int)\n    for num in lst:\n        freq[num] += 1\n    unique_sum = sum(num for num in freq if freq[num] == 1)\n    return unique_sum",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the sum of non-repeated elements in a given array."
+}

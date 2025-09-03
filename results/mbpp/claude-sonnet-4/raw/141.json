@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/141",
+  "llm_response": "def pancake_sort(arr):\n    def flip(arr, i):\n        start = 0\n        while start < i:\n            arr[start], arr[i] = arr[i], arr[start]\n            start += 1\n            i -= 1\n    \n    n = len(arr)\n    curr_size = n\n    \n    while curr_size > 1:\n        max_idx = arr.index(max(arr[:curr_size]))\n        \n        if max_idx != curr_size - 1:\n            if max_idx != 0:\n                flip(arr, max_idx)\n            flip(arr, curr_size - 1)\n        \n        curr_size -= 1\n    \n    return arr",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to sort a list of elements using pancake sort."
+}

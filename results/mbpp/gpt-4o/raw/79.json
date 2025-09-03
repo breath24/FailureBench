@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/79",
+  "llm_response": "def word_len(word):\n    return len(word) % 2 != 0",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to check whether the length of the word is odd or not."
+}

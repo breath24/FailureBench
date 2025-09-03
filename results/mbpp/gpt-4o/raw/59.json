@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/59",
+  "llm_response": "def is_octagonal(n):\n    return n * (3 * n - 2)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the nth octagonal number."
+}

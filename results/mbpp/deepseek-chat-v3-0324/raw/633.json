@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/633",
+  "llm_response": "def pair_xor_Sum(arr, n):\n    sum_total = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            sum_total += arr[i] ^ arr[j]\n    return sum_total",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the sum of xor of all pairs of numbers in the given array."
+}

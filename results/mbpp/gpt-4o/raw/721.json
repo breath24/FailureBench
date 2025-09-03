@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/721",
+  "llm_response": "def maxAverageOfPath(matrix):\n    import sys\n    N = len(matrix)\n    dp = [[-sys.maxsize] * N for _ in range(N)]\n    dp[0][0] = matrix[0][0]\n    \n    for i in range(N):\n        for j in range(N):\n            if i > 0:\n                dp[i][j] = max(dp[i][j], dp[i-1][j] + matrix[i][j])\n            if j > 0:\n                dp[i][j] = max(dp[i][j], dp[i][j-1] + matrix[i][j])\n    \n    return dp[-1][-1] / (2 * N - 1)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find a path with the maximum average over all existing paths for the given square matrix of size n*n."
+}

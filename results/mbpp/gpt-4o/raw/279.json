@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/279",
+  "llm_response": "def is_num_decagonal(n):\n    return n * (4 * n - 3)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the nth decagonal number."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/766",
+  "llm_response": "def pair_wise(lst):\n    return list(zip(lst, lst[1:]))",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to iterate over all pairs of consecutive items in a given list."
+}

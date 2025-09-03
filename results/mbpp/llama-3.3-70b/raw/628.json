@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/628",
+  "llm_response": "import re\n\ndef replace_spaces(s):\n    return re.sub(' ', '%20', s)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to replace all spaces in the given string with character * list item * list item * list item * list item '%20'."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/597",
+  "llm_response": "def find_kth(arr1, arr2, k):\n    i = 0\n    j = 0\n    count = 0\n    \n    while i < len(arr1) and j < len(arr2):\n        if arr1[i] < arr2[j]:\n            count += 1\n            if count == k:\n                return arr1[i]\n            i += 1\n        else:\n            count += 1\n            if count == k:\n                return arr2[j]\n            j += 1\n    \n    while i < len(arr1):\n        count += 1\n        if count == k:\n            return arr1[i]\n        i += 1\n    \n    while j < len(arr2):\n        count += 1\n        if count == k:\n            return arr2[j]\n        j += 1\n    \n    return -1\n\n# Test\nassert find_kth([2, 3, 6, 7, 9], [1, 4, 8, 10], 5) == 6",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find kth element from the given two sorted arrays."
+}

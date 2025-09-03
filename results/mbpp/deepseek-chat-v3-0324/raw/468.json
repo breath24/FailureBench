@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/468",
+  "llm_response": "import bisect\n\ndef max_product(arr):\n    if not arr:\n        return 0\n    tails = []\n    products = []\n    for num in arr:\n        idx = bisect.bisect_left(tails, num)\n        if idx == 0:\n            current_product = num\n        else:\n            current_product = products[idx - 1] * num\n        if idx == len(tails):\n            tails.append(num)\n            products.append(current_product)\n        else:\n            if current_product > products[idx]:\n                tails[idx] = num\n                products[idx] = current_product\n    return max(products) if products else 0",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the maximum product formed by multiplying numbers of an increasing subsequence of that array."
+}

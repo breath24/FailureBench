@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/589",
+  "llm_response": "def perfect_squares(start, end):\n    result = []\n    i = 1\n    while i * i <= end:\n        if i * i >= start:\n            result.append(i * i)\n        i += 1\n    return result",
+  "model": "qwen3-coder",
+  "task_description": "Write a function to find perfect squares between two given numbers."
+}

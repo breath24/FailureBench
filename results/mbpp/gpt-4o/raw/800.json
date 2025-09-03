@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/800",
+  "llm_response": "def remove_all_spaces(s):\n    return s.replace(\" \", \"\")",
+  "model": "gpt-4o",
+  "task_description": "Write a function to remove all whitespaces from a string."
+}

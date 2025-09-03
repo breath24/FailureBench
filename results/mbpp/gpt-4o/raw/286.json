@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/286",
+  "llm_response": "import itertools\n\ndef max_sub_array_sum_repeated(arr, k, repeat):\n    def max_sub_array_sum(arr):\n        max_ending_here = max_so_far = arr[0]\n        for x in arr[1:]:\n            max_ending_here = max(x, max_ending_here + x)\n            max_so_far = max(max_so_far, max_ending_here)\n        return max_so_far\n\n    if repeat == 1:\n        return max_sub_array_sum(arr)\n    \n    total_sum = sum(arr)\n    max_prefix_sum = max_suffix_sum = 0\n    current_prefix_sum = current_suffix_sum = 0\n    \n    for x in arr:\n        current_prefix_sum += x\n        max_prefix_sum = max(max_prefix_sum, current_prefix_sum)\n    \n    for x in reversed(arr):\n        current_suffix_sum += x\n        max_suffix_sum = max(max_suffix_sum, current_suffix_sum)\n    \n    if total_sum > 0:\n        return max(max_sub_array_sum(arr * 2), max_prefix_sum + max_suffix_sum + (repeat - 2) * total_sum)\n    else:\n        return max(max_sub_array_sum(arr * 2), max_prefix_sum + max_suffix_sum)",
+  "model": "gpt-4o",
+  "task_description": "Write a function to find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/767",
+  "llm_response": "from collections import defaultdict\n\ndef get_pairs_count(arr, sum):\n    count = 0\n    freq = defaultdict(int)\n    \n    for num in arr:\n        complement = sum - num\n        if complement in freq:\n            count += freq[complement]\n        freq[num] += 1\n    \n    return count",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to count the number of pairs whose sum is equal to \u2018sum\u2019."
+}

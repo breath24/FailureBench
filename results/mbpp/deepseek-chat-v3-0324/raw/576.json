@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/576",
+  "llm_response": "def is_Sub_Array(A, B):\n    n = len(A)\n    m = len(B)\n    if m == 0:\n        return True\n    if n == 0:\n        return False\n    for i in range(n - m + 1):\n        if A[i:i+m] == B:\n            return True\n    return False",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to check whether an array is subarray of another or not."
+}

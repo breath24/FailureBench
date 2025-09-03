@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/581",
+  "llm_response": "import math\n\ndef surface_Area(base_edge, height):\n    slant_height = math.sqrt((base_edge / 2) ** 2 + height ** 2)\n    base_area = base_edge ** 2\n    lateral_area = 2 * base_edge * slant_height\n    return base_area + lateral_area",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to find the surface area of the square pyramid."
+}

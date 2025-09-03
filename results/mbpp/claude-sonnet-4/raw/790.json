@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/790",
+  "llm_response": "def even_position(lst):\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            return False\n    return True",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to check whether every even index contains even numbers of a given list."
+}

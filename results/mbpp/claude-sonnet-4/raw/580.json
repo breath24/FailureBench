@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/580",
+  "llm_response": "def extract_even(nested_tuple):\n    result = []\n    for item in nested_tuple:\n        if isinstance(item, tuple):\n            even_nested = extract_even(item)\n            if even_nested:\n                result.append(even_nested)\n        elif isinstance(item, int) and item % 2 == 0:\n            result.append(item)\n    return tuple(result)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to extract the even elements in the nested mixed tuple."
+}

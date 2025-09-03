@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/638",
+  "llm_response": "import math\n\ndef wind_chill(wind_velocity, temperature):\n    if temperature > 0 or wind_velocity < 5:\n        return temperature\n    v = wind_velocity / 3.6\n    wci = 13.12 + 0.6215 * temperature - 11.37 * math.pow(v, 0.16) + 0.3965 * temperature * math.pow(v, 0.16)\n    return math.ceil(wci)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to calculate wind chill index."
+}

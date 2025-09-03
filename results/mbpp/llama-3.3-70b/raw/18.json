@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/18",
+  "llm_response": "import re\n\ndef remove_dirty_chars(s1, s2):\n    pattern = '[' + re.escape(s2) + ']'\n    return re.sub(pattern, '', s1)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to remove characters from the first string which are present in the second string."
+}

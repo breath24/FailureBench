@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/559",
+  "llm_response": "def max_sub_array_sum(arr, n):\n    max_sum = float('-inf')\n    current_sum = 0\n    \n    for num in arr:\n        current_sum += num\n        if current_sum > max_sum:\n            max_sum = current_sum\n        if current_sum < 0:\n            current_sum = 0\n    return max_sum",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to find the largest sum of contiguous subarray in the given array."
+}

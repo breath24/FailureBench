@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/593",
+  "llm_response": "import re\n\ndef removezero_ip(ip):\n    return re.sub(r'0*(\\d+)', r'\\1', ip)",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to remove leading zeroes from an ip address."
+}

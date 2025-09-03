@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/250",
+  "llm_response": "from typing import Tuple, Any\n\ndef count_X(tup: Tuple[Any, ...], element: Any) -> int:\n    return tup.count(element)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to count the occcurences of an element in a tuple."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/473",
+  "llm_response": "from itertools import combinations\n\ndef tuple_intersection(tuples1, tuples2):\n    set1 = {tuple(sorted(t)) for t in tuples1}\n    set2 = {tuple(sorted(t)) for t in tuples2}\n    return set1 & set2",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find the tuple intersection of elements in the given tuple list irrespective of their order."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/232",
+  "llm_response": "def larg_nnum(lst, n):\n    return sorted(lst, reverse=True)[:n]",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to get the n largest items from a dataset."
+}

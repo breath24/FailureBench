@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/290",
+  "llm_response": "def max_length(lists):\n    if not lists:\n        return (0, [])\n    max_len = max(len(lst) for lst in lists)\n    max_lists = [lst for lst in lists if len(lst) == max_len]\n    return (max_len, max_lists[0])",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find the list of lists with maximum length."
+}

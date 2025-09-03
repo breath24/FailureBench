@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/140",
+  "llm_response": "def extract_singly(list_of_lists):\n    flattened = []\n    for sublist in list_of_lists:\n        flattened.extend(sublist)\n    return flattened",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to extract elements that occur singly in the given tuple list."
+}

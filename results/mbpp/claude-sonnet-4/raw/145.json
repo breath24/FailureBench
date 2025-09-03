@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/145",
+  "llm_response": "def max_Abs_Diff(arr):\n    return max(arr) - min(arr)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to find the maximum difference between any two elements in a given array."
+}

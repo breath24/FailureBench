@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/70",
+  "llm_response": "def get_equal(tuples_list):\n    if not tuples_list:\n        return True\n    first_length = len(tuples_list[0])\n    return all(len(t) == first_length for t in tuples_list)",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to find whether all the given tuples have equal length or not."
+}

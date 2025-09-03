@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/253",
+  "llm_response": "def count_integer(lst):\n    count = 0\n    for element in lst:\n        if isinstance(element, int) and not isinstance(element, bool):\n            count += 1\n    return count",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a python function to count integers from a given list."
+}

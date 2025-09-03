@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/11",
+  "llm_response": "import re\n\ndef remove_Occ(s, c):\n    first_occurrence = s.find(c)\n    last_occurrence = s.rfind(c)\n    return s[:first_occurrence] + s[first_occurrence+1:last_occurrence] + s[last_occurrence+1:]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to remove first and last occurrence of a given character from the string."
+}

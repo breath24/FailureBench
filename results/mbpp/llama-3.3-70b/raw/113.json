@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/113",
+  "llm_response": "import re\ndef check_integer(s):\n    pattern = re.compile(\"^[0-9]+$\")\n    return bool(pattern.match(s))",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to check if a string represents an integer or not."
+}

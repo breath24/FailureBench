@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/66",
+  "llm_response": "import math\n\ndef pos_count(lst):\n    count = 0\n    for num in lst:\n        if num > 0:\n            count += 1\n    return count",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to count positive numbers in a list."
+}

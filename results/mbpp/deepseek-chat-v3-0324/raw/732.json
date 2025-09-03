@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/732",
+  "llm_response": "import re\n\ndef replace_specialchar(text):\n    return re.sub(r'[ ,.]', ':', text)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a function to replace all occurrences of spaces, commas, or dots with a colon."
+}

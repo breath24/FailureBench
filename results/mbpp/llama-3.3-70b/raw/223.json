@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/223",
+  "llm_response": "def is_majority(arr, n, x):\n    count = 0\n    for i in range(n):\n        if arr[i] == x:\n            count += 1\n    return count > n / 2",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a function to check for majority element in the given sorted array."
+}

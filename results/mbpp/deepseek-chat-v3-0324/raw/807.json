@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/807",
+  "llm_response": "from typing import List\n\ndef first_odd(numbers: List[int]) -> int:\n    for num in numbers:\n        if num % 2 != 0:\n            return num\n    return None",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the first odd number in a given list of numbers."
+}

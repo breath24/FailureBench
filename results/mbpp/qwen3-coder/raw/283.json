@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/283",
+  "llm_response": "def validate(n):\n    str_n = str(abs(n))\n    for digit_char in set(str_n):\n        digit = int(digit_char)\n        frequency = str_n.count(digit_char)\n        if frequency > digit:\n            return False\n    return True",
+  "model": "qwen3-coder",
+  "task_description": "Write a python function to check whether the frequency of each digit is less than or equal to the digit itself."
+}

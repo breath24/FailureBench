@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/91",
+  "llm_response": "def find_substring(strings, substring):\n    return any(substring in s for s in strings)",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to check if a substring is present in a given list of string values."
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/610",
+  "llm_response": "def remove_kth_element(lst, k):\n    return lst[:k-1] + lst[k:]",
+  "model": "llama-3.3-70b",
+  "task_description": "Write a python function to remove the k'th element from a given list."
+}

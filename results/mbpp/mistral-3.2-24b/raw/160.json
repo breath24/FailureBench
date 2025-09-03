@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/160",
+  "llm_response": "import math\n\ndef find_solution(a, b, n):\n    if a == 0 and b == 0:\n        return None\n    if a == 0:\n        if n % b == 0:\n            return (0, n // b)\n        else:\n            return None\n    if b == 0:\n        if n % a == 0:\n            return (n // a, 0)\n        else:\n            return None\n    gcd_ab = math.gcd(a, b)\n    if n % gcd_ab != 0:\n        return None\n    x0 = (n // gcd_ab) * (b // gcd_ab)\n    y0 = (n // gcd_ab) * (-a // gcd_ab)\n    return (x0, y0)",
+  "model": "mistral-3.2-24b",
+  "task_description": "Write a function to find x and y that satisfies ax + by = n."
+}

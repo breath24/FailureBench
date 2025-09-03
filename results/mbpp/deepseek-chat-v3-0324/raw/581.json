@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/581",
+  "llm_response": "import math\n\ndef surface_Area(base_edge, height):\n    base_area = base_edge ** 2\n    slant_height = math.sqrt((base_edge / 2) ** 2 + height ** 2)\n    lateral_area = 2 * base_edge * slant_height\n    total_surface_area = base_area + lateral_area\n    return round(total_surface_area)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "Write a python function to find the surface area of the square pyramid."
+}

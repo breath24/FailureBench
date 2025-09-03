@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/757",
+  "llm_response": "import collections\n\ndef count_reverse_pairs(string_list):\n    reverse_count = collections.Counter(s[::-1] for s in string_list)\n    return sum(min(reverse_count[s], reverse_count[s[::-1]]) for s in reverse_count) // 2",
+  "model": "gpt-4o",
+  "task_description": "Write a function to count the pairs of reverse strings in the given string list."
+}

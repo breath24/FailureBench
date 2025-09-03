@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/751",
+  "llm_response": "def check_min_heap(arr):\n    n = len(arr)\n    for i in range(n // 2):\n        left_child = 2 * i + 1\n        right_child = 2 * i + 2\n        \n        if left_child < n and arr[i] > arr[left_child]:\n            return False\n        \n        if right_child < n and arr[i] > arr[right_child]:\n            return False\n    \n    return True",
+  "model": "claude-sonnet-4",
+  "task_description": "Write a function to check if the given array represents min heap or not."
+}

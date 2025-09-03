@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/6",
+  "llm_response": "import operator\n\ndef differ_At_One_Bit_Pos(a, b):\n    return bin(operator.xor(a, b)).count('1') == 1",
+  "model": "gpt-4o",
+  "task_description": "Write a python function to check whether the two numbers differ at one bit position only or not."
+}
