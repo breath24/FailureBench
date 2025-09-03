@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/223",
+  "task_description": "Write a function to check for majority element in the given sorted array.",
+  "llm_response": "import bisect\n\ndef is_majority(arr, n, x):\n    left = bisect.bisect_left(arr, x)\n    right = bisect.bisect_right(arr, x)\n    return (right - left) > n / 2",
+  "model": "deepseek-chat-v3-0324"
+}

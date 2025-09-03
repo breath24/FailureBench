@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/807",
+  "task_description": "Write a python function to find the first odd number in a given list of numbers.",
+  "llm_response": "def first_odd(numbers):\n    for num in numbers:\n        if num % 2 != 0:\n            return num\n    return None",
+  "model": "mistral-3.2-24b"
+}

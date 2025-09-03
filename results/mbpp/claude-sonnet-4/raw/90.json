@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/90",
-  "llm_response": "def len_log(words):\n    return max(len(word) for word in words)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the length of the longest word."
-}

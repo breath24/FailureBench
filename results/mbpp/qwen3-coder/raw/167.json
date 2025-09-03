@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/167",
-  "llm_response": "def next_power_of_2(n):\n    if n <= 0:\n        return 1\n    n -= 1\n    n |= n >> 1\n    n |= n >> 2\n    n |= n >> 4\n    n |= n >> 8\n    n |= n >> 16\n    n |= n >> 32\n    return n + 1",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find smallest power of 2 greater than or equal to n."
-}

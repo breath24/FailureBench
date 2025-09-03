@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/83",
-  "llm_response": "import math\n\ndef starts_one_ends(n):\n    total_numbers = 9 * (10 ** (n - 1))\n    starts_with_one = 10 ** (n - 1)\n    ends_with_one = 9 * (10 ** (n - 1))\n    overlap = 9 * (10 ** (n - 2))\n    return starts_with_one + ends_with_one - overlap",
-  "model": "llama-3.3-70b",
-  "task_description": "\ndef starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n"
-}

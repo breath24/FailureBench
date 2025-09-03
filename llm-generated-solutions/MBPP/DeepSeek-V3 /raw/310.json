@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/310",
+  "task_description": "Write a function to convert a given string to a tuple.",
+  "llm_response": "def string_to_tuple(s):\n    return tuple(s)",
+  "model": "deepseek-chat-v3-0324"
+}

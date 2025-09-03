@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/808",
-  "llm_response": "def check_K(tup, k):\n    return k in tup",
-  "model": "gpt-4o",
-  "task_description": "Write a function to check if the given tuples contain the k or not."
-}

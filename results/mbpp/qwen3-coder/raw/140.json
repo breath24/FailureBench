@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/140",
-  "llm_response": "def extract_singly(list_of_tuples):\n    result = []\n    for tuple_item in list_of_tuples:\n        for item in tuple_item:\n            result.append(item)\n    return result",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to extract elements that occur singly in the given tuple list."
-}

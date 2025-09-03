@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/472",
-  "llm_response": "def check_Consecutive(lst):\n    if len(lst) == 0:\n        return False\n    min_val = min(lst)\n    max_val = max(lst)\n    if max_val - min_val + 1 == len(lst):\n        if len(set(lst)) == len(lst):\n            return True\n    return False",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to check whether the given list contains consecutive numbers or not."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/140",
-  "llm_response": "def extract_singly(lst):\n    result = []\n    for item in lst:\n        result.extend(item)\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to extract elements that occur singly in the given tuple list."
-}

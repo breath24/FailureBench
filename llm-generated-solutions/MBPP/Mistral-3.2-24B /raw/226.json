@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/226",
+  "task_description": "Write a python function to remove the characters which have odd index values of a given string.",
+  "llm_response": "def odd_values_string(input_string):\n    return input_string[::2]",
+  "model": "mistral-3.2-24b"
+}

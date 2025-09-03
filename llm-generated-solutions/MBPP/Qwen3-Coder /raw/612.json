@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/612",
+  "task_description": "Write a python function to merge the first and last elements separately in a list of lists.",
+  "llm_response": "def merge(lists):\n    if not lists:\n        return [[], []]\n    \n    first_elements = []\n    second_elements = []\n    \n    for sublist in lists:\n        first_elements.append(sublist[0])\n        second_elements.append(sublist[1])\n    \n    return [first_elements, second_elements]",
+  "model": "qwen3-coder"
+}

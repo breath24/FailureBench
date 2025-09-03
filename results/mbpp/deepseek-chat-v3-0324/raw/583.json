@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/583",
-  "llm_response": "import math\n\ndef catalan_number(n):\n    return math.factorial(2 * n) // (math.factorial(n + 1) * math.factorial(n))",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function for nth catalan number."
-}

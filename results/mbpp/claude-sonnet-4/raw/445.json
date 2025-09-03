@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/445",
-  "llm_response": "def index_multiplication(tuple1, tuple2):\n    return tuple(tuple(a * b for a, b in zip(t1, t2)) for t1, t2 in zip(tuple1, tuple2))",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to perform index wise multiplication of tuple elements in the given two tuples."
-}

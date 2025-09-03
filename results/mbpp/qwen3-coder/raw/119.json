@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/119",
-  "llm_response": "def search(arr):\n    left, right = 0, len(arr) - 1\n    \n    while left < right:\n        mid = left + (right - left) // 2\n        \n        if mid % 2 == 0:\n            if arr[mid] == arr[mid + 1]:\n                left = mid + 2\n            else:\n                right = mid\n        else:\n            if arr[mid] == arr[mid - 1]:\n                left = mid + 1\n            else:\n                right = mid - 1\n    \n    return arr[left]",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the element that appears only once in a sorted array."
-}

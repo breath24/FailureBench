@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/252",
+  "task_description": "Write a python function to convert complex numbers to polar coordinates.",
+  "llm_response": "import cmath\n\ndef convert(z):\n    r = abs(z)\n    theta = cmath.phase(z)\n    return (r, theta)",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/564",
+  "task_description": "Write a python function to count unequal element pairs from the given array.",
+  "llm_response": "from itertools import combinations\n\ndef count_Pairs(lst, n):\n    return sum(1 for a, b in combinations(lst, 2) if a != b)",
+  "model": "gpt-4o"
+}

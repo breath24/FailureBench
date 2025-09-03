@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/232",
+  "task_description": "Write a function to get the n largest items from a dataset.",
+  "llm_response": "import heapq\n\ndef larg_nnum(lst, n):\n    return heapq.nlargest(n, lst)",
+  "model": "claude-sonnet-4"
+}

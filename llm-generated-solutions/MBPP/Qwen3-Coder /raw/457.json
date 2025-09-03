@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/457",
+  "task_description": "Write a python function to find the sublist having minimum length.",
+  "llm_response": "def Find_Min(lst):\n    min_length = float('inf')\n    min_sublist = None\n    \n    for sublist in lst:\n        if len(sublist) < min_length:\n            min_length = len(sublist)\n            min_sublist = sublist\n    \n    return min_sublist",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/573",
+  "task_description": "Write a python function to calculate the product of the unique numbers of a given list.",
+  "llm_response": "import math\nfrom functools import reduce\nimport operator\n\ndef unique_product(lst):\n    unique_nums = set(lst)\n    return reduce(operator.mul, unique_nums, 1)",
+  "model": "llama-3.3-70b"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/559",
+  "task_description": "Write a function to find the largest sum of contiguous subarray in the given array.",
+  "llm_response": "def max_sub_array_sum(nums, size):\n    max_sum = float('-inf')\n    for i in range(size):\n        for j in range(i, size):\n            sub_array_sum = sum(nums[i:j+1])\n            if sub_array_sum > max_sum:\n                max_sum = sub_array_sum\n    return max_sum",
+  "model": "llama-3.3-70b"
+}

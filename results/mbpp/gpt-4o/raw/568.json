@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/568",
-  "llm_response": "def empty_list(N):\n    return [{} for _ in range(N)]",
-  "model": "gpt-4o",
-  "task_description": "Write a function to create a list of empty dictionaries."
-}

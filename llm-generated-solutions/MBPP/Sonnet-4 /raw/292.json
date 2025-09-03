@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/292",
+  "task_description": "Write a python function to find quotient of two numbers.",
+  "llm_response": "def find(a, b):\n    return a // b",
+  "model": "claude-sonnet-4"
+}

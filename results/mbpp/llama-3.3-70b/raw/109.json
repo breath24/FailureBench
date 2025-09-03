@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/109",
-  "llm_response": "def odd_Equivalent(s, rotations):\n    count = 0\n    for _ in range(rotations):\n        s = s[-1] + s[:-1]\n        if int(s, 2) % 2 != 0:\n            count += 1\n    return count",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find the count of rotations of a binary string with odd value."
-}

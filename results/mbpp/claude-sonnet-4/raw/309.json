@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/309",
-  "llm_response": "def maximum(a, b):\n    return max(a, b)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the maximum of two numbers."
-}

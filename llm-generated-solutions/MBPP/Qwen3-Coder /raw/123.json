@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/123",
+  "task_description": "Write a function to sum all amicable numbers from 1 to a specified number.",
+  "llm_response": "def amicable_numbers_sum(n):\n    def sum_of_divisors(num):\n        if num == 1:\n            return 1\n        divisor_sum = 1\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                divisor_sum += i\n                if i != num // i:\n                    divisor_sum += num // i\n        return divisor_sum\n    \n    amicable_sum = 0\n    for a in range(2, n + 1):\n        b = sum_of_divisors(a)\n        if b > a and b <= n:\n            if sum_of_divisors(b) == a:\n                amicable_sum += a + b\n    \n    return amicable_sum",
+  "model": "qwen3-coder"
+}

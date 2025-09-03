@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/286",
+  "task_description": "Write a function to find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times.",
+  "llm_response": "def max_sub_array_sum_repeated(arr, n, k):\n    def kadane(arr):\n        max_so_far = float('-inf')\n        max_ending_here = 0\n        for i in range(len(arr)):\n            max_ending_here += arr[i]\n            if max_so_far < max_ending_here:\n                max_so_far = max_ending_here\n            if max_ending_here < 0:\n                max_ending_here = 0\n        return max_so_far\n    \n    if k == 1:\n        return kadane(arr)\n    \n    total_sum = sum(arr)\n    max_prefix_sum = float('-inf')\n    max_suffix_sum = float('-inf')\n    current_sum = 0\n    \n    for i in range(n):\n        current_sum += arr[i]\n        max_prefix_sum = max(max_prefix_sum, current_sum)\n    \n    current_sum = 0\n    for i in range(n-1, -1, -1):\n        current_sum += arr[i]\n        max_suffix_sum = max(max_suffix_sum, current_sum)\n    \n    if total_sum > 0:\n        return max(kadane(arr), max_prefix_sum + max_suffix_sum + (k-2) * total_sum)\n    else:\n        return max(kadane(arr), max_prefix_sum + max_suffix_sum)",
+  "model": "qwen3-coder"
+}

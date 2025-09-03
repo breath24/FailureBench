@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/618",
+  "task_description": "Write a function to divide two lists using map and lambda function.",
+  "llm_response": "def div_list(list1, list2):\n    return [a / b for a, b in zip(list1, list2)]",
+  "model": "mistral-3.2-24b"
+}

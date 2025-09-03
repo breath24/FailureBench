@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/388",
+  "task_description": "Write a python function to find the highest power of 2 that is less than or equal to n.",
+  "llm_response": "def highest_Power_of_2(n):\n    if n <= 0:\n        return 0\n    power = 1\n    while power * 2 <= n:\n        power *= 2\n    return power",
+  "model": "mistral-3.2-24b"
+}

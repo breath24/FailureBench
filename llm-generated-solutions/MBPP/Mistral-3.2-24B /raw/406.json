@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/406",
+  "task_description": "Write a python function to find the parity of a given number.",
+  "llm_response": "def find_Parity(number):\n    return number % 2 != 0",
+  "model": "mistral-3.2-24b"
+}

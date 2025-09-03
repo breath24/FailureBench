@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/27",
+  "task_description": "\n\ndef flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n",
+  "llm_response": "def flip_case(string: str) -> str:\n    result = \"\"\n    for char in string:\n        if char.islower():\n            result += char.upper()\n        elif char.isupper():\n            result += char.lower()\n        else:\n            result += char\n    return result",
+  "model": "claude-sonnet-4"
+}

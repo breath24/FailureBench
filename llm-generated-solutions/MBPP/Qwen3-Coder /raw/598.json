@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/598",
+  "task_description": "Write a function to check whether the given number is armstrong or not.",
+  "llm_response": "def armstrong_number(n):\n    # Convert number to string to get individual digits\n    str_n = str(n)\n    # Calculate number of digits\n    num_digits = len(str_n)\n    # Calculate sum of each digit raised to the power of number of digits\n    total = sum(int(digit) ** num_digits for digit in str_n)\n    # Check if total equals the original number\n    return total == n",
+  "model": "qwen3-coder"
+}

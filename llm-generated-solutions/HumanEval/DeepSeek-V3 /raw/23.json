@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/23",
+  "task_description": "\n\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n",
+  "llm_response": "def strlen(string: str) -> int:\n    length = 0\n    for _ in string:\n        length += 1\n    return length",
+  "model": "deepseek-chat-v3-0324"
+}

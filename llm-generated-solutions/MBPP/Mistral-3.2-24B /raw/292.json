@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/292",
+  "task_description": "Write a python function to find quotient of two numbers.",
+  "llm_response": "import math\n\ndef find(a, b):\n    return math.floor(a / b)",
+  "model": "mistral-3.2-24b"
+}

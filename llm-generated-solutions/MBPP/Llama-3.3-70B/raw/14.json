@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/14",
+  "task_description": "Write a python function to find the volume of a triangular prism.",
+  "llm_response": "import math\n\ndef find_Volume(base, height, length):\n    return 0.5 * base * height * length",
+  "model": "llama-3.3-70b"
+}

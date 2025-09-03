@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/560",
+  "task_description": "Write a function to find the union of elements of the given tuples.",
+  "llm_response": "from typing import Tuple\n\ndef union_elements(tuple1: Tuple[int], tuple2: Tuple[int]) -> Tuple[int]:\n    return tuple(sorted(set(tuple1).union(set(tuple2))))",
+  "model": "gpt-4o"
+}

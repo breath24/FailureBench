@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/278",
+  "task_description": "Write a function to find the element count that occurs before the record in the given tuple.",
+  "llm_response": "def count_first_elements(tup):\n    for i, element in enumerate(tup):\n        if isinstance(element, tuple):\n            return i\n    return len(tup)",
+  "model": "claude-sonnet-4"
+}

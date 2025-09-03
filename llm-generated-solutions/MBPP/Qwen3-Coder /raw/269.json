@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/269",
+  "task_description": "Write a function to find the ascii value of a character.",
+  "llm_response": "def ascii_value(char):\n    return ord(char)",
+  "model": "qwen3-coder"
+}

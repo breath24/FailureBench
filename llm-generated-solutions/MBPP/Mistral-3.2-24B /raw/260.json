@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/260",
+  "task_description": "Write a function to find the nth newman–shanks–williams prime number.",
+  "llm_response": "import sympy\n\ndef newman_prime(n):\n    primes = sympy.primerange(1, 1000000)\n    newman_primes = [p for p in primes if p % 4 == 3]\n    return newman_primes[n-1]",
+  "model": "mistral-3.2-24b"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/562",
+  "task_description": "Write a python function to find the maximum length of sublist.",
+  "llm_response": "import numpy as np\n\ndef Find_Max_Length(lists):\n    return max(len(sublist) for sublist in lists)",
+  "model": "llama-3.3-70b"
+}

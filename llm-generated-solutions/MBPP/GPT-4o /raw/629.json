@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/629",
+  "task_description": "Write a python function to find even numbers from a mixed list.",
+  "llm_response": "def Split(numbers):\n    return [num for num in numbers if num % 2 == 0]",
+  "model": "gpt-4o"
+}

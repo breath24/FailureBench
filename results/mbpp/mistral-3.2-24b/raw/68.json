@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/68",
-  "llm_response": "def is_Monotonic(arr):\n    increasing = True\n    decreasing = True\n\n    for i in range(len(arr) - 1):\n        if arr[i] > arr[i + 1]:\n            increasing = False\n        if arr[i] < arr[i + 1]:\n            decreasing = False\n\n    return increasing or decreasing",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to check whether the given array is monotonic or not."
-}

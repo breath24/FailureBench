@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/58",
-  "llm_response": "import math\n\ndef opposite_Signs(a, b):\n    return (a * b) < 0",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to check whether the given two integers have opposite sign or not."
-}

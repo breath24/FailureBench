@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/554",
+  "task_description": "Write a python function to find odd numbers from a mixed list.",
+  "llm_response": "def Split(lst):\n    return [x for x in lst if x % 2 != 0]",
+  "model": "deepseek-chat-v3-0324"
+}

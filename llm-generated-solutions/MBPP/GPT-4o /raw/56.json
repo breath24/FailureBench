@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/56",
+  "task_description": "Write a python function to check if a given number is one less than twice its reverse.",
+  "llm_response": "def check(n):\n    reverse_n = int(str(n)[::-1])\n    return n == 2 * reverse_n - 1",
+  "model": "gpt-4o"
+}

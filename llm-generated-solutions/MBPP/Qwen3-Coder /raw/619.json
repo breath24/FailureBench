@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/619",
+  "task_description": "Write a function to move all the numbers in it to the given string.",
+  "llm_response": "def move_num(s):\n    letters = []\n    numbers = []\n    \n    for char in s:\n        if char.isdigit():\n            numbers.append(char)\n        else:\n            letters.append(char)\n    \n    return ''.join(letters) + ''.join(numbers)",
+  "model": "qwen3-coder"
+}

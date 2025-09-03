@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/19",
+  "task_description": "Write a function to find whether a given array of integers contains any duplicate element.",
+  "llm_response": "def test_duplicate(arr):\n    return len(arr) != len(set(arr))",
+  "model": "gpt-4o"
+}

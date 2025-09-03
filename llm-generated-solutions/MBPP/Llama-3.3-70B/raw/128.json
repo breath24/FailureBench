@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/128",
+  "task_description": "Write a function to shortlist words that are longer than n from a given list of words.",
+  "llm_response": "import re\n\ndef long_words(n, sentence):\n    words = re.findall(r'\\b\\w+\\b', sentence)\n    return [word for word in words if len(word) > n]",
+  "model": "llama-3.3-70b"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/62",
-  "llm_response": "def smallest_num(lst):\n    return min(lst)",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find smallest number in a list."
-}

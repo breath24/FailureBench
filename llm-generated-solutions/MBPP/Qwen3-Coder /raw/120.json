@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/120",
+  "task_description": "Write a function to find the maximum product from the pairs of tuples within a given list.",
+  "llm_response": "def max_product_tuple(tuple_list):\n    max_product = float('-inf')\n    \n    for tuple_pair in tuple_list:\n        product = abs(tuple_pair[0] * tuple_pair[1])\n        if product > max_product:\n            max_product = product\n    \n    return max_product",
+  "model": "qwen3-coder"
+}

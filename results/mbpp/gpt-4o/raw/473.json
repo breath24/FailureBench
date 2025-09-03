@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/473",
-  "llm_response": "from typing import List, Tuple, Set\n\ndef tuple_intersection(list1: List[Tuple[int, int]], list2: List[Tuple[int, int]]) -> Set[Tuple[int, int]]:\n    set1 = {tuple(sorted(t)) for t in list1}\n    set2 = {tuple(sorted(t)) for t in list2}\n    return set1.intersection(set2)",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the tuple intersection of elements in the given tuple list irrespective of their order."
-}

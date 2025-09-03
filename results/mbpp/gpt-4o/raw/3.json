@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/3",
-  "llm_response": "from math import isqrt\n\ndef is_not_prime(n):\n    if n <= 1:\n        return True\n    if n <= 3:\n        return False\n    if n % 2 == 0 or n % 3 == 0:\n        return True\n    for i in range(5, isqrt(n) + 1, 6):\n        if n % i == 0 or n % (i + 2) == 0:\n            return True\n    return False",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to identify non-prime numbers."
-}

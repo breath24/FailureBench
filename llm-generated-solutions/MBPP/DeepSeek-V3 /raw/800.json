@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/800",
+  "task_description": "Write a function to remove all whitespaces from a string.",
+  "llm_response": "import re\n\ndef remove_all_spaces(string):\n    return re.sub(r'\\s+', '', string)",
+  "model": "deepseek-chat-v3-0324"
+}

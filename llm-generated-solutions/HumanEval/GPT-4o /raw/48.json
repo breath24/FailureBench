@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/48",
+  "task_description": "\n\ndef is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\"\n",
+  "llm_response": "import re\n\ndef is_palindrome(text: str):\n    text = re.sub(r'[^A-Za-z0-9]', '', text).lower()\n    return text == text[::-1]",
+  "model": "gpt-4o"
+}

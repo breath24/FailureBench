@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/264",
-  "llm_response": "def dog_age(human_years):\n    if human_years <= 0:\n        return 0\n    elif human_years == 1:\n        return 15\n    elif human_years == 2:\n        return 24\n    else:\n        return 24 + (human_years - 2) * 5",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to calculate a dog's age in dog's years."
-}

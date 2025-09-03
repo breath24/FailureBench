@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/77",
+  "task_description": "\ndef iscube(a):\n    '''\n    Write a function that takes an integer a and returns True \n    if this ingeger is a cube of some integer number.\n    Note: you may assume the input is always valid.\n    Examples:\n    iscube(1) ==> True\n    iscube(2) ==> False\n    iscube(-1) ==> True\n    iscube(64) ==> True\n    iscube(0) ==> True\n    iscube(180) ==> False\n    '''\n",
+  "llm_response": "import math\n\ndef iscube(a):\n    if a == 0:\n        return True\n    cube_root = round(abs(a) ** (1/3))\n    if a < 0:\n        cube_root = -cube_root\n    return cube_root ** 3 == a",
+  "model": "deepseek-chat-v3-0324"
+}

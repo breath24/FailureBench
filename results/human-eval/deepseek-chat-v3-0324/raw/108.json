@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/108",
-  "llm_response": "import math\n\ndef count_nums(arr):\n    count = 0\n    for num in arr:\n        sum_digits = 0\n        n = abs(num)\n        while n > 0:\n            sum_digits += n % 10\n            n = n // 10\n        if num < 0:\n            first_digit = int(str(abs(num))[0])\n            sum_digits = sum_digits - 2 * first_digit\n        if sum_digits > 0:\n            count += 1\n    return count",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "\ndef count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n"
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/16",
-  "llm_response": "import collections\n\ndef count_distinct_characters(string: str) -> int:\n    return len(collections.Counter(string.lower()))",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "\n\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"\n"
-}

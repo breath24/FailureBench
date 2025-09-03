@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/586",
-  "llm_response": "def split_Arr(arr, n):\n    return arr[n:] + arr[:n]",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to split the array and add the first part to the end."
-}

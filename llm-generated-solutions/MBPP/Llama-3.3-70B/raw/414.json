@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/414",
+  "task_description": "Write a python function to check whether the value exists in a sequence or not.",
+  "llm_response": "def overlapping(seq1, seq2):\n    return any(value in seq2 for value in seq1)",
+  "model": "llama-3.3-70b"
+}

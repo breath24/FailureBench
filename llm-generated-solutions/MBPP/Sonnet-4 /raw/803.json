@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/803",
+  "task_description": "Write a python function to check whether the given number is a perfect square or not.",
+  "llm_response": "import math\n\ndef is_perfect_square(n):\n    if n < 0:\n        return False\n    sqrt_n = int(math.sqrt(n))\n    return sqrt_n * sqrt_n == n",
+  "model": "claude-sonnet-4"
+}

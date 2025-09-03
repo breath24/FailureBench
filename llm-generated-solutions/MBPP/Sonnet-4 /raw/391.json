@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/391",
+  "task_description": "Write a function to convert more than one list to nested dictionary.",
+  "llm_response": "def convert_list_dictionary(list1, list2, list3):\n    return [{list1[i]: {list2[i]: list3[i]}} for i in range(len(list1))]",
+  "model": "claude-sonnet-4"
+}

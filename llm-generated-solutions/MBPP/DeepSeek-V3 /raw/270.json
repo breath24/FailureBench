@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/270",
+  "task_description": "Write a python function to find the sum of even numbers at even positions.",
+  "llm_response": "def sum_even_and_even_index(nums):\n    return sum(num for idx, num in enumerate(nums) if idx % 2 == 0 and num % 2 == 0)",
+  "model": "deepseek-chat-v3-0324"
+}

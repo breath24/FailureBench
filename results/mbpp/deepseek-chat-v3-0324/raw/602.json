@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/602",
-  "llm_response": "import collections\n\ndef first_repeated_char(s):\n    freq = collections.defaultdict(int)\n    for char in s:\n        freq[char] += 1\n        if freq[char] == 2:\n            return char\n    return None",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the first repeated character in a given string."
-}

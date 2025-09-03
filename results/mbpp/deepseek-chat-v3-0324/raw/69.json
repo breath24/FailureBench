@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/69",
-  "llm_response": "def is_sublist(main_list, sublist):\n    n = len(sublist)\n    return any(sublist == main_list[i:i+n] for i in range(len(main_list)-n+1))",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to check whether a list contains the given sublist or not."
-}

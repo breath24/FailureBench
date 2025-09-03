@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/432",
+  "task_description": "Write a function to find the median of a trapezium.",
+  "llm_response": "import math\n\ndef median_trapezium(a, b, c, d):\n    sides = sorted([a, b, c, d])\n    median = (sides[1] + sides[2]) / 2\n    return median",
+  "model": "deepseek-chat-v3-0324"
+}

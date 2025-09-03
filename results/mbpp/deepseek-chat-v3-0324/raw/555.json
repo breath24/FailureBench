@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/555",
-  "llm_response": "import math\n\ndef difference(n):\n    sum_n = n * (n + 1) // 2\n    sum_cubes = (n * (n + 1) // 2) ** 2\n    return sum_cubes - sum_n",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the difference between sum of cubes of first n natural numbers and the sum of first n natural numbers."
-}

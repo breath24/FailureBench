@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/65",
+  "task_description": "\ndef circular_shift(x, shift):\n    \"\"\"Circular shift the digits of the integer x, shift the digits right by shift\n    and return the result as a string.\n    If shift > number of digits, return digits reversed.\n    >>> circular_shift(12, 1)\n    \"21\"\n    >>> circular_shift(12, 2)\n    \"12\"\n    \"\"\"\n",
+  "llm_response": "def circular_shift(x, shift):\n    digits = str(abs(x))\n    n = len(digits)\n    \n    if shift > n:\n        return digits[::-1]\n    \n    shift = shift % n\n    if shift == 0:\n        return digits\n    \n    return digits[-shift:] + digits[:-shift]",
+  "model": "claude-sonnet-4"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/597",
-  "llm_response": "import heapq\n\ndef find_kth(arr1, arr2, k):\n    merged = list(heapq.merge(arr1, arr2))\n    return merged[k-1]",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find kth element from the given two sorted arrays."
-}

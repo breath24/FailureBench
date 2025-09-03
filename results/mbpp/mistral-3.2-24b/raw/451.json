@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/451",
-  "llm_response": "def remove_whitespaces(input_string):\n    return input_string.replace(\" \", \"\")",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to remove all whitespaces from the given string using regex."
-}

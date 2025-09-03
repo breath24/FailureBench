@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/244",
+  "task_description": "Write a python function to find the next perfect square greater than a given number.",
+  "llm_response": "import math\n\ndef next_Perfect_Square(n):\n    if n < 0:\n        return 0\n    root = math.isqrt(n) + 1\n    return root * root",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/791",
+  "task_description": "Write a function to remove the nested record from the given tuple.",
+  "llm_response": "def remove_nested(t):\n    return tuple(x for x in t if not isinstance(x, tuple))",
+  "model": "qwen3-coder"
+}

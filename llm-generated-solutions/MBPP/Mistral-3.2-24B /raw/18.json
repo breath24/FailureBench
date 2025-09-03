@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/18",
+  "task_description": "Write a function to remove characters from the first string which are present in the second string.",
+  "llm_response": "def remove_dirty_chars(string, chars_to_remove):\n    return ''.join([char for char in string if char not in chars_to_remove])",
+  "model": "mistral-3.2-24b"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/129",
+  "task_description": "Write a function to calculate magic square.",
+  "llm_response": "import numpy as np\n\ndef magic_square_test(matrix):\n    matrix = np.array(matrix)\n    n = matrix.shape[0]\n    target_sum = n * (n**2 + 1) // 2\n    \n    for row in matrix:\n        if sum(row) != target_sum:\n            return False\n    \n    for col in matrix.T:\n        if sum(col) != target_sum:\n            return False\n    \n    if np.trace(matrix) != target_sum:\n        return False\n    \n    if np.trace(np.fliplr(matrix)) != target_sum:\n        return False\n    \n    return True",
+  "model": "deepseek-chat-v3-0324"
+}

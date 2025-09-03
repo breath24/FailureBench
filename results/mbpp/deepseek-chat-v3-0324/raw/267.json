@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/267",
-  "llm_response": "import math\n\ndef square_Sum(n):\n    return sum((2*i + 1)**2 for i in range(n))",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the sum of squares of first n odd natural numbers."
-}

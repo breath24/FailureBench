@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/138",
-  "llm_response": "def is_equal_to_sum_even(n):\n    if n < 8:\n        return False\n    return (n - 4) % 2 == 0",
-  "model": "mistral-3.2-24b",
-  "task_description": "\ndef is_equal_to_sum_even(n):\n    \"\"\"Evaluate whether the given number n can be written as the sum of exactly 4 positive even numbers\n    Example\n    is_equal_to_sum_even(4) == False\n    is_equal_to_sum_even(6) == False\n    is_equal_to_sum_even(8) == True\n    \"\"\"\n"
-}

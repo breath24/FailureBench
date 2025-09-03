@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/125",
+  "task_description": "Write a function to find the maximum difference between the number of 0s and number of 1s in any sub-string of the given binary string.",
+  "llm_response": "def find_length(s):\n    max_diff = 0\n    n = len(s)\n    \n    for i in range(n):\n        zeros = 0\n        ones = 0\n        for j in range(i, n):\n            if s[j] == '0':\n                zeros += 1\n            else:\n                ones += 1\n            max_diff = max(max_diff, abs(zeros - ones))\n    \n    return max_diff",
+  "model": "claude-sonnet-4"
+}

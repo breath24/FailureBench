@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/734",
+  "task_description": "Write a python function to find sum of products of all possible subarrays.",
+  "llm_response": "def sum_Of_Subarray_Prod(lst):\n    total = 0\n    n = len(lst)\n    for i in range(n):\n        product = 1\n        for j in range(i, n):\n            product *= lst[j]\n            total += product\n    return total",
+  "model": "mistral-3.2-24b"
+}

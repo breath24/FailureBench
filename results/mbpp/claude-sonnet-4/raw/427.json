@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/427",
-  "llm_response": "from datetime import datetime\n\ndef change_date_format(date_string):\n    date_obj = datetime.strptime(date_string, \"%Y-%m-%d\")\n    return date_obj.strftime(\"%d-%m-%Y\")",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to convert a date of yyyy-mm-dd format to dd-mm-yyyy format by using regex."
-}

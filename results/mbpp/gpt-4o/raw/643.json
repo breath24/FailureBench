@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/643",
-  "llm_response": "import re\n\ndef text_match_wordz_middle(text):\n    return bool(re.search(r'(?<!^).z(?!$)', text))",
-  "model": "gpt-4o",
-  "task_description": "Write a function that matches a word containing 'z', not at the start or end of the word."
-}

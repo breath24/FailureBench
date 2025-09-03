@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/618",
-  "llm_response": "import numpy as np\n\ndef div_list(list1, list2):\n    return np.divide(list1, list2).tolist()",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to divide two lists using map and lambda function."
-}

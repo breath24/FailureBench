@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/274",
-  "llm_response": "import math\n\ndef even_binomial_Coeff_Sum(n):\n    total = 0\n    for k in range(0, n + 1, 2):\n        total += math.comb(n, k)\n    return total",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find sum of even index binomial coefficients."
-}

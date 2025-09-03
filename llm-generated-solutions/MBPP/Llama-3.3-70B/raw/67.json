@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/67",
+  "task_description": "Write a function to find the number of ways to partition a set of bell numbers.",
+  "llm_response": "import math\n\ndef bell_number(n):\n    if n == 0:\n        return 1\n    sum = 0\n    for k in range(n):\n        sum += math.comb(n-1, k) * bell_number(k)\n    return sum",
+  "model": "llama-3.3-70b"
+}

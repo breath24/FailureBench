@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/622",
+  "task_description": "Write a function to find the median of two sorted arrays of same size.",
+  "llm_response": "import statistics\n\ndef get_median(list1, list2, n):\n    merged_list = sorted(list1 + list2)\n    return statistics.median(merged_list)",
+  "model": "gpt-4o"
+}

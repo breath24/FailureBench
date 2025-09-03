@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/394",
+  "task_description": "Write a function to check if given tuple is distinct or not.",
+  "llm_response": "import collections\n\ndef check_distinct(tup):\n    return len(tup) == len(set(tup))",
+  "model": "llama-3.3-70b"
+}

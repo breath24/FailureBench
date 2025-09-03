@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/75",
+  "task_description": "Write a function to find tuples which have all elements divisible by k from the given list of tuples.",
+  "llm_response": "import math\n\ndef find_tuples(tuples, k):\n    result = []\n    for t in tuples:\n        if all(i % k == 0 for i in t):\n            result.append(t)\n    return result",
+  "model": "llama-3.3-70b"
+}

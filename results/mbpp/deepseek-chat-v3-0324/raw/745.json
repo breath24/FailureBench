@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/745",
-  "llm_response": "def divisible_by_digits(startnum, endnum):\n    result = []\n    for num in range(startnum, endnum + 1):\n        digits = [int(d) for d in str(num) if d != '0']\n        divisible = all(num % d == 0 for d in digits)\n        if divisible:\n            result.append(num)\n    return result",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find numbers within a given range where every number is divisible by every digit it contains."
-}

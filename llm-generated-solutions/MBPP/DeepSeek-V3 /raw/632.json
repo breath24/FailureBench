@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/632",
+  "task_description": "Write a python function to move all zeroes to the end of the given list.",
+  "llm_response": "def move_zero(lst):\n    non_zero = [x for x in lst if x != 0]\n    zero_count = len(lst) - len(non_zero)\n    return non_zero + [0] * zero_count",
+  "model": "deepseek-chat-v3-0324"
+}

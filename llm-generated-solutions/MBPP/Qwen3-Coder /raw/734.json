@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/734",
+  "task_description": "Write a python function to find sum of products of all possible subarrays.",
+  "llm_response": "from itertools import combinations\n\ndef sum_Of_Subarray_Prod(lst):\n    total = 0\n    n = len(lst)\n    \n    for i in range(n):\n        product = 1\n        for j in range(i, n):\n            product *= lst[j]\n            total += product\n    \n    return total",
+  "model": "qwen3-coder"
+}

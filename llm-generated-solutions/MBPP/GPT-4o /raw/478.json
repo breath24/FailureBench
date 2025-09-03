@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/478",
+  "task_description": "Write a function to remove lowercase substrings from a given string.",
+  "llm_response": "import re\n\ndef remove_lowercase(s):\n    return re.sub(r'[a-z]+', '', s)",
+  "model": "gpt-4o"
+}

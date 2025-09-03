@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/285",
-  "llm_response": "import re\n\ndef text_match_two_three(text):\n    pattern = r'abb{1,2}'\n    return bool(re.search(pattern, text))",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function that matches a string that has an a followed by two to three 'b'."
-}

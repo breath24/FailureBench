@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/445",
-  "llm_response": "from typing import Tuple\n\ndef index_multiplication(tuple1: Tuple[Tuple[int, int]], tuple2: Tuple[Tuple[int, int]]) -> Tuple[Tuple[int, int]]:\n    return tuple((a * c, b * d) for (a, b), (c, d) in zip(tuple1, tuple2))",
-  "model": "gpt-4o",
-  "task_description": "Write a function to perform index wise multiplication of tuple elements in the given two tuples."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/390",
-  "llm_response": "def add_string(list_,string):\n    return [string.format(i) for i in list_]",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to insert a given string at the beginning of all items in a list."
-}

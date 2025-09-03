@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/477",
-  "llm_response": "import re\ndef is_lower(s):\n    return s.lower()",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to convert the given string to lower case."
-}

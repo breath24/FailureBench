@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/71",
+  "task_description": "Write a function to sort a list of elements using comb sort.",
+  "llm_response": "import math\n\ndef comb_sort(arr):\n    def get_next_gap(gap):\n        gap = (gap * 10) // 13\n        if gap < 1:\n            return 1\n        return gap\n\n    n = len(arr)\n    gap = n\n    swapped = True\n\n    while gap != 1 or swapped:\n        gap = get_next_gap(gap)\n        swapped = False\n\n        for i in range(0, n - gap):\n            j = i + gap\n            if arr[i] > arr[j]:\n                arr[i], arr[j] = arr[j], arr[i]\n                swapped = True\n\n    return arr",
+  "model": "llama-3.3-70b"
+}

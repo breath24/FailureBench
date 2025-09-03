@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/630",
+  "task_description": "Write a function to extract all the adjacent coordinates of the given coordinate tuple.",
+  "llm_response": "import itertools\n\ndef get_coordinates(coord):\n    x, y = coord\n    return [[i, j] for i, j in itertools.product(range(x-1, x+2), range(y-1, y+2))]",
+  "model": "gpt-4o"
+}

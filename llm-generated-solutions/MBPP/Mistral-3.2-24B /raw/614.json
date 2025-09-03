@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/614",
+  "task_description": "Write a function to find the cumulative sum of all the values that are present in the given tuple list.",
+  "llm_response": "def cumulative_sum(tuples_list):\n    total = 0\n    for t in tuples_list:\n        total += sum(t)\n    return total",
+  "model": "mistral-3.2-24b"
+}

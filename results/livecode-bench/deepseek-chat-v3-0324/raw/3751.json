@@ -1,6 +1,0 @@
-{
-  "task_id": "3751",
-  "llm_response": "from collections import defaultdict\n\ndef maxFrequency(nums, k):\n    freq = defaultdict(int)\n    for num in nums:\n        freq[num] += 1\n    max_freq = freq[k]\n    for i in range(len(nums)):\n        for j in range(i, len(nums)):\n            x = k - nums[i]\n            temp = nums.copy()\n            for idx in range(i, j + 1):\n                temp[idx] += x\n            current_freq = temp.count(k)\n            if current_freq > max_freq:\n                max_freq = current_freq\n    return max_freq",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "You are given an array nums of length n. You are also given an integer k.\nYou perform the following operation on nums once:\n\nSelect a subarray nums[i..j] where 0 <= i <= j <= n - 1.\nSelect an integer x and add x to all the elements in nums[i..j].\n\nFind the maximum frequency of the value k after the operation.\n \nExample 1:\n\nInput: nums = [1,2,3,4,5,6], k = 1\nOutput: 2\nExplanation:\nAfter adding -5 to nums[2..5], 1 has a frequency of 2 in [1, 2, -2, -1, 0, 1].\n\nExample 2:\n\nInput: nums = [10,2,3,4,5,5,4,3,2,2], k = 10\nOutput: 4\nExplanation:\nAfter adding 8 to nums[1..9], 10 has a frequency of 4 in [10, 10, 11, 12, 13, 13, 12, 11, 10, 10].\n\n \nConstraints:\n\n1 <= n == nums.length <= 10^5\n1 <= nums[i] <= 50\n1 <= k <= 50"
-}

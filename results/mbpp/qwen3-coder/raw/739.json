@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/739",
-  "llm_response": "import math\n\ndef find_Index(n):\n    if n == 1:\n        return 1\n    \n    # For n digits, the triangular number should be >= 10^(n-1)\n    # We use the formula for triangular numbers: T_k = k(k+1)/2\n    # We need to find the smallest k such that T_k >= 10^(n-1)\n    \n    lower_bound = 10 ** (n - 1)\n    \n    # Using the approximation k \u2248 sqrt(2 * lower_bound)\n    k = int(math.sqrt(2 * lower_bound))\n    \n    # Check if we need to adjust k\n    while k * (k + 1) // 2 < lower_bound:\n        k += 1\n    \n    return k",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the index of smallest triangular number with n digits."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/265",
+  "task_description": "Write a function to split a list for every nth element.",
+  "llm_response": "def list_split(lst, n):\n    return [[lst[j] for j in range(i, len(lst), n)] for i in range(n)]",
+  "model": "llama-3.3-70b"
+}

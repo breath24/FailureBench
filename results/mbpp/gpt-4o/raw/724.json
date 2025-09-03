@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/724",
-  "llm_response": "import math\n\ndef power_base_sum(base, power):\n    result = base ** power\n    return sum(int(digit) for digit in str(result))",
-  "model": "gpt-4o",
-  "task_description": "Write a function to calculate the sum of all digits of the base to the specified power."
-}

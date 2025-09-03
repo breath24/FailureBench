@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/472",
+  "task_description": "Write a python function to check whether the given list contains consecutive numbers or not.",
+  "llm_response": "import numpy as np\n\ndef check_Consecutive(lst):\n    return np.all(np.diff(lst) == 1)",
+  "model": "llama-3.3-70b"
+}

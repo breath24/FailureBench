@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/66",
+  "task_description": "Write a python function to count positive numbers in a list.",
+  "llm_response": "def pos_count(lst):\n    return sum(1 for num in lst if num > 0)",
+  "model": "claude-sonnet-4"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/58",
+  "task_description": "Write a python function to check whether the given two integers have opposite sign or not.",
+  "llm_response": "def opposite_Signs(a, b):\n    return (a < 0 and b > 0) or (a > 0 and b < 0)",
+  "model": "qwen3-coder"
+}

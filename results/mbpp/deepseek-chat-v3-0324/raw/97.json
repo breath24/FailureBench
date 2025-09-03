@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/97",
-  "llm_response": "from collections import defaultdict\n\ndef frequency_lists(list_of_lists):\n    freq = defaultdict(int)\n    for sublist in list_of_lists:\n        for item in sublist:\n            freq[item] += 1\n    return dict(freq)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find frequency count of list of lists."
-}

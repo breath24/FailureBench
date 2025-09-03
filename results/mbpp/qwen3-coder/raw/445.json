@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/445",
-  "llm_response": "def index_multiplication(tuple1, tuple2):\n    result = []\n    for i in range(len(tuple1)):\n        inner_result = []\n        for j in range(len(tuple1[i])):\n            inner_result.append(tuple1[i][j] * tuple2[i][j])\n        result.append(tuple(inner_result))\n    return tuple(result)",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to perform index wise multiplication of tuple elements in the given two tuples."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/168",
+  "task_description": "Write a python function to find the frequency of a number in a given array.",
+  "llm_response": "from typing import List\n\ndef frequency(lst: List[int], num: int) -> int:\n    return lst.count(num)",
+  "model": "deepseek-chat-v3-0324"
+}

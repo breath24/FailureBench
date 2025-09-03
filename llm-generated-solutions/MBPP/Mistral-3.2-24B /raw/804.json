@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/804",
+  "task_description": "Write a python function to check whether the product of numbers is even or not.",
+  "llm_response": "def is_product_even(numbers):\n    for num in numbers:\n        if num % 2 == 0:\n            return True\n    return False",
+  "model": "mistral-3.2-24b"
+}

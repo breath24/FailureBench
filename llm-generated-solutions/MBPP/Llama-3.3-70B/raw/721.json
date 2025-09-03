@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/721",
+  "task_description": "Write a function to find a path with the maximum average over all existing paths for the given square matrix of size n*n.",
+  "llm_response": "from functools import lru_cache\n\ndef maxAverageOfPath(matrix):\n    n = len(matrix)\n    directions = [(0, 1), (1, 0)]\n\n    @lru_cache(None)\n    def dfs(i, j):\n        if i == n - 1 and j == n - 1:\n            return matrix[i][j], 1\n        max_avg = float('-inf')\n        for dx, dy in directions:\n            x, y = i + dx, j + dy\n            if 0 <= x < n and 0 <= y < n:\n                cost, length = dfs(x, y)\n                max_avg = max(max_avg, (matrix[i][j] + cost) / (length + 1))\n        return matrix[i][j] + max_avg * (n - 1), 1 + n - 1\n\n    return dfs(0, 0)[0]",
+  "model": "llama-3.3-70b"
+}

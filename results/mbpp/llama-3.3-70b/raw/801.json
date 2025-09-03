@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/801",
-  "llm_response": "import itertools\n\ndef test_three_equal(a, b, c):\n    return len([i for i in set([a, b, c]) if list([a, b, c]).count(i) > 1]) * list([a, b, c]).count(list(set([a, b, c]))[0]) if len(set([a, b, c])) < 3 else 0",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to count the number of equal numbers from three given integers."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/286",
-  "llm_response": "import itertools\n\ndef max_sub_array_sum_repeated(arr, k, n):\n    max_sum = float('-inf')\n    for i in range(n):\n        for j in range(i, n):\n            sub_array_sum = sum(arr[i:j+1])\n            max_sum = max(max_sum, sub_array_sum)\n    return max_sum",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times."
-}

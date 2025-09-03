@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/106",
+  "task_description": "Write a function to add the given list to the given tuples.",
+  "llm_response": "import itertools\n\ndef add_lists(lst, tup):\n    return tup + tuple(lst)",
+  "model": "llama-3.3-70b"
+}

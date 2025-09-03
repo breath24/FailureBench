@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/632",
-  "llm_response": "def move_zero(lst):\n    non_zero = [x for x in lst if x != 0]\n    zero = [x for x in lst if x == 0]\n    return non_zero + zero",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to move all zeroes to the end of the given list."
-}

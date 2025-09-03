@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/105",
-  "llm_response": "def count(lst):\n    return sum(lst)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to count true booleans in the given list."
-}

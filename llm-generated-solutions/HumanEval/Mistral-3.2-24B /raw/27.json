@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/27",
+  "task_description": "\n\ndef flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n",
+  "llm_response": "def flip_case(string: str) -> str:\n    return ''.join([char.lower() if char.isupper() else char.upper() for char in string])",
+  "model": "mistral-3.2-24b"
+}

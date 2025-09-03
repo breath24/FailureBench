@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/141",
-  "llm_response": "from typing import List\n\ndef pancake_sort(arr: List[int]) -> List[int]:\n    def flip(sublist, k):\n        sublist[:k] = reversed(sublist[:k])\n    \n    n = len(arr)\n    for size in range(n, 1, -1):\n        max_index = arr.index(max(arr[:size]))\n        if max_index != size - 1:\n            flip(arr, max_index + 1)\n            flip(arr, size)\n    return arr",
-  "model": "gpt-4o",
-  "task_description": "Write a function to sort a list of elements using pancake sort."
-}

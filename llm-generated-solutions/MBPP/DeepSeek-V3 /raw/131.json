@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/131",
+  "task_description": "Write a python function to reverse only the vowels of a given string.",
+  "llm_response": "from typing import List\n\ndef reverse_vowels(s: str) -> str:\n    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']\n    s_list = list(s)\n    left, right = 0, len(s) - 1\n    \n    while left < right:\n        if s_list[left] in vowels and s_list[right] in vowels:\n            s_list[left], s_list[right] = s_list[right], s_list[left]\n            left += 1\n            right -= 1\n        elif s_list[left] not in vowels:\n            left += 1\n        else:\n            right -= 1\n    \n    return ''.join(s_list)",
+  "model": "deepseek-chat-v3-0324"
+}

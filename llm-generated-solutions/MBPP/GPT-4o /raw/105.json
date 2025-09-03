@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/105",
+  "task_description": "Write a python function to count true booleans in the given list.",
+  "llm_response": "def count_true_booleans(lst):\n    return sum(lst)",
+  "model": "gpt-4o"
+}

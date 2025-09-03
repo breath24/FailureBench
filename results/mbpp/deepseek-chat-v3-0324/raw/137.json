@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/137",
-  "llm_response": "import math\n\ndef zero_count(arr):\n    zeroes = arr.count(0)\n    non_zeroes = len(arr) - zeroes\n    if non_zeroes == 0:\n        return 0.0\n    return zeroes / non_zeroes",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find the ration of zeroes in an array of integers."
-}

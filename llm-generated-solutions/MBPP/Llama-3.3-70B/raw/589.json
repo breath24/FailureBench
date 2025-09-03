@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/589",
+  "task_description": "Write a function to find perfect squares between two given numbers.",
+  "llm_response": "import math\n\ndef perfect_squares(start, end):\n    return [i**2 for i in range(1, int(math.sqrt(end)) + 1) if start <= i**2 <= end]",
+  "model": "llama-3.3-70b"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/166",
-  "llm_response": "from itertools import combinations\n\ndef find_even_pair(lst):\n    return sum(1 for a, b in combinations(lst, 2) if (a ^ b) % 2 == 0)",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to count the pairs with xor as an even number."
-}

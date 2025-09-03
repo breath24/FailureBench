@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/278",
-  "llm_response": "def count_first_elements(t):\n    count = 0\n    for element in t:\n        if isinstance(element, tuple):\n            break\n        count += 1\n    return count",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find the element count that occurs before the record in the given tuple."
-}

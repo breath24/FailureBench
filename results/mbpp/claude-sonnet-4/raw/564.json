@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/564",
-  "llm_response": "def count_Pairs(arr, n):\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            if arr[i] != arr[j]:\n                count += 1\n    return count",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to count unequal element pairs from the given array."
-}

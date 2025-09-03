@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/155",
-  "llm_response": "import math\n\ndef even_odd_count(num):\n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    while num > 0:\n        digit = num % 10\n        if digit % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n        num = num // 10\n    return (even_count, odd_count)",
-  "model": "gpt-4o",
-  "task_description": "\ndef even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\"\n"
-}

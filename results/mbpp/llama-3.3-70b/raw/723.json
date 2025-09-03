@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/723",
-  "llm_response": "import numpy as np\n\ndef count_same_pair(list1, list2):\n    return sum(1 for a, b in zip(list1, list2) if a == b)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to count the same pair in two given lists using map function."
-}

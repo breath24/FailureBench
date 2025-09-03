@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/410",
-  "llm_response": "def min_val(lst):\n    return min(x for x in lst if isinstance(x, (int, float)))",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the minimum value in a given heterogeneous list."
-}

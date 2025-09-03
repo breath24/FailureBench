@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/731",
-  "llm_response": "import math\n\ndef lateralsurface_cone(r, h):\n    slant_height = math.sqrt(r**2 + h**2)\n    lateral_surface_area = math.pi * r * slant_height\n    return lateral_surface_area",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the lateral surface area of a cone."
-}

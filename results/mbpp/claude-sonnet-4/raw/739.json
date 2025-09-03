@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/739",
-  "llm_response": "import math\n\ndef find_Index(n):\n    min_n_digit = 10**(n-1)\n    k = math.ceil((-1 + math.sqrt(1 + 8*min_n_digit)) / 2)\n    while k*(k+1)//2 < min_n_digit:\n        k += 1\n    return k",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the index of smallest triangular number with n digits."
-}

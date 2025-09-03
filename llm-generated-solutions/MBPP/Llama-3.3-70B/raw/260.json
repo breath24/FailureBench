@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/260",
+  "task_description": "Write a function to find the nth newman–shanks–williams prime number.",
+  "llm_response": "import sympy\n\ndef newman_prime(n):\n    count = 0\n    num = 2\n    while True:\n        if sympy.isprime(num) and is_newman_shanks_williams(num):\n            count += 1\n            if count == n:\n                return num\n        num += 1\n\ndef is_newman_shanks_williams(n):\n    for p in range(2, int(n**0.5) + 1):\n        if n % p == 0:\n            return False\n    return True",
+  "model": "llama-3.3-70b"
+}

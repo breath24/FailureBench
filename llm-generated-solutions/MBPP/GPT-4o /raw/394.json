@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/394",
+  "task_description": "Write a function to check if given tuple is distinct or not.",
+  "llm_response": "def check_distinct(t):\n    return len(t) == len(set(t))",
+  "model": "gpt-4o"
+}

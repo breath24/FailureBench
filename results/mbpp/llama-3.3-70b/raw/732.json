@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/732",
-  "llm_response": "import re\ndef replace_specialchar(s):\n    return re.sub('[ ,.]', ':', s)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to replace all occurrences of spaces, commas, or dots with a colon."
-}

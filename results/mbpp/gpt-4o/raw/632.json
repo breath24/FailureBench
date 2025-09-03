@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/632",
-  "llm_response": "from typing import List\n\ndef move_zero(nums: List[int]) -> List[int]:\n    non_zeroes = [x for x in nums if x != 0]\n    zeroes = [0] * (len(nums) - len(non_zeroes))\n    return non_zeroes + zeroes",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to move all zeroes to the end of the given list."
-}

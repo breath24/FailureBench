@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/450",
-  "llm_response": "def extract_string(strings, size):\n    return [s for s in strings if len(s) == size]",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to extract specified size of strings from a give list of string values."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/767",
-  "llm_response": "def get_pairs_count(numbers, target_sum):\n    count = 0\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if numbers[i] + numbers[j] == target_sum:\n                count += 1\n    return count",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to count the number of pairs whose sum is equal to \u2018sum\u2019."
-}

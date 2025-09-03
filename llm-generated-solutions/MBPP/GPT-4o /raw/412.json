@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/412",
+  "task_description": "Write a python function to remove odd numbers from a given list.",
+  "llm_response": "def remove_odd(lst):\n    return [x for x in lst if x % 2 == 0]",
+  "model": "gpt-4o"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/435",
-  "llm_response": "def last_Digit(n):\n    return abs(n) % 10",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the last digit of a given number."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/446",
+  "task_description": "Write a python function to count the occurence of all elements of list in a tuple.",
+  "llm_response": "def count_Occurrence(tup, lst):\n    count = 0\n    for element in tup:\n        if element in lst:\n            count += 1\n    return count",
+  "model": "claude-sonnet-4"
+}

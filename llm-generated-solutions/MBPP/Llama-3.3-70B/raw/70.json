@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/70",
+  "task_description": "Write a function to find whether all the given tuples have equal length or not.",
+  "llm_response": "import itertools\n\ndef get_equal(tuples):\n    return len(set(map(len, tuples))) == 1",
+  "model": "llama-3.3-70b"
+}

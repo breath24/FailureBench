@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/20",
+  "task_description": "from typing import List, Tuple\n\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    \"\"\" From a supplied list of numbers (of length at least two) select and return two that are the closest to each\n    other and return them in order (smaller number, larger number).\n    >>> find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.2])\n    (2.0, 2.2)\n    >>> find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0])\n    (2.0, 2.0)\n    \"\"\"\n",
+  "llm_response": "from typing import List, Tuple\nimport math\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    min_diff = math.inf\n    result = (0.0, 0.0)\n    \n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            diff = abs(numbers[i] - numbers[j])\n            if diff < min_diff:\n                min_diff = diff\n                if numbers[i] <= numbers[j]:\n                    result = (numbers[i], numbers[j])\n                else:\n                    result = (numbers[j], numbers[i])\n    \n    return result",
+  "model": "qwen3-coder"
+}

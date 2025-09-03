@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/300",
-  "llm_response": "import math\n\ndef count_binary_seq(n):\n    def binomial(n, k):\n        if k > n or k < 0:\n            return 0\n        if k == 0 or k == n:\n            return 1\n        return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))\n    \n    total = 0\n    for i in range(n + 1):\n        total += binomial(n, i) * binomial(n, i)\n    \n    return float(total)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the count of all binary sequences of length 2n such that sum of first n bits is same as sum of last n bits."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/259",
+  "task_description": "Write a function to maximize the given two tuples.",
+  "llm_response": "def maximize_elements(tuple1, tuple2):\n    return tuple(tuple(max(a, b) for a, b in zip(t1, t2)) for t1, t2 in zip(tuple1, tuple2))",
+  "model": "deepseek-chat-v3-0324"
+}

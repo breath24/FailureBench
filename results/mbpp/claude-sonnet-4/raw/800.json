@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/800",
-  "llm_response": "def remove_all_spaces(text):\n    return text.replace(' ', '')",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to remove all whitespaces from a string."
-}

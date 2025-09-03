@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/743",
-  "llm_response": "def rotate_right(lst, n):\n    if not lst or n == 0:\n        return lst\n    n = n % len(lst)\n    return lst[-n:] + lst[:-n]",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to rotate a given list by specified number of items to the right direction."
-}

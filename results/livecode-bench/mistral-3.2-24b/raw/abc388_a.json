@@ -1,6 +1,0 @@
-{
-  "task_id": "abc388_a",
-  "llm_response": "def candidate_func(s):\n    return s[0] + \"UPC\"",
-  "model": "mistral-3.2-24b",
-  "task_description": "You are given a string S. Here, the first character of S is an uppercase English letter, and the second and subsequent characters are lowercase English letters.\nPrint the string formed by concatenating the first character of S and UPC in this order.\n\nInput\n\nThe input is given from Standard Input in the following format:\nS\n\nOutput\n\nPrint the string formed by concatenating the first character of S and UPC in this order.\n\nConstraints\n\n\n- S is a string of length between 1 and 100, inclusive.\n- The first character of S is an uppercase English letter.\n- The second and subsequent characters of S are lowercase English letters.\n\nSample Input 1\n\nKyoto\n\nSample Output 1\n\nKUPC\r\n\nThe first character of Kyoto is K, so concatenate K and UPC, and print KUPC.\n\nSample Input 2\n\nTohoku\n\nSample Output 2\n\nTUPC"
-}

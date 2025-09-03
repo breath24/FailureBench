@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/75",
-  "llm_response": "def find_tuples(tuples_list, k):\n    return [t for t in tuples_list if all(x % k == 0 for x in t)]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find tuples which have all elements divisible by k from the given list of tuples."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/463",
-  "llm_response": "import sys\n\ndef max_subarray_product(arr):\n    max_product = -sys.maxsize\n    min_product = 1\n    max_temp = 1\n    \n    for num in arr:\n        if num == 0:\n            max_temp = 1\n            min_product = 1\n            continue\n        \n        temp = max_temp * num\n        max_temp = max(num, temp, min_product * num)\n        min_product = min(num, temp, min_product * num)\n        \n        max_product = max(max_product, max_temp)\n    \n    return max_product\n\nassert max_subarray_product([1, -2, -3, 0, 7, -8, -2]) == 112",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the maximum product subarray of the given array."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/145",
-  "llm_response": "def max_Abs_Diff(arr):\n    if len(arr) == 0:\n        return 0\n    min_val = arr[0]\n    max_val = arr[0]\n    for num in arr:\n        if num < min_val:\n            min_val = num\n        if num > max_val:\n            max_val = num\n    return max_val - min_val",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the maximum difference between any two elements in a given array."
-}

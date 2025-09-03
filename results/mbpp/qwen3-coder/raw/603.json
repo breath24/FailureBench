@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/603",
-  "llm_response": "def get_ludic(n):\n    if n < 1:\n        return []\n    \n    # Start with list of numbers from 1 to n\n    ludic = list(range(1, n + 1))\n    \n    # Index of the current ludic number being used for sieving\n    i = 1\n    \n    # Continue until we've processed all relevant ludic numbers\n    while i < len(ludic):\n        # Current ludic number (step size for removal)\n        step = ludic[i]\n        \n        # Remove every 'step'th number starting from index i+1\n        # We work backwards to avoid index shifting issues\n        for j in range(len(ludic) - 1, i, -1):\n            if (j - i) % step == 0:\n                ludic.pop(j)\n        \n        i += 1\n    \n    return ludic",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to get a lucid number smaller than or equal to n."
-}

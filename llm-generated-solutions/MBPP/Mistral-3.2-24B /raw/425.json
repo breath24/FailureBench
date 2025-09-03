@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/425",
+  "task_description": "Write a function to count the number of sublists containing a particular element.",
+  "llm_response": "def count_element_in_list(lst, element):\n    return sum(1 for sublist in lst if element in sublist)",
+  "model": "mistral-3.2-24b"
+}

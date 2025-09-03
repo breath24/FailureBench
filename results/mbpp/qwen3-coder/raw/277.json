@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/277",
-  "llm_response": "def dict_filter(dictionary, n):\n    return {key: value for key, value in dictionary.items() if value >= n}",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to filter a dictionary based on values."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/280",
+  "task_description": "Write a function to search an element in the given array by using sequential search.",
+  "llm_response": "def sequential_search(arr, element):\n    for i in range(len(arr)):\n        if arr[i] == element:\n            return (True, i)\n    return (False, -1)",
+  "model": "qwen3-coder"
+}

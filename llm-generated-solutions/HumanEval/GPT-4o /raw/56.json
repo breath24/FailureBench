@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/56",
+  "task_description": "\n\ndef correct_bracketing(brackets: str):\n    \"\"\" brackets is a string of \"<\" and \">\".\n    return True if every opening bracket has a corresponding closing bracket.\n\n    >>> correct_bracketing(\"<\")\n    False\n    >>> correct_bracketing(\"<>\")\n    True\n    >>> correct_bracketing(\"<<><>>\")\n    True\n    >>> correct_bracketing(\"><<>\")\n    False\n    \"\"\"\n",
+  "llm_response": "import collections\n\ndef correct_bracketing(brackets: str):\n    counter = collections.Counter(brackets)\n    return counter['<'] == counter['>'] and brackets.find('>') >= brackets.find('<')",
+  "model": "gpt-4o"
+}

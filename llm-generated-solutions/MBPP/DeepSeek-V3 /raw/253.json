@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/253",
+  "task_description": "Write a python function to count integers from a given list.",
+  "llm_response": "import math\n\ndef count_integer(lst):\n    count = 0\n    for item in lst:\n        if isinstance(item, int) and not isinstance(item, bool):\n            count += 1\n    return count",
+  "model": "deepseek-chat-v3-0324"
+}

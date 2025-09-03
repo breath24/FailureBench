@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/100",
+  "task_description": "Write a function to find the next smallest palindrome of a specified number.",
+  "llm_response": "import math\n\ndef next_smallest_palindrome(n):\n    def is_palindrome(x):\n        return str(x) == str(x)[::-1]\n    \n    def create_palindrome(x):\n        s = str(x)\n        l = len(s)\n        if l == 1:\n            return x + 1\n        half = s[:(l + 1) // 2]\n        if l % 2 == 0:\n            return int(half + half[::-1])\n        else:\n            return int(half + half[-2::-1])\n    \n    def increment_half(x):\n        s = str(x)\n        l = len(s)\n        half = s[:(l + 1) // 2]\n        incremented_half = str(int(half) + 1)\n        if len(incremented_half) > len(half):\n            return int(incremented_half + incremented_half[-2::-1])\n        else:\n            if l % 2 == 0:\n                return int(incremented_half + incremented_half[::-1])\n            else:\n                return int(incremented_half + incremented_half[-2::-1])\n    \n    if n < 9:\n        return n + 1\n    if is_palindrome(n):\n        return increment_half(n)\n    else:\n        candidate = create_palindrome(n)\n        if candidate > n:\n            return candidate\n        else:\n            return increment_half(n)",
+  "model": "gpt-4o"
+}

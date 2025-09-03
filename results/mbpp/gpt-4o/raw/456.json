@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/456",
-  "llm_response": "import typing\n\ndef reverse_string_list(strings: typing.List[str]) -> typing.List[str]:\n    return [s[::-1] for s in strings]",
-  "model": "gpt-4o",
-  "task_description": "Write a function to reverse strings in a given list of string values."
-}

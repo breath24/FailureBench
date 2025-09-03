@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/462",
+  "task_description": "Write a function to find all possible combinations of the elements of a given list.",
+  "llm_response": "from itertools import combinations\n\ndef combinations_list(lst):\n    all_combinations = []\n    for r in range(len(lst) + 1):\n        for combo in combinations(lst, r):\n            all_combinations.append(list(combo))\n    return all_combinations",
+  "model": "deepseek-chat-v3-0324"
+}

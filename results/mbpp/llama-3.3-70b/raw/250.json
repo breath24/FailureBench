@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/250",
-  "llm_response": "import collections\n\ndef count_X(tup, elem):\n    return tup.count(elem)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to count the occcurences of an element in a tuple."
-}

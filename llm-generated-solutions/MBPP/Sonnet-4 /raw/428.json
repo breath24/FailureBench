@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/428",
+  "task_description": "Write a function to sort the given array by using shell sort.",
+  "llm_response": "def shell_sort(arr):\n    n = len(arr)\n    gap = n // 2\n    \n    while gap > 0:\n        for i in range(gap, n):\n            temp = arr[i]\n            j = i\n            while j >= gap and arr[j - gap] > temp:\n                arr[j] = arr[j - gap]\n                j -= gap\n            arr[j] = temp\n        gap //= 2\n    \n    return arr",
+  "model": "claude-sonnet-4"
+}

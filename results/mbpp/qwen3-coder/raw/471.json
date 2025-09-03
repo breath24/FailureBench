@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/471",
-  "llm_response": "def find_remainder(arr, n):\n    product = 1\n    for num in arr:\n        product = (product * num) % n\n    return product",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find remainder of array multiplication divided by n."
-}

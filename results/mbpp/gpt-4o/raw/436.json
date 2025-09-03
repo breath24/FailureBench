@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/436",
-  "llm_response": "def neg_nos(lst):\n    return [x for x in lst if x < 0]",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to print negative numbers in a list."
-}

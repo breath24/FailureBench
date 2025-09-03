@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/305",
-  "llm_response": "def start_withp(words):\n    result = []\n    for word in words:\n        for w in word.split():\n            if w.startswith('P'):\n                result.append(w)\n            if len(result) == 2:\n                return tuple(result)\n    return tuple(result)",
-  "model": "gpt-4o",
-  "task_description": "Write a function to match two words from a list of words starting with letter 'p'."
-}

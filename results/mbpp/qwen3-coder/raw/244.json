@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/244",
-  "llm_response": "import math\n\ndef next_Perfect_Square(n):\n    sqrt_n = math.isqrt(n)\n    next_sqrt = sqrt_n + 1\n    return next_sqrt * next_sqrt",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the next perfect square greater than a given number."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/123",
-  "llm_response": "def sum_of_divisors(n):\n    if n <= 1:\n        return 0\n    divisors_sum = 1\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            divisors_sum += i\n            if i != n // i:\n                divisors_sum += n // i\n    return divisors_sum\n\ndef amicable_numbers_sum(limit):\n    amicable_sum = 0\n    for i in range(1, limit + 1):\n        sum_i = sum_of_divisors(i)\n        if sum_i != i and sum_of_divisors(sum_i) == i:\n            amicable_sum += i\n    return amicable_sum",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to sum all amicable numbers from 1 to a specified number."
-}

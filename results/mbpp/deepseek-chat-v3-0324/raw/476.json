@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/476",
-  "llm_response": "import numpy as np\n\ndef big_sum(arr):\n    return np.max(arr) + np.min(arr)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the sum of the largest and smallest value in a given array."
-}

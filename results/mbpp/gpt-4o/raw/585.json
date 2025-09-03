@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/585",
-  "llm_response": "from typing import List, Dict\n\ndef expensive_items(items: List[Dict[str, float]], n: int) -> List[Dict[str, float]]:\n    return sorted(items, key=lambda x: x['price'], reverse=True)[:n]",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the n - expensive price items from a given dataset using heap queue algorithm."
-}

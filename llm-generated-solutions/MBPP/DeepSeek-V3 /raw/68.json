@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/68",
+  "task_description": "Write a python function to check whether the given array is monotonic or not.",
+  "llm_response": "def is_Monotonic(arr):\n    increasing = decreasing = True\n    for i in range(len(arr) - 1):\n        if arr[i] > arr[i+1]:\n            increasing = False\n        if arr[i] < arr[i+1]:\n            decreasing = False\n    return increasing or decreasing",
+  "model": "deepseek-chat-v3-0324"
+}

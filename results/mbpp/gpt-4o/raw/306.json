@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/306",
-  "llm_response": "from typing import List\n\ndef max_sum_increasing_subseq(arr: List[int], n: int, i: int, k: int) -> int:\n    if k <= i or i >= n or k >= n:\n        return 0\n    dp = [0] * n\n    for j in range(i + 1):\n        dp[j] = arr[j]\n    for j in range(1, i + 1):\n        for l in range(j):\n            if arr[j] > arr[l]:\n                dp[j] = max(dp[j], dp[l] + arr[j])\n    max_sum = 0\n    for j in range(i + 1):\n        if arr[j] < arr[k]:\n            max_sum = max(max_sum, dp[j] + arr[k])\n    return max_sum\n\nassert max_sum_increasing_subseq([1, 101, 2, 3, 100, 4, 5], 7, 4, 6) == 11",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the maximum sum of increasing subsequence from prefix till ith index and also including a given kth element which is after i, i.e., k > i ."
-}

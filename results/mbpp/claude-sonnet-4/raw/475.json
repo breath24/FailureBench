@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/475",
-  "llm_response": "def sort_counter(dict1):\n    return sorted(dict1.items(), key=lambda x: x[1], reverse=True)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to sort counter by value."
-}

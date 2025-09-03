@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/129",
+  "task_description": "Write a function to calculate magic square.",
+  "llm_response": "from typing import List\n\ndef magic_square_test(matrix: List[List[int]]) -> bool:\n    n = len(matrix)\n    if any(len(row) != n for row in matrix):\n        return False\n    magic_sum = sum(matrix[0])\n    for row in matrix:\n        if sum(row) != magic_sum:\n            return False\n    for col in range(n):\n        if sum(matrix[row][col] for row in range(n)) != magic_sum:\n            return False\n    if sum(matrix[i][i] for i in range(n)) != magic_sum:\n        return False\n    if sum(matrix[i][n - 1 - i] for i in range(n)) != magic_sum:\n        return False\n    return True",
+  "model": "gpt-4o"
+}

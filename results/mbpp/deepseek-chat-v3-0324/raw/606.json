@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/606",
-  "llm_response": "import math\n\ndef radian_degree(degrees):\n    return math.radians(degrees)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to convert degrees to radians."
-}

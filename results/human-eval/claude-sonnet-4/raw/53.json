@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/53",
-  "llm_response": "def add(x: int, y: int):\n    return x + y",
-  "model": "claude-sonnet-4",
-  "task_description": "\n\ndef add(x: int, y: int):\n    \"\"\"Add two numbers x and y\n    >>> add(2, 3)\n    5\n    >>> add(5, 7)\n    12\n    \"\"\"\n"
-}

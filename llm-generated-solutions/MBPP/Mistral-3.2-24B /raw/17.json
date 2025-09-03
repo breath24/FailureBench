@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/17",
+  "task_description": "Write a function to find the perimeter of a square.",
+  "llm_response": "def square_perimeter(side_length):\n    return 4 * side_length",
+  "model": "mistral-3.2-24b"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/454",
-  "llm_response": "import re\n\ndef text_match_wordz(text):\n    pattern = r'\\b\\w*z\\w*\\b'\n    return bool(re.search(pattern, text))",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function that matches a word containing 'z'."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/808",
-  "llm_response": "def check_K(tuple_data, k):\n    return k in tuple_data",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to check if the given tuples contain the k or not."
-}

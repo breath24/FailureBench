@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/580",
+  "task_description": "Write a function to extract the even elements in the nested mixed tuple.",
+  "llm_response": "def extract_even(t):\n    if not isinstance(t, tuple):\n        return t\n    result = []\n    for element in t:\n        if isinstance(element, tuple):\n            processed = extract_even(element)\n            if processed:\n                result.append(processed)\n        elif isinstance(element, int) and element % 2 == 0:\n            result.append(element)\n    return tuple(result)",
+  "model": "deepseek-chat-v3-0324"
+}

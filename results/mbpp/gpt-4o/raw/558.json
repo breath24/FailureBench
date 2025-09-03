@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/558",
-  "llm_response": "def digit_distance_nums(num1, num2):\n    return sum(abs(int(a) - int(b)) for a, b in zip(str(num1).zfill(max(len(str(num1)), len(str(num2)))), str(num2).zfill(max(len(str(num1)), len(str(num2))))))",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to find the digit distance between two integers."
-}

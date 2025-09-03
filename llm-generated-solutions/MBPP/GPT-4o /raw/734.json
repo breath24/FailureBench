@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/734",
+  "task_description": "Write a python function to find sum of products of all possible subarrays.",
+  "llm_response": "from itertools import combinations\nimport numpy as np\n\ndef sum_Of_Subarray_Prod(lst):\n    total_sum = 0\n    for r in range(1, len(lst) + 1):\n        for sublist in combinations(lst, r):\n            total_sum += np.prod(sublist)\n    return total_sum",
+  "model": "gpt-4o"
+}

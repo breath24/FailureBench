@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/99",
-  "llm_response": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return '0'\n    \n    binary = ''\n    while decimal_num > 0:\n        binary = str(decimal_num % 2) + binary\n        decimal_num = decimal_num // 2\n    \n    return binary",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to convert the given decimal number to its binary equivalent."
-}

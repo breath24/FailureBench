@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/74",
-  "llm_response": "def is_samepatterns(pattern1, pattern2):\n    if len(pattern1) != len(pattern2):\n        return False\n    pattern_map = {}\n    value_map = {}\n    for p1, p2 in zip(pattern1, pattern2):\n        if p1 in pattern_map:\n            if pattern_map[p1] != p2:\n                return False\n        else:\n            pattern_map[p1] = p2\n        if p2 in value_map:\n            if value_map[p2] != p1:\n                return False\n        else:\n            value_map[p2] = p1\n    return True",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to check whether it follows the sequence given in the patterns array."
-}

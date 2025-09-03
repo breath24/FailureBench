@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/74",
-  "llm_response": "from typing import List\n\ndef is_samepatterns(strings: List[str], patterns: List[str]) -> bool:\n    if len(strings) != len(patterns):\n        return False\n    str_to_pat = {}\n    pat_to_str = {}\n    for s, p in zip(strings, patterns):\n        if s in str_to_pat and str_to_pat[s] != p:\n            return False\n        if p in pat_to_str and pat_to_str[p] != s:\n            return False\n        str_to_pat[s] = p\n        pat_to_str[p] = s\n    return True",
-  "model": "gpt-4o",
-  "task_description": "Write a function to check whether it follows the sequence given in the patterns array."
-}

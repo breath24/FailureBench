@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/435",
-  "llm_response": "def last_Digit(n):\n    return n % 10",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the last digit of a given number."
-}

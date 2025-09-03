@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/18",
+  "task_description": "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n",
+  "llm_response": "def how_many_times(string: str, substring: str) -> int:\n    count = 0\n    n = len(substring)\n    if n == 0:\n        return 0\n    for i in range(len(string) - n + 1):\n        if string[i:i+n] == substring:\n            count += 1\n    return count",
+  "model": "deepseek-chat-v3-0324"
+}

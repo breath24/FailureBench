@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/798",
+  "task_description": "Write a python function to find the sum of an array.",
+  "llm_response": "import numpy as np\n\ndef _sum(arr):\n    return np.sum(arr)",
+  "model": "llama-3.3-70b"
+}

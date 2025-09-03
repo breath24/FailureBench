@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/440",
-  "llm_response": "def find_adverb_position(sentence):\n    import re\n    adverbs = ['clearly', 'quickly', 'slowly', 'carefully', 'happily', 'sadly', 'loudly', 'quietly', 'easily', 'hardly']\n    sentence = sentence.lower()\n    for adverb in adverbs:\n        match = re.search(r'\\b' + re.escape(adverb) + r'\\b', sentence)\n        if match:\n            return (match.start(), match.end(), adverb)\n    return None",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find all adverbs and their positions in a given sentence."
-}

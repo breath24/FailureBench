@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/9",
-  "llm_response": "from itertools import cycle\n\ndef find_Rotations(s):\n    n = len(s)\n    for i in range(1, n + 1):\n        if n % i == 0:\n            rotated = s[i:] + s[:i]\n            if rotated == s:\n                return n // i\n    return 1",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the minimum number of rotations required to get the same string."
-}

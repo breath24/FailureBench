@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/20",
+  "task_description": "Write a function to check if the given number is woodball or not.",
+  "llm_response": "def is_woodall(n):\n    if n < 1:\n        return False\n    k = 1\n    while (2 ** k - 1) <= n:\n        if (2 ** k - 1) * k == n:\n            return True\n        k += 1\n    return False",
+  "model": "mistral-3.2-24b"
+}

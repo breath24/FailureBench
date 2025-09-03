@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/604",
+  "task_description": "Write a function to reverse words in a given string.",
+  "llm_response": "def reverse_words(s):\n    return ' '.join(s.split()[::-1])",
+  "model": "mistral-3.2-24b"
+}

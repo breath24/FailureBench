@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/803",
-  "llm_response": "import math\n\ndef is_perfect_square(n):\n    if n < 0:\n        return False\n    root = math.isqrt(n)\n    return root * root == n",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to check whether the given number is a perfect square or not."
-}

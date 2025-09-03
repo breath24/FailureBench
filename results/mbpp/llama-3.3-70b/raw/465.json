@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/465",
-  "llm_response": "import copy\n\ndef drop_empty(dictionary):\n    new_dict = copy.deepcopy(dictionary)\n    for key, value in list(new_dict.items()):\n        if value is None or value == '':\n            del new_dict[key]\n    return new_dict",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to drop empty items from a given dictionary."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/109",
-  "llm_response": "from typing import List\n\ndef odd_Equivalent(s: str, rotations: int) -> int:\n    n = len(s)\n    odd_count = 0\n    for i in range(n):\n        rotated_char = s[(i - rotations) % n]\n        if int(rotated_char) % 2 != 0:\n            odd_count += 1\n    return odd_count",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the count of rotations of a binary string with odd value."
-}

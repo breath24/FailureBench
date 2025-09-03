@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/602",
-  "llm_response": "def first_repeated_char(s):\n    seen = set()\n    for char in s:\n        if char in seen:\n            return char\n        seen.add(char)\n    return None",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the first repeated character in a given string."
-}

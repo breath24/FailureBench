@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/59",
-  "llm_response": "import math\n\ndef largest_prime_factor(n: int):\n    def is_prime(num):\n        if num <= 1:\n            return False\n        if num <= 3:\n            return True\n        if num % 2 == 0 or num % 3 == 0:\n            return False\n        i = 5\n        while i * i <= num:\n            if num % i == 0 or num % (i + 2) == 0:\n                return False\n            i += 6\n        return True\n\n    largest_factor = None\n    while n % 2 == 0:\n        largest_factor = 2\n        n //= 2\n    for i in range(3, int(math.sqrt(n)) + 1, 2):\n        while n % i == 0:\n            largest_factor = i\n            n //= i\n    if n > 2:\n        largest_factor = n\n    return largest_factor",
-  "model": "gpt-4o",
-  "task_description": "\n\ndef largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\n    >>> largest_prime_factor(13195)\n    29\n    >>> largest_prime_factor(2048)\n    2\n    \"\"\"\n"
-}

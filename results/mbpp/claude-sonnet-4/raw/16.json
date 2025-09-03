@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/16",
-  "llm_response": "import re\n\ndef text_lowercase_underscore(text):\n    pattern = r'^[a-z]+(_[a-z]+)*$'\n    return bool(re.match(pattern, text))",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find sequences of lowercase letters joined with an underscore."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "abc391_a",
-  "llm_response": "import sys\n\ndef candidate_func(input_str):\n    directions = {\n        'N': 'S',\n        'S': 'N',\n        'E': 'W',\n        'W': 'E',\n        'NE': 'SW',\n        'SW': 'NE',\n        'NW': 'SE',\n        'SE': 'NW'\n    }\n    D = input_str.strip()\n    return directions[D]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "You are given a string D representing one of the eight directions (north, east, west, south, northeast, northwest, southeast, southwest). The correspondence between the directions and their representing strings is as follows.\n\n- North: N\n- East: E\n- West: W\n- South: S\n- Northeast: NE\n- Northwest: NW\n- Southeast: SE\n- Southwest: SW\n\nPrint the string representing the direction opposite to the direction denoted by D.\n\nInput\n\nThe input is given from Standard Input in the following format:\nD\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- D is one of N, E, W, S, NE, NW, SE, SW.\n\nSample Input 1\n\nN\n\nSample Output 1\n\nS\r\n\nPrint S, which represents south, the direction opposite to north.\n\nSample Input 2\n\nSE\n\nSample Output 2\n\nNW\r\n\nPrint NW, which represents northwest, the direction opposite to southeast."
-}

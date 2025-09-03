@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/11",
+  "task_description": "Write a python function to remove first and last occurrence of a given character from the string.",
+  "llm_response": "def remove_Occ(s, char):\n    if not s or len(s) < 2:\n        return s\n    s_list = list(s)\n    first_index = s_list.index(char)\n    last_index = s_list.rindex(char)\n    if first_index == last_index:\n        return s\n    s_list.pop(last_index)\n    s_list.pop(first_index)\n    return ''.join(s_list)",
+  "model": "mistral-3.2-24b"
+}

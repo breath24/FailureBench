@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/58",
-  "llm_response": "def opposite_Signs(x, y):\n    return (x > 0 and y < 0) or (x < 0 and y > 0)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to check whether the given two integers have opposite sign or not."
-}

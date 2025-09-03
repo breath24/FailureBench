@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/127",
-  "llm_response": "def multiply_int(a, b):\n    return a * b",
-  "model": "gpt-4o",
-  "task_description": "Write a function to multiply two integers without using the * operator in python."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/240",
+  "task_description": "Write a function to replace the last element of the list with another list.",
+  "llm_response": "import copy\n\ndef replace_list(list1, list2):\n    list1 = list1[:-1]\n    list1.extend(list2)\n    return list1",
+  "model": "llama-3.3-70b"
+}

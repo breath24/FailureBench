@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/635",
+  "task_description": "Write a function to push all values into a heap and then pop off the smallest values one at a time.",
+  "llm_response": "def heap_sort(arr):\n    def heapify(arr, n, i):\n        largest = i\n        l = 2 * i + 1\n        r = 2 * i + 2\n\n        if l < n and arr[i] < arr[l]:\n            largest = l\n\n        if r < n and arr[largest] < arr[r]:\n            largest = r\n\n        if largest != i:\n            arr[i], arr[largest] = arr[largest], arr[i]\n            heapify(arr, n, largest)\n\n    n = len(arr)\n\n    for i in range(n // 2 - 1, -1, -1):\n        heapify(arr, n, i)\n\n    for i in range(n - 1, 0, -1):\n        arr[i], arr[0] = arr[0], arr[i]\n        heapify(arr, i, 0)\n\n    return arr",
+  "model": "mistral-3.2-24b"
+}

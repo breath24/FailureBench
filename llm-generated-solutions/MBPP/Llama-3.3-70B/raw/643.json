@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/643",
+  "task_description": "Write a function that matches a word containing 'z', not at the start or end of the word.",
+  "llm_response": "import re\n\ndef text_match_wordz_middle(text):\n    words = re.findall(r'\\b\\w+\\b', text)\n    for word in words:\n        if len(word) > 1 and 'z' in word[1:-1]:\n            return True\n    return False",
+  "model": "llama-3.3-70b"
+}

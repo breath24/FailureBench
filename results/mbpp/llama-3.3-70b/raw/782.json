@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/782",
-  "llm_response": "import itertools\n\ndef odd_length_sum(arr):\n    total_sum = 0\n    for r in range(1, len(arr) + 1):\n        for sub in itertools.combinations(arr, r):\n            if len(sub) % 2 != 0:\n                total_sum += sum(sub)\n    return total_sum",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find the sum of all odd length subarrays."
-}

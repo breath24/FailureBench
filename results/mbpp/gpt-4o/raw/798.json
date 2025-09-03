@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/798",
-  "llm_response": "def _sum(arr):\n    return sum(arr)",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to find the sum of an array."
-}

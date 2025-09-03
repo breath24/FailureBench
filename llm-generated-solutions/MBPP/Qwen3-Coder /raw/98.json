@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/98",
+  "task_description": "Write a function to multiply all the numbers in a list and divide with the length of the list.",
+  "llm_response": "import math\ndef multiply_num(numbers):\n    product = 1\n    for num in numbers:\n        product *= num\n    return product / len(numbers)",
+  "model": "qwen3-coder"
+}

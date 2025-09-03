@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/460",
+  "task_description": "Write a python function to get the first element of each sublist.",
+  "llm_response": "def Extract(lst):\n    return [sublist[0] for sublist in lst]",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/311",
+  "task_description": "Write a python function to set the left most unset bit.",
+  "llm_response": "import math\n\ndef set_left_most_unset_bit(n):\n    left_most_unset_bit_position = math.floor(math.log2(~n & -~n))\n    return n | (1 << left_most_unset_bit_position)",
+  "model": "llama-3.3-70b"
+}

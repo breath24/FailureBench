@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/404",
-  "llm_response": "def minimum(a, b):\n    return a if a < b else b",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the minimum of two numbers."
-}

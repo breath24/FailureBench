@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/620",
+  "task_description": "Write a function to find the largest subset where each pair is divisible.",
+  "llm_response": "from math import gcd\nfrom functools import reduce\n\ndef largest_subset(numbers):\n    if not numbers:\n        return 0\n    numbers.sort()\n    dp = [1] * len(numbers)\n    for i in range(1, len(numbers)):\n        for j in range(i):\n            if numbers[i] % numbers[j] == 0:\n                if dp[i] < dp[j] + 1:\n                    dp[i] = dp[j] + 1\n    return max(dp)",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/33",
+  "task_description": "\n\ndef sort_third(l: list):\n    \"\"\"This function takes a list l and returns a list l' such that\n    l' is identical to l in the indicies that are not divisible by three, while its values at the indicies that are divisible by three are equal\n    to the values of the corresponding indicies of l, but sorted.\n    >>> sort_third([1, 2, 3])\n    [1, 2, 3]\n    >>> sort_third([5, 6, 3, 4, 8, 9, 2])\n    [2, 6, 3, 4, 8, 9, 5]\n    \"\"\"\n",
+  "llm_response": "def sort_third(l: list):\n    if not l:\n        return l\n    \n    third_elements = []\n    for i in range(0, len(l), 3):\n        third_elements.append(l[i])\n    \n    third_elements.sort()\n    \n    result = l.copy()\n    third_index = 0\n    for i in range(0, len(l), 3):\n        result[i] = third_elements[third_index]\n        third_index += 1\n    \n    return result",
+  "model": "claude-sonnet-4"
+}

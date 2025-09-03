@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/65",
-  "llm_response": "def recursive_list_sum(lst):\n    total = 0\n    for element in lst:\n        if isinstance(element, list):\n            total += recursive_list_sum(element)\n        else:\n            total += element\n    return total",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function of recursion list sum."
-}

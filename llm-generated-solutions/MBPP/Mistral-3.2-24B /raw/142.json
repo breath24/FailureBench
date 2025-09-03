@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/142",
+  "task_description": "Write a function to count the same pair in three given lists.",
+  "llm_response": "def count_samepair(list1, list2, list3):\n    count = 0\n    for a, b, c in zip(list1, list2, list3):\n        if a == b == c:\n            count += 1\n    return count",
+  "model": "mistral-3.2-24b"
+}

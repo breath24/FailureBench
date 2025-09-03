@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/740",
-  "llm_response": "def tuple_to_dict(tup):\n    result = {}\n    for i in range(0, len(tup), 2):\n        if i + 1 < len(tup):\n            result[tup[i]] = tup[i + 1]\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/61",
+  "task_description": "Write a python function to count number of substrings with the sum of digits equal to their length.",
+  "llm_response": "import itertools\n\ndef count_Substrings(s):\n    count = 0\n    for length in range(1, len(s) + 1):\n        for i in range(len(s) - length + 1):\n            substring = s[i:i + length]\n            if sum(int(digit) for digit in substring) == length:\n                count += 1\n    return count",
+  "model": "llama-3.3-70b"
+}

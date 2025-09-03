@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/739",
-  "llm_response": "import math\n\ndef find_Index(n):\n    digits = 0\n    index = 1\n    while True:\n        triangular = index * (index + 1) // 2\n        digits = len(str(triangular))\n        if digits == n:\n            return index\n        elif digits > n:\n            return index\n        index += 1",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the index of smallest triangular number with n digits."
-}

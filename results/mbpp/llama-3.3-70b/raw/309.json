@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/309",
-  "llm_response": "def maximum(a, b):\n    if a >= b:\n        return a\n    else:\n        return b",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find the maximum of two numbers."
-}

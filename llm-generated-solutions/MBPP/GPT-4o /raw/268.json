@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/268",
+  "task_description": "Write a function to find the n'th star number.",
+  "llm_response": "def find_star_num(n):\n    return 6 * n * (n - 1) + 1",
+  "model": "gpt-4o"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/260",
-  "llm_response": "import math\n\ndef newman_prime(n):\n    if n == 0:\n        return 1\n    elif n == 1:\n        return 1\n    a, b = 1, 1\n    for _ in range(2, n + 1):\n        c = 2 * b + a\n        a, b = b, c\n    return b",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find the nth newman\u2013shanks\u2013williams prime number."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/230",
+  "task_description": "Write a function to replace blank spaces with any character in a string.",
+  "llm_response": "def replace_blank(input_string, char):\n    return input_string.replace(' ', char)",
+  "model": "mistral-3.2-24b"
+}

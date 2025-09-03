@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/734",
-  "llm_response": "from itertools import chain, combinations\n\ndef sum_Of_Subarray_Prod(lst):\n    def powerset(s):\n        return list(chain.from_iterable(combinations(s, r) for r in range(1, len(s)+1)))\n\n    sublists = powerset(lst)\n    total_sum = 0\n    for sublist in sublists:\n        prod = 1\n        for num in sublist:\n            prod *= num\n        total_sum += prod\n    return total_sum",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find sum of products of all possible subarrays."
-}

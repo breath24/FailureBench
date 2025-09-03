@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/264",
-  "llm_response": "import math\ndef dog_age(human_age):\n    if human_age <= 2:\n        return human_age * 10.5\n    else:\n        return 21 + (human_age - 2) * 4",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to calculate a dog's age in dog's years."
-}

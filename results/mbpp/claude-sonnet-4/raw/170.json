@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/170",
-  "llm_response": "def sum_range_list(lst, start_idx, end_idx):\n    return sum(lst[start_idx:end_idx+1])",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find sum of the numbers in a list between the indices of a specified range."
-}

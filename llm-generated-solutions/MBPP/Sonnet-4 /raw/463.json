@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/463",
+  "task_description": "Write a function to find the maximum product subarray of the given array.",
+  "llm_response": "def max_subarray_product(arr):\n    if not arr:\n        return 0\n    \n    max_prod = arr[0]\n    min_prod = arr[0]\n    result = arr[0]\n    \n    for i in range(1, len(arr)):\n        if arr[i] < 0:\n            max_prod, min_prod = min_prod, max_prod\n        \n        max_prod = max(arr[i], max_prod * arr[i])\n        min_prod = min(arr[i], min_prod * arr[i])\n        \n        result = max(result, max_prod)\n    \n    return result",
+  "model": "claude-sonnet-4"
+}

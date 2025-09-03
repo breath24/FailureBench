@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/577",
-  "llm_response": "def last_Digit_Factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    if n >= 5:\n        return 0\n    \n    factorial = 1\n    for i in range(2, n + 1):\n        factorial *= i\n    \n    return factorial % 10",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the last digit in factorial of a given number."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/108",
-  "llm_response": "from heapq import merge\n\ndef merge_sorted_list(list1, list2, list3):\n    return sorted(merge(list1, list2, list3))",
-  "model": "gpt-4o",
-  "task_description": "Write a function to merge multiple sorted inputs into a single sorted iterator using heap queue algorithm."
-}

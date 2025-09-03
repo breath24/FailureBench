@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/612",
+  "task_description": "Write a python function to merge the first and last elements separately in a list of lists.",
+  "llm_response": "from typing import List\n\ndef merge(lst: List[List]) -> List[List]:\n    return [[sublist[0] for sublist in lst], [sublist[1] for sublist in lst]]",
+  "model": "gpt-4o"
+}

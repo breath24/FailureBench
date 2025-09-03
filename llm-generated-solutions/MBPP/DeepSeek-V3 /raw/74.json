@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/74",
+  "task_description": "Write a function to check whether it follows the sequence given in the patterns array.",
+  "llm_response": "from collections import defaultdict\n\ndef is_samepatterns(colors, patterns):\n    if len(colors) != len(patterns):\n        return False\n    \n    color_to_pattern = {}\n    pattern_to_color = {}\n    \n    for color, pattern in zip(colors, patterns):\n        if color in color_to_pattern:\n            if color_to_pattern[color] != pattern:\n                return False\n        else:\n            color_to_pattern[color] = pattern\n        \n        if pattern in pattern_to_color:\n            if pattern_to_color[pattern] != color:\n                return False\n        else:\n            pattern_to_color[pattern] = color\n    \n    return True",
+  "model": "deepseek-chat-v3-0324"
+}

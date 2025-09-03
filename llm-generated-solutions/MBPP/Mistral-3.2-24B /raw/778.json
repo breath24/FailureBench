@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/778",
+  "task_description": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
+  "llm_response": "def pack_consecutive_duplicates(lst):\n    if not lst:\n        return []\n\n    result = []\n    current = [lst[0]]\n\n    for item in lst[1:]:\n        if item == current[-1]:\n            current.append(item)\n        else:\n            result.append(current)\n            current = [item]\n\n    result.append(current)\n    return result",
+  "model": "mistral-3.2-24b"
+}

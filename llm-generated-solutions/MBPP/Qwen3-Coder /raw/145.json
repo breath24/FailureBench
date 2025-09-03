@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/145",
+  "task_description": "Write a python function to find the maximum difference between any two elements in a given array.",
+  "llm_response": "def max_Abs_Diff(arr):\n    if len(arr) < 2:\n        return 0\n    return max(arr) - min(arr)",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/457",
+  "task_description": "Write a python function to find the sublist having minimum length.",
+  "llm_response": "def Find_Min(sublists):\n    if not sublists:\n        return []\n    min_sublist = sublists[0]\n    for sublist in sublists:\n        if len(sublist) < len(min_sublist):\n            min_sublist = sublist\n    return min_sublist",
+  "model": "deepseek-chat-v3-0324"
+}

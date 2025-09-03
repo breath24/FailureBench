@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/165",
-  "llm_response": "import string\n\ndef count_char_position(s):\n    count = 0\n    s_lower = s.lower()\n    for i, char in enumerate(s_lower):\n        if char in string.ascii_lowercase and ord(char) - ord('a') == i:\n            count += 1\n    return count",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to count characters at same position in a given string (lower and uppercase characters) as in english alphabet."
-}

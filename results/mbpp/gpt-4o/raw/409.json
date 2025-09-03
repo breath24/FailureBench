@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/409",
-  "llm_response": "from functools import reduce\n\ndef min_product_tuple(lst):\n    return min(reduce(lambda x, y: x * y, t) for t in lst)",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the minimum product from the pairs of tuples within a given list."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/309",
+  "task_description": "Write a python function to find the maximum of two numbers.",
+  "llm_response": "def maximum(a, b):\n    return max(a, b)",
+  "model": "qwen3-coder"
+}

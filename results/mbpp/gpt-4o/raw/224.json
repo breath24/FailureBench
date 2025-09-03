@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/224",
-  "llm_response": "def count_Set_Bits(n):\n    return bin(n).count('1')",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to count set bits of a given number."
-}

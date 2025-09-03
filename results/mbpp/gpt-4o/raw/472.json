@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/472",
-  "llm_response": "from typing import List\n\ndef check_Consecutive(lst: List[int]) -> bool:\n    if not lst:\n        return False\n    sorted_lst = sorted(lst)\n    return all(sorted_lst[i] + 1 == sorted_lst[i + 1] for i in range(len(sorted_lst) - 1))",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to check whether the given list contains consecutive numbers or not."
-}

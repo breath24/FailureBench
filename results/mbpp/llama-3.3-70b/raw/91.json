@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/91",
-  "llm_response": "import re\n\ndef find_substring(lst, substring):\n    for string in lst:\n        if re.search(substring, string):\n            return True\n    return False",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to check if a substring is present in a given list of string values."
-}

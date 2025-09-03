@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/64",
-  "llm_response": "def subject_marks(lst):\n    return sorted(lst, key=lambda x: x[1])",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to sort a list of tuples using lambda."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/283",
-  "llm_response": "from collections import defaultdict\n\ndef validate(n):\n    digit_counts = defaultdict(int)\n    num_str = str(n)\n    for d in num_str:\n        digit_counts[int(d)] += 1\n    for d, count in digit_counts.items():\n        if count > d:\n            return False\n    return True",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to check whether the frequency of each digit is less than or equal to the digit itself."
-}

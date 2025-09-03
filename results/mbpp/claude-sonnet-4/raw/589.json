@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/589",
-  "llm_response": "import math\n\ndef perfect_squares(start, end):\n    result = []\n    sqrt_start = int(math.sqrt(start))\n    if sqrt_start * sqrt_start < start:\n        sqrt_start += 1\n    \n    i = sqrt_start\n    while i * i <= end:\n        result.append(i * i)\n        i += 1\n    \n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find perfect squares between two given numbers."
-}

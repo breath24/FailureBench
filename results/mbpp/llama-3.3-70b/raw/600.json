@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/600",
-  "llm_response": "import math\ndef is_Even(n):\n    return n % 2 == 0",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to check whether the given number is even or not using bitwise operator."
-}

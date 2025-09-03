@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/18",
-  "llm_response": "import re\n\ndef how_many_times(string: str, substring: str) -> int:\n    return len(re.findall(f'(?={re.escape(substring)})', string))",
-  "model": "gpt-4o",
-  "task_description": "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n"
-}

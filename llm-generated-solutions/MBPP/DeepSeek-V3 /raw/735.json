@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/735",
+  "task_description": "Write a python function to toggle bits of the number except the first and the last bit.",
+  "llm_response": "def toggle_middle_bits(num):\n    if num == 0:\n        return 0\n    length = num.bit_length()\n    if length <= 2:\n        return num\n    mask = (1 << (length - 1)) - 1\n    mask ^= 1\n    return num ^ mask",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/118",
-  "llm_response": "def string_to_list(string):\n    return string.split(' ')",
-  "model": "claude-sonnet-4",
-  "task_description": "[link text](https:// [link text](https:// [link text](https://)))write a function to convert a string to a list."
-}

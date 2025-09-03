@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/796",
+  "task_description": "Write function to find the sum of all items in the given dictionary.",
+  "llm_response": "from typing import Dict\n\ndef return_sum(dictionary: Dict) -> int:\n    return sum(dictionary.values())",
+  "model": "deepseek-chat-v3-0324"
+}

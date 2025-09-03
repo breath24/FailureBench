@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/126",
-  "llm_response": "import math\n\ndef sum_common_divisors(a, b):\n    def gcd(x, y):\n        while y:\n            x, y = y, x % y\n        return x\n    \n    def get_divisors(n):\n        divisors = set()\n        for i in range(1, int(math.sqrt(n)) + 1):\n            if n % i == 0:\n                divisors.add(i)\n                divisors.add(n // i)\n        return divisors\n    \n    g = gcd(a, b)\n    divisors = get_divisors(g)\n    return sum(divisors)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the sum of common divisors of two given numbers."
-}

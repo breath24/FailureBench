@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/55",
-  "llm_response": "import math\n\ndef fib(n: int):\n    sqrt5 = math.sqrt(5)\n    phi = (1 + sqrt5) / 2\n    return round(phi ** n / sqrt5)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "\n\ndef fib(n: int):\n    \"\"\"Return n-th Fibonacci number.\n    >>> fib(10)\n    55\n    >>> fib(1)\n    1\n    >>> fib(8)\n    21\n    \"\"\"\n"
-}

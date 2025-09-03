@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/308",
-  "llm_response": "import itertools\nimport heapq\n\ndef large_product(list1, list2, n):\n    products = [x * y for x, y in itertools.product(list1, list2)]\n    return heapq.nlargest(n, products)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the specified number of largest products from two given lists."
-}

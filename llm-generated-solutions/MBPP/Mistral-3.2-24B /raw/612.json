@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/612",
+  "task_description": "Write a python function to merge the first and last elements separately in a list of lists.",
+  "llm_response": "def merge(lst):\n    return [[item[0] for item in lst], [item[1] for item in lst]]",
+  "model": "mistral-3.2-24b"
+}

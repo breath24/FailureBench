@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/576",
-  "llm_response": "from typing import List\n\ndef is_Sub_Array(main_list: List[int], sub_list: List[int]) -> bool:\n    sub_len = len(sub_list)\n    return any(main_list[i:i+sub_len] == sub_list for i in range(len(main_list) - sub_len + 1))",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to check whether an array is subarray of another or not."
-}

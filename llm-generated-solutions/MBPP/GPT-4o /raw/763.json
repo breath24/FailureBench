@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/763",
+  "task_description": "Write a python function to find the minimum difference between any two elements in a given array.",
+  "llm_response": "import sys\n\ndef find_min_diff(arr, n):\n    if n < 2:\n        return 0\n    arr = sorted(arr)\n    min_diff = sys.maxsize\n    for i in range(n - 1):\n        min_diff = min(min_diff, arr[i + 1] - arr[i])\n    return min_diff",
+  "model": "gpt-4o"
+}

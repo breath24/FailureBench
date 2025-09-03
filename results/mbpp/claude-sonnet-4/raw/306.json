@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/306",
-  "llm_response": "def max_sum_increasing_subseq(arr, n, i, k):\n    if i >= k or k >= n:\n        return 0\n    \n    # dp[j] represents maximum sum of increasing subsequence ending at index j\n    dp = [0] * n\n    dp[0] = arr[0]\n    \n    # Fill dp array for prefix until index i\n    for j in range(1, i + 1):\n        dp[j] = arr[j]\n        for prev in range(j):\n            if arr[prev] < arr[j]:\n                dp[j] = max(dp[j], dp[prev] + arr[j])\n    \n    # Find maximum sum ending at or before index i\n    max_prefix_sum = max(dp[:i+1])\n    \n    # Find the best subsequence ending at index i that can be extended to k\n    best_sum_at_i = 0\n    for j in range(i + 1):\n        if arr[j] < arr[k]:\n            best_sum_at_i = max(best_sum_at_i, dp[j])\n    \n    # Return the sum including element at k\n    return best_sum_at_i + arr[k]",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the maximum sum of increasing subsequence from prefix till ith index and also including a given kth element which is after i, i.e., k > i ."
-}

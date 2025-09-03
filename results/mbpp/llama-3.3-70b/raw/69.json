@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/69",
-  "llm_response": "import itertools\n\ndef is_sublist(lst, sublst):\n    def window(iterable, size):\n        iterators = itertools.tee(iterable, size)\n        for i, iterator in enumerate(iterators):\n            for _ in range(i):\n                next(iterator)\n        return zip(*iterators)\n\n    for w in window(lst, len(sublst)):\n        if list(w) == sublst:\n            return True\n    return False",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to check whether a list contains the given sublist or not."
-}

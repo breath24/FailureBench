@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/103",
-  "llm_response": "import math\n\ndef eulerian_num(n, m):\n    def comb(n, k):\n        return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))\n\n    return sum((-1)**k * comb(n+1, k) * (m-k)**n for k in range(m+1))",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find eulerian number a(n, m)."
-}

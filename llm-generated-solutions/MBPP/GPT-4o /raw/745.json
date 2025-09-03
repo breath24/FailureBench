@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/745",
+  "task_description": "Write a function to find numbers within a given range where every number is divisible by every digit it contains.",
+  "llm_response": "from typing import List\n\ndef divisible_by_digits(startnum: int, endnum: int) -> List[int]:\n    def is_divisible_by_digits(num: int) -> bool:\n        for digit in str(num):\n            if digit == '0' or num % int(digit) != 0:\n                return False\n        return True\n    \n    return [num for num in range(startnum, endnum + 1) if is_divisible_by_digits(num)]",
+  "model": "gpt-4o"
+}

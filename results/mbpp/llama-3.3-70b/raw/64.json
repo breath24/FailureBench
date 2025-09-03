@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/64",
-  "llm_response": "import operator\n\ndef subject_marks(marks):\n    return sorted(marks, key=operator.itemgetter(1))",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to sort a list of tuples using lambda."
-}

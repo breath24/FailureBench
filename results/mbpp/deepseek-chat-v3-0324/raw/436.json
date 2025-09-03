@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/436",
-  "llm_response": "import math\n\ndef neg_nos(lst):\n    return [x for x in lst if x < 0]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to print negative numbers in a list."
-}

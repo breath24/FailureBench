@@ -1,0 +1,6 @@
+{
+  "task_id": "3753",
+  "task_description": "You are given a string s consisting of lowercase English letters. Your task is to find the maximum difference between the frequency of two characters in the string such that:\n\nOne of the characters has an even frequency in the string.\nThe other character has an odd frequency in the string.\n\nReturn the maximum difference, calculated as the frequency of the character with an odd frequency minus the frequency of the character with an even frequency.\n \nExample 1:\n\nInput: s = \"aaaaabbc\"\nOutput: 3\nExplanation:\n\nThe character 'a' has an odd frequency of 5, and 'b' has an even frequency of 2.\nThe maximum difference is 5 - 2 = 3.\n\n\nExample 2:\n\nInput: s = \"abcabcab\"\nOutput: 1\nExplanation:\n\nThe character 'a' has an odd frequency of 3, and 'c' has an even frequency of 2.\nThe maximum difference is 3 - 2 = 1.\n\n\n \nConstraints:\n\n3 <= s.length <= 100\ns consists only of lowercase English letters.\ns contains at least one character with an odd frequency and one with an even frequency.",
+  "llm_response": "from collections import Counter\n\ndef maxDifference(s: str) -> int:\n    freq = Counter(s)\n    odd_freq = [f for f in freq.values() if f % 2 != 0]\n    even_freq = [f for f in freq.values() if f % 2 == 0]\n    return max(odd_freq) - min(even_freq)",
+  "model": "llama-3.3-70b"
+}

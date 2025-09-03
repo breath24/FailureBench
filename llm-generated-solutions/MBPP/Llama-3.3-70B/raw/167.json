@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/167",
+  "task_description": "Write a python function to find smallest power of 2 greater than or equal to n.",
+  "llm_response": "import math\n\ndef next_power_of_2(n):\n    if n == 0:\n        return 1\n    return 2 ** math.ceil(math.log2(n))",
+  "model": "llama-3.3-70b"
+}

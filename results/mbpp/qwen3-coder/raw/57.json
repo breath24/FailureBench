@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/57",
-  "llm_response": "def find_Max_Num(digits):\n    digits.sort(reverse=True)\n    result = 0\n    for digit in digits:\n        result = result * 10 + digit\n    return result",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the largest number that can be formed with the given digits."
-}

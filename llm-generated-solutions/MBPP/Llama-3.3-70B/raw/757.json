@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/757",
+  "task_description": "Write a function to count the pairs of reverse strings in the given string list.",
+  "llm_response": "from typing import List\n\ndef count_reverse_pairs(strings: List[str]) -> int:\n    count = 0\n    for i in range(len(strings)):\n        for j in range(i + 1, len(strings)):\n            if strings[i] == strings[j][::-1]:\n                count += 1\n            if strings[j] == strings[i][::-1]:\n                count += 1\n    return count // 2",
+  "model": "llama-3.3-70b"
+}

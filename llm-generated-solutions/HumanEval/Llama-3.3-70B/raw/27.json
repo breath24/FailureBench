@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/27",
+  "task_description": "\n\ndef flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n",
+  "llm_response": "import re\n\ndef flip_case(string: str) -> str:\n    return re.sub(r'([a-z]+)', lambda x: x.group().upper(), re.sub(r'([A-Z]+)', lambda x: x.group().lower(), string))",
+  "model": "llama-3.3-70b"
+}

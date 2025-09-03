@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/424",
+  "task_description": "Write a function to extract only the rear index element of each string in the given tuple.",
+  "llm_response": "def extract_rear(tuple_of_strings):\n    return [string[-1] for string in tuple_of_strings]",
+  "model": "claude-sonnet-4"
+}

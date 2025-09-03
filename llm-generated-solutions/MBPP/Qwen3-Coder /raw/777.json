@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/777",
+  "task_description": "Write a python function to find the sum of non-repeated elements in a given array.",
+  "llm_response": "def find_sum(lst):\n    return sum([x for x in lst if lst.count(x) == 1])",
+  "model": "qwen3-coder"
+}

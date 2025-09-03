@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/771",
+  "task_description": "Write a function to check if the given expression is balanced or not.",
+  "llm_response": "import re\n\ndef check_expression(expression):\n    stack = []\n    mapping = {\")\": \"(\", \"}\": \"{\", \"]\": \"[\"}\n    for char in expression:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping:\n            if not stack or mapping[char] != stack.pop():\n                return False\n    return not stack",
+  "model": "llama-3.3-70b"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/754",
-  "llm_response": "def extract_index_list(l1, l2, l3):\n    common_elements = []\n    min_length = min(len(l1), len(l2), len(l3))\n    for i in range(min_length):\n        if l1[i] == l2[i] == l3[i]:\n            common_elements.append(l1[i])\n    return common_elements",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find common index elements from three lists."
-}

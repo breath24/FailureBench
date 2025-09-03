@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/605",
-  "llm_response": "def prime_num(n):\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
-  "model": "gpt-4o",
-  "task_description": "Write a function to check if the given integer is a prime number."
-}

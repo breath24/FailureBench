@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/750",
-  "llm_response": "def add_tuple(lst, tup):\n    return lst + list(tup)",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to add the given tuple to the given list."
-}

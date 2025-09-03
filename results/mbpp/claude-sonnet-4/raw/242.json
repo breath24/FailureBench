@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/242",
-  "llm_response": "def count_charac(string):\n    return len(string)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to count total characters in a string."
-}

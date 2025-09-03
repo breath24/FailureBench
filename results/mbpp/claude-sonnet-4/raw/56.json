@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/56",
-  "llm_response": "def reverse_number(n):\n    return int(str(n)[::-1])\n\ndef check(n):\n    reversed_n = reverse_number(n)\n    return n == 2 * reversed_n - 1",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to check if a given number is one less than twice its reverse."
-}

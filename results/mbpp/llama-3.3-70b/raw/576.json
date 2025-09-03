@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/576",
-  "llm_response": "def is_Sub_Array(lst1, lst2):\n    len1 = len(lst1)\n    len2 = len(lst2)\n    for i in range(len1 - len2 + 1):\n        if lst1[i:i + len2] == lst2:\n            return True\n    return False",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to check whether an array is subarray of another or not."
-}

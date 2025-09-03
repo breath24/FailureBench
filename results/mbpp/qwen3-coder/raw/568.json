@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/568",
-  "llm_response": "def empty_list(n):\n    return [{} for _ in range(n)]",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to create a list of empty dictionaries."
-}

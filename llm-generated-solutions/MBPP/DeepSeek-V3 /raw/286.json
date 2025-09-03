@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/286",
+  "task_description": "Write a function to find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times.",
+  "llm_response": "import sys\n\ndef max_sub_array_sum_repeated(arr, n, k):\n    max_subarray = -sys.maxsize - 1\n    current_max = 0\n    total_sum = sum(arr)\n    \n    for i in range(n * min(k, 2)):\n        current_max += arr[i % n]\n        if max_subarray < current_max:\n            max_subarray = current_max\n        if current_max < 0:\n            current_max = 0\n    \n    if total_sum > 0 and k > 2:\n        max_subarray += total_sum * (k - 2)\n    \n    return max_subarray",
+  "model": "deepseek-chat-v3-0324"
+}

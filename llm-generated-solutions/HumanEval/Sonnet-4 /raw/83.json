@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/83",
+  "task_description": "\ndef starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n",
+  "llm_response": "def starts_one_ends(n):\n    if n == 1:\n        return 1\n    \n    total_n_digit = 9 * (10 ** (n - 1))\n    starts_with_1 = 10 ** (n - 1)\n    ends_with_1 = 9 * (10 ** (n - 2))\n    starts_and_ends_with_1 = 10 ** (n - 2)\n    \n    return starts_with_1 + ends_with_1 - starts_and_ends_with_1",
+  "model": "claude-sonnet-4"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/576",
-  "llm_response": "def is_Sub_Array(main_list, sub_list):\n    if len(sub_list) == 0:\n        return True\n    if len(sub_list) > len(main_list):\n        return False\n    \n    for i in range(len(main_list) - len(sub_list) + 1):\n        if main_list[i:i + len(sub_list)] == sub_list:\n            return True\n    return False",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to check whether an array is subarray of another or not."
-}

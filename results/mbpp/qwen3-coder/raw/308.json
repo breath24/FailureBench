@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/308",
-  "llm_response": "def large_product(list1, list2, n):\n    import heapq\n    import itertools\n    \n    # Generate all possible products\n    products = []\n    for a, b in itertools.product(list1, list2):\n        products.append(a * b)\n    \n    # Find the n largest products\n    largest_products = heapq.nlargest(n, products)\n    \n    return largest_products",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find the specified number of largest products from two given lists."
-}

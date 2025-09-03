@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/612",
+  "task_description": "Write a python function to merge the first and last elements separately in a list of lists.",
+  "llm_response": "def merge(lst):\n    return [[x[0] for x in lst], [x[1] for x in lst]]",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/643",
+  "task_description": "Write a function that matches a word containing 'z', not at the start or end of the word.",
+  "llm_response": "import re\n\ndef text_match_wordz_middle(text):\n    pattern = r'\\Bz\\B'\n    return bool(re.search(pattern, text))",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/797",
-  "llm_response": "def sum_in_range(l, r):\n    total = 0\n    for i in range(l, r + 1):\n        if i % 2 == 1:\n            total += i\n    return total",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the sum of all odd natural numbers within the range l and r."
-}

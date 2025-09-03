@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/474",
-  "llm_response": "def replace_char(s, old_char, new_char):\n    return s.replace(old_char, new_char)",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to replace characters in a string."
-}

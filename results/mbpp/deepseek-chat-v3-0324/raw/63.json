@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/63",
-  "llm_response": "def max_difference(pairs):\n    if not pairs:\n        return 0\n    max_diff = 0\n    for a, b in pairs:\n        current_diff = abs(a - b)\n        if current_diff > max_diff:\n            max_diff = current_diff\n    return max_diff",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find the maximum difference between available pairs in the given tuple list."
-}

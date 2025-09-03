@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/739",
+  "task_description": "Write a python function to find the index of smallest triangular number with n digits.",
+  "llm_response": "import math\n\ndef find_Index(n):\n    if n == 1:\n        return 1\n    low = 1\n    high = 1\n    while True:\n        high *= 10\n        if math.log10(0.5 * high * (high + 1)) >= n - 1:\n            break\n    while low <= high:\n        mid = (low + high) // 2\n        triangular_number = 0.5 * mid * (mid + 1)\n        digits = len(str(int(triangular_number)))\n        if digits == n:\n            return mid\n        elif digits < n:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1",
+  "model": "mistral-3.2-24b"
+}

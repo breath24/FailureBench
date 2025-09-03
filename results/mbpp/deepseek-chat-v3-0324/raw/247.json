@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/247",
-  "llm_response": "from functools import lru_cache\n\ndef lps(s):\n    n = len(s)\n    \n    @lru_cache(maxsize=None)\n    def dp(i, j):\n        if i == j:\n            return 1\n        if s[i] == s[j]:\n            if i + 1 == j:\n                return 2\n            else:\n                return 2 + dp(i + 1, j - 1)\n        else:\n            return max(dp(i + 1, j), dp(i, j - 1))\n    \n    return dp(0, n - 1)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find the longest palindromic subsequence in the given string."
-}

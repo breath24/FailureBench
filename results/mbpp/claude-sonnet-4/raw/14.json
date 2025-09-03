@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/14",
-  "llm_response": "import math\n\ndef find_Volume(length, width, height):\n    return (length * width * height) / 2",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the volume of a triangular prism."
-}

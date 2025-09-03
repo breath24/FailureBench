@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/478",
-  "llm_response": "import re\n\ndef remove_lowercase(s):\n    return re.sub('[a-z]', '', s)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to remove lowercase substrings from a given string."
-}

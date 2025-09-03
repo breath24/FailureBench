@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/749",
+  "task_description": "Write a function to sort a given list of strings of numbers numerically.",
+  "llm_response": "def sort_numeric_strings(lst):\n    return sorted(map(int, lst))",
+  "model": "gpt-4o"
+}

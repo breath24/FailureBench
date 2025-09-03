@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/123",
-  "llm_response": "def amicable_numbers_sum(n):\n    def sum_proper_divisors(x):\n        if x == 1:\n            return 0\n        total = 1\n        for i in range(2, int(x**0.5) + 1):\n            if x % i == 0:\n                total += i\n                other = x // i\n                if other != i:\n                    total += other\n        return total\n\n    amicable_pairs = set()\n    for a in range(2, n + 1):\n        b = sum_proper_divisors(a)\n        if b != a and sum_proper_divisors(b) == a:\n            amicable_pairs.add((min(a, b), max(a, b)))\n\n    return sum(a + b for a, b in amicable_pairs)",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to sum all amicable numbers from 1 to a specified number."
-}

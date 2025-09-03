@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/252",
-  "llm_response": "import cmath\n\ndef convert(z):\n    if isinstance(z, complex):\n        return (abs(z), cmath.phase(z))\n    elif isinstance(z, (int, float)):\n        return (abs(z), 0.0)\n    else:\n        raise TypeError(\"Input must be a complex number, integer, or float\")",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to convert complex numbers to polar coordinates."
-}

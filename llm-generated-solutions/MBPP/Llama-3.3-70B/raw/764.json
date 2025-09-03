@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/764",
+  "task_description": "Write a python function to count numeric values in a given string.",
+  "llm_response": "import re\n\ndef number_ctr(s):\n    return len(re.findall('\\d', s))",
+  "model": "llama-3.3-70b"
+}

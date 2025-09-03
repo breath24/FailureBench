@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/279",
-  "llm_response": "def is_num_decagonal(n):\n    return n * (8 * n - 6) // 2",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find the nth decagonal number."
-}

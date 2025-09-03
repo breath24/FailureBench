@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/223",
+  "task_description": "Write a function to check for majority element in the given sorted array.",
+  "llm_response": "def is_majority(arr, n, element):\n    if n == 0:\n        return False\n    left = 0\n    right = n - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == element:\n            left_mid = mid\n            right_mid = mid\n            while left_mid >= 0 and arr[left_mid] == element:\n                left_mid -= 1\n            while right_mid < n and arr[right_mid] == element:\n                right_mid += 1\n            if (right_mid - left_mid - 1) > n // 2:\n                return True\n            return False\n        elif arr[mid] < element:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return False",
+  "model": "mistral-3.2-24b"
+}

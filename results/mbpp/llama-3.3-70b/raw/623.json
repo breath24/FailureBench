@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/623",
-  "llm_response": "import math\n\ndef nth_nums(nums, n):\n    return [math.pow(num, n) for num in nums]",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the n-th power of individual elements in a list using lambda function."
-}

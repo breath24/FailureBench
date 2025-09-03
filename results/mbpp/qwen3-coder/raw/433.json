@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/433",
-  "llm_response": "def check_greater(arr, num):\n    for element in arr:\n        if num <= element:\n            return False\n    return True",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to check whether the entered number is greater than the elements of the given array."
-}

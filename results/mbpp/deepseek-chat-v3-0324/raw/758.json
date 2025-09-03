@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/758",
-  "llm_response": "from collections import defaultdict\n\ndef unique_sublists(input_list):\n    count_dict = defaultdict(int)\n    for sublist in input_list:\n        tuple_sublist = tuple(sublist)\n        count_dict[tuple_sublist] += 1\n    return dict(count_dict)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to count number of unique lists within a list."
-}

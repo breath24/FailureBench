@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/418",
+  "task_description": "Write a python function to find the sublist having maximum length.",
+  "llm_response": "def Find_Max(lst):\n    return max(lst, key=len)",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/794",
+  "task_description": "Write a function that matches a string that has an 'a' followed by anything, ending in 'b'.",
+  "llm_response": "import re\n\ndef text_starta_endb(text):\n    pattern = r'^a.*b$'\n    return bool(re.match(pattern, text))",
+  "model": "claude-sonnet-4"
+}

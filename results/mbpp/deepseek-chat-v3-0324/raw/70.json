@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/70",
-  "llm_response": "def get_equal(tuples_list):\n    if not tuples_list:\n        return True\n    first_len = len(tuples_list[0])\n    return all(len(t) == first_len for t in tuples_list)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find whether all the given tuples have equal length or not."
-}

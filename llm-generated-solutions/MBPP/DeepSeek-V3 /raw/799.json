@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/799",
+  "task_description": "Write a python function to left rotate the bits of a given number.",
+  "llm_response": "import sys\n\ndef left_rotate(n, d):\n    return ((n << d) | (n >> (32 - d))) & 0xFFFFFFFF",
+  "model": "deepseek-chat-v3-0324"
+}

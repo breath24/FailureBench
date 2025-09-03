@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/111",
-  "llm_response": "def common_in_nested_lists(nested_lists):\n    if not nested_lists:\n        return []\n    \n    common = set(nested_lists[0])\n    for lst in nested_lists[1:]:\n        common = common.intersection(set(lst))\n    \n    return list(common)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find common elements in given nested lists. * list item * list item * list item * list item"
-}

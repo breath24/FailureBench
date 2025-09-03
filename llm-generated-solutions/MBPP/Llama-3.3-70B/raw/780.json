@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/780",
+  "task_description": "Write a function to find the combinations of sums with tuples in the given tuple list.",
+  "llm_response": "import itertools\n\ndef find_combinations(tuple_list):\n    combinations = list(itertools.combinations(tuple_list, 2))\n    result = []\n    for combination in combinations:\n        sum1 = combination[0][0] + combination[1][0]\n        sum2 = combination[0][1] + combination[1][1]\n        result.append((sum1, sum2))\n    return result",
+  "model": "llama-3.3-70b"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/750",
+  "task_description": "Write a function to add the given tuple to the given list.",
+  "llm_response": "def add_tuple(lst, tup):\n    return lst + list(tup)",
+  "model": "deepseek-chat-v3-0324"
+}

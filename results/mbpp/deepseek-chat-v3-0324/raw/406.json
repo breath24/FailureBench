@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/406",
-  "llm_response": "import math\n\ndef find_Parity(num):\n    binary = bin(num)\n    count = binary.count('1')\n    return count % 2 != 0",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the parity of a given number."
-}

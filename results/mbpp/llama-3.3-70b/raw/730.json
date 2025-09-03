@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/730",
-  "llm_response": "import itertools\n\ndef consecutive_duplicates(lst):\n    return list(itertools.chain.from_iterable([[k] for k, _ in itertools.groupby(lst)]))",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to remove consecutive duplicates of a given list."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/97",
+  "task_description": "Write a function to find frequency count of list of lists.",
+  "llm_response": "from collections import defaultdict\n\ndef frequency_lists(lists):\n    freq = defaultdict(int)\n    for sublist in lists:\n        for item in sublist:\n            freq[item] += 1\n    return dict(freq)",
+  "model": "mistral-3.2-24b"
+}

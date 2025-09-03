@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/294",
+  "task_description": "Write a function to find the maximum value in a given heterogeneous list.",
+  "llm_response": "from typing import List, Union\n\ndef max_val(lst: List[Union[int, str]]) -> Union[int, str]:\n    max_value = None\n    for item in lst:\n        if isinstance(item, int):\n            if max_value is None or item > max_value:\n                max_value = item\n    return max_value",
+  "model": "deepseek-chat-v3-0324"
+}

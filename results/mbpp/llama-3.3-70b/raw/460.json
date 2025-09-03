@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/460",
-  "llm_response": "import itertools\n\ndef Extract(lst):\n    return [sublist[0] for sublist in lst]",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to get the first element of each sublist."
-}

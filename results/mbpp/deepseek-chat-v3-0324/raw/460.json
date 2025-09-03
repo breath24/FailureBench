@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/460",
-  "llm_response": "from typing import List\n\ndef Extract(lst: List[List[int]]) -> List[int]:\n    return [sublist[0] for sublist in lst]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to get the first element of each sublist."
-}

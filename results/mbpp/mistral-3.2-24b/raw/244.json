@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/244",
-  "llm_response": "import math\n\ndef next_Perfect_Square(n):\n    root = math.isqrt(n)\n    return (root + 1) ** 2",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to find the next perfect square greater than a given number."
-}

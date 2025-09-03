@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/799",
-  "llm_response": "def left_rotate(n, d):\n    return ((n << d) | (n >> (32 - d))) & 0xFFFFFFFF",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to left rotate the bits of a given number."
-}

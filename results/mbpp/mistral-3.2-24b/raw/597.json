@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/597",
-  "llm_response": "def find_kth(arr1, arr2, k):\n    m, n = len(arr1), len(arr2)\n    if m > n:\n        return find_kth(arr2, arr1, k)\n    if m == 0:\n        return arr2[k-1]\n    if k == 1:\n        return min(arr1[0], arr2[0])\n    i = min(m, k // 2)\n    j = min(n, k // 2)\n    if arr1[i-1] > arr2[j-1]:\n        return find_kth(arr1, arr2[j:], k - j)\n    else:\n        return find_kth(arr1[i:], arr2, k - i)",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find kth element from the given two sorted arrays."
-}

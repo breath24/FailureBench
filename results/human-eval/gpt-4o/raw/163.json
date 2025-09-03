@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/163",
-  "llm_response": "def generate_integers(a, b):\n    return [i for i in range(min(a, b), max(a, b) + 1) if i % 2 == 0]",
-  "model": "gpt-4o",
-  "task_description": "\ndef generate_integers(a, b):\n    \"\"\"\n    Given two positive integers a and b, return the even digits between a\n    and b, in ascending order.\n\n    For example:\n    generate_integers(2, 8) => [2, 4, 6, 8]\n    generate_integers(8, 2) => [2, 4, 6, 8]\n    generate_integers(10, 14) => []\n    \"\"\"\n"
-}

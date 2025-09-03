@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/792",
+  "task_description": "Write a python function to count the number of lists in a given number of lists.",
+  "llm_response": "def count_list(lists):\n    return len(lists)",
+  "model": "mistral-3.2-24b"
+}

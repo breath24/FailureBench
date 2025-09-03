@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/272",
-  "llm_response": "from typing import List, Tuple\n\ndef rear_extract(tuples_list: List[Tuple]) -> List:\n    return [t[-1] for t in tuples_list]",
-  "model": "gpt-4o",
-  "task_description": "Write a function to perfom the rear element extraction from list of tuples records."
-}

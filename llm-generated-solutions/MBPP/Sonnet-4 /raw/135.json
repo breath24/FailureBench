@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/135",
+  "task_description": "Write a function to find the nth hexagonal number.",
+  "llm_response": "def hexagonal_num(n):\n    return n * (2 * n - 1)",
+  "model": "claude-sonnet-4"
+}

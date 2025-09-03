@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/59",
+  "task_description": "\n\ndef largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\n    >>> largest_prime_factor(13195)\n    29\n    >>> largest_prime_factor(2048)\n    2\n    \"\"\"\n",
+  "llm_response": "import math\n\ndef largest_prime_factor(n: int):\n    largest = -1\n    while n % 2 == 0:\n        largest = 2\n        n = n // 2\n    for i in range(3, int(math.sqrt(n)) + 1, 2):\n        while n % i == 0:\n            largest = i\n            n = n // i\n    if n > 2:\n        largest = n\n    return largest",
+  "model": "deepseek-chat-v3-0324"
+}

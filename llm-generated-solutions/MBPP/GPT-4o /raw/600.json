@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/600",
+  "task_description": "Write a python function to check whether the given number is even or not using bitwise operator.",
+  "llm_response": "def is_Even(number):\n    return number % 2 == 0",
+  "model": "gpt-4o"
+}

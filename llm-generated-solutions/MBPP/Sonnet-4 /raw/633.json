@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/633",
+  "task_description": "Write a python function to find the sum of xor of all pairs of numbers in the given array.",
+  "llm_response": "def pair_xor_Sum(arr, n):\n    result = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            result += arr[i] ^ arr[j]\n    return result",
+  "model": "claude-sonnet-4"
+}

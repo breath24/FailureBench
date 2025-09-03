@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/284",
+  "task_description": "Write a function to check whether all items of a list are equal to a given string.",
+  "llm_response": "import numpy as np\n\ndef check_element(lst, element):\n    return all(i == element for i in lst)",
+  "model": "llama-3.3-70b"
+}

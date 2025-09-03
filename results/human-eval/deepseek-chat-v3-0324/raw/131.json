@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/131",
-  "llm_response": "import math\n\ndef digits(n):\n    product = 1\n    has_odd = False\n    for digit in str(n):\n        num = int(digit)\n        if num % 2 != 0:\n            product *= num\n            has_odd = True\n    return product if has_odd else 0",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "\ndef digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\"\n"
-}

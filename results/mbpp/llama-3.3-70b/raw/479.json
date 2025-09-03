@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/479",
-  "llm_response": "import math\n\ndef first_Digit(n):\n    while n >= 10:\n        n = n // 10\n    return n",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find the first digit of a given number."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/806",
-  "llm_response": "import re\n\ndef max_run_uppercase(s):\n    runs = re.findall(r'[A-Z]+', s)\n    if not runs:\n        return 0\n    return max(len(run) for run in runs)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find maximum run of uppercase characters in the given string."
-}

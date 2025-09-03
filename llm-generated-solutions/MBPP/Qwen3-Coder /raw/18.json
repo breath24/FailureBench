@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/18",
+  "task_description": "Write a function to remove characters from the first string which are present in the second string.",
+  "llm_response": "def remove_dirty_chars(str1, str2):\n    # Convert str2 to a set for faster lookup\n    chars_to_remove = set(str2)\n    \n    # Build result string by including only characters not in chars_to_remove\n    result = ''.join(char for char in str1 if char not in chars_to_remove)\n    \n    return result",
+  "model": "qwen3-coder"
+}

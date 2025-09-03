@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/558",
-  "llm_response": "def digit_distance_nums(num1, num2):\n    str1 = str(abs(num1))\n    str2 = str(abs(num2))\n    \n    max_len = max(len(str1), len(str2))\n    str1 = str1.zfill(max_len)\n    str2 = str2.zfill(max_len)\n    \n    total_distance = 0\n    for i in range(max_len):\n        total_distance += abs(int(str1[i]) - int(str2[i]))\n    \n    return total_distance",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the digit distance between two integers."
-}

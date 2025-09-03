@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/597",
-  "llm_response": "import bisect\n\ndef find_kth(arr1, arr2, k):\n    m, n = len(arr1), len(arr2)\n    if m > n:\n        arr1, arr2, m, n = arr2, arr1, n, m\n    low, high = 0, m\n    while low <= high:\n        partition_x = (low + high) // 2\n        partition_y = k - partition_x\n        if partition_y > n:\n            low = partition_x + 1\n            continue\n        max_left_x = arr1[partition_x - 1] if partition_x != 0 else float('-inf')\n        min_right_x = arr1[partition_x] if partition_x != m else float('inf')\n        max_left_y = arr2[partition_y - 1] if partition_y != 0 else float('-inf')\n        min_right_y = arr2[partition_y] if partition_y != n else float('inf')\n        if max_left_x <= min_right_y and max_left_y <= min_right_x:\n            return max(max_left_x, max_left_y)\n        elif max_left_x > min_right_y:\n            high = partition_x - 1\n        else:\n            low = partition_x + 1\n    return -1",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find kth element from the given two sorted arrays."
-}

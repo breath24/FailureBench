@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/790",
-  "llm_response": "import typing\n\ndef even_position(lst: typing.List[int]) -> bool:\n    return all(lst[i] % 2 == 0 for i in range(0, len(lst), 2))",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to check whether every even index contains even numbers of a given list."
-}

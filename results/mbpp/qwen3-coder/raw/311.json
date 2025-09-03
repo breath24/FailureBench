@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/311",
-  "llm_response": "def set_left_most_unset_bit(n):\n    if n == 0:\n        return 1\n    \n    # Find the position of the leftmost unset bit\n    temp = n\n    pos = 0\n    \n    # Find the leftmost unset bit position\n    while temp > 0:\n        if (temp & 1) == 0:\n            pos += 1\n        temp >>= 1\n    \n    # If all bits are set, we need to add a new bit at the left\n    if pos == 0:\n        # Find the position of the MSB\n        temp = n\n        msb_pos = 0\n        while temp > 0:\n            msb_pos += 1\n            temp >>= 1\n        pos = msb_pos\n    \n    # Set the bit at position (pos-1) from right (0-indexed)\n    return n | (1 << (pos - 1))",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to set the left most unset bit."
-}

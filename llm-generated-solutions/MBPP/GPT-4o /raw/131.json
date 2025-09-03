@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/131",
+  "task_description": "Write a python function to reverse only the vowels of a given string.",
+  "llm_response": "import re\n\ndef reverse_vowels(s):\n    vowels = re.findall(r'[aeiouAEIOU]', s)\n    return re.sub(r'[aeiouAEIOU]', lambda _: vowels.pop(), s)",
+  "model": "gpt-4o"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/556",
+  "task_description": "Write a python function to count the pairs with xor as an odd number.",
+  "llm_response": "def find_Odd_Pair(arr, n):\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            if (arr[i] ^ arr[j]) % 2 != 0:\n                count += 1\n    return count",
+  "model": "mistral-3.2-24b"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/804",
-  "llm_response": "def is_product_even(lst):\n    from functools import reduce\n    return reduce(lambda x, y: x * y, lst) % 2 == 0",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to check whether the product of numbers is even or not."
-}

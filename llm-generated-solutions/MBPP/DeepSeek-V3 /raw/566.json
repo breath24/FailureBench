@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/566",
+  "task_description": "Write a function to get the sum of a non-negative integer.",
+  "llm_response": "import math\n\ndef sum_digits(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n = math.floor(n / 10)\n    return total",
+  "model": "deepseek-chat-v3-0324"
+}

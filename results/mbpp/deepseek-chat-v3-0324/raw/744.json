@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/744",
-  "llm_response": "from typing import Tuple\n\ndef check_none(t: Tuple) -> bool:\n    return any(x is None for x in t)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to check if the given tuple has any none value or not."
-}

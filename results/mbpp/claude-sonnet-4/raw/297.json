@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/297",
-  "llm_response": "def flatten_list(nested_list):\n    result = []\n    for item in nested_list:\n        if isinstance(item, list):\n            result.extend(flatten_list(item))\n        else:\n            result.append(item)\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to flatten a given nested list structure."
-}

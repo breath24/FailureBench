@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/92",
-  "llm_response": "import math\n\ndef is_undulating(n):\n    s = str(n)\n    if len(s) < 3:\n        return False\n    pattern1 = s[0] + s[1]\n    pattern2 = s[1] + s[0]\n    for i in range(2, len(s)):\n        if i % 2 == 0:\n            if s[i] != pattern1[0]:\n                return False\n        else:\n            if s[i] != pattern1[1]:\n                return False\n    return True",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to check whether the given number is undulating or not."
-}

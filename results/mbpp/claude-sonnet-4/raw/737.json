@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/737",
-  "llm_response": "import re\n\ndef check_str(string):\n    pattern = r'^[aeiouAEIOU]'\n    return bool(re.match(pattern, string))",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to check whether the given string is starting with a vowel or not using regex."
-}

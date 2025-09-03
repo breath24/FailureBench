@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/736",
+  "task_description": "Write a function to locate the left insertion point for a specified value in sorted order.",
+  "llm_response": "import bisect\n\ndef left_insertion(arr, val):\n    return bisect.bisect_left(arr, val)",
+  "model": "claude-sonnet-4"
+}

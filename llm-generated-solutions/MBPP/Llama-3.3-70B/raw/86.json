@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/86",
+  "task_description": "Write a function to find nth centered hexagonal number.",
+  "llm_response": "import math\n\ndef centered_hexagonal_number(n):\n    return n * (3 * n - 1) // 2",
+  "model": "llama-3.3-70b"
+}

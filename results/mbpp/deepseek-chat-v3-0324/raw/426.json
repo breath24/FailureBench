@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/426",
-  "llm_response": "def filter_oddnumbers(numbers):\n    return [num for num in numbers if num % 2 != 0]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to filter odd numbers using lambda function."
-}

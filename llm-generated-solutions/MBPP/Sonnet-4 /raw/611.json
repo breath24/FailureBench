@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/611",
+  "task_description": "Write a function to find the maximum of nth column from the given tuple list.",
+  "llm_response": "def max_of_nth(matrix, n):\n    return max(row[n] for row in matrix)",
+  "model": "claude-sonnet-4"
+}

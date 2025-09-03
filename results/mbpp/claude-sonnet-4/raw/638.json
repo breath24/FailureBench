@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/638",
-  "llm_response": "import math\n\ndef wind_chill(velocity, temperature):\n    wind_chill_value = 13.12 + 0.6215 * temperature - 11.37 * (velocity ** 0.16) + 0.3965 * temperature * (velocity ** 0.16)\n    return math.ceil(wind_chill_value)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to calculate wind chill index."
-}

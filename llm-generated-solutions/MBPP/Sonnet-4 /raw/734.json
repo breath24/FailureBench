@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/734",
+  "task_description": "Write a python function to find sum of products of all possible subarrays.",
+  "llm_response": "def sum_Of_Subarray_Prod(arr):\n    n = len(arr)\n    total_sum = 0\n    \n    for i in range(n):\n        for j in range(i, n):\n            product = 1\n            for k in range(i, j + 1):\n                product *= arr[k]\n            total_sum += product\n    \n    return total_sum",
+  "model": "claude-sonnet-4"
+}

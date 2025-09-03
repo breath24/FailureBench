@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/95",
-  "llm_response": "def Find_Min_Length(lists):\n    return min(len(lst) for lst in lists)",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the minimum length of sublist."
-}

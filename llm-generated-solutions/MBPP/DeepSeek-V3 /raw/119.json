@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/119",
+  "task_description": "Write a python function to find the element that appears only once in a sorted array.",
+  "llm_response": "def search(nums):\n    left, right = 0, len(nums) - 1\n    while left < right:\n        mid = (left + right) // 2\n        if mid % 2 == 1:\n            mid -= 1\n        if nums[mid] == nums[mid + 1]:\n            left = mid + 2\n        else:\n            right = mid\n    return nums[left]",
+  "model": "deepseek-chat-v3-0324"
+}

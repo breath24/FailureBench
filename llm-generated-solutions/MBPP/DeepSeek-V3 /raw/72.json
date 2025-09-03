@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/72",
+  "task_description": "Write a python function to check whether the given number can be represented as difference of two squares or not.",
+  "llm_response": "import math\n\ndef dif_Square(n):\n    if n % 2 != 0:\n        return True\n    else:\n        if n % 4 == 0:\n            return True\n        else:\n            return False",
+  "model": "deepseek-chat-v3-0324"
+}

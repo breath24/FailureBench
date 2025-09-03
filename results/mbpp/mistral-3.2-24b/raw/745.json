@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/745",
-  "llm_response": "def divisible_by_digits(startnum, endnum):\n    result = []\n    for num in range(startnum, endnum + 1):\n        num_str = str(num)\n        divisible = True\n        for digit in num_str:\n            if digit == '0':\n                divisible = False\n                break\n            if num % int(digit) != 0:\n                divisible = False\n                break\n        if divisible:\n            result.append(num)\n    return result",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find numbers within a given range where every number is divisible by every digit it contains."
-}

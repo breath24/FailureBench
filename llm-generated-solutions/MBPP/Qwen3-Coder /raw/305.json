@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/305",
+  "task_description": "Write a function to match two words from a list of words starting with letter 'p'.",
+  "llm_response": "import re\n\ndef start_withp(words):\n    result = []\n    for word in words:\n        parts = word.split()\n        for part in parts:\n            if part.lower().startswith('p'):\n                result.append(part)\n                if len(result) == 2:\n                    return tuple(result)\n    return tuple(result)",
+  "model": "qwen3-coder"
+}

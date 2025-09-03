@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/6",
+  "task_description": "Write a python function to check whether the two numbers differ at one bit position only or not.",
+  "llm_response": "import math\n\ndef differ_At_One_Bit_Pos(num1, num2):\n    xor = num1 ^ num2\n    return (xor != 0) and ((xor & (xor - 1)) == 0)",
+  "model": "llama-3.3-70b"
+}

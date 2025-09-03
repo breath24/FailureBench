@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/791",
-  "llm_response": "def remove_nested(test_tup):\n    return tuple(item for item in test_tup if not isinstance(item, tuple))",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to remove the nested record from the given tuple."
-}

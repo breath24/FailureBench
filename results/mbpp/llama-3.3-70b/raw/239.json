@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/239",
-  "llm_response": "def get_total_number_of_sequences(m, n):\n    memo = {}\n\n    def dfs(i, prev):\n        if i == n:\n            return 1\n        if (i, prev) in memo:\n            return memo[(i, prev)]\n        count = 0\n        for j in range(max(1, prev * 2), m + 1):\n            count += dfs(i + 1, j)\n        memo[(i, prev)] = count\n        return count\n\n    return dfs(0, 0)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the number of possible sequences of length n such that each of the next element is greater than or equal to twice of the previous element but less than or equal to m."
-}

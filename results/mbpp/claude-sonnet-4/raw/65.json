@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/65",
-  "llm_response": "def recursive_list_sum(lst):\n    total = 0\n    for item in lst:\n        if isinstance(item, list):\n            total += recursive_list_sum(item)\n        else:\n            total += item\n    return total",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function of recursion list sum."
-}

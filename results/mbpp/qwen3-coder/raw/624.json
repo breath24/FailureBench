@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/624",
-  "llm_response": "def is_upper(s):\n    return s.upper()",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to convert the given string to upper case."
-}

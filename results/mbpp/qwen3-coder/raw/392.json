@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/392",
-  "llm_response": "def get_max_sum(n):\n    memo = {}\n    \n    def f(num):\n        if num in memo:\n            return memo[num]\n        if num == 0:\n            return 0\n        if num < 12:\n            memo[num] = max(num, f(num//2) + f(num//3) + f(num//4) + f(num//5))\n        else:\n            memo[num] = max(num, f(num//2) + f(num//3) + f(num//4) + f(num//5))\n        return memo[num]\n    \n    return f(n)",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find the maximum sum possible by using the given equation f(n) = max( (f(n/2) + f(n/3) + f(n/4) + f(n/5)), n)."
-}

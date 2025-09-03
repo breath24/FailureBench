@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/57",
-  "llm_response": "from itertools import permutations\n\ndef find_Max_Num(digits):\n    max_num = 0\n    for perm in permutations(digits):\n        num = int(''.join(map(str, perm)))\n        if num > max_num:\n            max_num = num\n    return max_num",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to find the largest number that can be formed with the given digits."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/616",
+  "task_description": "Write a function to perfom the modulo of tuple elements in the given two tuples.",
+  "llm_response": "import operator\n\ndef tuple_modulo(t1, t2):\n    return tuple(map(operator.mod, t1, t2))",
+  "model": "gpt-4o"
+}

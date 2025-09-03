@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/170",
-  "llm_response": "from typing import List\n\ndef sum_range_list(numbers: List[int], start: int, end: int) -> int:\n    return sum(numbers[start:end+1])",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find sum of the numbers in a list between the indices of a specified range."
-}

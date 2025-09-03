@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/245",
-  "llm_response": "def max_sum(arr):\n    n = len(arr)\n    if n == 0:\n        return 0\n    \n    inc = [0] * n\n    dec = [0] * n\n    \n    for i in range(n):\n        inc[i] = arr[i]\n        for j in range(i):\n            if arr[i] > arr[j] and inc[i] < inc[j] + arr[i]:\n                inc[i] = inc[j] + arr[i]\n    \n    for i in range(n-1, -1, -1):\n        dec[i] = arr[i]\n        for j in range(i+1, n):\n            if arr[i] > arr[j] and dec[i] < dec[j] + arr[i]:\n                dec[i] = dec[j] + arr[i]\n    \n    max_sum = 0\n    for i in range(n):\n        current_sum = inc[i] + dec[i] - arr[i]\n        if current_sum > max_sum:\n            max_sum = current_sum\n    \n    return max_sum",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find the maximum sum of bi-tonic sub-sequence for the given array."
-}

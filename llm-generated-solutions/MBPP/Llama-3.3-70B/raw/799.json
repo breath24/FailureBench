@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/799",
+  "task_description": "Write a python function to left rotate the bits of a given number.",
+  "llm_response": "import ctypes\n\ndef left_rotate(n, d):\n    bits = 32\n    d = d % bits\n    return (n << d) | (n >> (bits - d))",
+  "model": "llama-3.3-70b"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "abc398_a",
+  "task_description": "Find a length-N string that satisfies all of the following conditions:\n\n- Each character is - or =.\n- It is a palindrome.\n- It contains exactly one or exactly two =s. If it contains two =s, they are adjacent.\n\nSuch a string is unique.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 1 \\leq N \\leq 100\n- N is an integer.\n\nSample Input 1\n\n4\n\nSample Output 1\n\n-==-\n\nSample Input 2\n\n7\n\nSample Output 2\n\n---=---",
+  "llm_response": "def candidate_func(input_str):\n    N = int(input_str.strip())\n    if N == 1:\n        return \"=\"\n    if N % 2 == 0:\n        return \"-\" * (N // 2 - 1) + \"==\" + \"-\" * (N // 2 - 1)\n    else:\n        return \"-\" * (N // 2) + \"=\" + \"-\" * (N // 2)",
+  "model": "gpt-4o"
+}

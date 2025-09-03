@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/138",
-  "llm_response": "def is_equal_to_sum_even(n):\n    # A number can be written as sum of 4 positive even numbers\n    # if and only if:\n    # 1. n >= 8 (minimum sum is 2+2+2+2=8)\n    # 2. n is even (sum of even numbers is even)\n    \n    return n >= 8 and n % 2 == 0",
-  "model": "qwen3-coder",
-  "task_description": "\ndef is_equal_to_sum_even(n):\n    \"\"\"Evaluate whether the given number n can be written as the sum of exactly 4 positive even numbers\n    Example\n    is_equal_to_sum_even(4) == False\n    is_equal_to_sum_even(6) == False\n    is_equal_to_sum_even(8) == True\n    \"\"\"\n"
-}

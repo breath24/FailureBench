@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/420",
-  "llm_response": "def cube_Sum(n):\n    total = 0\n    even_num = 2\n    for i in range(n):\n        total += even_num ** 3\n        even_num += 2\n    return total",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the cube sum of first n even natural numbers."
-}

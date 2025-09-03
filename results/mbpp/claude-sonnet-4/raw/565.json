@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/565",
-  "llm_response": "def split(string):\n    return list(string)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to split a string into characters."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/140",
+  "task_description": "Write a function to extract elements that occur singly in the given tuple list.",
+  "llm_response": "from itertools import chain\n\ndef extract_singly(list_of_lists):\n    return set(chain.from_iterable(list_of_lists))",
+  "model": "deepseek-chat-v3-0324"
+}

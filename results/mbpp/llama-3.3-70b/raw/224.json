@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/224",
-  "llm_response": "import math\ndef count_Set_Bits(n):\n    count = 0\n    while n:\n        count += n & 1\n        n >>= 1\n    return count",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to count set bits of a given number."
-}

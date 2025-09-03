@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/565",
-  "llm_response": "import typing\n\ndef split(s: str) -> typing.List[str]:\n    return list(s)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to split a string into characters."
-}

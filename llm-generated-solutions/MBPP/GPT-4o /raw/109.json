@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/109",
+  "task_description": "Write a python function to find the count of rotations of a binary string with odd value.",
+  "llm_response": "from collections import deque\n\ndef odd_Equivalent(binary_string, rotations):\n    def is_odd(binary_str):\n        return int(binary_str, 2) % 2 != 0\n\n    binary_deque = deque(binary_string)\n    odd_count = 0\n\n    for _ in range(rotations):\n        if is_odd(''.join(binary_deque)):\n            odd_count += 1\n        binary_deque.rotate(1)\n\n    return odd_count",
+  "model": "gpt-4o"
+}

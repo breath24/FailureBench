@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/235",
-  "llm_response": "def even_bit_set_number(n):\n    result = n\n    position = 0\n    while (1 << position) <= n or position < 32:\n        if position % 2 == 0:\n            result |= (1 << position)\n        position += 1\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to set all even bits of a given number."
-}

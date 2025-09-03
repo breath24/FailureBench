@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/404",
+  "task_description": "Write a python function to find the minimum of two numbers.",
+  "llm_response": "def minimum(a, b):\n    return a if a < b else b",
+  "model": "gpt-4o"
+}

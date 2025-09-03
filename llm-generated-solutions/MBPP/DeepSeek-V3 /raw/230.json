@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/230",
+  "task_description": "Write a function to replace blank spaces with any character in a string.",
+  "llm_response": "import re\n\ndef replace_blank(s, char):\n    return re.sub(r'\\s', char, s)",
+  "model": "deepseek-chat-v3-0324"
+}

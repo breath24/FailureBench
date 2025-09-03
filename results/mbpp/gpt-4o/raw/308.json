@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/308",
-  "llm_response": "import heapq\n\ndef large_product(list1, list2, n):\n    max_heap = []\n    for num1 in list1:\n        for num2 in list2:\n            product = num1 * num2\n            if len(max_heap) < n:\n                heapq.heappush(max_heap, product)\n            else:\n                heapq.heappushpop(max_heap, product)\n    return sorted(max_heap, reverse=True)",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find the specified number of largest products from two given lists."
-}

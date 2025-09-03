@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/454",
-  "llm_response": "import re\n\ndef text_match_wordz(text):\n    return bool(re.search(r'\\b\\w*z\\w*\\b', text))",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function that matches a word containing 'z'."
-}

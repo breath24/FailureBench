@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/237",
+  "task_description": "Write a function to check the occurrences of records which occur similar times in the given tuples.",
+  "llm_response": "def check_occurences(tuple_list):\n    occurrence_dict = {}\n    for tuple_item in tuple_list:\n        # Count both the tuple and its reverse\n        reversed_tuple = tuple_item[::-1]\n        if tuple_item in occurrence_dict:\n            occurrence_dict[tuple_item] += 1\n        elif reversed_tuple in occurrence_dict:\n            occurrence_dict[reversed_tuple] += 1\n        else:\n            # Check if this is actually the reverse of something we've seen\n            if reversed_tuple in tuple_list:\n                if tuple_item <= reversed_tuple:\n                    occurrence_dict[tuple_item] = 2\n            else:\n                occurrence_dict[tuple_item] = 1\n    \n    # Clean up duplicates that might have been double counted\n    final_dict = {}\n    for key, value in occurrence_dict.items():\n        reverse_key = key[::-1]\n        if reverse_key not in final_dict and key not in final_dict:\n            final_dict[key] = value\n    \n    return final_dict",
+  "model": "qwen3-coder"
+}

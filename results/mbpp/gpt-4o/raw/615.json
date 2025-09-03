@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/615",
-  "llm_response": "from typing import List, Tuple\n\ndef average_tuple(tuples: Tuple[Tuple[int, ...], ...]) -> List[float]:\n    return [sum(t) / len(t) for t in tuples]",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find average value of the numbers in a given tuple of tuples."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/308",
+  "task_description": "Write a function to find the specified number of largest products from two given lists.",
+  "llm_response": "import heapq\n\ndef large_product(list1, list2, n):\n    products = []\n    for num1 in list1:\n        for num2 in list2:\n            products.append(num1 * num2)\n    largest_products = heapq.nlargest(n, products)\n    return largest_products",
+  "model": "mistral-3.2-24b"
+}

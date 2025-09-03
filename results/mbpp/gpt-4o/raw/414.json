@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/414",
-  "llm_response": "import itertools\n\ndef overlapping(seq1, seq2):\n    return any(itertools.starmap(lambda x, y: x == y, itertools.product(seq1, seq2)))",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to check whether the value exists in a sequence or not."
-}

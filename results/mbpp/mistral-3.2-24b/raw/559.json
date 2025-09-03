@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/559",
-  "llm_response": "def max_sub_array_sum(arr, k):\n    max_sum = current_sum = sum(arr[:k])\n    for i in range(k, len(arr)):\n        current_sum += arr[i] - arr[i - k]\n        max_sum = max(max_sum, current_sum)\n    return max_sum",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find the largest sum of contiguous subarray in the given array."
-}

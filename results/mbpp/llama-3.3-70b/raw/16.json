@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/16",
-  "llm_response": "import re\n\ndef text_lowercase_underscore(s):\n    return bool(re.match('^[a-z_]+$', s) and all(c != '_' or (s[s.index(c)-1].islower() and s[s.index(c)+1].islower()) for c in s if c == '_'))",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find sequences of lowercase letters joined with an underscore."
-}

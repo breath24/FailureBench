@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/23",
+  "task_description": "\n\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n",
+  "llm_response": "import re\n\ndef strlen(string: str) -> int:\n    return len(string)",
+  "model": "llama-3.3-70b"
+}

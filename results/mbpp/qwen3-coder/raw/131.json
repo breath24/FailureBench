@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/131",
-  "llm_response": "def reverse_vowels(s):\n    vowels = set('aeiouAEIOU')\n    s = list(s)\n    left, right = 0, len(s) - 1\n    \n    while left < right:\n        if s[left] not in vowels:\n            left += 1\n        elif s[right] not in vowels:\n            right -= 1\n        else:\n            s[left], s[right] = s[right], s[left]\n            left += 1\n            right -= 1\n    \n    return ''.join(s)",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to reverse only the vowels of a given string."
-}

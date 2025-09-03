@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/447",
-  "llm_response": "def cube_nums(lst):\n    return [x**3 for x in lst]",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find cubes of individual elements in a list using lambda function."
-}

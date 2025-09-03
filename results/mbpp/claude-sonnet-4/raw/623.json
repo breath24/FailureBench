@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/623",
-  "llm_response": "def nth_nums(nums, n):\n    return [num ** n for num in nums]",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the n-th power of individual elements in a list using lambda function."
-}

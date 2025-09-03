@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/622",
-  "llm_response": "def get_median(list1, list2, n):\n    i = 0\n    j = 0\n    count = 0\n    median1 = -1\n    median2 = -1\n    \n    while count <= n:\n        if i == n:\n            median1 = median2\n            median2 = list2[0]\n            break\n        elif j == n:\n            median1 = median2\n            median2 = list1[0]\n            break\n        \n        if list1[i] <= list2[j]:\n            median1 = median2\n            median2 = list1[i]\n            i += 1\n        else:\n            median1 = median2\n            median2 = list2[j]\n            j += 1\n        count += 1\n    \n    return (median1 + median2) / 2.0",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find the median of two sorted arrays of same size."
-}

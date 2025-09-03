@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/792",
+  "task_description": "Write a python function to count the number of lists in a given number of lists.",
+  "llm_response": "def count_list(lst):\n    return len(lst)",
+  "model": "deepseek-chat-v3-0324"
+}

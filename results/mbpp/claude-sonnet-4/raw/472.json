@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/472",
-  "llm_response": "def check_Consecutive(lst):\n    if len(lst) <= 1:\n        return True\n    \n    sorted_lst = sorted(lst)\n    \n    for i in range(1, len(sorted_lst)):\n        if sorted_lst[i] - sorted_lst[i-1] != 1:\n            return False\n    \n    return True",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to check whether the given list contains consecutive numbers or not."
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/622",
+  "task_description": "Write a function to find the median of two sorted arrays of same size.",
+  "llm_response": "def get_median(list1, list2, n):\n    merged = []\n    i, j = 0, 0\n    while i < n and j < n:\n        if list1[i] < list2[j]:\n            merged.append(list1[i])\n            i += 1\n        else:\n            merged.append(list2[j])\n            j += 1\n    while i < n:\n        merged.append(list1[i])\n        i += 1\n    while j < n:\n        merged.append(list2[j])\n        j += 1\n    if n % 2 == 0:\n        return (merged[n-1] + merged[n]) / 2\n    else:\n        return merged[n // 2]",
+  "model": "mistral-3.2-24b"
+}

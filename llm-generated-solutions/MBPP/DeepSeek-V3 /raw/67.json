@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/67",
+  "task_description": "Write a function to find the number of ways to partition a set of bell numbers.",
+  "llm_response": "from math import comb\n\ndef bell_number(n):\n    if n == 0:\n        return 1\n    bell = [0] * (n + 1)\n    bell[0] = 1\n    for i in range(1, n + 1):\n        bell[i] = 0\n        for j in range(i):\n            bell[i] += comb(i - 1, j) * bell[j]\n    return bell[n]",
+  "model": "deepseek-chat-v3-0324"
+}

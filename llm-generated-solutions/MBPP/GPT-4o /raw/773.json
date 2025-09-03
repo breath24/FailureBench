@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/773",
+  "task_description": "Write a function to find the occurrence and position of the substrings within a string.",
+  "llm_response": "import re\n\ndef occurance_substring(main_string, sub_string):\n    matches = [(m.group(), m.start(), m.end()) for m in re.finditer(re.escape(sub_string), main_string)]\n    return matches[0] if matches else None",
+  "model": "gpt-4o"
+}

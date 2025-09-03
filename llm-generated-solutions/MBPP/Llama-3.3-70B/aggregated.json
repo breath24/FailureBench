@@ -1,0 +1,2270 @@
+[
+  {
+    "task_id": "Mbpp/2",
+    "task_description": "Write a function to find the similar elements from the given two tuple lists.",
+    "llm_response": "import numpy as np\n\ndef similar_elements(list1, list2):\n    return tuple(set(list1) & set(list2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/3",
+    "task_description": "Write a python function to identify non-prime numbers.",
+    "llm_response": "import math\n\ndef is_not_prime(n):\n    if n <= 1:\n        return True\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/4",
+    "task_description": "Write a function to find the largest integers from a given list of numbers using heap queue algorithm.",
+    "llm_response": "import heapq\n\ndef heap_queue_largest(numbers, n):\n    return heapq.nlargest(n, numbers)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/6",
+    "task_description": "Write a python function to check whether the two numbers differ at one bit position only or not.",
+    "llm_response": "import math\n\ndef differ_At_One_Bit_Pos(num1, num2):\n    xor = num1 ^ num2\n    return (xor != 0) and ((xor & (xor - 1)) == 0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/7",
+    "task_description": "Write a function to find all words which are at least 4 characters long in a string by using regex.",
+    "llm_response": "import re\n\ndef find_char_long(s):\n    return re.findall(r'\\b\\w{4,}\\b', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/8",
+    "task_description": "Write a function to find squares of individual elements in a list using lambda function.",
+    "llm_response": "import numpy as np\n\ndef square_nums(nums):\n    return [num ** 2 for num in nums]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/9",
+    "task_description": "Write a python function to find the minimum number of rotations required to get the same string.",
+    "llm_response": "def find_Rotations(s):\n    for i in range(1, len(s)):\n        if s[i:] + s[:i] == s:\n            return i\n    return len(s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/11",
+    "task_description": "Write a python function to remove first and last occurrence of a given character from the string.",
+    "llm_response": "import re\n\ndef remove_Occ(s, c):\n    first_occurrence = s.find(c)\n    last_occurrence = s.rfind(c)\n    return s[:first_occurrence] + s[first_occurrence+1:last_occurrence] + s[last_occurrence+1:]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/12",
+    "task_description": "Write a function to sort a given matrix in ascending order according to the sum of its rows.",
+    "llm_response": "import numpy as np\n\ndef sort_matrix(matrix):\n    return sorted(matrix, key=sum)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/14",
+    "task_description": "Write a python function to find the volume of a triangular prism.",
+    "llm_response": "import math\n\ndef find_Volume(base, height, length):\n    return 0.5 * base * height * length",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/16",
+    "task_description": "Write a function to find sequences of lowercase letters joined with an underscore.",
+    "llm_response": "import re\n\ndef text_lowercase_underscore(s):\n    return bool(re.match('^[a-z_]+$', s) and all(c != '_' or (s[s.index(c)-1].islower() and s[s.index(c)+1].islower()) for c in s if c == '_'))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/17",
+    "task_description": "Write a function to find the perimeter of a square.",
+    "llm_response": "import math\ndef square_perimeter(side_length):\n    return 4 * side_length",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/18",
+    "task_description": "Write a function to remove characters from the first string which are present in the second string.",
+    "llm_response": "import re\n\ndef remove_dirty_chars(s1, s2):\n    pattern = '[' + re.escape(s2) + ']'\n    return re.sub(pattern, '', s1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/19",
+    "task_description": "Write a function to find whether a given array of integers contains any duplicate element.",
+    "llm_response": "import numpy as np\n\ndef test_duplicate(arr):\n    return len(arr) != len(set(arr))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/20",
+    "task_description": "Write a function to check if the given number is woodball or not.",
+    "llm_response": "import math\n\ndef is_woodall(n):\n    i = 1\n    while True:\n        woodall = i * (2 ** i) - 1\n        if woodall == n:\n            return True\n        elif woodall > n:\n            return False\n        i += 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/56",
+    "task_description": "Write a python function to check if a given number is one less than twice its reverse.",
+    "llm_response": "import math\n\ndef check(n):\n    rev = 0\n    temp = n\n    while temp != 0:\n        rev = rev * 10 + temp % 10\n        temp = temp // 10\n    return n == 2 * rev - 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/57",
+    "task_description": "Write a python function to find the largest number that can be formed with the given digits.",
+    "llm_response": "import itertools\n\ndef find_Max_Num(digits):\n    max_num = 0\n    for p in itertools.permutations(digits):\n        num = int(''.join(map(str, p)))\n        if num > max_num:\n            max_num = num\n    return max_num",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/58",
+    "task_description": "Write a python function to check whether the given two integers have opposite sign or not.",
+    "llm_response": "import math\n\ndef opposite_Signs(a, b):\n    return (a * b) < 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/59",
+    "task_description": "Write a function to find the nth octagonal number.",
+    "llm_response": "import math\n\ndef is_octagonal(n):\n    return n * (3 * n - 2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/61",
+    "task_description": "Write a python function to count number of substrings with the sum of digits equal to their length.",
+    "llm_response": "import itertools\n\ndef count_Substrings(s):\n    count = 0\n    for length in range(1, len(s) + 1):\n        for i in range(len(s) - length + 1):\n            substring = s[i:i + length]\n            if sum(int(digit) for digit in substring) == length:\n                count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/62",
+    "task_description": "Write a python function to find smallest number in a list.",
+    "llm_response": "import math\n\ndef smallest_num(nums):\n    return min(nums)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/63",
+    "task_description": "Write a function to find the maximum difference between available pairs in the given tuple list.",
+    "llm_response": "import itertools\n\ndef max_difference(tuples):\n    max_diff = 0\n    for pair in itertools.product(*[tuples]):\n        diff = abs(pair[0][0] - pair[1][0]) + abs(pair[0][1] - pair[1][1])\n        max_diff = max(max_diff, diff)\n    return max_diff",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/64",
+    "task_description": "Write a function to sort a list of tuples using lambda.",
+    "llm_response": "import operator\n\ndef subject_marks(marks):\n    return sorted(marks, key=operator.itemgetter(1))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/65",
+    "task_description": "Write a function of recursion list sum.",
+    "llm_response": "def recursive_list_sum(lst):\n    total = 0\n    for element in lst:\n        if type(element) == list:\n            total += recursive_list_sum(element)\n        else:\n            total += element\n    return total",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/66",
+    "task_description": "Write a python function to count positive numbers in a list.",
+    "llm_response": "import numpy as np\n\ndef pos_count(lst):\n    return sum(1 for num in lst if num > 0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/67",
+    "task_description": "Write a function to find the number of ways to partition a set of bell numbers.",
+    "llm_response": "import math\n\ndef bell_number(n):\n    if n == 0:\n        return 1\n    sum = 0\n    for k in range(n):\n        sum += math.comb(n-1, k) * bell_number(k)\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/68",
+    "task_description": "Write a python function to check whether the given array is monotonic or not.",
+    "llm_response": "import numpy as np\n\ndef is_Monotonic(array):\n    increasing = decreasing = True\n    for i in range(len(array) - 1):\n        if array[i] < array[i + 1]:\n            decreasing = False\n        if array[i] > array[i + 1]:\n            increasing = False\n    return increasing or decreasing",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/69",
+    "task_description": "Write a function to check whether a list contains the given sublist or not.",
+    "llm_response": "import itertools\n\ndef is_sublist(lst, sublst):\n    def window(iterable, size):\n        iterators = itertools.tee(iterable, size)\n        for i, iterator in enumerate(iterators):\n            for _ in range(i):\n                next(iterator)\n        return zip(*iterators)\n\n    for w in window(lst, len(sublst)):\n        if list(w) == sublst:\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/70",
+    "task_description": "Write a function to find whether all the given tuples have equal length or not.",
+    "llm_response": "import itertools\n\ndef get_equal(tuples):\n    return len(set(map(len, tuples))) == 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/71",
+    "task_description": "Write a function to sort a list of elements using comb sort.",
+    "llm_response": "import math\n\ndef comb_sort(arr):\n    def get_next_gap(gap):\n        gap = (gap * 10) // 13\n        if gap < 1:\n            return 1\n        return gap\n\n    n = len(arr)\n    gap = n\n    swapped = True\n\n    while gap != 1 or swapped:\n        gap = get_next_gap(gap)\n        swapped = False\n\n        for i in range(0, n - gap):\n            j = i + gap\n            if arr[i] > arr[j]:\n                arr[i], arr[j] = arr[j], arr[i]\n                swapped = True\n\n    return arr",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/72",
+    "task_description": "Write a python function to check whether the given number can be represented as difference of two squares or not.",
+    "llm_response": "import math\n\ndef dif_Square(n):\n    for i in range(1, int(math.sqrt(n)) + 1):\n        if i * i <= n and (n - i * i) ** 0.5 == int((n - i * i) ** 0.5):\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/74",
+    "task_description": "Write a function to check whether it follows the sequence given in the patterns array.",
+    "llm_response": "def is_samepatterns(patterns, colors):\n    if len(patterns) != len(colors):\n        return False\n    mapping = {}\n    for pattern, color in zip(patterns, colors):\n        if pattern in mapping:\n            if mapping[pattern] != color:\n                return False\n        else:\n            if color in mapping.values():\n                return False\n            mapping[pattern] = color\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/75",
+    "task_description": "Write a function to find tuples which have all elements divisible by k from the given list of tuples.",
+    "llm_response": "import math\n\ndef find_tuples(tuples, k):\n    result = []\n    for t in tuples:\n        if all(i % k == 0 for i in t):\n            result.append(t)\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/77",
+    "task_description": "Write a python function to find the difference between sum of even and odd digits.",
+    "llm_response": "def is_Diff(n):\n    return n % 11 == 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/79",
+    "task_description": "Write a python function to check whether the length of the word is odd or not.",
+    "llm_response": "import math\ndef word_len(word):\n    return len(word) % 2 != 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/80",
+    "task_description": "Write a function to find the nth tetrahedral number.",
+    "llm_response": "import math\n\ndef tetrahedral_number(n):\n    return (n * (n + 1) * (n + 2)) // 6",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/82",
+    "task_description": "Write a function to find the volume of a sphere.",
+    "llm_response": "import math\n\ndef volume_sphere(radius):\n    return (4/3) * math.pi * (radius ** 3)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/84",
+    "task_description": "Write a function to find the n-th number in newman conway sequence.",
+    "llm_response": "import math\n\ndef sequence(n):\n    a = [0] * (n + 1)\n    a[1] = 1\n    for i in range(2, n + 1):\n        a[i] = a[i - a[i - 1]] + a[i - 1]\n    return a[n]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/85",
+    "task_description": "Write a function to find the surface area of a sphere.",
+    "llm_response": "import math\n\ndef surfacearea_sphere(radius):\n    return 4 * math.pi * (radius ** 2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/86",
+    "task_description": "Write a function to find nth centered hexagonal number.",
+    "llm_response": "import math\n\ndef centered_hexagonal_number(n):\n    return n * (3 * n - 1) // 2",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/87",
+    "task_description": "Write a function to merge three dictionaries into a single expression.",
+    "llm_response": "import copy\n\ndef merge_dictionaries_three(dict1, dict2, dict3):\n    merged_dict = copy.copy(dict1)\n    merged_dict.update(dict2)\n    merged_dict.update(dict3)\n    return merged_dict",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/88",
+    "task_description": "Write a function to get the frequency of the elements in a list.",
+    "llm_response": "from collections import Counter\n\ndef freq_count(lst):\n    return dict(Counter(lst))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/89",
+    "task_description": "Write a function to find the closest smaller number than n.",
+    "llm_response": "import math\ndef closest_num(n):\n    return n - 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/90",
+    "task_description": "Write a python function to find the length of the longest word.",
+    "llm_response": "import functools\n\ndef len_log(words):\n    return max(len(word) for word in words)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/91",
+    "task_description": "Write a function to check if a substring is present in a given list of string values.",
+    "llm_response": "import re\n\ndef find_substring(lst, substring):\n    for string in lst:\n        if re.search(substring, string):\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/92",
+    "task_description": "Write a function to check whether the given number is undulating or not.",
+    "llm_response": "def is_undulating(n):\n    n = str(n)\n    for i in range(len(n) - 2):\n        if (int(n[i]) > int(n[i+1]) and int(n[i+1]) < int(n[i+2])) or (int(n[i]) < int(n[i+1]) and int(n[i+1]) > int(n[i+2])):\n            continue\n        else:\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/93",
+    "task_description": "Write a function to calculate the value of 'a' to the power 'b'.",
+    "llm_response": "import math\n\ndef power(a, b):\n    return math.pow(a, b)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/94",
+    "task_description": "Write a function to extract the index minimum value record from the given tuples.",
+    "llm_response": "import sys\n\ndef index_minimum(tuples):\n    return min(tuples, key=lambda x: x[1])[0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/95",
+    "task_description": "Write a python function to find the minimum length of sublist.",
+    "llm_response": "def Find_Min_Length(lists):\n    return min(len(lst) for lst in lists)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/96",
+    "task_description": "Write a python function to find the number of divisors of a given integer.",
+    "llm_response": "import math\n\ndef divisor(n):\n    count = 0\n    for i in range(1, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            if n // i == i:\n                count += 1\n            else:\n                count += 2\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/97",
+    "task_description": "Write a function to find frequency count of list of lists.",
+    "llm_response": "import itertools\n\ndef frequency_lists(lists):\n    flat_list = list(itertools.chain(*lists))\n    freq_dict = {}\n    for item in flat_list:\n        if item in freq_dict:\n            freq_dict[item] += 1\n        else:\n            freq_dict[item] = 1\n    return freq_dict",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/98",
+    "task_description": "Write a function to multiply all the numbers in a list and divide with the length of the list.",
+    "llm_response": "import math\nimport operator\nimport functools\n\ndef multiply_num(numbers):\n    product = functools.reduce(operator.mul, numbers, 1)\n    return product / len(numbers)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/99",
+    "task_description": "Write a function to convert the given decimal number to its binary equivalent.",
+    "llm_response": "import math\n\ndef decimal_to_binary(n):\n    if n == 0:\n        return '0'\n    result = ''\n    while n > 0:\n        result = str(n % 2) + result\n        n = n // 2\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/100",
+    "task_description": "Write a function to find the next smallest palindrome of a specified number.",
+    "llm_response": "def is_palindrome(n):\n    return str(n) == str(n)[::-1]\n\ndef next_smallest_palindrome(n):\n    n += 1\n    while not is_palindrome(n):\n        n += 1\n    return n",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/101",
+    "task_description": "Write a function to find the kth element in the given array.",
+    "llm_response": "def kth_element(arr, k):\n    if k < 1 or k > len(arr):\n        return None\n    return sorted(arr)[k-1]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/102",
+    "task_description": "Write a function to convert snake case string to camel case string.",
+    "llm_response": "import re\n\ndef snake_to_camel(s):\n    components = s.split('_')\n    return components[0].capitalize() + ''.join(x.capitalize() for x in components[1:])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/103",
+    "task_description": "Write a function to find eulerian number a(n, m).",
+    "llm_response": "import math\n\ndef eulerian_num(n, m):\n    def comb(n, k):\n        return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))\n\n    return sum((-1)**k * comb(n+1, k) * (m-k)**n for k in range(m+1))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/104",
+    "task_description": "Write a function to sort each sublist of strings in a given list of lists using lambda function.",
+    "llm_response": "import functools\nimport operator\n\ndef sort_sublists(lists):\n    return [sorted(sublist, key=functools.cmp_to_key(lambda x, y: -1 if x < y else 1 if x > y else 0)) for sublist in lists]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/105",
+    "task_description": "Write a python function to count true booleans in the given list.",
+    "llm_response": "import numpy as np\n\ndef count(lst):\n    return sum(1 for x in lst if x)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/106",
+    "task_description": "Write a function to add the given list to the given tuples.",
+    "llm_response": "import itertools\n\ndef add_lists(lst, tup):\n    return tup + tuple(lst)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/108",
+    "task_description": "Write a function to merge multiple sorted inputs into a single sorted iterator using heap queue algorithm.",
+    "llm_response": "import heapq\n\ndef merge_sorted_list(list1, list2, list3):\n    return sorted(list1 + list2 + list3)\n\ndef merge_sorted_list_efficient(list1, list2, list3):\n    return list(heapq.merge(list1, list2, list3))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/109",
+    "task_description": "Write a python function to find the count of rotations of a binary string with odd value.",
+    "llm_response": "def odd_Equivalent(s, rotations):\n    count = 0\n    for _ in range(rotations):\n        s = s[-1] + s[:-1]\n        if int(s, 2) % 2 != 0:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/111",
+    "task_description": "Write a function to find common elements in given nested lists. * list item * list item * list item * list item",
+    "llm_response": "import functools\n\ndef common_in_nested_lists(nested_lists):\n    sets = [set(lst) for lst in nested_lists]\n    return list(functools.reduce(lambda a, b: a & b, sets))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/113",
+    "task_description": "Write a function to check if a string represents an integer or not.",
+    "llm_response": "import re\ndef check_integer(s):\n    pattern = re.compile(\"^[0-9]+$\")\n    return bool(pattern.match(s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/116",
+    "task_description": "Write a function to convert a given tuple of positive integers into an integer.",
+    "llm_response": "import functools\n\ndef tuple_to_int(t):\n    return int(functools.reduce(lambda x, y: str(x) + str(y), t))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/118",
+    "task_description": "[link text](https:// [link text](https:// [link text](https://)))write a function to convert a string to a list.",
+    "llm_response": "def string_to_list(s):\n    return s.split()",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/119",
+    "task_description": "Write a python function to find the element that appears only once in a sorted array.",
+    "llm_response": "import itertools\n\ndef search(nums):\n    for key, group in itertools.groupby(nums):\n        if len(list(group)) == 1:\n            return key",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/120",
+    "task_description": "Write a function to find the maximum product from the pairs of tuples within a given list.",
+    "llm_response": "import itertools\n\ndef max_product_tuple(tuples):\n    max_product = float('-inf')\n    for pair in itertools.combinations(tuples, 2):\n        product1 = abs(pair[0][0] * pair[1][0])\n        product2 = abs(pair[0][0] * pair[1][1])\n        product3 = abs(pair[0][1] * pair[1][0])\n        product4 = abs(pair[0][1] * pair[1][1])\n        max_product = max(max_product, product1, product2, product3, product4)\n    return max_product",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/123",
+    "task_description": "Write a function to sum all amicable numbers from 1 to a specified number.",
+    "llm_response": "import math\n\ndef sum_of_divisors(n):\n    divisors = [i for i in range(1, n) if n % i == 0]\n    return sum(divisors)\n\ndef amicable_numbers_sum(n):\n    amicable_numbers = set()\n    for i in range(1, n + 1):\n        j = sum_of_divisors(i)\n        if i != j and sum_of_divisors(j) == i and i < j:\n            amicable_numbers.add(i)\n            amicable_numbers.add(j)\n    return sum(amicable_numbers)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/124",
+    "task_description": "Write a function to get the angle of a complex number.",
+    "llm_response": "import math\nimport cmath\n\ndef angle_complex(real, imag):\n    complex_num = complex(real, imag)\n    return cmath.phase(complex_num)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/125",
+    "task_description": "Write a function to find the maximum difference between the number of 0s and number of 1s in any sub-string of the given binary string.",
+    "llm_response": "def find_length(s):\n    max_diff = 0\n    for i in range(len(s)):\n        zeros = 0\n        ones = 0\n        for j in range(i, len(s)):\n            if s[j] == '0':\n                zeros += 1\n            else:\n                ones += 1\n            max_diff = max(max_diff, abs(zeros - ones))\n    return max_diff",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/126",
+    "task_description": "Write a python function to find the sum of common divisors of two given numbers.",
+    "llm_response": "import math\n\ndef sum(a, b):\n    common_divisors = [i for i in range(1, min(a, b) + 1) if a % i == 0 and b % i == 0]\n    return sum(common_divisors)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/127",
+    "task_description": "Write a function to multiply two integers without using the * operator in python.",
+    "llm_response": "import operator\ndef multiply_int(a, b):\n    return operator.mul(a, b)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/128",
+    "task_description": "Write a function to shortlist words that are longer than n from a given list of words.",
+    "llm_response": "import re\n\ndef long_words(n, sentence):\n    words = re.findall(r'\\b\\w+\\b', sentence)\n    return [word for word in words if len(word) > n]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/129",
+    "task_description": "Write a function to calculate magic square.",
+    "llm_response": "import numpy as np\n\ndef magic_square_test(matrix):\n    n = len(matrix)\n    expected_sum = sum(matrix[0])\n    for row in matrix:\n        if sum(row) != expected_sum:\n            return False\n    for col in range(n):\n        if sum(matrix[row][col] for row in range(n)) != expected_sum:\n            return False\n    if sum(matrix[i][i] for i in range(n)) != expected_sum:\n        return False\n    if sum(matrix[i][n-i-1] for i in range(n)) != expected_sum:\n        return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/130",
+    "task_description": "Write a function to find the item with maximum frequency in a given list.",
+    "llm_response": "import collections\n\ndef max_occurrences(lst):\n    freq = collections.Counter(lst)\n    return max(freq, key=freq.get)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/131",
+    "task_description": "Write a python function to reverse only the vowels of a given string.",
+    "llm_response": "import re\n\ndef reverse_vowels(s):\n    vowels = re.findall(r'[aeiouAEIOU]', s)\n    vowels = vowels[::-1]\n    return re.sub(r'[aeiouAEIOU]', lambda x: vowels.pop(0), s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/132",
+    "task_description": "Write a function to convert tuple to a string.",
+    "llm_response": "import itertools\n\ndef tup_string(tup):\n    return ''.join(itertools.chain.from_iterable(itertools.groupby(tup)))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/133",
+    "task_description": "Write a function to calculate the sum of the negative numbers of a given list of numbers using lambda function.",
+    "llm_response": "import numpy as np\n\ndef sum_negativenum(numbers):\n    return sum(num for num in numbers if num < 0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/135",
+    "task_description": "Write a function to find the nth hexagonal number.",
+    "llm_response": "import math\n\ndef hexagonal_num(n):\n    return n * (2 * n - 1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/137",
+    "task_description": "Write a function to find the ration of zeroes in an array of integers.",
+    "llm_response": "import math\n\ndef zero_count(arr):\n    zeroes = sum(1 for x in arr if x == 0)\n    non_zeroes = len(arr) - zeroes\n    if non_zeroes == 0:\n        return 0\n    return zeroes / non_zeroes",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/138",
+    "task_description": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not.",
+    "llm_response": "def is_Sum_Of_Powers_Of_Two(n):\n    binary = bin(n)[2:]\n    return binary.count('1') > 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/139",
+    "task_description": "Write a function to find the circumference of a circle.",
+    "llm_response": "import math\n\ndef circle_circumference(radius):\n    return 2 * math.pi * radius",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/140",
+    "task_description": "Write a function to extract elements that occur singly in the given tuple list.",
+    "llm_response": "def extract_singly(lists):\n    result = set()\n    for lst in lists:\n        result.update(lst)\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/141",
+    "task_description": "Write a function to sort a list of elements using pancake sort.",
+    "llm_response": "import functools\n\ndef pancake_sort(arr):\n    def flip(arr, k):\n        return arr[:k][::-1] + arr[k:]\n\n    for size in range(len(arr), 0, -1):\n        max_index = arr.index(max(arr[:size]))\n        if max_index == size - 1:\n            continue\n        if max_index != 0:\n            arr = flip(arr, max_index + 1)\n        arr = flip(arr, size)\n    return arr",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/142",
+    "task_description": "Write a function to count the same pair in three given lists.",
+    "llm_response": "def count_samepair(list1, list2, list3):\n    count = 0\n    for i in range(len(list1)):\n        if list1[i] == list2[i] == list3[i]:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/145",
+    "task_description": "Write a python function to find the maximum difference between any two elements in a given array.",
+    "llm_response": "import itertools\n\ndef max_Abs_Diff(arr):\n    return max(abs(a - b) for a, b in itertools.combinations(arr, 2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/160",
+    "task_description": "Write a function to find x and y that satisfies ax + by = n.",
+    "llm_response": "import math\n\ndef find_solution(a, b, n):\n    for x in range(n + 1):\n        if (n - a * x) % b == 0:\n            y = (n - a * x) // b\n            return (x, y)\n    return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/161",
+    "task_description": "Write a function to remove all elements from a given list present in another list.",
+    "llm_response": "import numpy as np\n\ndef remove_elements(list1, list2):\n    return [i for i in list1 if i not in list2]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/162",
+    "task_description": "Write a function to calculate the sum of the positive integers of n+(n-2)+(n-4)... (until n-x =< 0).",
+    "llm_response": "def sum_series(n):\n    total = 0\n    for i in range(n // 2 + 1):\n        if n - 2 * i > 0:\n            total += n - 2 * i\n    return total",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/165",
+    "task_description": "Write a python function to count characters at same position in a given string (lower and uppercase characters) as in english alphabet.",
+    "llm_response": "import string\n\ndef count_char_position(s):\n    s = s.lower()\n    count = 0\n    for i, c in enumerate(s):\n        if c in string.ascii_lowercase and ord(c) - 96 == i + 1:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/166",
+    "task_description": "Write a python function to count the pairs with xor as an even number.",
+    "llm_response": "import itertools\n\ndef find_even_pair(lst):\n    count = 0\n    for pair in itertools.combinations(lst, 2):\n        if (pair[0] ^ pair[1]) % 2 == 0:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/167",
+    "task_description": "Write a python function to find smallest power of 2 greater than or equal to n.",
+    "llm_response": "import math\n\ndef next_power_of_2(n):\n    if n == 0:\n        return 1\n    return 2 ** math.ceil(math.log2(n))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/168",
+    "task_description": "Write a python function to find the frequency of a number in a given array.",
+    "llm_response": "import numpy as np\n\ndef frequency(lst, num):\n    return lst.count(num)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/170",
+    "task_description": "Write a function to find sum of the numbers in a list between the indices of a specified range.",
+    "llm_response": "def sum_range_list(lst, start, end):\n    return sum(lst[lst.index(start):lst.index(end)+1])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/171",
+    "task_description": "Write a function to find the perimeter of a pentagon.",
+    "llm_response": "import math\n\ndef perimeter_pentagon(side_length):\n    return 5 * side_length",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/172",
+    "task_description": "Write a function to find the occurence of characters 'std' in the given string 1. list item 1. list item 1. list item 2. list item 2. list item 2. list item",
+    "llm_response": "import re\n\ndef count_occurance(s):\n    return len(re.findall('std', s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/222",
+    "task_description": "Write a function to check if all the elements in tuple have same data type or not.",
+    "llm_response": "import typing\n\ndef check_type(t):\n    return len(set(type(x) for x in t)) == 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/223",
+    "task_description": "Write a function to check for majority element in the given sorted array.",
+    "llm_response": "def is_majority(arr, n, x):\n    count = 0\n    for i in range(n):\n        if arr[i] == x:\n            count += 1\n    return count > n / 2",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/224",
+    "task_description": "Write a python function to count set bits of a given number.",
+    "llm_response": "import math\ndef count_Set_Bits(n):\n    count = 0\n    while n:\n        count += n & 1\n        n >>= 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/226",
+    "task_description": "Write a python function to remove the characters which have odd index values of a given string.",
+    "llm_response": "import numpy as np\n\ndef odd_values_string(s):\n    return ''.join([s[i] for i in range(len(s)) if i % 2 == 0])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/227",
+    "task_description": "Write a function to find minimum of three numbers.",
+    "llm_response": "import math\ndef min_of_three(a, b, c):\n    return min(a, b, c)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/230",
+    "task_description": "Write a function to replace blank spaces with any character in a string.",
+    "llm_response": "import re\ndef replace_blank(s, c):\n    return re.sub(' ', c, s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/232",
+    "task_description": "Write a function to get the n largest items from a dataset.",
+    "llm_response": "import heapq\n\ndef larg_nnum(lst, n):\n    return heapq.nlargest(n, lst)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/233",
+    "task_description": "Write a function to find the lateral surface area of a cylinder.",
+    "llm_response": "import math\n\ndef lateralsuface_cylinder(radius, height):\n    return 2 * math.pi * radius * height",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/234",
+    "task_description": "Write a function to find the volume of a cube.",
+    "llm_response": "def volume_cube(side_length):\n    return side_length ** 3",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/235",
+    "task_description": "Write a python function to set all even bits of a given number.",
+    "llm_response": "def even_bit_set_number(n):\n    binary = bin(n)[2:]\n    binary = binary.zfill(8)\n    result = ''\n    for i in range(len(binary)):\n        if (i+1) % 2 == 0:\n            result += '1'\n        else:\n            result += binary[i]\n    return int(result, 2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/237",
+    "task_description": "Write a function to check the occurrences of records which occur similar times in the given tuples.",
+    "llm_response": "from collections import defaultdict\n\ndef check_occurences(tuples):\n    occurrences = defaultdict(int)\n    for t in tuples:\n        sorted_t = tuple(sorted(t))\n        occurrences[sorted_t] += 1\n    return dict(occurrences)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/238",
+    "task_description": "Write a python function to count number of non-empty substrings of a given string.",
+    "llm_response": "def number_of_substrings(s):\n    count = 0\n    for i in range(len(s)):\n        for j in range(i + 1, len(s) + 1):\n            if s[i:j]:\n                count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/239",
+    "task_description": "Write a function to find the number of possible sequences of length n such that each of the next element is greater than or equal to twice of the previous element but less than or equal to m.",
+    "llm_response": "def get_total_number_of_sequences(m, n):\n    memo = {}\n\n    def dfs(i, prev):\n        if i == n:\n            return 1\n        if (i, prev) in memo:\n            return memo[(i, prev)]\n        count = 0\n        for j in range(max(1, prev * 2), m + 1):\n            count += dfs(i + 1, j)\n        memo[(i, prev)] = count\n        return count\n\n    return dfs(0, 0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/240",
+    "task_description": "Write a function to replace the last element of the list with another list.",
+    "llm_response": "import copy\n\ndef replace_list(list1, list2):\n    list1 = list1[:-1]\n    list1.extend(list2)\n    return list1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/242",
+    "task_description": "Write a function to count total characters in a string.",
+    "llm_response": "import re\ndef count_charac(s):\n    return len(re.sub(r'\\s+', '', s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/244",
+    "task_description": "Write a python function to find the next perfect square greater than a given number.",
+    "llm_response": "import math\n\ndef next_Perfect_Square(n):\n    root = math.ceil(math.sqrt(n))\n    return root * root",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/245",
+    "task_description": "Write a function to find the maximum sum of bi-tonic sub-sequence for the given array.",
+    "llm_response": "def max_sum(arr):\n    def max_ending_here(arr, i, direction):\n        if direction == 'up':\n            if i == 0:\n                return arr[i]\n            else:\n                return max(arr[i], max_ending_here(arr, i-1, direction) + arr[i])\n        else:\n            if i == len(arr) - 1:\n                return arr[i]\n            else:\n                return max(arr[i], max_ending_here(arr, i+1, direction) + arr[i])\n\n    max_sum = 0\n    for i in range(len(arr)):\n        sum_up = max_ending_here(arr, i, 'up')\n        sum_down = max_ending_here(arr, i, 'down')\n        max_sum = max(max_sum, sum_up + sum_down - arr[i])\n    return max_sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/247",
+    "task_description": "Write a function to find the longest palindromic subsequence in the given string.",
+    "llm_response": "import re\n\ndef lps(s):\n    s = re.sub('[\\W_]+', '', s.upper())\n    n = len(s)\n    dp = [[0 for _ in range(n)] for _ in range(n)]\n    for i in range(n):\n        dp[i][i] = 1\n    for cl in range(2, n + 1):\n        for i in range(n - cl + 1):\n            j = i + cl - 1\n            if s[i] == s[j] and cl == 2:\n                dp[i][j] = 2\n            elif s[i] == s[j]:\n                dp[i][j] = dp[i + 1][j - 1] + 2\n            else:\n                dp[i][j] = max(dp[i][j - 1], dp[i + 1][j])\n    return dp[0][n - 1]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/250",
+    "task_description": "Write a python function to count the occcurences of an element in a tuple.",
+    "llm_response": "import collections\n\ndef count_X(tup, elem):\n    return tup.count(elem)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/251",
+    "task_description": "Write a function to insert an element before each element of a list.",
+    "llm_response": "def insert_element(lst, elem):\n    result = []\n    for i in lst:\n        result.append(elem)\n        result.append(i)\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/252",
+    "task_description": "Write a python function to convert complex numbers to polar coordinates.",
+    "llm_response": "import cmath\nimport math\n\ndef convert(z):\n    r = abs(z)\n    phi = cmath.phase(z)\n    return r, phi",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/253",
+    "task_description": "Write a python function to count integers from a given list.",
+    "llm_response": "import numpy as np\n\ndef count_integer(lst):\n    return sum(isinstance(i, int) for i in lst)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/255",
+    "task_description": "Write a function to choose specified number of colours from three different colours and generate all the combinations with repetitions.",
+    "llm_response": "import itertools\n\ndef combinations_colors(lst, n):\n    return list(itertools.product(lst, repeat=n))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/256",
+    "task_description": "Write a python function to count the number of prime numbers less than a given non-negative number.",
+    "llm_response": "import math\n\ndef count_Primes_nums(n):\n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(math.sqrt(num)) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    count = 0\n    for i in range(2, n):\n        if is_prime(i):\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/257",
+    "task_description": "Write a function to swap two numbers.",
+    "llm_response": "import math\ndef swap_numbers(a, b):\n    return b, a",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/259",
+    "task_description": "Write a function to maximize the given two tuples.",
+    "llm_response": "import itertools\n\ndef maximize_elements(tuple1, tuple2):\n    return tuple(max(pair1, pair2) for pair1, pair2 in zip(tuple1, tuple2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/260",
+    "task_description": "Write a function to find the nth newman–shanks–williams prime number.",
+    "llm_response": "import sympy\n\ndef newman_prime(n):\n    count = 0\n    num = 2\n    while True:\n        if sympy.isprime(num) and is_newman_shanks_williams(num):\n            count += 1\n            if count == n:\n                return num\n        num += 1\n\ndef is_newman_shanks_williams(n):\n    for p in range(2, int(n**0.5) + 1):\n        if n % p == 0:\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/261",
+    "task_description": "Write a function to perform mathematical division operation across the given tuples.",
+    "llm_response": "import math\n\ndef division_elements(tuple1, tuple2):\n    result = []\n    for i in range(len(tuple1)):\n        result.append(math.ceil(tuple1[i] / tuple2[i]))\n    return tuple(result)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/262",
+    "task_description": "Write a function to split a given list into two parts where the length of the first part of the list is given.",
+    "llm_response": "import itertools\n\ndef split_two_parts(lst, L):\n    return lst[:L], lst[L:]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/264",
+    "task_description": "Write a function to calculate a dog's age in dog's years.",
+    "llm_response": "import math\ndef dog_age(human_age):\n    if human_age <= 2:\n        return human_age * 10.5\n    else:\n        return 21 + (human_age - 2) * 4",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/265",
+    "task_description": "Write a function to split a list for every nth element.",
+    "llm_response": "def list_split(lst, n):\n    return [[lst[j] for j in range(i, len(lst), n)] for i in range(n)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/266",
+    "task_description": "Write a function to find the lateral surface area of a cube.",
+    "llm_response": "import math\n\ndef lateralsurface_cube(side_length):\n    return 4 * (side_length ** 2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/267",
+    "task_description": "Write a python function to find the sum of squares of first n odd natural numbers.",
+    "llm_response": "import math\n\ndef square_Sum(n):\n    sum = 0\n    for i in range(n):\n        sum += (2*i+1)**2\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/268",
+    "task_description": "Write a function to find the n'th star number.",
+    "llm_response": "import math\n\ndef find_star_num(n):\n    i = 1\n    count = 0\n    while True:\n        if is_star_num(i):\n            count += 1\n            if count == n:\n                return i\n        i += 1\n\ndef is_star_num(num):\n    octal = oct(num)[2:]\n    return set(octal) == {'1', '0'} and octal[0] == '1' and '11' not in octal",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/269",
+    "task_description": "Write a function to find the ascii value of a character.",
+    "llm_response": "import sys\ndef ascii_value(char):\n    return ord(char)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/270",
+    "task_description": "Write a python function to find the sum of even numbers at even positions.",
+    "llm_response": "def sum_even_and_even_index(lst):\n    return sum(num for idx, num in enumerate(lst) if idx % 2 == 0 and num % 2 == 0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/271",
+    "task_description": "Write a python function to find the sum of fifth power of first n even natural numbers.",
+    "llm_response": "import math\n\ndef even_Power_Sum(n):\n    sum = 0\n    count = 0\n    i = 1\n    while count < n:\n        if i % 2 == 0:\n            sum += i ** 5\n            count += 1\n        i += 1\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/272",
+    "task_description": "Write a function to perfom the rear element extraction from list of tuples records.",
+    "llm_response": "import operator\n\ndef rear_extract(tuples):\n    return list(map(lambda x: x[-1], tuples))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/273",
+    "task_description": "Write a function to substract the contents of one tuple with corresponding index of other tuple.",
+    "llm_response": "import operator\n\ndef substract_elements(tuple1, tuple2):\n    return tuple(map(operator.sub, tuple1, tuple2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/274",
+    "task_description": "Write a python function to find sum of even index binomial coefficients.",
+    "llm_response": "import math\n\ndef even_binomial_Coeff_Sum(n):\n    sum = 0\n    for k in range(n + 1):\n        if k % 2 == 0:\n            sum += math.comb(n, k)\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/276",
+    "task_description": "Write a function to find the volume of a cylinder.",
+    "llm_response": "import math\n\ndef volume_cylinder(radius, height):\n    return math.pi * (radius ** 2) * height",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/277",
+    "task_description": "Write a function to filter a dictionary based on values.",
+    "llm_response": "import operator\n\ndef dict_filter(dictionary, n):\n    return dict(filter(lambda item: item[1] >= n, dictionary.items()))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/278",
+    "task_description": "Write a function to find the element count that occurs before the record in the given tuple.",
+    "llm_response": "def count_first_elements(t):\n    for i, element in enumerate(t):\n        if isinstance(element, tuple):\n            return i\n    return len(t)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/279",
+    "task_description": "Write a function to find the nth decagonal number.",
+    "llm_response": "import math\n\ndef is_num_decagonal(n):\n    return 4 * n ** 2 - 4 * n + 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/280",
+    "task_description": "Write a function to search an element in the given array by using sequential search.",
+    "llm_response": "import numpy as np\n\ndef sequential_search(array, element):\n    for i in range(len(array)):\n        if array[i] == element:\n            return (True, i)\n    return (False, -1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/281",
+    "task_description": "Write a python function to check if the elements of a given list are unique or not.",
+    "llm_response": "def all_unique(lst):\n    return len(lst) == len(set(lst))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/282",
+    "task_description": "Write a function to substaract two lists using map and lambda function.",
+    "llm_response": "import numpy as np\n\ndef sub_list(list1, list2):\n    return np.subtract(list1, list2).tolist()",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/283",
+    "task_description": "Write a python function to check whether the frequency of each digit is less than or equal to the digit itself.",
+    "llm_response": "import collections\n\ndef validate(n):\n    str_n = str(n)\n    digit_counts = collections.Counter(str_n)\n    for digit, count in digit_counts.items():\n        if count > int(digit):\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/284",
+    "task_description": "Write a function to check whether all items of a list are equal to a given string.",
+    "llm_response": "import numpy as np\n\ndef check_element(lst, element):\n    return all(i == element for i in lst)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/285",
+    "task_description": "Write a function that matches a string that has an a followed by two to three 'b'.",
+    "llm_response": "import re\n\ndef text_match_two_three(text):\n    pattern = r'ab{2,3}'\n    return bool(re.search(pattern, text))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/286",
+    "task_description": "Write a function to find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times.",
+    "llm_response": "import itertools\n\ndef max_sub_array_sum_repeated(arr, k, n):\n    max_sum = float('-inf')\n    for i in range(n):\n        for j in range(i, n):\n            sub_array_sum = sum(arr[i:j+1])\n            max_sum = max(max_sum, sub_array_sum)\n    return max_sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/287",
+    "task_description": "Write a python function to find the sum of squares of first n even natural numbers.",
+    "llm_response": "import math\n\ndef square_Sum(n):\n    return sum([i**2 for i in range(2, n*2 + 1, 2)])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/290",
+    "task_description": "Write a function to find the list of lists with maximum length.",
+    "llm_response": "import itertools\n\ndef max_length(lists):\n    max_len = max(len(lst) for lst in lists)\n    return (max_len, next(lst for lst in lists if len(lst) == max_len))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/292",
+    "task_description": "Write a python function to find quotient of two numbers.",
+    "llm_response": "import math\ndef find(a, b):\n    return math.floor(a / b)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/293",
+    "task_description": "Write a function to find the third side of a right angled triangle.",
+    "llm_response": "import math\n\ndef otherside_rightangle(a, b):\n    return math.sqrt(a**2 + b**2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/294",
+    "task_description": "Write a function to find the maximum value in a given heterogeneous list.",
+    "llm_response": "import numbers\n\ndef max_val(lst):\n    numeric_values = [x for x in lst if isinstance(x, numbers.Number)]\n    return max(numeric_values) if numeric_values else None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/296",
+    "task_description": "Write a python function to count inversions in an array.",
+    "llm_response": "import math\n\ndef get_Inv_Count(arr):\n    count = 0\n    for i in range(len(arr)):\n        for j in range(i+1, len(arr)):\n            if arr[i] > arr[j]:\n                count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/297",
+    "task_description": "Write a function to flatten a given nested list structure.",
+    "llm_response": "def flatten_list(nested_list):\n    flat_list = []\n    for item in nested_list:\n        if isinstance(item, list):\n            flat_list.extend(flatten_list(item))\n        else:\n            flat_list.append(item)\n    return flat_list",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/299",
+    "task_description": "Write a function to calculate the maximum aggregate from the list of tuples.",
+    "llm_response": "from collections import defaultdict\n\ndef max_aggregate(students):\n    student_scores = defaultdict(int)\n    for student, score in students:\n        student_scores[student] += score\n    max_score = max(student_scores.values())\n    max_student = [student for student, score in student_scores.items() if score == max_score][0]\n    return max_student, max_score",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/300",
+    "task_description": "Write a function to find the count of all binary sequences of length 2n such that sum of first n bits is same as sum of last n bits.",
+    "llm_response": "import math\n\ndef count_binary_seq(n):\n    return math.comb(2*n, n)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/301",
+    "task_description": "Write a function to find the depth of a dictionary.",
+    "llm_response": "import collections\n\ndef dict_depth(d):\n    if not isinstance(d, collections.abc.Mapping):\n        return 0\n    elif not d:\n        return 1\n    else:\n        return 1 + max((dict_depth(v) for v in d.values() if isinstance(v, collections.abc.Mapping)), default=0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/305",
+    "task_description": "Write a function to match two words from a list of words starting with letter 'p'.",
+    "llm_response": "import re\n\ndef start_withp(words):\n    p_words = [word for word in ' '.join(words).split() if word.startswith('p') or word.startswith('P')]\n    return tuple(p_words[:2])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/306",
+    "task_description": "Write a function to find the maximum sum of increasing subsequence from prefix till ith index and also including a given kth element which is after i, i.e., k > i .",
+    "llm_response": "def max_sum_increasing_subseq(arr, n, i, k):\n    max_sum = float('-inf')\n    for j in range(i+1, n):\n        if arr[j] > arr[i]:\n            subseq_sum = arr[i] + arr[j]\n            max_sum = max(max_sum, subseq_sum)\n    if k < n:\n        if arr[k] > arr[i]:\n            subseq_sum = arr[i] + arr[k]\n            max_sum = max(max_sum, subseq_sum)\n    return max_sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/308",
+    "task_description": "Write a function to find the specified number of largest products from two given lists.",
+    "llm_response": "import itertools\nimport heapq\n\ndef large_product(list1, list2, n):\n    products = [x * y for x, y in itertools.product(list1, list2)]\n    return heapq.nlargest(n, products)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/309",
+    "task_description": "Write a python function to find the maximum of two numbers.",
+    "llm_response": "def maximum(a, b):\n    if a >= b:\n        return a\n    else:\n        return b",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/310",
+    "task_description": "Write a function to convert a given string to a tuple.",
+    "llm_response": "def string_to_tuple(s):\n    return tuple(s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/311",
+    "task_description": "Write a python function to set the left most unset bit.",
+    "llm_response": "import math\n\ndef set_left_most_unset_bit(n):\n    left_most_unset_bit_position = math.floor(math.log2(~n & -~n))\n    return n | (1 << left_most_unset_bit_position)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/312",
+    "task_description": "Write a function to find the volume of a cone.",
+    "llm_response": "import math\n\ndef volume_cone(radius, height):\n    return (1.0/3) * math.pi * radius * radius * height",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/388",
+    "task_description": "Write a python function to find the highest power of 2 that is less than or equal to n.",
+    "llm_response": "import math\n\ndef highest_Power_of_2(n):\n    if n <= 0:\n        return 0\n    return 2 ** math.floor(math.log2(n))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/389",
+    "task_description": "Write a function to find the n'th lucas number.",
+    "llm_response": "import math\n\ndef find_lucas(n):\n    if n == 0:\n        return 2\n    elif n == 1:\n        return 1\n    else:\n        a, b = 2, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/390",
+    "task_description": "Write a function to insert a given string at the beginning of all items in a list.",
+    "llm_response": "import functools\n\ndef add_string(lst, fmt):\n    return [fmt.format(i) for i in lst]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/391",
+    "task_description": "Write a function to convert more than one list to nested dictionary.",
+    "llm_response": "import itertools\n\ndef convert_list_dictionary(list1, list2, list3):\n    return [{k1: {k2: v}} for k1, k2, v in zip(list1, list2, list3)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/392",
+    "task_description": "Write a function to find the maximum sum possible by using the given equation f(n) = max( (f(n/2) + f(n/3) + f(n/4) + f(n/5)), n).",
+    "llm_response": "import math\n\ndef get_max_sum(n, memo = {}):\n    if n in memo:\n        return memo[n]\n    if n <= 0:\n        return 0\n    memo[n] = max(n, get_max_sum(n/2, memo) + get_max_sum(n/3, memo) + get_max_sum(n/4, memo) + get_max_sum(n/5, memo))\n    return memo[n]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/394",
+    "task_description": "Write a function to check if given tuple is distinct or not.",
+    "llm_response": "import collections\n\ndef check_distinct(tup):\n    return len(tup) == len(set(tup))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/395",
+    "task_description": "Write a python function to find the first non-repeated character in a given string.",
+    "llm_response": "from collections import Counter\n\ndef first_non_repeating_character(s):\n    char_count = Counter(s)\n    for char in s:\n        if char_count[char] == 1:\n            return char\n    return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/397",
+    "task_description": "Write a function to find the median of three specific numbers.",
+    "llm_response": "import statistics\n\ndef median_numbers(a, b, c):\n    return statistics.median([a, b, c])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/398",
+    "task_description": "Write a function to compute the sum of digits of each number of a given list.",
+    "llm_response": "import functools\n\ndef sum_of_digits(lst):\n    def sum_digits(n):\n        return sum(int(digit) for digit in str(n))\n    return sum(sum_digits(n) for n in lst)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/404",
+    "task_description": "Write a python function to find the minimum of two numbers.",
+    "llm_response": "def minimum(a, b):\n    if a < b:\n        return a\n    else:\n        return b",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/405",
+    "task_description": "Write a function to check whether an element exists within a tuple.",
+    "llm_response": "import sys\n\ndef check_tuplex(tup, val):\n    for i in tup:\n        if i == val:\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/406",
+    "task_description": "Write a python function to find the parity of a given number.",
+    "llm_response": "import math\ndef find_Parity(n):\n    if n % 2 == 0:\n        return False\n    else:\n        return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/409",
+    "task_description": "Write a function to find the minimum product from the pairs of tuples within a given list.",
+    "llm_response": "import itertools\n\ndef min_product_tuple(tuples):\n    return min(a * b for a, b in itertools.combinations((min(t) for t in tuples), 2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/410",
+    "task_description": "Write a function to find the minimum value in a given heterogeneous list.",
+    "llm_response": "def min_val(lst):\n    numeric_values = [x for x in lst if isinstance(x, (int, float))]\n    return min(numeric_values)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/412",
+    "task_description": "Write a python function to remove odd numbers from a given list.",
+    "llm_response": "import numpy as np\n\ndef remove_odd(numbers):\n    return [num for num in numbers if num % 2 == 0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/413",
+    "task_description": "Write a function to extract the nth element from a given list of tuples.",
+    "llm_response": "def extract_nth_element(tuples, n):\n    return [t[n] for t in tuples]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/414",
+    "task_description": "Write a python function to check whether the value exists in a sequence or not.",
+    "llm_response": "def overlapping(seq1, seq2):\n    return any(value in seq2 for value in seq1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/415",
+    "task_description": "Write a python function to find a pair with highest product from a given array of integers.",
+    "llm_response": "import itertools\n\ndef max_Product(arr):\n    max_product = float('-inf')\n    max_pair = None\n    for pair in itertools.combinations(arr, 2):\n        product = pair[0] * pair[1]\n        if product > max_product:\n            max_product = product\n            max_pair = pair\n    return max_pair",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/418",
+    "task_description": "Write a python function to find the sublist having maximum length.",
+    "llm_response": "def Find_Max(lst):\n    return max(lst, key=len)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/419",
+    "task_description": "Write a function to round every number of a given list of numbers and print the total sum multiplied by the length of the list.",
+    "llm_response": "import math\n\ndef round_and_sum(numbers):\n    rounded_numbers = [round(num) for num in numbers]\n    total_sum = sum(rounded_numbers)\n    result = total_sum * len(numbers)\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/420",
+    "task_description": "Write a python function to find the cube sum of first n even natural numbers.",
+    "llm_response": "import math\n\ndef cube_Sum(n):\n    sum = 0\n    for i in range(2, n*2 + 1, 2):\n        sum += i ** 3\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/421",
+    "task_description": "Write a function to concatenate each element of tuple by the delimiter.",
+    "llm_response": "import functools\n\ndef concatenate_tuple(t):\n    return functools.reduce(lambda x, y: str(x) + '-' + str(y), t)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/422",
+    "task_description": "Write a python function to find the average of cubes of first n natural numbers.",
+    "llm_response": "import math\n\ndef find_Average_Of_Cube(n):\n    sum_of_cubes = sum(i**3 for i in range(1, n+1))\n    return sum_of_cubes / n",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/424",
+    "task_description": "Write a function to extract only the rear index element of each string in the given tuple.",
+    "llm_response": "import re\n\ndef extract_rear(tup):\n    return [s[-1] for s in tup]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/425",
+    "task_description": "Write a function to count the number of sublists containing a particular element.",
+    "llm_response": "import numpy as np\n\ndef count_element_in_list(lst, elem):\n    count = 0\n    for sublist in lst:\n        if elem in sublist:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/426",
+    "task_description": "Write a function to filter odd numbers using lambda function.",
+    "llm_response": "import numpy as np\n\ndef filter_oddnumbers(numbers):\n    return [num for num in numbers if num % 2 != 0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/427",
+    "task_description": "Write a function to convert a date of yyyy-mm-dd format to dd-mm-yyyy format by using regex.",
+    "llm_response": "from datetime import datetime\n\ndef change_date_format(date_str):\n    date_obj = datetime.strptime(date_str, '%Y-%m-%d')\n    return date_obj.strftime('%d-%m-%Y')",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/428",
+    "task_description": "Write a function to sort the given array by using shell sort.",
+    "llm_response": "def shell_sort(array):\n    n = len(array)\n    gap = n//2\n\n    while gap > 0:\n        for i in range(gap, n):\n            temp = array[i]\n            j = i\n            while j >= gap and array[j-gap] > temp:\n                array[j] = array[j-gap]\n                j -= gap\n            array[j] = temp\n        gap //= 2\n    return array",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/429",
+    "task_description": "Write a function to extract the elementwise and tuples from the given two tuples.",
+    "llm_response": "def and_tuples(t1, t2):\n    return tuple(a - b for a, b in zip(t1, t2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/430",
+    "task_description": "Write a function to find the directrix of a parabola.",
+    "llm_response": "import math\n\ndef parabola_directrix(a, b, c):\n    p = 1 / (4 * a)\n    return (-(b**2) - 4 * a * c + 1) / (4 * a) - p",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/432",
+    "task_description": "Write a function to find the median of a trapezium.",
+    "llm_response": "import statistics\ndef median_trapezium(a, b, c):\n    lengths = [a, b, c]\n    return statistics.median(lengths)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/433",
+    "task_description": "Write a function to check whether the entered number is greater than the elements of the given array.",
+    "llm_response": "import numpy as np\n\ndef check_greater(array, num):\n    for i in array:\n        if i >= num:\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/435",
+    "task_description": "Write a python function to find the last digit of a given number.",
+    "llm_response": "import math\n\ndef last_Digit(n):\n    return n % 10",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/436",
+    "task_description": "Write a python function to print negative numbers in a list.",
+    "llm_response": "import numpy as np\n\ndef neg_nos(lst):\n    return [i for i in lst if i < 0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/437",
+    "task_description": "Write a function to remove odd characters in a string.",
+    "llm_response": "import numpy as np\n\ndef remove_odd(s):\n    return ''.join([s[i] for i in range(len(s)) if i % 2 == 0])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/439",
+    "task_description": "Write a function to convert a list of multiple integers into a single integer.",
+    "llm_response": "import functools\n\ndef multiple_to_single(nums):\n    return int(functools.reduce(lambda x, y: str(x) + str(y), nums))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/440",
+    "task_description": "Write a function to find all adverbs and their positions in a given sentence.",
+    "llm_response": "import re\n\ndef find_adverb_position(sentence):\n    adverbs = re.findall(r'\\b\\w+ly\\b', sentence)\n    if adverbs:\n        first_adverb = adverbs[0]\n        start = sentence.find(first_adverb)\n        end = start + len(first_adverb)\n        return start, end, first_adverb\n    else:\n        return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/441",
+    "task_description": "Write a function to find the surface area of a cube.",
+    "llm_response": "import math\n\ndef surfacearea_cube(size):\n    return 6 * (size ** 2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/445",
+    "task_description": "Write a function to perform index wise multiplication of tuple elements in the given two tuples.",
+    "llm_response": "import operator\nimport itertools\n\ndef index_multiplication(tuple1, tuple2):\n    return tuple(tuple(map(operator.mul, a, b)) for a, b in zip(tuple1, tuple2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/446",
+    "task_description": "Write a python function to count the occurence of all elements of list in a tuple.",
+    "llm_response": "from collections import Counter\n\ndef count_Occurrence(tup, lst):\n    count = Counter(tup)\n    return sum(count[i] for i in lst)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/447",
+    "task_description": "Write a function to find cubes of individual elements in a list using lambda function.",
+    "llm_response": "import numpy as np\n\ndef cube_nums(nums):\n    return [num**3 for num in nums]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/448",
+    "task_description": "Write a function to calculate the sum of perrin numbers.",
+    "llm_response": "import math\n\ndef cal_sum(n):\n    a, b, c = 0, 2, 3\n    total = 0\n    for _ in range(n):\n        total += a\n        a, b, c = b, c, a + b\n    return total",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/450",
+    "task_description": "Write a function to extract specified size of strings from a give list of string values.",
+    "llm_response": "import numpy as np\n\ndef extract_string(lst, size):\n    return [s for s in lst if len(s) == size]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/451",
+    "task_description": "Write a function to remove all whitespaces from the given string using regex.",
+    "llm_response": "import re\n\ndef remove_whitespaces(s):\n    return re.sub(r'\\s+', '', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/453",
+    "task_description": "Write a python function to find the sum of even factors of a number.",
+    "llm_response": "def sumofFactors(n):\n    sum = 0\n    for i in range(1, n + 1):\n        if n % i == 0 and i % 2 == 0:\n            sum += i\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/454",
+    "task_description": "Write a function that matches a word containing 'z'.",
+    "llm_response": "import re\n\ndef text_match_wordz(text):\n    pattern = r'\\b\\w*z\\w*\\b'\n    return bool(re.search(pattern, text))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/455",
+    "task_description": "Write a function to check whether the given month number contains 31 days or not.",
+    "llm_response": "import calendar\ndef check_monthnumb_number(n):\n    return calendar.monthrange(2024, n)[1] == 31",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/456",
+    "task_description": "Write a function to reverse strings in a given list of string values.",
+    "llm_response": "import numpy as np\n\ndef reverse_string_list(string_list):\n    return [s[::-1] for s in string_list]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/457",
+    "task_description": "Write a python function to find the sublist having minimum length.",
+    "llm_response": "import sys\n\ndef Find_Min(lists):\n    min_len = sys.maxsize\n    min_list = None\n    for lst in lists:\n        if len(lst) < min_len:\n            min_len = len(lst)\n            min_list = lst\n    return min_list",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/458",
+    "task_description": "Write a function to find the area of a rectangle.",
+    "llm_response": "import math\ndef rectangle_area(length, width):\n    return length * width",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/459",
+    "task_description": "Write a function to remove uppercase substrings from a given string by using regex.",
+    "llm_response": "import re\n\ndef remove_uppercase(s):\n    return re.sub('[A-Z]+', '', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/460",
+    "task_description": "Write a python function to get the first element of each sublist.",
+    "llm_response": "import itertools\n\ndef Extract(lst):\n    return [sublist[0] for sublist in lst]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/462",
+    "task_description": "Write a function to find all possible combinations of the elements of a given list.",
+    "llm_response": "import itertools\n\ndef combinations_list(lst):\n    result = []\n    for r in range(len(lst) + 1):\n        result.extend(itertools.combinations(lst, r))\n    return [list(x) for x in result]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/463",
+    "task_description": "Write a function to find the maximum product subarray of the given array.",
+    "llm_response": "import math\n\ndef max_subarray_product(nums):\n    if not nums:\n        return 0\n\n    max_product = nums[0]\n    min_product = nums[0]\n    result = nums[0]\n\n    for i in range(1, len(nums)):\n        if nums[i] < 0:\n            max_product, min_product = min_product, max_product\n\n        max_product = max(nums[i], max_product * nums[i])\n        min_product = min(nums[i], min_product * nums[i])\n\n        result = max(result, max_product)\n\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/465",
+    "task_description": "Write a function to drop empty items from a given dictionary.",
+    "llm_response": "import copy\n\ndef drop_empty(dictionary):\n    new_dict = copy.deepcopy(dictionary)\n    for key, value in list(new_dict.items()):\n        if value is None or value == '':\n            del new_dict[key]\n    return new_dict",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/468",
+    "task_description": "Write a function to find the maximum product formed by multiplying numbers of an increasing subsequence of that array.",
+    "llm_response": "import itertools\n\ndef max_product(arr):\n    max_product = float('-inf')\n    for r in range(1, len(arr) + 1):\n        for sub in itertools.combinations(arr, r):\n            if list(sub) == sorted(sub):\n                product = 1\n                for num in sub:\n                    product *= num\n                max_product = max(max_product, product)\n    return max_product",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/470",
+    "task_description": "Write a function to find the pairwise addition of the elements of the given tuples.",
+    "llm_response": "import itertools\n\ndef add_pairwise(t):\n    return tuple(a + b for a, b in itertools.pairwise(t))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/471",
+    "task_description": "Write a python function to find remainder of array multiplication divided by n.",
+    "llm_response": "import functools\nimport operator\n\ndef find_remainder(arr, n):\n    product = functools.reduce(operator.mul, arr, 1)\n    return product % n",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/472",
+    "task_description": "Write a python function to check whether the given list contains consecutive numbers or not.",
+    "llm_response": "import numpy as np\n\ndef check_Consecutive(lst):\n    return np.all(np.diff(lst) == 1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/473",
+    "task_description": "Write a function to find the tuple intersection of elements in the given tuple list irrespective of their order.",
+    "llm_response": "from itertools import chain\n\ndef tuple_intersection(list1, list2):\n    set1 = set(tuple(sorted(t)) for t in list1)\n    set2 = set(tuple(sorted(t)) for t in list2)\n    return set(chain.from_iterable((t for t in set1 if t in set2), (t for t in set2 if t in set1)))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/474",
+    "task_description": "Write a function to replace characters in a string.",
+    "llm_response": "import re\ndef replace_char(s, old, new):\n    return re.sub(old, new, s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/475",
+    "task_description": "Write a function to sort counter by value.",
+    "llm_response": "import operator\n\ndef sort_counter(counter):\n    return sorted(counter.items(), key=operator.itemgetter(1), reverse=True)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/476",
+    "task_description": "Write a python function to find the sum of the largest and smallest value in a given array.",
+    "llm_response": "import numpy as np\n\ndef big_sum(arr):\n    return np.max(arr) + np.min(arr)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/477",
+    "task_description": "Write a python function to convert the given string to lower case.",
+    "llm_response": "import re\ndef is_lower(s):\n    return s.lower()",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/478",
+    "task_description": "Write a function to remove lowercase substrings from a given string.",
+    "llm_response": "import re\n\ndef remove_lowercase(s):\n    return re.sub('[a-z]+', '', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/479",
+    "task_description": "Write a python function to find the first digit of a given number.",
+    "llm_response": "import math\n\ndef first_Digit(n):\n    while n >= 10:\n        n = n // 10\n    return n",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/554",
+    "task_description": "Write a python function to find odd numbers from a mixed list.",
+    "llm_response": "def Split(lst):\n    return [i for i in lst if i % 2 != 0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/555",
+    "task_description": "Write a python function to find the difference between sum of cubes of first n natural numbers and the sum of first n natural numbers.",
+    "llm_response": "import math\n\ndef difference(n):\n    sum_of_cubes = sum(i**3 for i in range(1, n+1))\n    sum_of_numbers = sum(range(1, n+1))\n    return sum_of_cubes - sum_of_numbers",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/556",
+    "task_description": "Write a python function to count the pairs with xor as an odd number.",
+    "llm_response": "def find_Odd_Pair(arr, n):\n    count = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if (arr[i] ^ arr[j]) % 2 != 0:\n                count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/557",
+    "task_description": "Write a function to toggle characters case in a string.",
+    "llm_response": "import re\ndef toggle_string(s):\n    return re.sub(r'([a-z]+)', lambda x: x.group().upper(), re.sub(r'([A-Z]+)', lambda x: x.group().lower(), s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/558",
+    "task_description": "Write a python function to find the digit distance between two integers.",
+    "llm_response": "def digit_distance_nums(num1, num2):\n    return abs(num1 - num2)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/559",
+    "task_description": "Write a function to find the largest sum of contiguous subarray in the given array.",
+    "llm_response": "def max_sub_array_sum(nums, size):\n    max_sum = float('-inf')\n    for i in range(size):\n        for j in range(i, size):\n            sub_array_sum = sum(nums[i:j+1])\n            if sub_array_sum > max_sum:\n                max_sum = sub_array_sum\n    return max_sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/560",
+    "task_description": "Write a function to find the union of elements of the given tuples.",
+    "llm_response": "import itertools\n\ndef union_elements(tuple1, tuple2):\n    return tuple(sorted(set(itertools.chain(tuple1, tuple2))))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/562",
+    "task_description": "Write a python function to find the maximum length of sublist.",
+    "llm_response": "import numpy as np\n\ndef Find_Max_Length(lists):\n    return max(len(sublist) for sublist in lists)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/563",
+    "task_description": "Write a function to extract values between quotation marks of a string.",
+    "llm_response": "import re\n\ndef extract_values(s):\n    return re.findall(r'\"(.*?)\"', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/564",
+    "task_description": "Write a python function to count unequal element pairs from the given array.",
+    "llm_response": "import itertools\n\ndef count_Pairs(lst, n):\n    count = 0\n    pairs = list(itertools.combinations(lst, 2))\n    for pair in pairs:\n        if pair[0] != pair[1]:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/565",
+    "task_description": "Write a python function to split a string into characters.",
+    "llm_response": "def split(s):\n    return list(s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/566",
+    "task_description": "Write a function to get the sum of a non-negative integer.",
+    "llm_response": "import math\n\ndef sum_digits(n):\n    if n == 0:\n        return 0\n    return n % 10 + sum_digits(n // 10)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/567",
+    "task_description": "Write a function to check whether a specified list is sorted or not.",
+    "llm_response": "import itertools\n\ndef issort_list(lst):\n    return all(x <= y for x, y in itertools.pairwise(lst))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/568",
+    "task_description": "Write a function to create a list of empty dictionaries.",
+    "llm_response": "import numpy as np\n\ndef empty_list(n):\n    return [{} for _ in range(n)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/569",
+    "task_description": "Write a function to sort each sublist of strings in a given list of lists.",
+    "llm_response": "import functools\n\ndef sort_sublists(lists):\n    return [sorted(sublist, key=functools.cmp_to_key(lambda x, y: -1 if x < y else 1 if x > y else 0)) for sublist in lists]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/572",
+    "task_description": "Write a python function to remove two duplicate numbers from a given number of lists.",
+    "llm_response": "from collections import Counter\n\ndef two_unique_nums(nums):\n    count = Counter(nums)\n    return [num for num in nums if count[num] == 1]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/573",
+    "task_description": "Write a python function to calculate the product of the unique numbers of a given list.",
+    "llm_response": "import math\nfrom functools import reduce\nimport operator\n\ndef unique_product(lst):\n    unique_nums = set(lst)\n    return reduce(operator.mul, unique_nums, 1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/576",
+    "task_description": "Write a python function to check whether an array is subarray of another or not.",
+    "llm_response": "def is_Sub_Array(lst1, lst2):\n    len1 = len(lst1)\n    len2 = len(lst2)\n    for i in range(len1 - len2 + 1):\n        if lst1[i:i + len2] == lst2:\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/577",
+    "task_description": "Write a python function to find the last digit in factorial of a given number.",
+    "llm_response": "import math\n\ndef last_Digit_Factorial(n):\n    return math.factorial(n) % 10",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/578",
+    "task_description": "Write a function to interleave lists of the same length.",
+    "llm_response": "import itertools\n\ndef interleave_lists(list1, list2, list3):\n    return list(itertools.chain(*zip(list1, list2, list3)))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/579",
+    "task_description": "Write a function to find the dissimilar elements in the given two tuples.",
+    "llm_response": "def find_dissimilar(t1, t2):\n    set1 = set(t1)\n    set2 = set(t2)\n    dissimilar = set1.symmetric_difference(set2)\n    return tuple(sorted(dissimilar))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/580",
+    "task_description": "Write a function to extract the even elements in the nested mixed tuple.",
+    "llm_response": "def extract_even(t):\n    if isinstance(t, tuple):\n        return tuple(extract_even(i) for i in t if isinstance(i, tuple) or i % 2 == 0)\n    else:\n        return t",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/581",
+    "task_description": "Write a python function to find the surface area of the square pyramid.",
+    "llm_response": "import math\n\ndef surface_Area(edge, height):\n    slant_height = math.sqrt((edge / 2) ** 2 + height ** 2)\n    base_area = edge ** 2\n    triangle_area = (edge * slant_height) / 2\n    return base_area + 4 * triangle_area",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/583",
+    "task_description": "Write a function for nth catalan number.",
+    "llm_response": "import math\n\ndef catalan_number(n):\n    return math.comb(2*n, n) // (n + 1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/585",
+    "task_description": "Write a function to find the n - expensive price items from a given dataset using heap queue algorithm.",
+    "llm_response": "import operator\n\ndef expensive_items(dataset, n):\n    sorted_dataset = sorted(dataset, key=operator.itemgetter('price'), reverse=True)\n    return sorted_dataset[:n]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/586",
+    "task_description": "Write a python function to split the array and add the first part to the end.",
+    "llm_response": "def split_Arr(arr, n):\n    return arr[n:] + arr[:n]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/587",
+    "task_description": "Write a function to convert a list to a tuple.",
+    "llm_response": "import typing\n\ndef list_tuple(input_list: typing.List[int]) -> typing.Tuple[int]:\n    return tuple(input_list)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/588",
+    "task_description": "Write a python function to find the difference between largest and smallest value in a given array.",
+    "llm_response": "import numpy as np\n\ndef big_diff(nums):\n    return max(nums) - min(nums)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/589",
+    "task_description": "Write a function to find perfect squares between two given numbers.",
+    "llm_response": "import math\n\ndef perfect_squares(start, end):\n    return [i**2 for i in range(1, int(math.sqrt(end)) + 1) if start <= i**2 <= end]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/590",
+    "task_description": "Write a function to convert polar coordinates to rectangular coordinates.",
+    "llm_response": "import math\nimport cmath\n\ndef polar_rect(r, theta):\n    x = r * math.cos(theta)\n    y = r * math.sin(theta)\n    z = r * cmath.exp(1j * theta)\n    return ((x, y), z)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/591",
+    "task_description": "Write a python function to interchange the first and last elements in a list.",
+    "llm_response": "def swap_List(lst):\n    if len(lst) > 1:\n        lst[0], lst[-1] = lst[-1], lst[0]\n    return lst",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/592",
+    "task_description": "Write a python function to find sum of product of binomial co-efficients.",
+    "llm_response": "import math\n\ndef sum_Of_product(n):\n    total = 0\n    for i in range(n):\n        total += math.comb(n, i) * math.comb(n, i+1)\n    return total",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/593",
+    "task_description": "Write a function to remove leading zeroes from an ip address.",
+    "llm_response": "import re\n\ndef removezero_ip(ip):\n    return re.sub(r'0*(\\d+)', r'\\1', ip)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/594",
+    "task_description": "Write a function to find the difference of first even and odd number of a given list.",
+    "llm_response": "import numpy as np\n\ndef diff_even_odd(lst):\n    even = [num for num in lst if num % 2 == 0]\n    odd = [num for num in lst if num % 2 != 0]\n    if even and odd:\n        return even[0] - odd[0]\n    else:\n        return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/596",
+    "task_description": "Write a function to find the size of the given tuple.",
+    "llm_response": "import sys\n\ndef tuple_size(t):\n    return sys.getsizeof(t)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/597",
+    "task_description": "Write a function to find kth element from the given two sorted arrays.",
+    "llm_response": "import heapq\n\ndef find_kth(arr1, arr2, k):\n    merged = list(heapq.merge(arr1, arr2))\n    return merged[k-1]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/598",
+    "task_description": "Write a function to check whether the given number is armstrong or not.",
+    "llm_response": "import math\n\ndef armstrong_number(n):\n    sum = 0\n    temp = n\n    while temp > 0:\n        digit = temp % 10\n        sum += digit ** len(str(n))\n        temp //= 10\n    return n == sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/599",
+    "task_description": "Write a function to find sum and average of first n natural numbers.",
+    "llm_response": "import math\n\ndef sum_average(n):\n    total = n * (n + 1) // 2\n    average = total / n\n    return total, average",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/600",
+    "task_description": "Write a python function to check whether the given number is even or not using bitwise operator.",
+    "llm_response": "import math\ndef is_Even(n):\n    return n % 2 == 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/602",
+    "task_description": "Write a python function to find the first repeated character in a given string.",
+    "llm_response": "from collections import OrderedDict\n\ndef first_repeated_char(s):\n    char_count = OrderedDict()\n    for char in s:\n        if char in char_count:\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    for char, count in char_count.items():\n        if count > 1:\n            return char\n    return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/603",
+    "task_description": "Write a function to get a lucid number smaller than or equal to n.",
+    "llm_response": "import math\n\ndef get_ludic(n):\n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(math.sqrt(num)) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    lucid_numbers = []\n    for i in range(1, n + 1):\n        if is_prime(i):\n            lucid_numbers.append(i)\n    return lucid_numbers",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/604",
+    "task_description": "Write a function to reverse words in a given string.",
+    "llm_response": "import re\ndef reverse_words(s):\n    words = re.split(' ', s)\n    return ' '.join(reversed(words))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/605",
+    "task_description": "Write a function to check if the given integer is a prime number.",
+    "llm_response": "import math\n\ndef prime_num(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/606",
+    "task_description": "Write a function to convert degrees to radians.",
+    "llm_response": "import math\n\ndef radian_degree(degrees):\n    return degrees * math.pi / 180",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/607",
+    "task_description": "Write a function to search a literals string in a string and also find the location within the original string where the pattern occurs by using regex.",
+    "llm_response": "import re\n\ndef find_literals(string, pattern):\n    match = re.search(pattern, string)\n    if match:\n        return (match.group(), match.start(), match.end())\n    else:\n        return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/608",
+    "task_description": "Write a python function to find nth bell number.",
+    "llm_response": "import math\n\ndef bell_Number(n):\n    bell = [[0 for i in range(n+1)] for j in range(n+1)]\n    bell[0][0] = 1\n    for i in range(1, n+1):\n        bell[i][0] = bell[i-1][i-1]\n        for j in range(1, i+1):\n            bell[i][j] = bell[i-1][j-1] + bell[i][j-1]\n    return bell[n][0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/610",
+    "task_description": "Write a python function to remove the k'th element from a given list.",
+    "llm_response": "def remove_kth_element(lst, k):\n    return lst[:k-1] + lst[k:]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/611",
+    "task_description": "Write a function to find the maximum of nth column from the given tuple list.",
+    "llm_response": "def max_of_nth(matrix, n):\n    return max(row[n] for row in matrix)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/612",
+    "task_description": "Write a python function to merge the first and last elements separately in a list of lists.",
+    "llm_response": "def merge(lst):\n    return [[sublist[0] for sublist in lst], [sublist[1] for sublist in lst]]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/614",
+    "task_description": "Write a function to find the cumulative sum of all the values that are present in the given tuple list.",
+    "llm_response": "import itertools\n\ndef cummulative_sum(tuple_list):\n    return sum(itertools.chain(*tuple_list))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/615",
+    "task_description": "Write a function to find average value of the numbers in a given tuple of tuples.",
+    "llm_response": "import numpy as np\n\ndef average_tuple(tuples):\n    return [np.mean(i) for i in zip(*tuples)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/616",
+    "task_description": "Write a function to perfom the modulo of tuple elements in the given two tuples.",
+    "llm_response": "import operator\nfrom functools import starmap\n\ndef tuple_modulo(t1, t2):\n    return tuple(starmap(operator.mod, zip(t1, t2)))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/618",
+    "task_description": "Write a function to divide two lists using map and lambda function.",
+    "llm_response": "import numpy as np\n\ndef div_list(list1, list2):\n    return np.divide(list1, list2).tolist()",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/619",
+    "task_description": "Write a function to move all the numbers in it to the given string.",
+    "llm_response": "import re\n\ndef move_num(s):\n    return re.sub(r'\\d', lambda x: '', s) + re.sub(r'[^\\d]', lambda x: '', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/620",
+    "task_description": "Write a function to find the largest subset where each pair is divisible.",
+    "llm_response": "from itertools import chain, combinations\n\ndef largest_subset(nums):\n    def is_divisible(subset):\n        for i in range(len(subset)):\n            for j in range(i + 1, len(subset)):\n                if subset[i] % subset[j] != 0 and subset[j] % subset[i] != 0:\n                    return False\n        return True\n\n    max_size = 0\n    for r in range(1, len(nums) + 1):\n        for subset in combinations(nums, r):\n            if is_divisible(subset):\n                max_size = max(max_size, len(subset))\n    return max_size",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/622",
+    "task_description": "Write a function to find the median of two sorted arrays of same size.",
+    "llm_response": "import numpy as np\n\ndef get_median(arr1, arr2, n):\n    merged = sorted(arr1 + arr2)\n    mid = n * 2 // 2\n    if (n * 2) % 2 == 0:\n        return (merged[mid - 1] + merged[mid]) / 2.0\n    else:\n        return merged[mid]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/623",
+    "task_description": "Write a function to find the n-th power of individual elements in a list using lambda function.",
+    "llm_response": "import math\n\ndef nth_nums(nums, n):\n    return [math.pow(num, n) for num in nums]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/624",
+    "task_description": "Write a python function to convert the given string to upper case.",
+    "llm_response": "import re\ndef is_upper(s):\n    return s.upper()",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/626",
+    "task_description": "Write a python function to find the largest triangle that can be inscribed in the semicircle.",
+    "llm_response": "import math\n\ndef triangle_area(radius):\n    if radius < 0:\n        return None\n    base = 2 * radius\n    height = radius\n    area = 0.5 * base * height\n    return area",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/628",
+    "task_description": "Write a function to replace all spaces in the given string with character * list item * list item * list item * list item '%20'.",
+    "llm_response": "import re\n\ndef replace_spaces(s):\n    return re.sub(' ', '%20', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/629",
+    "task_description": "Write a python function to find even numbers from a mixed list.",
+    "llm_response": "import numpy as np\n\ndef Split(numbers):\n    even_numbers = [num for num in numbers if num % 2 == 0]\n    return even_numbers",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/630",
+    "task_description": "Write a function to extract all the adjacent coordinates of the given coordinate tuple.",
+    "llm_response": "import itertools\n\ndef get_coordinates(coord):\n    x, y = coord\n    adjacent_coords = list(itertools.product(range(x-1, x+2), range(y-1, y+2)))\n    return [list(i) for i in adjacent_coords]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/631",
+    "task_description": "Write a function to replace whitespaces with an underscore and vice versa in a given string by using regex.",
+    "llm_response": "import re\n\ndef replace_spaces(s):\n    return re.sub(' +', '_', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/632",
+    "task_description": "Write a python function to move all zeroes to the end of the given list.",
+    "llm_response": "import itertools\n\ndef move_zero(lst):\n    return list(itertools.chain(*itertools.groupby(lst, key=lambda x: x==0), reverse=True))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/633",
+    "task_description": "Write a python function to find the sum of xor of all pairs of numbers in the given array.",
+    "llm_response": "from itertools import combinations\n\ndef pair_xor_Sum(nums, n):\n    total = 0\n    for pair in combinations(nums, 2):\n        total += pair[0] ^ pair[1]\n    return total",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/635",
+    "task_description": "Write a function to push all values into a heap and then pop off the smallest values one at a time.",
+    "llm_response": "import heapq\n\ndef heap_sort(nums):\n    heap = []\n    for num in nums:\n        heapq.heappush(heap, num)\n    return [heapq.heappop(heap) for _ in range(len(heap))]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/637",
+    "task_description": "Write a function to check whether the given amount has no profit and no loss",
+    "llm_response": "def noprofit_noloss(selling_price, cost_price):\n    if selling_price == cost_price:\n        return True\n    else:\n        return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/638",
+    "task_description": "Write a function to calculate wind chill index.",
+    "llm_response": "import math\n\ndef wind_chill(wind_velocity, temperature):\n    if temperature > 0 or wind_velocity < 5:\n        return temperature\n    v = wind_velocity / 3.6\n    wci = 13.12 + 0.6215 * temperature - 11.37 * math.pow(v, 0.16) + 0.3965 * temperature * math.pow(v, 0.16)\n    return math.ceil(wci)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/639",
+    "task_description": "Write a function to sum the length of the names of a given list of names after removing the names that start with a lowercase letter.",
+    "llm_response": "def sample_nam(names):\n    return sum(len(name) for name in names if name[0].isupper())",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/641",
+    "task_description": "Write a function to find the nth nonagonal number.",
+    "llm_response": "import math\n\ndef is_nonagonal(n):\n    return (8 * n**2 - 8 * n + 1) // 8",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/643",
+    "task_description": "Write a function that matches a word containing 'z', not at the start or end of the word.",
+    "llm_response": "import re\n\ndef text_match_wordz_middle(text):\n    words = re.findall(r'\\b\\w+\\b', text)\n    for word in words:\n        if len(word) > 1 and 'z' in word[1:-1]:\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/644",
+    "task_description": "Write a python function to reverse an array upto a given position.",
+    "llm_response": "def reverse_Array_Upto_K(arr, k):\n    return arr[:k][::-1] + arr[k:]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/720",
+    "task_description": "Write a function to add a dictionary to the tuple.",
+    "llm_response": "import copy\n\ndef add_dict_to_tuple(tup, dict):\n    return tup + (copy.deepcopy(dict),)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/721",
+    "task_description": "Write a function to find a path with the maximum average over all existing paths for the given square matrix of size n*n.",
+    "llm_response": "from functools import lru_cache\n\ndef maxAverageOfPath(matrix):\n    n = len(matrix)\n    directions = [(0, 1), (1, 0)]\n\n    @lru_cache(None)\n    def dfs(i, j):\n        if i == n - 1 and j == n - 1:\n            return matrix[i][j], 1\n        max_avg = float('-inf')\n        for dx, dy in directions:\n            x, y = i + dx, j + dy\n            if 0 <= x < n and 0 <= y < n:\n                cost, length = dfs(x, y)\n                max_avg = max(max_avg, (matrix[i][j] + cost) / (length + 1))\n        return matrix[i][j] + max_avg * (n - 1), 1 + n - 1\n\n    return dfs(0, 0)[0]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/722",
+    "task_description": "Write a function to filter the height and width of students which are stored in a dictionary.",
+    "llm_response": "import math\n\ndef filter_data(students, min_height, min_weight):\n    return {name: (height, weight) for name, (height, weight) in students.items() if height > min_height and weight > min_weight}",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/723",
+    "task_description": "Write a function to count the same pair in two given lists using map function.",
+    "llm_response": "import numpy as np\n\ndef count_same_pair(list1, list2):\n    return sum(1 for a, b in zip(list1, list2) if a == b)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/724",
+    "task_description": "Write a function to calculate the sum of all digits of the base to the specified power.",
+    "llm_response": "import math\n\ndef power_base_sum(base, power):\n    result = base ** power\n    return sum(int(digit) for digit in str(result))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/725",
+    "task_description": "Write a function to extract values between quotation marks of the given string by using regex.",
+    "llm_response": "import re\n\ndef extract_quotation(s):\n    return re.findall(r'\"([^\"]*)\"', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/726",
+    "task_description": "Write a function to multiply the adjacent elements of the given tuple.",
+    "llm_response": "import itertools\n\ndef multiply_elements(t):\n    return tuple(a * b for a, b in itertools.pairwise(t))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/728",
+    "task_description": "Write a function to sum elements in two lists.",
+    "llm_response": "import numpy as np\n\ndef sum_list(a, b):\n    return np.add(a, b).tolist()",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/730",
+    "task_description": "Write a function to remove consecutive duplicates of a given list.",
+    "llm_response": "import itertools\n\ndef consecutive_duplicates(lst):\n    return list(itertools.chain.from_iterable([[k] for k, _ in itertools.groupby(lst)]))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/731",
+    "task_description": "Write a function to find the lateral surface area of a cone.",
+    "llm_response": "import math\n\ndef lateralsurface_cone(r, h):\n    l = math.sqrt(r**2 + h**2)\n    return math.pi * r * l",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/732",
+    "task_description": "Write a function to replace all occurrences of spaces, commas, or dots with a colon.",
+    "llm_response": "import re\ndef replace_specialchar(s):\n    return re.sub('[ ,.]', ':', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/733",
+    "task_description": "Write a function to find the index of the first occurrence of a given number in a sorted array.",
+    "llm_response": "import bisect\n\ndef find_first_occurrence(arr, target):\n    index = bisect.bisect_left(arr, target)\n    if index != len(arr) and arr[index] == target:\n        return index\n    return -1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/734",
+    "task_description": "Write a python function to find sum of products of all possible subarrays.",
+    "llm_response": "from itertools import chain, combinations\n\ndef sum_Of_Subarray_Prod(lst):\n    def powerset(s):\n        return list(chain.from_iterable(combinations(s, r) for r in range(1, len(s)+1)))\n\n    sublists = powerset(lst)\n    total_sum = 0\n    for sublist in sublists:\n        prod = 1\n        for num in sublist:\n            prod *= num\n        total_sum += prod\n    return total_sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/735",
+    "task_description": "Write a python function to toggle bits of the number except the first and the last bit.",
+    "llm_response": "import math\n\ndef toggle_middle_bits(n):\n    num_bits = n.bit_length()\n    mask = (1 << (num_bits - 1)) | 1\n    middle_bits = n ^ mask\n    return middle_bits",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/736",
+    "task_description": "Write a function to locate the left insertion point for a specified value in sorted order.",
+    "llm_response": "from bisect import bisect_left\n\ndef left_insertion(arr, target):\n    return bisect_left(arr, target)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/737",
+    "task_description": "Write a function to check whether the given string is starting with a vowel or not using regex.",
+    "llm_response": "import re\n\ndef check_str(s):\n    if re.match('^[aeiouAEIOU]', s):\n        return True\n    else:\n        return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/739",
+    "task_description": "Write a python function to find the index of smallest triangular number with n digits.",
+    "llm_response": "import math\n\ndef find_Index(n):\n    i = 1\n    while True:\n        triangular_num = i * (i + 1) // 2\n        if len(str(triangular_num)) == n:\n            return i\n        i += 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/740",
+    "task_description": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements.",
+    "llm_response": "import itertools\n\ndef tuple_to_dict(t):\n    return dict(itertools.zip_longest(t[::2], t[1::2]))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/741",
+    "task_description": "Write a python function to check whether all the characters are same or not.",
+    "llm_response": "import itertools\n\ndef all_Characters_Same(s):\n    return len(set(s)) == 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/742",
+    "task_description": "Write a function to caluclate the area of a tetrahedron.",
+    "llm_response": "import math\n\ndef area_tetrahedron(side_length):\n    return math.sqrt(3) * side_length ** 2",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/743",
+    "task_description": "Write a function to rotate a given list by specified number of items to the right direction.",
+    "llm_response": "import collections\n\ndef rotate_right(lst, n):\n    n = n % len(lst)\n    return lst[-n:] + lst[:-n]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/744",
+    "task_description": "Write a function to check if the given tuple has any none value or not.",
+    "llm_response": "import numpy as np\n\ndef check_none(tup):\n    for i in tup:\n        if i is None:\n            return True\n    return False",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/745",
+    "task_description": "Write a function to find numbers within a given range where every number is divisible by every digit it contains.",
+    "llm_response": "import math\n\ndef divisible_by_digits(startnum, endnum):\n    def is_divisible(n):\n        for digit in str(n):\n            if digit == '0' or n % int(digit) != 0:\n                return False\n        return True\n\n    return [i for i in range(startnum, endnum + 1) if is_divisible(i)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/748",
+    "task_description": "Write a function to put spaces between words starting with capital letters in a given string by using regex.",
+    "llm_response": "import re\n\ndef capital_words_spaces(s):\n    return re.sub(r\"(\\w)([A-Z])\", r\"\\1 \\2\", s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/749",
+    "task_description": "Write a function to sort a given list of strings of numbers numerically.",
+    "llm_response": "import functools\n\ndef sort_numeric_strings(lst):\n    return sorted(lst, key=functools.cmp_to_key(lambda x, y: int(x) - int(y)))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/750",
+    "task_description": "Write a function to add the given tuple to the given list.",
+    "llm_response": "import itertools\n\ndef add_tuple(lst, tup):\n    return list(itertools.chain(lst, tup))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/751",
+    "task_description": "Write a function to check if the given array represents min heap or not.",
+    "llm_response": "import math\n\ndef check_min_heap(arr):\n    n = len(arr)\n    for i in range(n):\n        left_child = 2 * i + 1\n        right_child = 2 * i + 2\n        if left_child < n and arr[i] > arr[left_child]:\n            return False\n        if right_child < n and arr[i] > arr[right_child]:\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/752",
+    "task_description": "Write a function to find the nth jacobsthal number.",
+    "llm_response": "import math\n\ndef jacobsthal_num(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, 2 * a + b\n        return b",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/753",
+    "task_description": "Write a function to find minimum k records from tuple list.",
+    "llm_response": "import heapq\n\ndef min_k(records, k):\n    return heapq.nsmallest(k, records, key=lambda x: x[1])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/754",
+    "task_description": "Write a function to find common index elements from three lists.",
+    "llm_response": "from collections import Counter\n\ndef extract_index_list(l1, l2, l3):\n    c1 = Counter(l1)\n    c2 = Counter(l2)\n    c3 = Counter(l3)\n    common = set(c1.keys()) & set(c2.keys()) & set(c3.keys())\n    return list(common)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/755",
+    "task_description": "Write a function to find the second smallest number in a list.",
+    "llm_response": "import heapq\n\ndef second_smallest(nums):\n    return heapq.nsmallest(2, set(nums))[-1]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/757",
+    "task_description": "Write a function to count the pairs of reverse strings in the given string list.",
+    "llm_response": "from typing import List\n\ndef count_reverse_pairs(strings: List[str]) -> int:\n    count = 0\n    for i in range(len(strings)):\n        for j in range(i + 1, len(strings)):\n            if strings[i] == strings[j][::-1]:\n                count += 1\n            if strings[j] == strings[i][::-1]:\n                count += 1\n    return count // 2",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/758",
+    "task_description": "Write a function to count number of unique lists within a list.",
+    "llm_response": "import collections\n\ndef unique_sublists(lst):\n    counter = collections.defaultdict(int)\n    for sublst in lst:\n        counter[tuple(sublst)] += 1\n    return dict(counter)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/759",
+    "task_description": "Write a function to check a decimal with a precision of 2.",
+    "llm_response": "import re\n\ndef is_decimal(s):\n    pattern = re.compile(r'^\\d+(\\.\\d{2})?$')\n    return bool(pattern.match(s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/760",
+    "task_description": "Write a python function to check whether an array contains only one distinct element or not.",
+    "llm_response": "import numpy as np\n\ndef unique_Element(lst):\n    return len(set(lst)) == 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/762",
+    "task_description": "Write a function to check whether the given month number contains 30 days or not.",
+    "llm_response": "import calendar\n\ndef check_monthnumber_number(month):\n    return calendar.monthrange(2024, month)[1] == 30",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/763",
+    "task_description": "Write a python function to find the minimum difference between any two elements in a given array.",
+    "llm_response": "import itertools\n\ndef find_min_diff(arr, k):\n    return min(abs(x - y) for x, y in itertools.combinations(arr, 2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/764",
+    "task_description": "Write a python function to count numeric values in a given string.",
+    "llm_response": "import re\n\ndef number_ctr(s):\n    return len(re.findall('\\d', s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/765",
+    "task_description": "Write a function to find nth polite number.",
+    "llm_response": "import math\n\ndef is_polite(n):\n    def sum_of_divisors(num):\n        sum = 0\n        for i in range(1, int(math.sqrt(num)) + 1):\n            if num % i == 0:\n                sum += i\n                if i != num // i:\n                    sum += num // i\n        return sum - num\n\n    i = 1\n    count = 0\n    while True:\n        if sum_of_divisors(i) == i:\n            count += 1\n            if count == n:\n                return i\n        i += 1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/766",
+    "task_description": "Write a function to iterate over all pairs of consecutive items in a given list.",
+    "llm_response": "import itertools\n\ndef pair_wise(lst):\n    return list(itertools.chain(zip(lst, lst[1:])))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/767",
+    "task_description": "Write a python function to count the number of pairs whose sum is equal to ‘sum’.",
+    "llm_response": "from itertools import combinations\n\ndef get_pairs_count(numbers, sum):\n    count = 0\n    pairs = list(combinations(numbers, 2))\n    for pair in pairs:\n        if sum(pair) == sum:\n            count += 1\n    return count",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/769",
+    "task_description": "Write a python function to get the difference between two lists.",
+    "llm_response": "import numpy as np\n\ndef Diff(li1, li2): \n    return [i for i in li1 + li2 if i not in li2 or i not in li1]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/770",
+    "task_description": "Write a python function to find the sum of fourth power of first n odd natural numbers.",
+    "llm_response": "import math\n\ndef odd_num_sum(n):\n    sum = 0\n    for i in range(1, n+1):\n        num = 2 * i - 1\n        sum += num ** 4\n    return sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/771",
+    "task_description": "Write a function to check if the given expression is balanced or not.",
+    "llm_response": "import re\n\ndef check_expression(expression):\n    stack = []\n    mapping = {\")\": \"(\", \"}\": \"{\", \"]\": \"[\"}\n    for char in expression:\n        if char in mapping.values():\n            stack.append(char)\n        elif char in mapping:\n            if not stack or mapping[char] != stack.pop():\n                return False\n    return not stack",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/772",
+    "task_description": "Write a function to remove all the words with k length in the given string.",
+    "llm_response": "import re\n\ndef remove_length(s, k):\n    words = s.split()\n    return ' '.join([word for word in words if len(word) != k])",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/773",
+    "task_description": "Write a function to find the occurrence and position of the substrings within a string.",
+    "llm_response": "import re\n\ndef occurance_substring(string, substring):\n    match = re.search(substring, string)\n    if match:\n        return (match.group(), match.start(), match.end())\n    else:\n        return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/775",
+    "task_description": "Write a python function to check whether every odd index contains odd numbers of a given list.",
+    "llm_response": "def odd_position(lst):\n    return all(lst[i] % 2 != 0 for i in range(1, len(lst), 2))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/777",
+    "task_description": "Write a python function to find the sum of non-repeated elements in a given array.",
+    "llm_response": "from collections import Counter\n\ndef find_sum(lst):\n    count = Counter(lst)\n    return sum(i for i in lst if count[i] == 1)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/778",
+    "task_description": "Write a function to pack consecutive duplicates of a given list elements into sublists.",
+    "llm_response": "import itertools\n\ndef pack_consecutive_duplicates(lst):\n    return [list(g) for k, g in itertools.groupby(lst)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/780",
+    "task_description": "Write a function to find the combinations of sums with tuples in the given tuple list.",
+    "llm_response": "import itertools\n\ndef find_combinations(tuple_list):\n    combinations = list(itertools.combinations(tuple_list, 2))\n    result = []\n    for combination in combinations:\n        sum1 = combination[0][0] + combination[1][0]\n        sum2 = combination[0][1] + combination[1][1]\n        result.append((sum1, sum2))\n    return result",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/781",
+    "task_description": "Write a python function to check whether the count of divisors is even or odd.",
+    "llm_response": "import math\n\ndef count_divisors(n):\n    count = 0\n    for i in range(1, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            if n // i == i:\n                count += 1\n            else:\n                count += 2\n    return count % 2 == 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/782",
+    "task_description": "Write a python function to find the sum of all odd length subarrays.",
+    "llm_response": "import itertools\n\ndef odd_length_sum(arr):\n    total_sum = 0\n    for r in range(1, len(arr) + 1):\n        for sub in itertools.combinations(arr, r):\n            if len(sub) % 2 != 0:\n                total_sum += sum(sub)\n    return total_sum",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/784",
+    "task_description": "Write a function to find the product of first even and odd number of a given list.",
+    "llm_response": "import numpy as np\n\ndef mul_even_odd(lst):\n    even = [num for num in lst if num % 2 == 0]\n    odd = [num for num in lst if num % 2 != 0]\n    if even and odd:\n        return even[0] * odd[0]\n    else:\n        return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/785",
+    "task_description": "Write a function to convert tuple string to integer tuple.",
+    "llm_response": "import ast\n\ndef tuple_str_int(s):\n    return tuple(map(int, ast.literal_eval(s)))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/786",
+    "task_description": "Write a function to locate the right insertion point for a specified value in sorted order.",
+    "llm_response": "from bisect import bisect_right\n\ndef right_insertion(nums, target):\n    return bisect_right(nums, target)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/787",
+    "task_description": "Write a function that matches a string that has an a followed by three 'b'.",
+    "llm_response": "import re\n\ndef text_match_three(text):\n    pattern = re.compile(r'ab{3}')\n    return bool(pattern.search(text))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/788",
+    "task_description": "Write a function to create a new tuple from the given string and list.",
+    "llm_response": "import itertools\n\ndef new_tuple(lst, string):\n    return tuple(itertools.chain(lst, [string]))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/790",
+    "task_description": "Write a python function to check whether every even index contains even numbers of a given list.",
+    "llm_response": "def even_position(lst):\n    for i in range(len(lst)):\n        if i % 2 == 0 and lst[i] % 2 != 0:\n            return False\n    return True",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/791",
+    "task_description": "Write a function to remove the nested record from the given tuple.",
+    "llm_response": "import inspect\n\ndef remove_nested(t):\n    return tuple(i for i in t if not isinstance(i, tuple))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/792",
+    "task_description": "Write a python function to count the number of lists in a given number of lists.",
+    "llm_response": "import numpy as np\n\ndef count_list(lists):\n    return len(lists)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/793",
+    "task_description": "Write a python function to find the last position of an element in a sorted array.",
+    "llm_response": "from bisect import bisect_left, bisect_right\n\ndef last(arr, target):\n    i = bisect_right(arr, target)\n    return i - 1 if i > 0 and arr[i - 1] == target else -1",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/794",
+    "task_description": "Write a function that matches a string that has an 'a' followed by anything, ending in 'b'.",
+    "llm_response": "import re\n\ndef text_starta_endb(text):\n    pattern = re.compile(r'^a.*b$')\n    return bool(pattern.match(text))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/796",
+    "task_description": "Write function to find the sum of all items in the given dictionary.",
+    "llm_response": "def return_sum(dictionary):\n    return sum(dictionary.values())",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/797",
+    "task_description": "Write a python function to find the sum of all odd natural numbers within the range l and r.",
+    "llm_response": "def sum_in_range(l, r):\n    return sum(i for i in range(l, r+1) if i % 2 != 0)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/798",
+    "task_description": "Write a python function to find the sum of an array.",
+    "llm_response": "import numpy as np\n\ndef _sum(arr):\n    return np.sum(arr)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/799",
+    "task_description": "Write a python function to left rotate the bits of a given number.",
+    "llm_response": "import ctypes\n\ndef left_rotate(n, d):\n    bits = 32\n    d = d % bits\n    return (n << d) | (n >> (bits - d))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/800",
+    "task_description": "Write a function to remove all whitespaces from a string.",
+    "llm_response": "import re\ndef remove_all_spaces(s):\n    return re.sub(r'\\s+', '', s)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/801",
+    "task_description": "Write a python function to count the number of equal numbers from three given integers.",
+    "llm_response": "import itertools\n\ndef test_three_equal(a, b, c):\n    return len([i for i in set([a, b, c]) if list([a, b, c]).count(i) > 1]) * list([a, b, c]).count(list(set([a, b, c]))[0]) if len(set([a, b, c])) < 3 else 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/803",
+    "task_description": "Write a python function to check whether the given number is a perfect square or not.",
+    "llm_response": "import math\n\ndef is_perfect_square(n):\n    if n < 0:\n        return False\n    sqrt = math.sqrt(n)\n    return sqrt == int(sqrt)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/804",
+    "task_description": "Write a python function to check whether the product of numbers is even or not.",
+    "llm_response": "import math\n\ndef is_product_even(numbers):\n    product = math.prod(numbers)\n    return product % 2 == 0",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/805",
+    "task_description": "Write a function to find the list in a list of lists whose sum of elements is the highest.",
+    "llm_response": "import numpy as np\n\ndef max_sum_list(lists):\n    sums = [sum(lst) for lst in lists]\n    return lists[np.argmax(sums)]",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/806",
+    "task_description": "Write a function to find maximum run of uppercase characters in the given string.",
+    "llm_response": "import re\n\ndef max_run_uppercase(s):\n    return max(len(m) for m in re.findall(r'[A-Z]+', s))",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/807",
+    "task_description": "Write a python function to find the first odd number in a given list of numbers.",
+    "llm_response": "import numpy as np\n\ndef first_odd(numbers):\n    for num in numbers:\n        if num % 2 != 0:\n            return num\n    return None",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/808",
+    "task_description": "Write a function to check if the given tuples contain the k or not.",
+    "llm_response": "import operator\n\ndef check_K(tup, k):\n    return operator.contains(tup, k)",
+    "model": "llama-3.3-70b"
+  },
+  {
+    "task_id": "Mbpp/809",
+    "task_description": "Write a function to check if each element of second tuple is smaller than its corresponding index in first tuple.",
+    "llm_response": "def check_smaller(tuple1, tuple2):\n    return all(x < y for x, y in zip(tuple2, tuple1))",
+    "model": "llama-3.3-70b"
+  }
+]

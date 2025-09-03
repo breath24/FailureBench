@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/301",
+  "task_description": "Write a function to find the depth of a dictionary.",
+  "llm_response": "def dict_depth(d):\n    if not isinstance(d, dict) or not d:\n        return 1\n    return 1 + max(dict_depth(v) for v in d.values())",
+  "model": "claude-sonnet-4"
+}

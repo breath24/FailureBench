@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/108",
+  "task_description": "\ndef count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n",
+  "llm_response": "def count_nums(arr):\n    count = 0\n    for num in arr:\n        sum_digits = 0\n        num_str = str(num)\n        for i, digit in enumerate(num_str):\n            if i == 0 and num < 0 and digit != '-':\n                sum_digits -= int(digit)\n            else:\n                sum_digits += int(digit)\n        if sum_digits > 0:\n            count += 1\n    return count",
+  "model": "mistral-3.2-24b"
+}

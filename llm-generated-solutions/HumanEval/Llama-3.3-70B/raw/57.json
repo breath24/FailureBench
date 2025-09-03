@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/57",
+  "task_description": "\n\ndef monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\"\n",
+  "llm_response": "import itertools\n\ndef monotonic(l: list):\n    increasing = all(x <= y for x, y in itertools.pairwise(l))\n    decreasing = all(x >= y for x, y in itertools.pairwise(l))\n    return increasing or decreasing",
+  "model": "llama-3.3-70b"
+}

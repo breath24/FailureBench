@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/769",
+  "task_description": "Write a python function to get the difference between two lists.",
+  "llm_response": "def Diff(list1, list2):\n    return [item for item in list1 if item not in list2] + [item for item in list2 if item not in list1]",
+  "model": "mistral-3.2-24b"
+}

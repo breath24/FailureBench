@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/74",
+  "task_description": "Write a function to check whether it follows the sequence given in the patterns array.",
+  "llm_response": "def is_samepatterns(strings, patterns):\n    if len(strings) != len(patterns):\n        return False\n    \n    string_to_pattern = {}\n    pattern_to_string = {}\n    \n    for string, pattern in zip(strings, patterns):\n        if string in string_to_pattern:\n            if string_to_pattern[string] != pattern:\n                return False\n        else:\n            string_to_pattern[string] = pattern\n            \n        if pattern in pattern_to_string:\n            if pattern_to_string[pattern] != string:\n                return False\n        else:\n            pattern_to_string[pattern] = string\n    return True",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/748",
+  "task_description": "Write a function to put spaces between words starting with capital letters in a given string by using regex.",
+  "llm_response": "def capital_words_spaces(s):\n    if not s:\n        return s\n    result = []\n    for i, char in enumerate(s):\n        if i > 0 and char.isupper():\n            result.append(' ')\n        result.append(char)\n    return ''.join(result)",
+  "model": "mistral-3.2-24b"
+}

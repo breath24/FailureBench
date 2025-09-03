@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/644",
-  "llm_response": "def reverse_Array_Upto_K(arr, k):\n    return arr[:k][::-1] + arr[k:]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to reverse an array upto a given position."
-}

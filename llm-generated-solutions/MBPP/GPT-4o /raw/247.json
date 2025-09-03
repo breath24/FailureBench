@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/247",
+  "task_description": "Write a function to find the longest palindromic subsequence in the given string.",
+  "llm_response": "from functools import lru_cache\n\ndef lps(s: str) -> int:\n    @lru_cache(None)\n    def helper(l: int, r: int) -> int:\n        if l > r:\n            return 0\n        if l == r:\n            return 1\n        if s[l] == s[r]:\n            return 2 + helper(l + 1, r - 1)\n        return max(helper(l + 1, r), helper(l, r - 1))\n    \n    return helper(0, len(s) - 1)",
+  "model": "gpt-4o"
+}

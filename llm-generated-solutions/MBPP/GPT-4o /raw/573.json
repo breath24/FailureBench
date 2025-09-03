@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/573",
+  "task_description": "Write a python function to calculate the product of the unique numbers of a given list.",
+  "llm_response": "from functools import reduce\n\ndef unique_product(numbers):\n    unique_numbers = set(numbers)\n    return reduce(lambda x, y: x * y, unique_numbers)",
+  "model": "gpt-4o"
+}

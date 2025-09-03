@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/772",
+  "task_description": "Write a function to remove all the words with k length in the given string.",
+  "llm_response": "import re\n\ndef remove_length(s, k):\n    pattern = r'\\b\\w{' + str(k) + r'}\\b'\n    return re.sub(pattern, '', s).strip()",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/83",
-  "llm_response": "import math\n\ndef starts_one_ends(n):\n    if n == 1:\n        return 1\n    total = 10 ** n\n    no_start_1 = 9 * (10 ** (n - 1))\n    no_end_1 = 9 * (10 ** (n - 1))\n    no_start_or_end_1 = 8 * (10 ** (n - 2)) * 9\n    return total - no_start_1 - no_end_1 + no_start_or_end_1",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "\ndef starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n"
-}

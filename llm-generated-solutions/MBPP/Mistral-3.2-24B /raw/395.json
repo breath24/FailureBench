@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/395",
+  "task_description": "Write a python function to find the first non-repeated character in a given string.",
+  "llm_response": "from collections import OrderedDict\n\ndef first_non_repeating_character(s):\n    char_order = OrderedDict()\n    for char in s:\n        if char in char_order:\n            char_order[char] += 1\n        else:\n            char_order[char] = 1\n\n    for char, count in char_order.items():\n        if count == 1:\n            return char\n    return None",
+  "model": "mistral-3.2-24b"
+}

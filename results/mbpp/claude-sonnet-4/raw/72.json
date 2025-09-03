@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/72",
-  "llm_response": "def dif_Square(n):\n    if n % 4 == 2:\n        return False\n    return True",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to check whether the given number can be represented as difference of two squares or not."
-}

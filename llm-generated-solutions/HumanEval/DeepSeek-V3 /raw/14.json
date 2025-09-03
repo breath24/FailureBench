@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/14",
+  "task_description": "from typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    \"\"\" Return list of all prefixes from shortest to longest of the input string\n    >>> all_prefixes('abc')\n    ['a', 'ab', 'abc']\n    \"\"\"\n",
+  "llm_response": "from typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    return [string[:i] for i in range(1, len(string) + 1)]",
+  "model": "deepseek-chat-v3-0324"
+}

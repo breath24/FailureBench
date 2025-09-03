@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/166",
+  "task_description": "Write a python function to count the pairs with xor as an even number.",
+  "llm_response": "def find_even_pair(lst):\n    count = 0\n    for i in range(len(lst)):\n        for j in range(i + 1, len(lst)):\n            if (lst[i] ^ lst[j]) % 2 == 0:\n                count += 1\n    return count",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/95",
+  "task_description": "Write a python function to find the minimum length of sublist.",
+  "llm_response": "def Find_Min_Length(lists):\n    return min(len(lst) for lst in lists)",
+  "model": "claude-sonnet-4"
+}

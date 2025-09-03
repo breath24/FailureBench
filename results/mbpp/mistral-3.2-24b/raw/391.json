@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/391",
-  "llm_response": "def convert_list_dictionary(*args):\n    result = []\n    for i in range(len(args[0])):\n        temp_dict = {}\n        current_dict = temp_dict\n        for lst in args:\n            if i < len(lst):\n                current_dict[lst[i]] = {}\n                current_dict = current_dict[lst[i]]\n        result.append({k: v for k, v in temp_dict.items() if v != {}})\n    return result",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to convert more than one list to nested dictionary."
-}

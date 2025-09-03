@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/744",
+  "task_description": "Write a function to check if the given tuple has any none value or not.",
+  "llm_response": "def check_none(t):\n    return any(x is None for x in t)",
+  "model": "gpt-4o"
+}

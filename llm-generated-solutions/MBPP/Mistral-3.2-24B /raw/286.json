@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/286",
+  "task_description": "Write a function to find the largest sum of contiguous array in the modified array which is formed by repeating the given array k times.",
+  "llm_response": "def max_sub_array_sum_repeated(arr, n, k):\n    if not arr:\n        return 0\n\n    max_sum = current_sum = 0\n    total_length = n * k\n    extended_arr = arr * k\n\n    for i in range(total_length):\n        current_sum += extended_arr[i]\n        if current_sum > max_sum:\n            max_sum = current_sum\n        if current_sum < 0:\n            current_sum = 0\n\n    return max_sum",
+  "model": "mistral-3.2-24b"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/463",
-  "llm_response": "def max_subarray_product(nums):\n    if not nums:\n        return 0\n    \n    max_product = nums[0]\n    min_product = nums[0]\n    result = nums[0]\n    \n    for i in range(1, len(nums)):\n        current = nums[i]\n        \n        # When we encounter a negative number, max and min swap roles\n        if current < 0:\n            max_product, min_product = min_product, max_product\n        \n        # Calculate new max and min products ending at current position\n        max_product = max(current, max_product * current)\n        min_product = min(current, min_product * current)\n        \n        # Update the overall result\n        result = max(result, max_product)\n    \n    return result",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find the maximum product subarray of the given array."
-}

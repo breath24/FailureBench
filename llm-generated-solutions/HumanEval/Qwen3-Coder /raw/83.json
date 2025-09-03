@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/83",
+  "task_description": "\ndef starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n",
+  "llm_response": "def starts_one_ends(n):\n    if n == 1:\n        return 1\n    \n    # Numbers that start with 1: 1 followed by (n-1) digits\n    # Each of the remaining (n-1) positions can be filled with any digit 0-9\n    start_with_1 = 10 ** (n - 1)\n    \n    # Numbers that end with 1: any (n-1) digits followed by 1\n    # First digit can be 1-9 (9 choices), remaining (n-2) digits can be 0-9\n    end_with_1 = 9 * (10 ** (n - 2))\n    \n    # Numbers that both start and end with 1: 1 followed by (n-2) digits followed by 1\n    # Middle (n-2) positions can be filled with any digit 0-9\n    both_start_end_1 = 10 ** (n - 2) if n >= 2 else 1\n    \n    # Apply inclusion-exclusion principle\n    return start_with_1 + end_with_1 - both_start_end_1",
+  "model": "qwen3-coder"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/237",
+  "task_description": "Write a function to check the occurrences of records which occur similar times in the given tuples.",
+  "llm_response": "from collections import defaultdict\n\ndef check_occurences(tuples_list):\n    occurrences = defaultdict(int)\n    for t in tuples_list:\n        occurrences[t] += 1\n    return dict(occurrences)",
+  "model": "mistral-3.2-24b"
+}

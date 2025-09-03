@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/312",
-  "llm_response": "import math\n\ndef volume_cone(radius, height):\n    return (1/3) * math.pi * (radius ** 2) * height",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find the volume of a cone."
-}

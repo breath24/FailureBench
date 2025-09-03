@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/726",
+  "task_description": "Write a function to multiply the adjacent elements of the given tuple.",
+  "llm_response": "def multiply_elements(tuple_numbers):\n    return tuple(tuple_numbers[i] * tuple_numbers[i+1] for i in range(len(tuple_numbers)-1))",
+  "model": "mistral-3.2-24b"
+}

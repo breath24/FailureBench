@@ -1,0 +1,6 @@
+{
+  "task_id": "abc389_a",
+  "task_description": "You are given a 3-character string S, where the first character is a digit, the second character is the character x, and the third character is a digit.\nFind the product of the two numbers in S.\n\nInput\n\nThe input is given from Standard Input in the following format:\nS\n\nOutput\n\nPrint the answer as an integer.\n\nConstraints\n\n\n- S is a 3-character string where the first character is an integer between 1 and 9, inclusive, the second character is the character x, and the third character is an integer between 1 and 9, inclusive.\n\nSample Input 1\n\n3x8\n\nSample Output 1\n\n24\n\nFrom 3 \\times 8 = 24, print 24.\n\nSample Input 2\n\n9x9\n\nSample Output 2\n\n81\n\nFrom 9 \\times 9 = 81, print 81.",
+  "llm_response": "def candidate_func(input_str):\n    a, _, b = input_str\n    return str(int(a) * int(b))",
+  "model": "deepseek-chat-v3-0324"
+}

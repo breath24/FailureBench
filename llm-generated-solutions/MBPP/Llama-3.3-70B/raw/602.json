@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/602",
+  "task_description": "Write a python function to find the first repeated character in a given string.",
+  "llm_response": "from collections import OrderedDict\n\ndef first_repeated_char(s):\n    char_count = OrderedDict()\n    for char in s:\n        if char in char_count:\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    for char, count in char_count.items():\n        if count > 1:\n            return char\n    return None",
+  "model": "llama-3.3-70b"
+}

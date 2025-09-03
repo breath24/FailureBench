@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/83",
+  "task_description": "\ndef starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n",
+  "llm_response": "import math\n\ndef starts_one_ends(n):\n    if n == 1:\n        return 1\n    return 18 * 10**(n-2) + 2 * 10**(n-1) - 10**(n-2)",
+  "model": "gpt-4o"
+}

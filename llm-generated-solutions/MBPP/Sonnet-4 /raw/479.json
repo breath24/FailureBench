@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/479",
+  "task_description": "Write a python function to find the first digit of a given number.",
+  "llm_response": "def first_Digit(n):\n    n = abs(n)\n    while n >= 10:\n        n //= 10\n    return n",
+  "model": "claude-sonnet-4"
+}

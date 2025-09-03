@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/644",
+  "task_description": "Write a python function to reverse an array upto a given position.",
+  "llm_response": "from typing import List\n\ndef reverse_Array_Upto_K(arr: List[int], k: int) -> List[int]:\n    return arr[:k][::-1] + arr[k:]",
+  "model": "gpt-4o"
+}

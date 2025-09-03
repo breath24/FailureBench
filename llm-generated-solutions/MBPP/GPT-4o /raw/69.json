@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/69",
+  "task_description": "Write a function to check whether a list contains the given sublist or not.",
+  "llm_response": "from typing import List\n\ndef is_sublist(lst: List[int], sublst: List[int]) -> bool:\n    if not sublst:\n        return True\n    sublst_len = len(sublst)\n    for i in range(len(lst) - sublst_len + 1):\n        if lst[i:i + sublst_len] == sublst:\n            return True\n    return False",
+  "model": "gpt-4o"
+}

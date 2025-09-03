@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/578",
-  "llm_response": "def interleave_lists(list1, list2, list3):\n    result = []\n    for i in range(len(list1)):\n        result.extend([list1[i], list2[i], list3[i]])\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to interleave lists of the same length."
-}

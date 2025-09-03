@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/572",
-  "llm_response": "def two_unique_nums(nums):\n    count = {}\n    for num in nums:\n        count[num] = count.get(num, 0) + 1\n    \n    result = []\n    for num in nums:\n        if count[num] == 1:\n            result.append(num)\n    \n    return result",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to remove two duplicate numbers from a given number of lists."
-}

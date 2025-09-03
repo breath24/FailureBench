@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/28",
-  "llm_response": "from typing import List\n\ndef concatenate(strings: List[str]) -> str:\n    return ''.join(strings)",
-  "model": "gpt-4o",
-  "task_description": "from typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n"
-}

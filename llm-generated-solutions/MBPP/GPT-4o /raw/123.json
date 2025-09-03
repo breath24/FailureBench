@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/123",
+  "task_description": "Write a function to sum all amicable numbers from 1 to a specified number.",
+  "llm_response": "import math\n\ndef amicable_numbers_sum(n):\n    def sum_of_divisors(x):\n        total = 1\n        for i in range(2, int(math.sqrt(x)) + 1):\n            if x % i == 0:\n                total += i\n                if i != x // i:\n                    total += x // i\n        return total\n\n    def is_amicable(a):\n        b = sum_of_divisors(a)\n        return a != b and sum_of_divisors(b) == a\n\n    return sum(a for a in range(2, n + 1) if is_amicable(a))",
+  "model": "gpt-4o"
+}

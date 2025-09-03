@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/446",
-  "llm_response": "from collections import Counter\n\ndef count_Occurrence(tup, lst):\n    counter = Counter(tup)\n    return sum(counter[elem] for elem in lst)",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to count the occurence of all elements of list in a tuple."
-}

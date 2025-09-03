@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/769",
-  "llm_response": "import numpy as np\n\ndef Diff(li1, li2): \n    return [i for i in li1 + li2 if i not in li2 or i not in li1]",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to get the difference between two lists."
-}

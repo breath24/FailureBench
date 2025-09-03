@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/75",
-  "llm_response": "def find_tuples(tuple_list, k):\n    result = []\n    for tuple_item in tuple_list:\n        if all(element % k == 0 for element in tuple_item):\n            result.append(tuple_item)\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find tuples which have all elements divisible by k from the given list of tuples."
-}

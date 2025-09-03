@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/751",
-  "llm_response": "import math\n\ndef check_min_heap(arr):\n    n = len(arr)\n    for i in range((n - 2) // 2 + 1):\n        if arr[i] > arr[2 * i + 1]:\n            return False\n        if 2 * i + 2 < n and arr[i] > arr[2 * i + 2]:\n            return False\n    return True\n\nassert check_min_heap([1, 2, 3, 4, 5, 6]) == True",
-  "model": "gpt-4o",
-  "task_description": "Write a function to check if the given array represents min heap or not."
-}

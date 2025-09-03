@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/244",
-  "llm_response": "import math\n\ndef next_Perfect_Square(n):\n    sqrt_n = int(math.sqrt(n))\n    if sqrt_n * sqrt_n == n:\n        return (sqrt_n + 1) ** 2\n    else:\n        return (sqrt_n + 1) ** 2",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the next perfect square greater than a given number."
-}

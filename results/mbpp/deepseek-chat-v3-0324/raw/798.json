@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/798",
-  "llm_response": "import numpy as np\n\ndef _sum(arr):\n    return np.sum(arr)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the sum of an array."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/250",
-  "llm_response": "def count_X(tuple_input, element):\n    return tuple_input.count(element)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to count the occcurences of an element in a tuple."
-}

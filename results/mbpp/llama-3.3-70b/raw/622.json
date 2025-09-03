@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/622",
-  "llm_response": "import numpy as np\n\ndef get_median(arr1, arr2, n):\n    merged = sorted(arr1 + arr2)\n    mid = n * 2 // 2\n    if (n * 2) % 2 == 0:\n        return (merged[mid - 1] + merged[mid]) / 2.0\n    else:\n        return merged[mid]",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the median of two sorted arrays of same size."
-}

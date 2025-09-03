@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/270",
+  "task_description": "Write a python function to find the sum of even numbers at even positions.",
+  "llm_response": "import itertools\n\ndef sum_even_and_even_index(lst):\n    return sum(num for i, num in enumerate(itertools.islice(lst, 0, None, 2)) if num % 2 == 0)",
+  "model": "gpt-4o"
+}

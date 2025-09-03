@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/3",
+  "task_description": "Write a python function to identify non-prime numbers.",
+  "llm_response": "import math\n\ndef is_not_prime(n):\n    if n <= 1:\n        return True\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            return True\n    return False",
+  "model": "llama-3.3-70b"
+}

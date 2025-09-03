@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/270",
-  "llm_response": "def sum_even_and_even_index(lst):\n    return sum(lst[i] for i in range(0, len(lst), 2) if lst[i] % 2 == 0)",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to find the sum of even numbers at even positions."
-}

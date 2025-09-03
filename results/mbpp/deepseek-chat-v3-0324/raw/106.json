@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/106",
-  "llm_response": "from typing import Tuple\n\ndef add_lists(lst: list, tpl: Tuple) -> Tuple:\n    return tpl + tuple(lst)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to add the given list to the given tuples."
-}

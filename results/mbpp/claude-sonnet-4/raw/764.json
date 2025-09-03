@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/764",
-  "llm_response": "def number_ctr(string):\n    count = 0\n    for char in string:\n        if char.isdigit():\n            count += 1\n    return count",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to count numeric values in a given string."
-}

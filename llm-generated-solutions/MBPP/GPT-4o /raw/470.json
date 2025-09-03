@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/470",
+  "task_description": "Write a function to find the pairwise addition of the elements of the given tuples.",
+  "llm_response": "from typing import Tuple\n\ndef add_pairwise(t: Tuple[int, ...]) -> Tuple[int, ...]:\n    return tuple(t[i] + t[i+1] for i in range(len(t) - 1))",
+  "model": "gpt-4o"
+}

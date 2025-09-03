@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/610",
+  "task_description": "Write a python function to remove the k'th element from a given list.",
+  "llm_response": "from typing import List\n\ndef remove_kth_element(lst: List[int], k: int) -> List[int]:\n    if 0 <= k < len(lst):\n        return lst[:k] + lst[k+1:]\n    return lst",
+  "model": "gpt-4o"
+}

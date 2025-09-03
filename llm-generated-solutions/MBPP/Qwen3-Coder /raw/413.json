@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/413",
+  "task_description": "Write a function to extract the nth element from a given list of tuples.",
+  "llm_response": "def extract_nth_element(tuple_list, n):\n    return [t[n] for t in tuple_list]",
+  "model": "qwen3-coder"
+}

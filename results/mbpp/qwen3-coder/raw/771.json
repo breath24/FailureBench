@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/771",
-  "llm_response": "def check_expression(expression):\n    stack = []\n    opening = set('({[')\n    closing = set(')}]')\n    pairs = {')': '(', '}': '{', ']': '['}\n    \n    for char in expression:\n        if char in opening:\n            stack.append(char)\n        elif char in closing:\n            if not stack or stack.pop() != pairs[char]:\n                return False\n    \n    return len(stack) == 0",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to check if the given expression is balanced or not."
-}

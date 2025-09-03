@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/82",
+  "task_description": "\ndef prime_length(string):\n    \"\"\"Write a function that takes a string and returns True if the string\n    length is a prime number or False otherwise\n    Examples\n    prime_length('Hello') == True\n    prime_length('abcdcba') == True\n    prime_length('kittens') == True\n    prime_length('orange') == False\n    \"\"\"\n",
+  "llm_response": "import math\n\ndef prime_length(string):\n    length = len(string)\n    if length <= 1:\n        return False\n    for i in range(2, int(math.sqrt(length)) + 1):\n        if length % i == 0:\n            return False\n    return True",
+  "model": "deepseek-chat-v3-0324"
+}

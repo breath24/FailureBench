@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/100",
+  "task_description": "Write a function to find the next smallest palindrome of a specified number.",
+  "llm_response": "import math\n\ndef next_smallest_palindrome(num):\n    num += 1\n    while True:\n        if str(num) == str(num)[::-1]:\n            return num\n        num += 1",
+  "model": "deepseek-chat-v3-0324"
+}

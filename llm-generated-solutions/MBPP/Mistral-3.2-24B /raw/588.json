@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/588",
+  "task_description": "Write a python function to find the difference between largest and smallest value in a given array.",
+  "llm_response": "def big_diff(numbers):\n    return max(numbers) - min(numbers)",
+  "model": "mistral-3.2-24b"
+}

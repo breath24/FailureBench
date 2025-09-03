@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/626",
-  "llm_response": "import math\n\ndef largest_triangle_in_semicircle(radius):\n    if radius < 0:\n        return None\n    return (radius ** 2) * math.pi / 2",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to find the largest triangle that can be inscribed in the semicircle."
-}

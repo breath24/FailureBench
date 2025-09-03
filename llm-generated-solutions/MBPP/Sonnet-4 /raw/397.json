@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/397",
+  "task_description": "Write a function to find the median of three specific numbers.",
+  "llm_response": "def median_numbers(a, b, c):\n    numbers = [a, b, c]\n    numbers.sort()\n    return float(numbers[1])",
+  "model": "claude-sonnet-4"
+}

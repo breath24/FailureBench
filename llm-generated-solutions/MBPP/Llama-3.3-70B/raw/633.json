@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/633",
+  "task_description": "Write a python function to find the sum of xor of all pairs of numbers in the given array.",
+  "llm_response": "from itertools import combinations\n\ndef pair_xor_Sum(nums, n):\n    total = 0\n    for pair in combinations(nums, 2):\n        total += pair[0] ^ pair[1]\n    return total",
+  "model": "llama-3.3-70b"
+}

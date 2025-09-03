@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/409",
+  "task_description": "Write a function to find the minimum product from the pairs of tuples within a given list.",
+  "llm_response": "import itertools\n\ndef min_product_tuple(tuples):\n    return min(a * b for a, b in itertools.combinations((min(t) for t in tuples), 2))",
+  "model": "llama-3.3-70b"
+}

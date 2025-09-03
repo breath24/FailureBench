@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/60",
-  "llm_response": "def sum_to_n(n: int):\n    return n * (n + 1) // 2",
-  "model": "mistral-3.2-24b",
-  "task_description": "\n\ndef sum_to_n(n: int):\n    \"\"\"sum_to_n is a function that sums numbers from 1 to n.\n    >>> sum_to_n(30)\n    465\n    >>> sum_to_n(100)\n    5050\n    >>> sum_to_n(5)\n    15\n    >>> sum_to_n(10)\n    55\n    >>> sum_to_n(1)\n    1\n    \"\"\"\n"
-}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/572",
+  "task_description": "Write a python function to remove two duplicate numbers from a given number of lists.",
+  "llm_response": "def two_unique_nums(lst):\n    seen = set()\n    result = []\n    for num in lst:\n        if num not in seen:\n            seen.add(num)\n            result.append(num)\n    return result",
+  "model": "mistral-3.2-24b"
+}

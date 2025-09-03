@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/95",
-  "llm_response": "def check_dict_case(dict):\n    if not dict:\n        return False\n\n    keys = list(dict.keys())\n    if not keys:\n        return False\n\n    first_key = keys[0]\n    if not isinstance(first_key, str):\n        return False\n\n    all_lower = all(isinstance(key, str) and key.islower() for key in keys)\n    all_upper = all(isinstance(key, str) and key.isupper() for key in keys)\n\n    return all_lower or all_upper",
-  "model": "mistral-3.2-24b",
-  "task_description": "\ndef check_dict_case(dict):\n    \"\"\"\n    Given a dictionary, return True if all keys are strings in lower \n    case or all keys are strings in upper case, else return False.\n    The function should return False is the given dictionary is empty.\n    Examples:\n    check_dict_case({\"a\":\"apple\", \"b\":\"banana\"}) should return True.\n    check_dict_case({\"a\":\"apple\", \"A\":\"banana\", \"B\":\"banana\"}) should return False.\n    check_dict_case({\"a\":\"apple\", 8:\"banana\", \"a\":\"apple\"}) should return False.\n    check_dict_case({\"Name\":\"John\", \"Age\":\"36\", \"City\":\"Houston\"}) should return False.\n    check_dict_case({\"STATE\":\"NC\", \"ZIP\":\"12345\" }) should return True.\n    \"\"\"\n"
-}

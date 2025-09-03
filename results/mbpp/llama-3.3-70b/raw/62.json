@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/62",
-  "llm_response": "import math\n\ndef smallest_num(nums):\n    return min(nums)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find smallest number in a list."
-}

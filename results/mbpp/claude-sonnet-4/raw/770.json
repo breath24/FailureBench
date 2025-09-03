@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/770",
-  "llm_response": "def odd_num_sum(n):\n    total = 0\n    odd_num = 1\n    for i in range(n):\n        total += odd_num ** 4\n        odd_num += 2\n    return total",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to find the sum of fourth power of first n odd natural numbers."
-}

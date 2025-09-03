@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/441",
-  "llm_response": "def surfacearea_cube(size):\n    return 6 * size ** 2",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find the surface area of a cube."
-}

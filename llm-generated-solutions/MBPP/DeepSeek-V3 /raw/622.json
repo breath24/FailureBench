@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/622",
+  "task_description": "Write a function to find the median of two sorted arrays of same size.",
+  "llm_response": "import math\n\ndef get_median(arr1, arr2, n):\n    i = 0\n    j = 0\n    m1 = -1\n    m2 = -1\n    count = 0\n    while count <= n:\n        if i == n:\n            m1 = m2\n            m2 = arr2[0]\n            break\n        elif j == n:\n            m1 = m2\n            m2 = arr1[0]\n            break\n        if arr1[i] <= arr2[j]:\n            m1 = m2\n            m2 = arr1[i]\n            i += 1\n        else:\n            m1 = m2\n            m2 = arr2[j]\n            j += 1\n        count += 1\n    return (m1 + m2) / 2",
+  "model": "deepseek-chat-v3-0324"
+}

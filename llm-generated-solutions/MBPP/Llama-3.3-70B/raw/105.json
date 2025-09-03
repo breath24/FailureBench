@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/105",
+  "task_description": "Write a python function to count true booleans in the given list.",
+  "llm_response": "import numpy as np\n\ndef count(lst):\n    return sum(1 for x in lst if x)",
+  "model": "llama-3.3-70b"
+}

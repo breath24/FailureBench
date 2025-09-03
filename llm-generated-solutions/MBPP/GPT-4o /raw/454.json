@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/454",
+  "task_description": "Write a function that matches a word containing 'z'.",
+  "llm_response": "import re\n\ndef text_match_wordz(text):\n    return bool(re.search(r'\\b\\w*z\\w*\\b', text))",
+  "model": "gpt-4o"
+}

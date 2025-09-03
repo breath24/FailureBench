@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/77",
+  "task_description": "Write a python function to find the difference between sum of even and odd digits.",
+  "llm_response": "import math\n\ndef is_Diff(num):\n    return num % 11 == 0",
+  "model": "deepseek-chat-v3-0324"
+}

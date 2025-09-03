@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/591",
+  "task_description": "Write a python function to interchange the first and last elements in a list.",
+  "llm_response": "def swap_List(lst):\n    if len(lst) > 1:\n        lst[0], lst[-1] = lst[-1], lst[0]\n    return lst",
+  "model": "gpt-4o"
+}

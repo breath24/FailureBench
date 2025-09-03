@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/440",
-  "llm_response": "import re\n\ndef find_adverb_position(sentence):\n    pattern = r'\\b\\w*ly\\b'\n    match = re.search(pattern, sentence)\n    if match:\n        start = match.start()\n        end = match.end()\n        adverb = match.group()\n        return (start, end, adverb)\n    return None",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find all adverbs and their positions in a given sentence."
-}

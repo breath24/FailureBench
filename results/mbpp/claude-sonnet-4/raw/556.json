@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/556",
-  "llm_response": "def find_Odd_Pair(arr, n):\n    even_count = 0\n    odd_count = 0\n    \n    for num in arr:\n        if num % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    \n    return even_count * odd_count",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a python function to count the pairs with xor as an odd number."
-}

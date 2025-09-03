@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/430",
+  "task_description": "Write a function to find the directrix of a parabola.",
+  "llm_response": "import sympy as sp\n\ndef parabola_directrix(a, b, c):\n    x = sp.symbols('x')\n    y = a * x**2 + b * x + c\n    vertex_x = -b / (2 * a)\n    directrix = c - (b**2 + 1) / (4 * a)\n    return int(directrix)",
+  "model": "gpt-4o"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/138",
-  "llm_response": "import math\n\ndef is_Sum_Of_Powers_Of_Two(n):\n    while n > 0:\n        if n % 2 == 0:\n            n //= 2\n        else:\n            n -= 1\n    return n == 0",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to check whether the given number can be represented as sum of non-zero powers of 2 or not."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/96",
-  "llm_response": "import math\n\ndef divisor(n):\n    count = 0\n    sqrt_n = int(math.sqrt(n))\n    for i in range(1, sqrt_n + 1):\n        if n % i == 0:\n            if i * i == n:\n                count += 1\n            else:\n                count += 2\n    return count",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the number of divisors of a given integer."
-}

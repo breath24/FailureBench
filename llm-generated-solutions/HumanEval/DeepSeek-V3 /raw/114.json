@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/114",
+  "task_description": "\ndef minSubArraySum(nums):\n    \"\"\"\n    Given an array of integers nums, find the minimum sum of any non-empty sub-array\n    of nums.\n    Example\n    minSubArraySum([2, 3, 4, 1, 2, 4]) == 1\n    minSubArraySum([-1, -2, -3]) == -6\n    \"\"\"\n",
+  "llm_response": "import math\n\ndef minSubArraySum(nums):\n    min_sum = math.inf\n    current_sum = 0\n    for num in nums:\n        current_sum += num\n        if current_sum < min_sum:\n            min_sum = current_sum\n        if current_sum > 0:\n            current_sum = 0\n    return min_sum",
+  "model": "deepseek-chat-v3-0324"
+}

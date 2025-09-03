@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/720",
+  "task_description": "Write a function to add a dictionary to the tuple.",
+  "llm_response": "def add_dict_to_tuple(input_tuple, input_dict):\n    return input_tuple + (input_dict,)",
+  "model": "deepseek-chat-v3-0324"
+}

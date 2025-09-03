@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/129",
+  "task_description": "Write a function to calculate magic square.",
+  "llm_response": "def magic_square_test(matrix):\n    n = len(matrix)\n    if n == 0 or any(len(row) != n for row in matrix):\n        return False\n\n    # Check rows\n    magic_sum = sum(matrix[0])\n    for row in matrix:\n        if sum(row) != magic_sum:\n            return False\n\n    # Check columns\n    for col in range(n):\n        if sum(matrix[row][col] for row in range(n)) != magic_sum:\n            return False\n\n    # Check diagonals\n    if sum(matrix[i][i] for i in range(n)) != magic_sum or sum(matrix[i][n - 1 - i] for i in range(n)) != magic_sum:\n        return False\n\n    return True",
+  "model": "mistral-3.2-24b"
+}

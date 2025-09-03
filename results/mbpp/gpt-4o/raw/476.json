@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/476",
-  "llm_response": "def big_sum(arr):\n    if not arr:\n        return 0\n    return min(arr) + max(arr)",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to find the sum of the largest and smallest value in a given array."
-}

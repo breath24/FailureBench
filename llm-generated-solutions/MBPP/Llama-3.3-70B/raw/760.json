@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/760",
+  "task_description": "Write a python function to check whether an array contains only one distinct element or not.",
+  "llm_response": "import numpy as np\n\ndef unique_Element(lst):\n    return len(set(lst)) == 1",
+  "model": "llama-3.3-70b"
+}

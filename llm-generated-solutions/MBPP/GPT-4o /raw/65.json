@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/65",
+  "task_description": "Write a function of recursion list sum.",
+  "llm_response": "from collections.abc import Iterable\n\ndef recursive_list_sum(lst):\n    def flatten_and_sum(lst):\n        total = 0\n        for item in lst:\n            if isinstance(item, Iterable) and not isinstance(item, (str, bytes)):\n                total += flatten_and_sum(item)\n            else:\n                total += item\n        return total\n    return flatten_and_sum(lst)",
+  "model": "gpt-4o"
+}

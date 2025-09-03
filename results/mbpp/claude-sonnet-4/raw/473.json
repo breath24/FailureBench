@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/473",
-  "llm_response": "def tuple_intersection(list1, list2):\n    set1 = set()\n    set2 = set()\n    \n    for tup in list1:\n        set1.add(tuple(sorted(tup)))\n    \n    for tup in list2:\n        set2.add(tuple(sorted(tup)))\n    \n    intersection = set1.intersection(set2)\n    return intersection",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the tuple intersection of elements in the given tuple list irrespective of their order."
-}

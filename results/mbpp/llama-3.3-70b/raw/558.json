@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/558",
-  "llm_response": "def digit_distance_nums(num1, num2):\n    return abs(num1 - num2)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find the digit distance between two integers."
-}

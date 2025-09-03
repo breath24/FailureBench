@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/732",
+  "task_description": "Write a function to replace all occurrences of spaces, commas, or dots with a colon.",
+  "llm_response": "def replace_specialchar(input_string):\n    return input_string.replace(' ', ':').replace(',', ':').replace('.', ':')",
+  "model": "mistral-3.2-24b"
+}

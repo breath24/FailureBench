@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/457",
+  "task_description": "Write a python function to find the sublist having minimum length.",
+  "llm_response": "import sys\n\ndef Find_Min(lists):\n    min_len = sys.maxsize\n    min_list = None\n    for lst in lists:\n        if len(lst) < min_len:\n            min_len = len(lst)\n            min_list = lst\n    return min_list",
+  "model": "llama-3.3-70b"
+}

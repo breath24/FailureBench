@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/437",
+  "task_description": "Write a function to remove odd characters in a string.",
+  "llm_response": "def remove_odd(s):\n    return s[1::2]",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/592",
+  "task_description": "Write a python function to find sum of product of binomial co-efficients.",
+  "llm_response": "from math import comb\n\ndef sum_Of_product(n):\n    total = 0\n    for i in range(n):\n        total += comb(n, i) * comb(n, n - i)\n    return total",
+  "model": "mistral-3.2-24b"
+}

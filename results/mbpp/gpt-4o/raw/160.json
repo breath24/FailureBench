@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/160",
-  "llm_response": "from math import gcd\n\ndef find_solution(a, b, n):\n    def extended_gcd(aa, bb):\n        if bb == 0:\n            return aa, 1, 0\n        g, x1, y1 = extended_gcd(bb, aa % bb)\n        x = y1\n        y = x1 - (aa // bb) * y1\n        return g, x, y\n\n    g, x, y = extended_gcd(a, b)\n    if n % g != 0:\n        return None\n    x *= n // g\n    y *= n // g\n    return x, y if x * a + y * b == n else None",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find x and y that satisfies ax + by = n."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/573",
-  "llm_response": "from functools import reduce\nimport operator\n\ndef unique_product(lst):\n    unique_numbers = list(set(lst))\n    return reduce(operator.mul, unique_numbers, 1)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to calculate the product of the unique numbers of a given list."
-}

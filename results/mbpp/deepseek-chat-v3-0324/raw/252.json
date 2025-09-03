@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/252",
-  "llm_response": "import math\n\ndef convert(complex_num):\n    r = abs(complex_num)\n    theta = math.atan2(complex_num.imag, complex_num.real)\n    return (r, theta)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to convert complex numbers to polar coordinates."
-}

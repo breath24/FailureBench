@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/168",
-  "llm_response": "import numpy as np\n\ndef frequency(lst, num):\n    return lst.count(num)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find the frequency of a number in a given array."
-}

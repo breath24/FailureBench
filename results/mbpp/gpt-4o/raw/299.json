@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/299",
-  "llm_response": "from collections import defaultdict\n\ndef max_aggregate(data):\n    aggregates = defaultdict(int)\n    for name, score in data:\n        aggregates[name] += score\n    return max(aggregates.items(), key=lambda x: x[1])",
-  "model": "gpt-4o",
-  "task_description": "Write a function to calculate the maximum aggregate from the list of tuples."
-}

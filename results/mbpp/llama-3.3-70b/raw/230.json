@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/230",
-  "llm_response": "import re\ndef replace_blank(s, c):\n    return re.sub(' ', c, s)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to replace blank spaces with any character in a string."
-}

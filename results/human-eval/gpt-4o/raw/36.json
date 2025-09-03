@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/36",
-  "llm_response": "import re\n\ndef fizz_buzz(n: int):\n    count = 0\n    for i in range(n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += len(re.findall('7', str(i)))\n    return count",
-  "model": "gpt-4o",
-  "task_description": "\n\ndef fizz_buzz(n: int):\n    \"\"\"Return the number of times the digit 7 appears in integers less than n which are divisible by 11 or 13.\n    >>> fizz_buzz(50)\n    0\n    >>> fizz_buzz(78)\n    2\n    >>> fizz_buzz(79)\n    3\n    \"\"\"\n"
-}

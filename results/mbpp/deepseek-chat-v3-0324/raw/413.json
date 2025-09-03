@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/413",
-  "llm_response": "def extract_nth_element(lst, n):\n    return [t[n] for t in lst]",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to extract the nth element from a given list of tuples."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/270",
-  "llm_response": "def sum_even_and_even_index(lst):\n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 == 0:\n            total += lst[i]\n    return total",
-  "model": "qwen3-coder",
-  "task_description": "Write a python function to find the sum of even numbers at even positions."
-}

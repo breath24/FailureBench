@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/165",
+  "task_description": "Write a python function to count characters at same position in a given string (lower and uppercase characters) as in english alphabet.",
+  "llm_response": "import string\n\ndef count_char_position(s):\n    s = s.lower()\n    count = 0\n    for i, c in enumerate(s):\n        if c in string.ascii_lowercase and ord(c) - 96 == i + 1:\n            count += 1\n    return count",
+  "model": "llama-3.3-70b"
+}

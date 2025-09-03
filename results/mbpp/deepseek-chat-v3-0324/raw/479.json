@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/479",
-  "llm_response": "import math\n\ndef first_Digit(number):\n    number = abs(number)\n    while number >= 10:\n        number = number // 10\n    return number",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the first digit of a given number."
-}

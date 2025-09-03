@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/441",
-  "llm_response": "def surfacearea_cube(size):\n    return 6 * size * size",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to find the surface area of a cube."
-}

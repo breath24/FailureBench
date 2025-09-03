@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/583",
-  "llm_response": "def catalan_number(n):\n    if n <= 1:\n        return 1\n    \n    catalan = [0] * (n + 1)\n    catalan[0] = catalan[1] = 1\n    \n    for i in range(2, n + 1):\n        for j in range(i):\n            catalan[i] += catalan[j] * catalan[i - 1 - j]\n    \n    return catalan[n]",
-  "model": "qwen3-coder",
-  "task_description": "Write a function for nth catalan number."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/427",
-  "llm_response": "def change_date_format(date_str):\n    parts = date_str.split('-')\n    return parts[2] + '-' + parts[1] + '-' + parts[0]",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to convert a date of yyyy-mm-dd format to dd-mm-yyyy format by using regex."
-}

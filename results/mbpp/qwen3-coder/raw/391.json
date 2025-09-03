@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/391",
-  "llm_response": "def convert_list_dictionary(*lists):\n    result = []\n    for i in range(len(lists[0])):\n        nested_dict = {}\n        current_dict = nested_dict\n        for j in range(len(lists) - 1):\n            current_dict[lists[j][i]] = {}\n            current_dict = current_dict[lists[j][i]]\n        current_dict[lists[-1][i]] = lists[-1][i]\n        result.append(nested_dict)\n    return result",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to convert more than one list to nested dictionary."
-}

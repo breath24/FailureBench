@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/801",
+  "task_description": "Write a python function to count the number of equal numbers from three given integers.",
+  "llm_response": "def test_three_equal(a, b, c):\n    return sum(1 for num in [a, b, c] if num == a)",
+  "model": "mistral-3.2-24b"
+}

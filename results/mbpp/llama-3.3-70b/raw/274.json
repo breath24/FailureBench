@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/274",
-  "llm_response": "import math\n\ndef even_binomial_Coeff_Sum(n):\n    sum = 0\n    for k in range(n + 1):\n        if k % 2 == 0:\n            sum += math.comb(n, k)\n    return sum",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to find sum of even index binomial coefficients."
-}

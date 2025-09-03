@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/596",
+  "task_description": "Write a function to find the size of the given tuple.",
+  "llm_response": "import sys\n\ndef tuple_size(tup):\n    return sys.getsizeof(tup)",
+  "model": "claude-sonnet-4"
+}

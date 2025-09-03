@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/410",
+  "task_description": "Write a function to find the minimum value in a given heterogeneous list.",
+  "llm_response": "def min_val(lst):\n    numeric_values = [x for x in lst if isinstance(x, (int, float))]\n    if not numeric_values:\n        return None\n    return min(numeric_values)",
+  "model": "claude-sonnet-4"
+}

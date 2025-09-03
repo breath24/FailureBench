@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/787",
-  "llm_response": "import re\n\ndef text_match_three(text):\n    pattern = r'abbb'\n    return bool(re.fullmatch(pattern, text))",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function that matches a string that has an a followed by three 'b'."
-}

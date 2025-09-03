@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/425",
-  "llm_response": "def count_element_in_list(list_of_lists, element):\n    count = 0\n    for sublist in list_of_lists:\n        if element in sublist:\n            count += 1\n    return count",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to count the number of sublists containing a particular element."
-}

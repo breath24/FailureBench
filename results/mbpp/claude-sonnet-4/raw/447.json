@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/447",
-  "llm_response": "def cube_nums(nums):\n    return [num ** 3 for num in nums]",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find cubes of individual elements in a list using lambda function."
-}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/425",
-  "llm_response": "from typing import List\n\ndef count_element_in_list(lst: List[List[int]], element: int) -> int:\n    return sum(element in sublist for sublist in lst)",
-  "model": "gpt-4o",
-  "task_description": "Write a function to count the number of sublists containing a particular element."
-}

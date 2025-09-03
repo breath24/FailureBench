@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/473",
+  "task_description": "Write a function to find the tuple intersection of elements in the given tuple list irrespective of their order.",
+  "llm_response": "from itertools import chain\n\ndef tuple_intersection(list1, list2):\n    set1 = set(tuple(sorted(t)) for t in list1)\n    set2 = set(tuple(sorted(t)) for t in list2)\n    return set(chain.from_iterable((t for t in set1 if t in set2), (t for t in set2 if t in set1)))",
+  "model": "llama-3.3-70b"
+}

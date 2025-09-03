@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/780",
-  "llm_response": "from itertools import combinations\n\ndef find_combinations(tuple_list):\n    sums = []\n    for pair in combinations(tuple_list, 2):\n        sum_x = pair[0][0] + pair[1][0]\n        sum_y = pair[0][1] + pair[1][1]\n        sums.append((sum_x, sum_y))\n    return sums",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to find the combinations of sums with tuples in the given tuple list."
-}

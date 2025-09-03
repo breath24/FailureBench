@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/253",
-  "llm_response": "import numpy as np\n\ndef count_integer(lst):\n    return sum(isinstance(i, int) for i in lst)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a python function to count integers from a given list."
-}

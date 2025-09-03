@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/757",
-  "llm_response": "def count_reverse_pairs(string_list):\n    count = 0\n    seen = set()\n    \n    for string in string_list:\n        reversed_string = string[::-1]\n        if reversed_string in seen:\n            count += 1\n        seen.add(string)\n    \n    return count",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to count the pairs of reverse strings in the given string list."
-}

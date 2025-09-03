@@ -1,6 +1,0 @@
-{
-  "task_id": "3723",
-  "llm_response": "def sumOfGoodNumbers(nums, k):\n    return sum(num for i, num in enumerate(nums) if (i - k < 0 or num > nums[i - k]) and (i + k >= len(nums) or num > nums[i + k]))",
-  "model": "llama-3.3-70b",
-  "task_description": "Given an array of integers nums and an integer k, an element nums[i] is considered good if it is strictly greater than the elements at indices i - k and i + k (if those indices exist). If neither of these indices exists, nums[i] is still considered good.\nReturn the sum of all the good elements in the array.\n \nExample 1:\n\nInput: nums = [1,3,2,1,5,4], k = 2\nOutput: 12\nExplanation:\nThe good numbers are nums[1] = 3, nums[4] = 5, and nums[5] = 4 because they are strictly greater than the numbers at indices i - k and i + k.\n\nExample 2:\n\nInput: nums = [2,1], k = 1\nOutput: 2\nExplanation:\nThe only good number is nums[0] = 2 because it is strictly greater than nums[1].\n\n \nConstraints:\n\n2 <= nums.length <= 100\n1 <= nums[i] <= 1000\n1 <= k <= floor(nums.length / 2)"
-}

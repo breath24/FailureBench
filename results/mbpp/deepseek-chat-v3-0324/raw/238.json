@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/238",
-  "llm_response": "def number_of_substrings(s):\n    n = len(s)\n    return n * (n + 1) // 2",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to count number of non-empty substrings of a given string."
-}

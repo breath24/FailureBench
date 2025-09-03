@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/111",
+  "task_description": "Write a function to find common elements in given nested lists. * list item * list item * list item * list item",
+  "llm_response": "from functools import reduce\n\ndef common_in_nested_lists(nested_lists):\n    if not nested_lists:\n        return []\n    return list(reduce(lambda x, y: set(x) & set(y), nested_lists))",
+  "model": "deepseek-chat-v3-0324"
+}

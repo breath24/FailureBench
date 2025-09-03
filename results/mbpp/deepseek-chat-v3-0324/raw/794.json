@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/794",
-  "llm_response": "import re\n\ndef text_starta_endb(text):\n    return bool(re.fullmatch(r'a.*b', text))",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function that matches a string that has an 'a' followed by anything, ending in 'b'."
-}

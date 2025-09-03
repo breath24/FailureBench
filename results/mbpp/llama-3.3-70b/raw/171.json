@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/171",
-  "llm_response": "import math\n\ndef perimeter_pentagon(side_length):\n    return 5 * side_length",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the perimeter of a pentagon."
-}

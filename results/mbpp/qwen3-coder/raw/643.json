@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/643",
-  "llm_response": "import re\n\ndef text_match_wordz_middle(text):\n    # Check if 'z' appears in the middle of any word (not at start or end)\n    # \\b ensures word boundaries\n    # \\w+z\\w+ means word characters + z + word characters (so z is in middle)\n    pattern = r'\\b\\w+z\\w+\\b'\n    return bool(re.search(pattern, text))",
-  "model": "qwen3-coder",
-  "task_description": "Write a function that matches a word containing 'z', not at the start or end of the word."
-}

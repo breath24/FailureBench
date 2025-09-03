@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/162",
-  "llm_response": "import math\n\ndef sum_series(n):\n    total = 0\n    for i in range(n // 2 + 1):\n        term = n - 2 * i\n        if term > 0:\n            total += term\n    return total",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to calculate the sum of the positive integers of n+(n-2)+(n-4)... (until n-x =< 0)."
-}

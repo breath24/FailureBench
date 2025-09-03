@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/255",
-  "llm_response": "from itertools import combinations_with_replacement\n\ndef combinations_colors(lst, n):\n    return list(combinations_with_replacement(lst, n))",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to choose specified number of colours from three different colours and generate all the combinations with repetitions."
-}

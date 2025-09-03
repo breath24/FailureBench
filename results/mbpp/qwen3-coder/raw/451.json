@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/451",
-  "llm_response": "import re\n\ndef remove_whitespaces(text):\n    return re.sub(r'\\s+', '', text)",
-  "model": "qwen3-coder",
-  "task_description": "Write a function to remove all whitespaces from the given string using regex."
-}

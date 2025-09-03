@@ -1,6 +1,0 @@
-{
-  "task_id": "HumanEval/1",
-  "llm_response": "from typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    balance = 0\n    current_group = []\n    \n    for char in paren_string:\n        current_group.append(char)\n        if char == '(':\n            balance += 1\n        elif char == ')':\n            balance -= 1\n        \n        if balance == 0 and current_group:\n            result.append(''.join(current_group))\n            current_group = []\n    \n    return result",
-  "model": "gpt-4o",
-  "task_description": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n"
-}

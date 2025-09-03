@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/311",
-  "llm_response": "def set_left_most_unset_bit(n):\n    import math\n    if n == 0:\n        return 1\n    num_bits = int(math.log2(n)) + 1\n    for i in range(num_bits):\n        if not (n & (1 << i)):\n            return n | (1 << i)\n    return n | (1 << num_bits)",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to set the left most unset bit."
-}

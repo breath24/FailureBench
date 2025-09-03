@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/223",
+  "task_description": "Write a function to check for majority element in the given sorted array.",
+  "llm_response": "from typing import List\n\ndef is_majority(arr: List[int], n: int, element: int) -> bool:\n    from bisect import bisect_left, bisect_right\n    left_index = bisect_left(arr, element)\n    right_index = bisect_right(arr, element)\n    return (right_index - left_index) > n // 2",
+  "model": "gpt-4o"
+}

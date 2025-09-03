@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/740",
+  "task_description": "Write a function to convert the given tuple to a key-value dictionary using adjacent elements.",
+  "llm_response": "import itertools\n\ndef tuple_to_dict(t):\n    return dict(itertools.zip_longest(t[::2], t[1::2]))",
+  "model": "llama-3.3-70b"
+}

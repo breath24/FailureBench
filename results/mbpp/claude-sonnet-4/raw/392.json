@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/392",
-  "llm_response": "def get_max_sum(n):\n    memo = {}\n    \n    def helper(num):\n        if num in memo:\n            return memo[num]\n        \n        if num == 0:\n            return 0\n        \n        divided_sum = helper(num // 2) + helper(num // 3) + helper(num // 4) + helper(num // 5)\n        result = max(divided_sum, num)\n        memo[num] = result\n        return result\n    \n    return helper(n)",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the maximum sum possible by using the given equation f(n) = max( (f(n/2) + f(n/3) + f(n/4) + f(n/5)), n)."
-}

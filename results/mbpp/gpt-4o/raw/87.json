@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/87",
-  "llm_response": "def merge_dictionaries_three(dict1, dict2, dict3):\n    merged_dict = {**dict1, **dict2, **dict3}\n    return merged_dict",
-  "model": "gpt-4o",
-  "task_description": "Write a function to merge three dictionaries into a single expression."
-}

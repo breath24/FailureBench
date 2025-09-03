@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/562",
+  "task_description": "Write a python function to find the maximum length of sublist.",
+  "llm_response": "from typing import List\n\ndef Find_Max_Length(lst: List[List[int]]) -> int:\n    return max(len(sublist) for sublist in lst) if lst else 0",
+  "model": "gpt-4o"
+}

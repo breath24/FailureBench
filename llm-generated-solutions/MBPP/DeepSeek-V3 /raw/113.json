@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/113",
+  "task_description": "Write a function to check if a string represents an integer or not.",
+  "llm_response": "import re\n\ndef check_integer(s):\n    return bool(re.fullmatch(r'[-+]?\\d+', s))",
+  "model": "deepseek-chat-v3-0324"
+}

@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/432",
-  "llm_response": "import statistics\ndef median_trapezium(a, b, c):\n    lengths = [a, b, c]\n    return statistics.median(lengths)",
-  "model": "llama-3.3-70b",
-  "task_description": "Write a function to find the median of a trapezium."
-}

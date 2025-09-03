@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/57",
+  "task_description": "Write a python function to find the largest number that can be formed with the given digits.",
+  "llm_response": "from functools import cmp_to_key\n\ndef find_Max_Num(digits):\n    def compare(x, y):\n        if x + y > y + x:\n            return -1\n        elif x + y < y + x:\n            return 1\n        else:\n            return 0\n    \n    str_digits = [str(digit) for digit in digits]\n    str_digits.sort(key=cmp_to_key(compare))\n    result = ''.join(str_digits)\n    return int(result)",
+  "model": "claude-sonnet-4"
+}

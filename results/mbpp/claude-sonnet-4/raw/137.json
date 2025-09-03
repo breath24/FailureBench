@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/137",
-  "llm_response": "import math\n\ndef zero_count(arr):\n    if not arr:\n        return 0\n    \n    zeros = arr.count(0)\n    non_zeros = len(arr) - zeros\n    \n    if non_zeros == 0:\n        return float('inf')\n    \n    return zeros / non_zeros",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to find the ration of zeroes in an array of integers."
-}

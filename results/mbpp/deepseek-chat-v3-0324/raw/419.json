@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/419",
-  "llm_response": "import math\n\ndef round_and_sum(numbers):\n    rounded = [round(num) for num in numbers]\n    total = sum(rounded) * len(numbers)\n    return total",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to round every number of a given list of numbers and print the total sum multiplied by the length of the list."
-}

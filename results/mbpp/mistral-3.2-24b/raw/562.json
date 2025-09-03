@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/562",
-  "llm_response": "def Find_Max_Length(lst):\n    return max(len(sublist) for sublist in lst) if lst else 0",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a python function to find the maximum length of sublist."
-}

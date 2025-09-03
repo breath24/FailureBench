@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/239",
-  "llm_response": "def get_total_number_of_sequences(m, n):\n    if n == 0:\n        return 0\n    dp = [0] * (m + 1)\n    dp[1] = 1\n    for _ in range(2, n + 1):\n        new_dp = [0] * (m + 1)\n        for j in range(1, m + 1):\n            for k in range(2 * j, m + 1):\n                new_dp[k] += dp[j]\n        dp = new_dp\n    return sum(dp)",
-  "model": "mistral-3.2-24b",
-  "task_description": "Write a function to find the number of possible sequences of length n such that each of the next element is greater than or equal to twice of the previous element but less than or equal to m."
-}

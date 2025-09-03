@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/160",
+  "task_description": "Write a function to find x and y that satisfies ax + by = n.",
+  "llm_response": "import math\n\ndef find_solution(a, b, n):\n    def extended_gcd(a, b):\n        if a == 0:\n            return b, 0, 1\n        gcd, x1, y1 = extended_gcd(b % a, a)\n        x = y1 - (b // a) * x1\n        y = x1\n        return gcd, x, y\n    \n    gcd, x, y = extended_gcd(a, b)\n    \n    if n % gcd != 0:\n        return None\n    \n    x *= n // gcd\n    y *= n // gcd\n    \n    return (x, y)",
+  "model": "claude-sonnet-4"
+}

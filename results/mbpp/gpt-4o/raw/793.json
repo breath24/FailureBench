@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/793",
-  "llm_response": "from typing import List\n\ndef last(arr: List[int], target: int) -> int:\n    left, right = 0, len(arr) - 1\n    result = -1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            result = mid\n            left = mid + 1\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return result",
-  "model": "gpt-4o",
-  "task_description": "Write a python function to find the last position of an element in a sorted array."
-}

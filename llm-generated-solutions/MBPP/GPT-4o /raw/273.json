@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/273",
+  "task_description": "Write a function to substract the contents of one tuple with corresponding index of other tuple.",
+  "llm_response": "from typing import Tuple\n\ndef subtract_elements(tuple1: Tuple[int, ...], tuple2: Tuple[int, ...]) -> Tuple[int, ...]:\n    return tuple(a - b for a, b in zip(tuple1, tuple2))",
+  "model": "gpt-4o"
+}

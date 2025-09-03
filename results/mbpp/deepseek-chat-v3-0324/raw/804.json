@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/804",
-  "llm_response": "import math\n\ndef is_product_even(lst):\n    product = math.prod(lst)\n    return product % 2 == 0",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to check whether the product of numbers is even or not."
-}

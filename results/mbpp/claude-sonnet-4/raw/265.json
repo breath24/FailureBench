@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/265",
-  "llm_response": "def list_split(lst, n):\n    result = []\n    for i in range(n):\n        result.append([lst[j] for j in range(i, len(lst), n)])\n    return result",
-  "model": "claude-sonnet-4",
-  "task_description": "Write a function to split a list for every nth element."
-}

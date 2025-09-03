@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/222",
-  "llm_response": "from typing import Tuple, Any\n\ndef check_type(t: Tuple[Any, ...]) -> bool:\n    if not t:\n        return True\n    first_type = type(t[0])\n    return all(isinstance(x, first_type) for x in t)",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to check if all the elements in tuple have same data type or not."
-}

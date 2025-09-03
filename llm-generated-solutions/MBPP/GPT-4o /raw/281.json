@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/281",
+  "task_description": "Write a python function to check if the elements of a given list are unique or not.",
+  "llm_response": "def all_unique(lst):\n    return len(lst) == len(set(lst))",
+  "model": "gpt-4o"
+}

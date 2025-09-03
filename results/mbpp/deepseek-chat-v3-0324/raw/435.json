@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/435",
-  "llm_response": "import math\n\ndef last_Digit(number):\n    return abs(number) % 10",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a python function to find the last digit of a given number."
-}

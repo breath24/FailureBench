@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/607",
-  "llm_response": "import re\n\ndef find_literals(text, pattern):\n    match = re.search(pattern, text)\n    if match:\n        return (match.group(), match.start(), match.end())\n    return None",
-  "model": "deepseek-chat-v3-0324",
-  "task_description": "Write a function to search a literals string in a string and also find the location within the original string where the pattern occurs by using regex."
-}

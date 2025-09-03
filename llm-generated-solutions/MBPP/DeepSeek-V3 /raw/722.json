@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/722",
+  "task_description": "Write a function to filter the height and width of students which are stored in a dictionary.",
+  "llm_response": "def filter_data(students, min_height, min_weight):\n    return {name: (height, weight) for name, (height, weight) in students.items() if height >= min_height and weight >= min_weight}",
+  "model": "deepseek-chat-v3-0324"
+}

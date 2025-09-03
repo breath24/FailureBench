@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/98",
+  "task_description": "Write a function to multiply all the numbers in a list and divide with the length of the list.",
+  "llm_response": "import math\n\ndef multiply_num(lst):\n    product = 1\n    for num in lst:\n        product *= num\n    return product / len(lst)",
+  "model": "deepseek-chat-v3-0324"
+}

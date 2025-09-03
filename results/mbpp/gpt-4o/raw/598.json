@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/598",
-  "llm_response": "def armstrong_number(n):\n    num_str = str(n)\n    num_len = len(num_str)\n    return n == sum(int(digit) ** num_len for digit in num_str)",
-  "model": "gpt-4o",
-  "task_description": "Write a function to check whether the given number is armstrong or not."
-}

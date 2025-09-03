@@ -1,6 +1,0 @@
-{
-  "task_id": "Mbpp/753",
-  "llm_response": "def min_k(records, k):\n    return sorted(records, key=lambda x: x[1])[:k]",
-  "model": "gpt-4o",
-  "task_description": "Write a function to find minimum k records from tuple list."
-}

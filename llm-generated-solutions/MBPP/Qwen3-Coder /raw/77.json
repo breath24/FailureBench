@@ -1,0 +1,6 @@
+{
+  "task_id": "Mbpp/77",
+  "task_description": "Write a python function to find the difference between sum of even and odd digits.",
+  "llm_response": "def is_Diff(n):\n    s = str(n)\n    odd_sum = 0\n    even_sum = 0\n    \n    for i in range(len(s)):\n        if i % 2 == 0:\n            even_sum += int(s[i])\n        else:\n            odd_sum += int(s[i])\n    \n    diff = abs(odd_sum - even_sum)\n    \n    return diff % 11 == 0",
+  "model": "qwen3-coder"
+}
