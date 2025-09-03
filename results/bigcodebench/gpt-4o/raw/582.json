@@ -1,0 +1,6 @@
+{
+  "task_id": "BigCodeBench/582",
+  "instruct_prompt": "Create a list of normally distributed random numbers and plot their histogram and probability density function (PDF).\nThe function should output with:\n    matplotlib.figure.Figure: A figure object containing the histogram and PDF plot.\nYou should write self-contained code starting with:\n```\nimport numpy as np\nfrom scipy import stats\nimport matplotlib.pyplot as plt\ndef task_func(size=1000):\n```",
+  "llm_response": "import numpy as np\nfrom scipy import stats\nimport matplotlib.pyplot as plt\ndef task_func(size=1000):\n    # Generate normally distributed random numbers\n    data = np.random.normal(loc=0, scale=1, size=size)\n    \n    # Create a histogram of the data\n    fig, ax = plt.subplots()\n    count, bins, ignored = ax.hist(data, bins=30, density=True, alpha=0.6, color='g', label='Histogram')\n    \n    # Calculate the PDF\n    xmin, xmax = plt.xlim()\n    x = np.linspace(xmin, xmax, 100)\n    p = stats.norm.pdf(x, loc=0, scale=1)\n    \n    # Plot the PDF\n    ax.plot(x, p, 'k', linewidth=2, label='PDF')\n    \n    # Add labels and legend\n    ax.set_title('Histogram and PDF of Normally Distributed Data')\n    ax.set_xlabel('Value')\n    ax.set_ylabel('Density')\n    ax.legend()\n    \n    # Return the figure object\n    return fig",
+  "model": "gpt-4o"
+}

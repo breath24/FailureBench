@@ -1,0 +1,6 @@
+{
+  "task_id": "BigCodeBench/1085",
+  "instruct_prompt": "Analyzes the frequency of words in a given text after lowercasing, removing punctuation, splitting into words, and plots the top 10 most common words.\nThe function should output with:\n    list: A list of tuples containing the 10 most common words and their counts.\n    Axes: The matplotlib Axes object of the bar chart.\nYou should write self-contained code starting with:\n```\nimport re\nfrom collections import Counter\nimport matplotlib.pyplot as plt\ndef task_func(text):\n```",
+  "llm_response": "import re\nfrom collections import Counter\nimport matplotlib.pyplot as plt\ndef task_func(text):\n    # Lowercase the text\n    text = text.lower()\n\n    # Remove punctuation using regex\n    text = re.sub(r'[^\\w\\s]', '', text)\n\n    # Split into words\n    words = text.split()\n\n    # Count word frequencies\n    word_counts = Counter(words)\n\n    # Get top 10 most common words\n    top_10 = word_counts.most_common(10)\n\n    # Create bar chart\n    words, counts = zip(*top_10)\n    fig, ax = plt.subplots()\n    ax.bar(words, counts)\n    ax.set_title('Top 10 Most Common Words')\n    ax.set_xlabel('Words')\n    ax.set_ylabel('Frequency')\n    ax.tick_params(axis='x', rotation=45)\n\n    return top_10, ax",
+  "model": "mistral-3.2-24b"
+}

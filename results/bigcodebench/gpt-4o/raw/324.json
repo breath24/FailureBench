@@ -1,0 +1,6 @@
+{
+  "task_id": "BigCodeBench/324",
+  "instruct_prompt": "Run files from list of files as subprocesses at the same time.\nThe function should output with:\n    list: The exit codes of the subprocesses.\nYou should write self-contained code starting with:\n```\nimport subprocess\nimport time\nimport threading\ndef task_func(file_list):\n```",
+  "llm_response": "import subprocess\nimport threading\ndef run_file(file, results, index):\n    try:\n        # Run the file as a subprocess\n        result = subprocess.run(['python', file], capture_output=True)\n        # Store the exit code in the results list\n        results[index] = result.returncode\n    except Exception as e:\n        # If there's an error, store a non-zero exit code\n        results[index] = -1\ndef task_func(file_list):\n    # Initialize a list to store the exit codes\n    results = [None] * len(file_list)\n    # Create a list to hold the thread objects\n    threads = []\n\n    # Start a thread for each file\n    for i, file in enumerate(file_list):\n        thread = threading.Thread(target=run_file, args=(file, results, i))\n        threads.append(thread)\n        thread.start()\n\n    # Wait for all threads to complete\n    for thread in threads:\n        thread.join()\n\n    # Return the list of exit codes\n    return results",
+  "model": "gpt-4o"
+}

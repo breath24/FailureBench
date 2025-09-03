@@ -1,0 +1,6 @@
+{
+  "task_id": "BigCodeBench/368",
+  "instruct_prompt": "Moves a random file from the source directory to the specified destination directory.\nThe function should output with:\n    str: The name of the file moved. Format: 'filename.extension' (e.g., 'file1.txt').\nYou should write self-contained code starting with:\n```\nimport os\nimport shutil\nimport random\ndef task_func(src_dir: str, dest_dir: str, seed:int = 100) -> str:\n```",
+  "llm_response": "import os\nimport shutil\nimport random\ndef task_func(src_dir: str, dest_dir: str, seed: int = 100) -> str:\n    # Set the random seed for reproducibility\n    random.seed(seed)\n    \n    # List all files in the source directory\n    files = [f for f in os.listdir(src_dir) if os.path.isfile(os.path.join(src_dir, f))]\n    \n    # Check if there are any files to move\n    if not files:\n        raise ValueError(\"No files found in the source directory.\")\n    \n    # Select a random file from the list\n    file_to_move = random.choice(files)\n    \n    # Construct full file paths\n    src_file_path = os.path.join(src_dir, file_to_move)\n    dest_file_path = os.path.join(dest_dir, file_to_move)\n    \n    # Move the file to the destination directory\n    shutil.move(src_file_path, dest_file_path)\n    \n    # Return the name of the file moved\n    return file_to_move",
+  "model": "gpt-4o"
+}
