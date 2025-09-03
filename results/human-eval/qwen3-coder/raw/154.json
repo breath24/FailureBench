@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/154",
+  "llm_response": "def cycpattern_check(a, b):\n    if len(b) > len(a):\n        return False\n    \n    # Create all possible rotations of b\n    doubled_b = b + b\n    \n    # Check if any rotation of b is a substring of a\n    for i in range(len(b)):\n        rotation = doubled_b[i:i+len(b)]\n        if rotation in a:\n            return True\n    \n    return False",
+  "model": "qwen3-coder",
+  "task_description": "\ndef cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n"
+}

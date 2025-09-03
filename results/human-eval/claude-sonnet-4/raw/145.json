@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/145",
+  "llm_response": "def order_by_points(nums):\n    def digit_sum(n):\n        if n == 0:\n            return 0\n        if n < 0:\n            return -int(str(n)[1]) + sum(int(digit) for digit in str(n)[2:])\n        return sum(int(digit) for digit in str(n))\n    \n    indexed_nums = [(num, i) for i, num in enumerate(nums)]\n    indexed_nums.sort(key=lambda x: (digit_sum(x[0]), x[1]))\n    return [num for num, _ in indexed_nums]",
+  "model": "claude-sonnet-4",
+  "task_description": "\ndef order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"\n"
+}

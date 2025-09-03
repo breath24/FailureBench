@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/111",
+  "llm_response": "from collections import defaultdict\n\ndef histogram(test):\n    if not test:\n        return {}\n    freq = defaultdict(int)\n    letters = test.split()\n    for letter in letters:\n        freq[letter] += 1\n    max_count = max(freq.values()) if freq else 0\n    result = {k: v for k, v in freq.items() if v == max_count}\n    return result",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "\ndef histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\"\n"
+}

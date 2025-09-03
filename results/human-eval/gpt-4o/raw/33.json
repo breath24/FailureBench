@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/33",
+  "llm_response": "def sort_third(l: list):\n    import itertools\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    sorted_values = sorted(l[i] for i in indices)\n    result = l[:]\n    for i, value in zip(indices, sorted_values):\n        result[i] = value\n    return result",
+  "model": "gpt-4o",
+  "task_description": "\n\ndef sort_third(l: list):\n    \"\"\"This function takes a list l and returns a list l' such that\n    l' is identical to l in the indicies that are not divisible by three, while its values at the indicies that are divisible by three are equal\n    to the values of the corresponding indicies of l, but sorted.\n    >>> sort_third([1, 2, 3])\n    [1, 2, 3]\n    >>> sort_third([5, 6, 3, 4, 8, 9, 2])\n    [2, 6, 3, 4, 8, 9, 5]\n    \"\"\"\n"
+}

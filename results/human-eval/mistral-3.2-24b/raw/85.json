@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/85",
+  "llm_response": "def add(lst):\n    return sum(lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 == 0)",
+  "model": "mistral-3.2-24b",
+  "task_description": "\ndef add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\"\n"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/35",
+  "llm_response": "def max_element(l: list):\n    if not l:\n        raise ValueError(\"List is empty\")\n    max_val = l[0]\n    for element in l[1:]:\n        if element > max_val:\n            max_val = element\n    return max_val",
+  "model": "qwen3-coder",
+  "task_description": "\n\ndef max_element(l: list):\n    \"\"\"Return maximum element in the list.\n    >>> max_element([1, 2, 3])\n    3\n    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n"
+}

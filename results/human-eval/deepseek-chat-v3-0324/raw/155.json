@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/155",
+  "llm_response": "def even_odd_count(num):\n    even = 0\n    odd = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n    return (even, odd)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "\ndef even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\"\n"
+}

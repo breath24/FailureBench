@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/128",
+  "llm_response": "import math\nimport functools\nimport operator\n\ndef prod_signs(arr):\n    if not arr:\n        return None\n    signs = [1 if x >= 0 else -1 for x in arr]\n    product_of_signs = functools.reduce(operator.mul, signs, 1)\n    sum_of_magnitudes = sum(abs(x) for x in arr)\n    return product_of_signs * sum_of_magnitudes",
+  "model": "llama-3.3-70b",
+  "task_description": "\ndef prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\"\n"
+}

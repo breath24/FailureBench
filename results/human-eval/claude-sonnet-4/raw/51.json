@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/51",
+  "llm_response": "def remove_vowels(text):\n    vowels = \"aeiouAEIOU\"\n    return ''.join(char for char in text if char not in vowels)",
+  "model": "claude-sonnet-4",
+  "task_description": "\n\ndef remove_vowels(text):\n    \"\"\"\n    remove_vowels is a function that takes string and returns string without vowels.\n    >>> remove_vowels('')\n    ''\n    >>> remove_vowels(\"abcdef\\nghijklm\")\n    'bcdf\\nghjklm'\n    >>> remove_vowels('abcdef')\n    'bcdf'\n    >>> remove_vowels('aaaaa')\n    ''\n    >>> remove_vowels('aaBAA')\n    'B'\n    >>> remove_vowels('zbcd')\n    'zbcd'\n    \"\"\"\n"
+}

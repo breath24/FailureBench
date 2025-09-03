@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/137",
+  "llm_response": "def compare_one(a, b):\n    def convert(x):\n        if isinstance(x, str):\n            x = x.replace(',', '.')\n            if '.' in x:\n                return float(x)\n            else:\n                return int(x)\n        return x\n    \n    a_conv = convert(a)\n    b_conv = convert(b)\n    \n    if a_conv == b_conv:\n        return None\n    elif a_conv > b_conv:\n        return a\n    else:\n        return b",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "\ndef compare_one(a, b):\n    \"\"\"\n    Create a function that takes integers, floats, or strings representing\n    real numbers, and returns the larger variable in its given variable type.\n    Return None if the values are equal.\n    Note: If a real number is represented as a string, the floating point might be . or ,\n\n    compare_one(1, 2.5) \u279e 2.5\n    compare_one(1, \"2,3\") \u279e \"2,3\"\n    compare_one(\"5,1\", \"6\") \u279e \"6\"\n    compare_one(\"1\", 1) \u279e None\n    \"\"\"\n"
+}

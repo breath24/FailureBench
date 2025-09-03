@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/13",
+  "llm_response": "import math\n\ndef greatest_common_divisor(a: int, b: int) -> int:\n    return math.gcd(a, b)",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "\n\ndef greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\"\n"
+}

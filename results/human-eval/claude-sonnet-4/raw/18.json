@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/18",
+  "llm_response": "def how_many_times(string: str, substring: str) -> int:\n    if not substring:\n        return 0\n    \n    count = 0\n    start = 0\n    \n    while True:\n        pos = string.find(substring, start)\n        if pos == -1:\n            break\n        count += 1\n        start = pos + 1\n    \n    return count",
+  "model": "claude-sonnet-4",
+  "task_description": "\n\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n"
+}

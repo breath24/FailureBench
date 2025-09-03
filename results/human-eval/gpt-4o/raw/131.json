@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/131",
+  "llm_response": "import functools\n\ndef digits(n):\n    odd_digits = [int(d) for d in str(n) if int(d) % 2 != 0]\n    if not odd_digits:\n        return 0\n    return functools.reduce(lambda x, y: x * y, odd_digits)",
+  "model": "gpt-4o",
+  "task_description": "\ndef digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\"\n"
+}

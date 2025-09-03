@@ -1,0 +1,6 @@
+{
+  "task_id": "HumanEval/24",
+  "llm_response": "def largest_divisor(n: int) -> int:\n    for i in range(n // 2, 0, -1):\n        if n % i == 0:\n            return i\n    return 1",
+  "model": "qwen3-coder",
+  "task_description": "\n\ndef largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\"\n"
+}
