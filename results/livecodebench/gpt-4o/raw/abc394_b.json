@@ -1,0 +1,6 @@
+{
+  "task_id": "abc394_b",
+  "llm_response": "def candidate_func(input_str):\n    lines = input_str.strip().split('\\n')\n    N = int(lines[0])\n    strings = lines[1:]\n    strings.sort(key=len)\n    return ''.join(strings)",
+  "model": "gpt-4o",
+  "task_description": "You are given N strings S_1, S_2, \\ldots, S_N, each consisting of lowercase English letters. The lengths of these strings are all distinct.\nSort these strings in ascending order of length, and then concatenate them in that order to form a single string.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\r\nS_1\r\nS_2\r\n\\vdots\r\nS_N\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 2 \\leq N \\leq 50\n- N is an integer.\n- Each S_i is a string consisting of lowercase English letters with length between 1 and 50, inclusive.\n- If i \\neq j, the length of S_i is different from the length of S_j.\n\nSample Input 1\n\n3\r\ntc\r\noder\r\na\n\nSample Output 1\n\natcoder\r\n\nWhen we sort (tc, oder, a) in ascending order of length, we get (a, tc, oder). Concatenating them in this order yields the string atcoder.\n\nSample Input 2\n\n4\r\ncat\r\nenate\r\non\r\nc\n\nSample Output 2\n\nconcatenate"
+}

@@ -1,0 +1,6 @@
+{
+  "task_id": "abc389_b",
+  "llm_response": "import math\n\ndef candidate_func(input_str):\n    X = int(input_str.strip())\n    \n    N = 1\n    factorial = 1\n    \n    while factorial < X:\n        N += 1\n        factorial *= N\n    \n    return str(N)",
+  "model": "qwen3-coder",
+  "task_description": "You are given an integer X not less than 2.\nFind the positive integer N such that N! = X.\nHere, N! denotes the factorial of N, and it is guaranteed that there is exactly one such N.\n\nInput\n\nThe input is given from Standard Input in the following format:\nX\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 2 \\leq X \\leq 3 \\times 10^{18}\n- There is exactly one positive integer N such that N!=X.\n- All input values are integers.\n\nSample Input 1\n\n6\n\nSample Output 1\n\n3\r\n\nFrom 3!=3\\times2\\times1=6, print 3.\n\nSample Input 2\n\n2432902008176640000\n\nSample Output 2\n\n20\r\n\nFrom 20!=2432902008176640000, print 20."
+}

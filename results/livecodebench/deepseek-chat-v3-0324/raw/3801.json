@@ -1,0 +1,6 @@
+{
+  "task_id": "3801",
+  "llm_response": "def beautifulNumbers(l, r):\n    count = 0\n    for num in range(l, r + 1):\n        digits = list(map(int, str(num)))\n        sum_d = sum(digits)\n        if sum_d == 0:\n            continue\n        product = 1\n        for d in digits:\n            product *= d\n        if product % sum_d == 0:\n            count += 1\n    return count",
+  "model": "deepseek-chat-v3-0324",
+  "task_description": "You are given two positive integers, l and r. A positive integer is called beautiful if the product of its digits is divisible by the sum of its digits.\nReturn the count of beautiful numbers between l and r, inclusive.\n \nExample 1:\n\nInput: l = 10, r = 20\nOutput: 2\nExplanation:\nThe beautiful numbers in the range are 10 and 20.\n\nExample 2:\n\nInput: l = 1, r = 15\nOutput: 10\nExplanation:\nThe beautiful numbers in the range are 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.\n\n \nConstraints:\n\n1 <= l <= r < 10^9"
+}

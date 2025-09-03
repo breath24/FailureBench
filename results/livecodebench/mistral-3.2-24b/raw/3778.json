@@ -1,0 +1,6 @@
+{
+  "task_id": "3778",
+  "llm_response": "def transformArray(nums):\n    for i in range(len(nums)):\n        if nums[i] % 2 == 0:\n            nums[i] = 0\n        else:\n            nums[i] = 1\n    nums.sort()\n    return nums",
+  "model": "mistral-3.2-24b",
+  "task_description": "You are given an integer array nums. Transform nums by performing the following operations in the exact order specified:\n\nReplace each even number with 0.\nReplace each odd numbers with 1.\nSort the modified array in non-decreasing order.\n\nReturn the resulting array after performing these operations.\n \nExample 1:\n\nInput: nums = [4,3,2,1]\nOutput: [0,0,1,1]\nExplanation:\n\nReplace the even numbers (4 and 2) with 0 and the odd numbers (3 and 1) with 1. Now, nums = [0, 1, 0, 1].\nAfter sorting nums in non-descending order, nums = [0, 0, 1, 1].\n\n\nExample 2:\n\nInput: nums = [1,5,1,4,2]\nOutput: [0,0,1,1,1]\nExplanation:\n\nReplace the even numbers (4 and 2) with 0 and the odd numbers (1, 5 and 1) with 1. Now, nums = [1, 1, 1, 0, 0].\nAfter sorting nums in non-descending order, nums = [0, 0, 1, 1, 1].\n\n\n \nConstraints:\n\n1 <= nums.length <= 100\n1 <= nums[i] <= 1000"
+}

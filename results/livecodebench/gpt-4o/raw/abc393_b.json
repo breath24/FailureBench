@@ -1,0 +1,6 @@
+{
+  "task_id": "abc393_b",
+  "llm_response": "def candidate_func(input_str):\n    S = input_str.strip()\n    n = len(S)\n    count = 0\n    for i in range(n):\n        if S[i] == 'A':\n            for j in range(i + 1, n):\n                if S[j] == 'B':\n                    k = 2 * j - i\n                    if k < n and S[k] == 'C':\n                        count += 1\n    return str(count)",
+  "model": "gpt-4o",
+  "task_description": "A string S is given.\nFind how many places in S have A, B, and C in this order at even intervals.\nSpecifically, find the number of triples of integers (i,j,k) that satisfy all of the following conditions. Here, |S| denotes the length of S, and S_x denotes the x-th character of S.\n\n- 1 \\leq i < j < k \\leq |S|\n- j - i = k - j\n- S_i = A\n- S_j = B\n- S_k = C\n\nInput\n\nThe input is given from Standard Input in the following format:\nS\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- S is an uppercase English string with length between 3 and 100, inclusive.\n\nSample Input 1\n\nAABCC\n\nSample Output 1\n\n2\r\n\nThere are two triples (i,j,k) = (1,3,5) and (2,3,4) that satisfy the conditions.\n\nSample Input 2\n\nARC\n\nSample Output 2\n\n0\n\nSample Input 3\n\nAABAAABBAEDCCCD\n\nSample Output 3\n\n4"
+}

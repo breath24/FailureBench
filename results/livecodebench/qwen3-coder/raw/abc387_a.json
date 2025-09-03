@@ -1,0 +1,6 @@
+{
+  "task_id": "abc387_a",
+  "llm_response": "def candidate_func(input_str):\n    A, B = map(int, input_str.strip().split())\n    result = (A + B) ** 2\n    return str(result)",
+  "model": "qwen3-coder",
+  "task_description": "You are given two positive integers A and B.\nOutput the square of A + B.\n\nInput\n\nThe input is given from Standard Input in the following format:\nA B\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 1 \\leq A,B \\leq 2025\n- All input values are integers.\n\nSample Input 1\n\n20 25\n\nSample Output 1\n\n2025\r\n\n(20+25)^2=2025.\n\nSample Input 2\n\n30 25\n\nSample Output 2\n\n3025\n\nSample Input 3\n\n45 11\n\nSample Output 3\n\n3136\n\nSample Input 4\n\n2025 1111\n\nSample Output 4\n\n9834496"
+}
