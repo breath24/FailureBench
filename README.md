@@ -6,14 +6,15 @@ This repository contains the experimental data and analysis tools for the paper 
 
 Large Language Models (LLMs) have achieved remarkable success in code generation, but understanding their failure patterns remains crucial for model improvement. This work systematically analyzes tasks that consistently cause LLM failures across popular benchmarks.
 
-
 ## Repository Structure
 
-- **`llm-generated-code/`** - Generated code from 6 LLMs across 4 benchmarks
-  - `HumanEval/` - Generated code for HumanEval benchmark tasks
-  - `MBPP/` - Generated code for MBPP benchmark tasks  
-  - `LiveCodeBench/` - Generated code for LiveCodeBench tasks
-  - `BCB-Hard/` - Generated code for BigCodeBench-Hard tasks
+- **`evaluation-results/`** - Experimental results and generated solutions
+  - **`llm-generated-code/`** - Generated code from 6 LLMs across 4 benchmarks
+    - `HumanEval/` - Generated code for HumanEval benchmark tasks
+    - `MBPP/` - Generated code for MBPP benchmark tasks  
+    - `LiveCodeBench/` - Generated code for LiveCodeBench tasks
+    - `BCB-Hard/` - Generated code for BigCodeBench-Hard tasks
+  - `model-failures-per-task/` - Analysis of model failures organized by task
 
 - **`failure-inspection/`** - Detailed analysis of consistently failed tasks
 
