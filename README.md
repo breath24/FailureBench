@@ -9,17 +9,17 @@ Large Language Models (LLMs) have achieved remarkable success in code generation
 
 ## Repository Structure
 
-- **`llm-generated-solutions/`** - Generated code from 6 LLMs across 4 benchmarks
-  - `HumanEval/` - Solutions for HumanEval benchmark tasks
-  - `MBPP/` - Solutions for MBPP benchmark tasks  
-  - `LiveCodeBench/` - Solutions for LiveCodeBench tasks
-  - `BCB-Hard/` - Solutions for BigCodeBench-Hard tasks
+- **`llm-generated-code/`** - Generated code from 6 LLMs across 4 benchmarks
+  - `HumanEval/` - Generated code for HumanEval benchmark tasks
+  - `MBPP/` - Generated code for MBPP benchmark tasks  
+  - `LiveCodeBench/` - Generated code for LiveCodeBench tasks
+  - `BCB-Hard/` - Generated code for BigCodeBench-Hard tasks
 
 - **`failure-inspection/`** - Detailed analysis of consistently failed tasks
 
-- **`Complexity/`** - Code complexity measurement tools and results
-  - `Complexity_Measurement/` - Main script that takes a folder path of solution code as input and generates complexity metrics as CSV output
-  - `Comparison_Plots/` - Visualization of complexity metrics across benchmarks
+- **`complexity/`** - Code complexity measurement tools and results
+  - `complexity-measurement/` - Main script that takes a folder path of solution code as input and generates complexity metrics as CSV output
+  - `comparison-plots/` - Visualization of complexity metrics across benchmarks
 
 ## Benchmarks & Models
 
