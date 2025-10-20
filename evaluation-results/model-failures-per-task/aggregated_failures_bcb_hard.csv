@@ -74,7 +74,7 @@ BigCodeBench/955,failed,failed,failed,failed,failed,failed,all_failed,6
 BigCodeBench/964,failed,failed,failed,failed,failed,failed,all_failed,6
 BigCodeBench/985,failed,failed,failed,failed,failed,failed,all_failed,6
 BigCodeBench/988,failed,failed,failed,failed,failed,failed,all_failed,6
-BigCodeBench/273,failed,failed,failed,failed,failed,failed,mixed_failed,6
+BigCodeBench/273,failed,failed,failed,failed,failed,failed,all_failed,6
 BigCodeBench/100,failed,failed,passed,failed,failed,failed,mixed_failed,5
 BigCodeBench/1004,passed,failed,failed,failed,failed,failed,mixed_failed,5
 BigCodeBench/1008,failed,failed,passed,failed,failed,failed,mixed_failed,5
